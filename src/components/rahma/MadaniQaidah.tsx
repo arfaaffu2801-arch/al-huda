@@ -39,8 +39,8 @@ export function MadaniQaidah() {
         <div className="flex flex-col justify-center space-y-4">
           <p className="text-muted-foreground">
             The Madani Qaidah is a foundational book that teaches the Arabic
-            alphabet, basic Tajweed rules, and how to read the Quranic script.
-            It's an essential starting point for beginners of all ages.
+            alphabet and basic Tajweed rules through its 21 lessons. It's an
+            essential starting point for beginners of all ages.
           </p>
           <Link
             href="https://media.dawateislami.net/Book-Library/en/Madani-Qaidah/Madani-Qaidah-Eng-v1-Web.pdf"
