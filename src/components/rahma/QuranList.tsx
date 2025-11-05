@@ -26,7 +26,7 @@ export function QuranList() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookMarked className="h-6 w-6 text-primary" />
-          Qur'an Juz
+          Qur'an
         </CardTitle>
         <CardDescription>
           Browse through the 30 Juz of the Holy Qur'an.
