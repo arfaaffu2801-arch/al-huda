@@ -167,7 +167,7 @@ export function QiblaFinder() {
           Qibla Direction
         </CardTitle>
         <CardDescription>
-          Find the direction of the Kaaba from your current location.
+          Show the direction in any where
         </CardDescription>
       </CardHeader>
       <CardContent className="flex h-64 items-center justify-center">
