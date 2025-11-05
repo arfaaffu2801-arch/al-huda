@@ -72,7 +72,7 @@ export function DuaSuggester() {
         <CardContent>
           <Textarea
             name="situation"
-            placeholder="O my allah, make it easy and do not make it difficult, and complete it with good"
+            placeholder="O my allah, make it easy and do not make it difficult, and complete it with good (اللَّهُمَّ لاَ سَهْلاً إِلّاَ مَا جَعَلّتَهٌ سَهْلاً وَأَنّتَ تَجّعَلَ الحَزَنَ إِذَا شِئتَ سَهْلاً)"
             className="min-h-[100px] text-base"
             required
           />
