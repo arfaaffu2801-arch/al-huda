@@ -50,7 +50,7 @@ export function MadaniQaidah() {
           >
             <Button className="w-full">
               <ExternalLink className="mr-2 h-4 w-4" />
-              Open Madani Qaidah (PDF)
+              Open it
             </Button>
           </Link>
           <p className="text-xs text-center text-muted-foreground">
