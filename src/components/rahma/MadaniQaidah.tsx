@@ -9,7 +9,6 @@ import {
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Book, ExternalLink } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 export function MadaniQaidah() {
@@ -27,14 +26,7 @@ export function MadaniQaidah() {
       </CardHeader>
       <CardContent className="grid gap-6 md:grid-cols-2">
         <div className="relative flex items-center justify-center rounded-lg bg-secondary/30 p-4">
-          <Image
-            src="https://picsum.photos/seed/book/600/400"
-            alt="Madani Qaidah"
-            width={600}
-            height={400}
-            className="rounded-md object-cover"
-            data-ai-hint="islamic book"
-          />
+          <Book className="h-48 w-48 text-primary/30" />
         </div>
         <div className="flex flex-col justify-center space-y-4">
           <p className="text-muted-foreground">
