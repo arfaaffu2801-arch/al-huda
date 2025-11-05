@@ -1,4 +1,4 @@
-import { Moon } from 'lucide-react';
+import { BookOpen, Moon } from 'lucide-react';
 import Link from 'next/link';
 
 export function Header() {
@@ -13,6 +13,20 @@ export function Header() {
             Rahma Hub
           </span>
         </Link>
+        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+          <Link
+            href="/"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Home
+          </Link>
+          <Link
+            href="#quran"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Qur'an
+          </Link>
+        </nav>
         <div className="text-sm text-muted-foreground">
           Your Daily Islamic Companion
         </div>

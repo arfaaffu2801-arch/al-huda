@@ -23,6 +23,40 @@ export const islamicEvents = [
   { name: 'Ashura', date: '2025-07-05' },
 ];
 
+export const juzData = [
+    { juzNumber: 1, name: "Alif Lam Meem" },
+    { juzNumber: 2, name: "Sayaqool" },
+    { juzNumber: 3, name: "Tilkal Rusul" },
+    { juzNumber: 4, name: "Lan Tana Loo" },
+    { juzNumber: 5, name: "Wal Mohsanat" },
+    { juzNumber: 6, name: "La Yuhibbullah" },
+    { juzNumber: 7, name: "Wa Iza Samiu" },
+    { juzNumber: 8, name: "Wa Lau Annana" },
+    { juzNumber: 9, name: "Qalal Malao" },
+    { juzNumber: 10, name: "Wa A'lamu" },
+    { juzNumber: 11, name: "Yatazeroon" },
+    { juzNumber: 12, name: "Wa Mamin Da'abat" },
+    { juzNumber: 13, name: "Wa Ma Ubrioo" },
+    { juzNumber: 14, name: "Rubama" },
+    { juzNumber: 15, name: "Subhanal lazi" },
+    { juzNumber: 16, name: "Qala Alam" },
+    { juzNumber: 17, name: "Iqtaraba lil'n-nasi" },
+    { juzNumber: 18, name: "Qadd Aflaha" },
+    { juzNumber: 19, name: "Wa Qala lladhina" },
+    { juzNumber: 20, name: "A'man Khalaqa" },
+    { juzNumber: 21, name: "Utlu Ma Oohiya" },
+    { juzNumber: 22, name: "Wa-Man yaqnut" },
+    { juzNumber: 23, name: "Wa Mali" },
+    { juzNumber: 24, name: "Fa-man Azlamu" },
+    { juzNumber: 25, name: "Ilayhi Yuruddu" },
+    { juzNumber: 26, name: "Ha Meem" },
+    { juzNumber: 27, name: "Qala Fama Khatbukum" },
+    { juzNumber: 28, name: "Qadd Sami Allah" },
+    { juzNumber: 29, name: "Tabaraka lladhi" },
+    { juzNumber: 30, name: "Amma" }
+];
+
+
 export const KAABA_COORDS = {
   lat: 21.4225,
   lng: 39.8262,

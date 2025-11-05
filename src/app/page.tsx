@@ -3,6 +3,7 @@ import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QiblaFinder } from '@/components/rahma/QiblaFinder';
+import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
 
 export default function Home() {
@@ -20,6 +21,9 @@ export default function Home() {
             <IslamicCalendar />
             <QiblaFinder />
           </div>
+        </div>
+        <div className="mx-auto mt-6 max-w-screen-2xl">
+          <QuranList />
         </div>
       </main>
     </div>
