@@ -3,7 +3,7 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Rahma Hub',
+  title: 'Qudrat-AI-Quran',
   description: 'Your daily Islamic companion.',
 };
 

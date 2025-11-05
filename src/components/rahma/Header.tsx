@@ -10,7 +10,7 @@ export function Header() {
             <Moon className="h-6 w-6" />
           </div>
           <span className="text-2xl font-bold font-headline text-primary">
-            Rahma Hub
+            Qudrat-AI-Quran
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
