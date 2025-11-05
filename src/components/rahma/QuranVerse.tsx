@@ -15,7 +15,7 @@ export function QuranVerse() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookOpen className="h-6 w-6 text-primary" />
-          Verse of the Day
+          Start of the day
         </CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 text-center">
