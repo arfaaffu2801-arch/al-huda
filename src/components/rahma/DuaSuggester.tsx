@@ -72,7 +72,7 @@ export function DuaSuggester() {
         <CardContent>
           <Textarea
             name="situation"
-            placeholder="e.g., 'I have an important exam tomorrow and I am feeling anxious.' or 'I am grateful for the blessings in my life.'"
+            placeholder="O my allah, make it easy and do not make it difficult, and complete it with good"
             className="min-h-[100px] text-base"
             required
           />
