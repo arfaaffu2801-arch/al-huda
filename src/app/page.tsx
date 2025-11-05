@@ -21,6 +21,9 @@ export default function Home() {
         <div className="mx-auto w-full max-w-screen-2xl">
           <Makhraj />
         </div>
+        <div className="mx-auto w-full max-w-screen-2xl">
+          <QuranList />
+        </div>
         <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="flex flex-col gap-6 lg:col-span-2">
             <PrayerTimes />
@@ -29,9 +32,6 @@ export default function Home() {
             <IslamicCalendar />
             <QiblaFinder />
           </div>
-        </div>
-        <div className="mx-auto mt-6 grid max-w-screen-2xl grid-cols-1 gap-6">
-          <QuranList />
         </div>
       </main>
     </div>
