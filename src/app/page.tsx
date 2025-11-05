@@ -7,6 +7,7 @@ import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QiblaFinder } from '@/components/rahma/QiblaFinder';
 import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
+import { TajweedBasics } from '@/components/rahma/TajweedBasics';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <div className="mx-auto mt-6 grid max-w-screen-2xl grid-cols-1 gap-6">
           <MadaniQaidah />
           <Makhraj />
+          <TajweedBasics />
           <QuranList />
         </div>
       </main>
