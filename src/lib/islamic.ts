@@ -10,7 +10,7 @@ export const prayerTimesData = {
   Fajr: '05:00',
   Sunrise: '06:00',
   Zohar: '13:00',
-  Asr: '16:00',
+  Asr: '05:10',
   Maghrib: '18:45',
   Isha: '20:15',
 };
