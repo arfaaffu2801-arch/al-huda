@@ -10,22 +10,31 @@ import {
 import { Input } from '@/components/ui/input';
 import { juzData } from '@/lib/islamic';
 import { BookMarked, Search } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
 export function QuranList() {
   const [searchTerm, setSearchTerm] = useState('');
 
-  const filteredJuz = juzData.filter((juz) =>
-    juz.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-    `Juz ${juz.juzNumber}`.toLowerCase().includes(searchTerm.toLowerCase())
+  const filteredJuz = juzData.filter(
+    (juz) =>
+      juz.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      `Juz ${juz.juzNumber}`.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
     <Card id="quran">
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
-          <BookMarked className="h-6 w-6 text-primary" />
+          <Image
+            src="https://picsum.photos/seed/islamic-art/24/24"
+            width={24}
+            height={24}
+            alt="Quran icon"
+            className="rounded-sm"
+            data-ai-hint="islamic art"
+          />
           Qur'an
         </CardTitle>
         <CardDescription>
