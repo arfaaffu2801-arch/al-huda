@@ -28,7 +28,7 @@ export function MadaniQaidah() {
       <CardContent className="grid gap-6 md:grid-cols-2">
         <div className="relative flex items-center justify-center rounded-lg bg-secondary/30 p-4">
           <Image
-            src="https://picsum.photos/seed/qaidah/600/400"
+            src="https://picsum.photos/seed/book/600/400"
             alt="Madani Qaidah"
             width={600}
             height={400}
