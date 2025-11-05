@@ -167,7 +167,7 @@ export function QiblaFinder() {
           Qibla Direction
         </CardTitle>
         <CardDescription>
-          Show the direction in any where
+          North side: qibla, South side: Guru be Aftab,
         </CardDescription>
       </CardHeader>
       <CardContent className="flex h-64 items-center justify-center">
