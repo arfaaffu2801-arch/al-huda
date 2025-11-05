@@ -1,4 +1,4 @@
-import { BookOpen, Moon } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
 import Link from 'next/link';
 
 export function Header() {
@@ -9,7 +9,7 @@ export function Header() {
           <div className="rounded-full bg-primary/10 p-2 text-primary">
             <BookOpen className="h-6 w-6" />
           </div>
-          <span className="text-2xl font-bold font-headline text-primary">
+          <span className="text-2xl font-bold font-headline text-green-500">
             Qudrat-AI-Quran
           </span>
         </Link>
