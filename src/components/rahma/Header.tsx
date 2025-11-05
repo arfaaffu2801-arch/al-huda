@@ -9,7 +9,7 @@ export function Header() {
           <div className="rounded-full bg-primary/10 p-2 text-primary">
             <BookOpen className="h-6 w-6" />
           </div>
-          <span className="text-2xl font-bold font-headline text-green-500">
+          <span className="text-2xl font-bold font-headline text-peach-pink">
             Qudrat-AI-Quran
           </span>
         </Link>
