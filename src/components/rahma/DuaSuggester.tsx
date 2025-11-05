@@ -61,7 +61,7 @@ export function DuaSuggester() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <Lightbulb className="h-6 w-6 text-primary" />
-          Personalized Du'a Suggestions
+          Successful Du'a
         </CardTitle>
         <CardDescription>
           Describe your situation or feelings, and our AI will suggest relevant
