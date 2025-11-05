@@ -18,7 +18,7 @@ export function MadaniQaidah() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <Book className="h-6 w-6 text-primary" />
-          Madani Qaidah
+          Qaidah
         </CardTitle>
         <CardDescription>
           Learn to read the Holy Qur'an with correct pronunciation using the
