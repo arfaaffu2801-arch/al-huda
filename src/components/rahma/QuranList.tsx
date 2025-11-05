@@ -10,6 +10,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { juzData } from '@/lib/islamic';
 import { BookMarked, Search } from 'lucide-react';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export function QuranList() {
@@ -46,8 +47,11 @@ export function QuranList() {
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {filteredJuz.map((juz) => (
-            <div
+            <Link
               key={juz.juzNumber}
+              href={juz.url}
+              target="_blank"
+              rel="noopener noreferrer"
               className="group flex cursor-pointer items-center gap-4 rounded-lg border p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
             >
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
@@ -61,7 +65,7 @@ export function QuranList() {
                   Juz {juz.juzNumber}
                 </p>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </CardContent>
