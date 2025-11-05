@@ -14,7 +14,7 @@ import { Bell, MapPin, Moon, Sun, Sunrise, Sunset } from 'lucide-react';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
   Fajr: <Sunrise className="h-5 w-5 text-accent" />,
-  Dhuhr: <Sun className="h-5 w-5 text-accent" />,
+  Zohar: <Sun className="h-5 w-5 text-accent" />,
   Asr: <Sun className="h-5 w-5 text-accent opacity-70" />,
   Maghrib: <Sunset className="h-5 w-5 text-accent" />,
   Isha: <Moon className="h-5 w-5 text-accent" />,

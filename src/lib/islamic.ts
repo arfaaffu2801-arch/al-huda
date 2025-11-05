@@ -9,7 +9,7 @@ export const verseOfTheDay = {
 export const prayerTimesData = {
   Fajr: '04:30',
   Sunrise: '06:00',
-  Dhuhr: '12:30',
+  Zohar: '12:30',
   Asr: '16:00',
   Maghrib: '18:45',
   Isha: '20:15',
