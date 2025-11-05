@@ -1,6 +1,7 @@
 import { DuaSuggester } from '@/components/rahma/DuaSuggester';
 import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
+import { Makhraj } from '@/components/rahma/Makhraj';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QiblaFinder } from '@/components/rahma/QiblaFinder';
 import { QuranList } from '@/components/rahma/QuranList';
@@ -22,7 +23,8 @@ export default function Home() {
             <QiblaFinder />
           </div>
         </div>
-        <div className="mx-auto mt-6 max-w-screen-2xl">
+        <div className="mx-auto mt-6 grid max-w-screen-2xl grid-cols-1 gap-6">
+          <Makhraj />
           <QuranList />
         </div>
       </main>
