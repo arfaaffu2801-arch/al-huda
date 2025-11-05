@@ -14,7 +14,6 @@ import { Bell, MapPin, Moon, Sun, Sunrise, Sunset } from 'lucide-react';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
   Fajr: <Sunrise className="h-5 w-5 text-accent" />,
-  Sunrise: <Sunrise className="h-5 w-5 text-muted-foreground" />,
   Dhuhr: <Sun className="h-5 w-5 text-accent" />,
   Asr: <Sun className="h-5 w-5 text-accent opacity-70" />,
   Maghrib: <Sunset className="h-5 w-5 text-accent" />,
@@ -22,6 +21,10 @@ const prayerIcons: { [key: string]: React.ReactNode } = {
 };
 
 export function PrayerTimes() {
+  const prayerTimes = Object.entries(prayerTimesData).filter(
+    ([name]) => name !== 'Sunrise'
+  );
+
   return (
     <Card className="h-full">
       <CardHeader>
@@ -36,7 +39,7 @@ export function PrayerTimes() {
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {Object.entries(prayerTimesData).map(([name, time]) => (
+          {prayerTimes.map(([name, time]) => (
             <div
               key={name}
               className="flex items-center justify-between rounded-lg bg-background p-3 transition-colors hover:bg-secondary/50"
