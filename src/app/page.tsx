@@ -6,6 +6,7 @@ import { MorningAzkar } from '@/components/rahma/MorningAzkar';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
+import { AllahNames } from '@/components/rahma/AllahNames';
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <DuaSuggester />
+        </div>
+        <div className="mx-auto w-full max-w-screen-2xl">
+          <AllahNames />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <QuranList />
