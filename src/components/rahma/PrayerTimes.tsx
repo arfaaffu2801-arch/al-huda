@@ -14,6 +14,7 @@ import { useEffect, useState } from 'react';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
   Fajr: <Sunrise className="h-5 w-5 text-accent" />,
+  Sunrise: <Sunrise className="h-5 w-5 text-yellow-500" />,
   Dhuhr: <Sun className="h-5 w-5 text-accent" />,
   Asr: <Sun className="h-5 w-5 text-accent opacity-70" />,
   Maghrib: <Sunset className="h-5 w-5 text-accent" />,
@@ -22,6 +23,7 @@ const prayerIcons: { [key: string]: React.ReactNode } = {
 
 type PrayerTimesData = {
   Fajr: string;
+  Sunrise: string;
   Dhuhr: string;
   Asr: string;
   Maghrib: string;
@@ -52,6 +54,7 @@ export function PrayerTimes() {
             // The API returns Dhuhr, but the old UI used Zohar. Let's stick to the API.
             const relevantTimings: PrayerTimesData = {
               Fajr: timings.Fajr,
+              Sunrise: timings.Sunrise,
               Dhuhr: timings.Dhuhr,
               Asr: timings.Asr,
               Maghrib: timings.Maghrib,
