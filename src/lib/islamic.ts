@@ -93,13 +93,18 @@ export function getQiblaDirection(userCoords: { lat: number; lng: number }) {
 
 export const morningAzkar = [
   {
-    arabic: 'أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ وَالْحَمْدُ لِلَّهِ، لَا إِلَهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ.',
-    transliteration: 'Aṣbaḥnā wa aṣbaḥa al-mulku lillāhi, walḥamdulillāh, lā ilāha illallāhu waḥdahu lā sharīka lahu, lahul-mulku wa lahul-ḥamdu, wa huwa `alā kulli shay’in qadīr.',
-    translation: 'We have reached the morning, and at this very time unto Allah belongs all sovereignty, and all praise is for Allah. None has the right to be worshipped except Allah, alone, without partner, to Him belongs all sovereignty and praise and He is over all things omnipotent.'
+    arabic: 'سُورَةُ الإِخْلَاصِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللهُ أَحَدٌ ۝ ٱللهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ',
+    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul huwa-llaahu aḥad * allaahuṣ-ṣamad * lam yalid wa lam yoolad * wa lam yakul-lahuۥ kufuwan aḥad',
+    translation: 'Surah Al-Ikhlas: In the name of Allah, the Beneficent, the Merciful Say (O Muhammad (SAW)): "He is Allâh, (the) One.* Allâh the Self-Sufficient Master, Whom all creatures need, (He neither eats nor drinks). * He begets not, nor was He begotten. * And there is none co-equal or comparable unto Him."'
   },
   {
-    arabic: 'اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ.',
-    transliteration: 'Allāhumma bika aṣbaḥnā, wa bika amsaynā, wa bika naḥyā, wa bika namūtu, wa ilaykan-nushūr.',
-    translation: 'O Allah, by your leave we have reached the morning and by Your leave we have reached the evening, by Your leave we live and die and unto You is our resurrection.'
+    arabic: 'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodhu birabbil-falaq * min sharri maa khalaq * wa min sharri ghaasiqin idhaa waqab * wa min sharrin-naffaathaati fil-‛uqad * wa min sharri ḥaasidin idhaa ḥasad',
+    translation: 'Surah Al-Falaq: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of the daybreak, * From the evil of what He has created; * And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away) * And from the evil of those who practice witchcrafts when they blow in the knots, * And from the evil of the envier when he envies."'
+  },
+  {
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
+    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas * malikin-naas * ilaahin-naas * min sharril-waswaasil-khannaas * alladhee yuwaswisu fee ṣudoorin-naas * minal-jinnati wan-naas',
+    translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (God) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."'
   }
 ];
