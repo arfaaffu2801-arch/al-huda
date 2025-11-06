@@ -4,7 +4,6 @@ import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
 import { MorningAzkar } from '@/components/rahma/MorningAzkar';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
-import { QiblaFinder } from '@/components/rahma/QiblaFinder';
 import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
 
@@ -32,7 +31,6 @@ export default function Home() {
           </div>
           <div className="flex flex-col gap-6 lg:col-span-1">
             <IslamicCalendar />
-            <QiblaFinder />
           </div>
         </div>
       </main>
