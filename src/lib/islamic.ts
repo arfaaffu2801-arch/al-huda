@@ -299,3 +299,124 @@ export const eveningAzkar = [
     translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
   }
 ];
+
+export const jummahDuas = [
+  {
+    arabic: 'اللَّهُمَّ اغْفِرْ لَنَا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ، الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ',
+    transliteration: 'Allahumma-ghfir lana wa lil-mu’minina wal-mu’minat, al-ahya’i minhum wal-amwat',
+    translation: 'O Allah, forgive us and the believing men and women, the living among them and the dead.',
+    reference: 'Hadith',
+  },
+];
+export const mercyDuas = [
+  {
+    arabic: 'رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',
+    transliteration: 'Rabbana atina fi dunya hasanatan wa fil akhirati hasanatan waqina adhaban-nar',
+    translation: 'Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.',
+    reference: 'Quran 2:201',
+  },
+];
+export const forgivenessDuas = [
+  {
+    arabic: 'رَبَّنَا ظَلَمْنَا أَنْفُسَنَا وَإِنْ لَمْ تَغْفِرْ لَنَا وَتَرْحَمْنَا لَنَكُونَنَّ مِنَ الْخَاسِرِينَ',
+    transliteration: 'Rabbana zalamna anfusana wa il lam taghfir lana wa tarhamna lanakunanna minal-khasirin',
+    translation: 'Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy upon us, we will surely be among the losers.',
+    reference: 'Quran 7:23',
+  },
+];
+export const happinessDuas = [
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ نَفْسًا بِكَ مُطْمَئِنَّةً، تُؤْمِنُ بِلِقَائِكَ، وَتَرْضَى بِقَضَائِكَ، وَتَقْنَعُ بِعَطَائِكَ',
+    transliteration: 'Allahumma inni as’aluka nafsan bika mutma’innah, tu’minu biliqa’ika, wa tarda biqada’ika, wa taqna‘u bi‘ata’ika',
+    translation: 'O Allah, I ask You for a soul that is tranquil and pleased with You, that believes in meeting You, that is content with Your decree, and that is satisfied with Your giving.',
+    reference: 'Hadith',
+  },
+];
+export const rizqDuas = [
+  {
+    arabic: 'اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ',
+    transliteration: 'Allahummak-finee bihalalika ‘an haramik, wa aghninee bifadhlika ‘amman siwak',
+    translation: 'O Allah, suffice me with what You have permitted so that I have no need of that which You have forbidden, and make me independent of all others besides You.',
+    reference: 'Hadith',
+  },
+];
+export const repentanceDuas = [
+  {
+    arabic: 'أَسْتَغْفِرُ اللَّهَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ',
+    transliteration: 'Astaghfirullahal-ladhi la ilaha illa Huwal-Hayyul-Qayyum wa atubu ilaih',
+    translation: 'I seek the forgiveness of Allah, whom there is none worthy of worship except Him, The Ever-Living, The Self-Subsisting, and I turn to Him in repentance.',
+    reference: 'Hadith',
+  },
+];
+export const rectificationDuas = [
+  {
+    arabic: 'اللَّهُمَّ أَصْلِحْ لِي دِينِي الَّذِي هُوَ عِصْمَةُ أَمْرِي، وَأَصْلِحْ لِي دُنْيَايَ الَّتِي فِيهَا مَعَاشِي، وَأَصْلِحْ لِي آخِرَتِي الَّتِي فِيهَا مَعَادِي',
+    transliteration: 'Allahumma aslih li deeni allathee huwa ‘ismatu amri, wa aslih li dunyaya allati feeha ma’ashi, wa aslih li akhirati allati feeha ma’adi',
+    translation: 'O Allah, rectify for me my religion which is the protection of my affairs, and rectify for me my worldly life in which is my livelihood, and rectify for me my hereafter in which is my return.',
+    reference: 'Hadith',
+  },
+];
+export const goodnessDuas = [
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ فِعْلَ الْخَيْرَاتِ، وَتَرْكَ الْمُنْكَرَاتِ، وَحُبَّ الْمَسَاكِينِ',
+    transliteration: 'Allahumma inni as’aluka fi’lal-khayrat, wa tarkal-munkarat, wa hubbal-masakeen',
+    translation: 'O Allah, I ask You for the ability to do good deeds, to avoid evil deeds, and to love the poor.',
+    reference: 'Hadith',
+  },
+];
+export const patienceDuas = [
+  {
+    arabic: 'رَبَّنَا أَفْرِغْ عَلَيْنَا صَبْرًا وَثَبِّتْ أَقْدَامَنَا وَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ',
+    transliteration: 'Rabbana afrigh ‘alayna sabran wa thabbit aqdamana wansurna ‘alal-qawmil-kafirin',
+    translation: 'Our Lord, pour upon us patience and plant firmly our feet and give us victory over the disbelieving people.',
+    reference: 'Quran 2:250',
+  },
+];
+export const justiceDuas = [
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ دَعْوَةِ الْمَظْلُومِ',
+    transliteration: 'Allahumma inni a’udhu bika min da’watil-mazloom',
+    translation: 'O Allah, I seek refuge in You from the supplication of the oppressed.',
+    reference: 'Hadith',
+  },
+];
+export const rabbanaDuas = [
+  {
+    arabic: 'رَبَّنَا تَقَبَّلْ مِنَّا إِنَّكَ أَنْتَ السَّمِيعُ الْعَلِيمُ',
+    transliteration: 'Rabbana taqabbal minna innaka Antas-Sami’ul-‘Alim',
+    translation: 'Our Lord, accept [this] from us. Indeed, You are the Hearing, the Knowing.',
+    reference: 'Quran 2:127',
+  },
+];
+export const ruqyahDuas = [
+  {
+    arabic: 'أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ',
+    transliteration: 'A’udhu bikalimatil-lahit-tammati min sharri ma khalaq',
+    translation: 'I seek refuge in the perfect words of Allah from the evil of that which He has created.',
+    reference: 'Hadith',
+  },
+];
+export const protectionDuas = [
+  {
+    arabic: 'اللَّهُمَّ احْفَظْنِي مِنْ بَيْنِ يَدَيَّ وَمِنْ خَلْفِي وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي وَأَعُوذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي',
+    transliteration: 'Allahummah-fazni min bayni yadayya wa min khalfi wa ‘an yameeni wa ‘an shimali wa min fawqi wa a’udhu bi’azamatika an ughtala min tahti',
+    translation: 'O Allah, protect me from before me and from behind me, on my right and on my left, and from above me, and I seek refuge in Your greatness from being unexpectedly destroyed from beneath me.',
+    reference: 'Hadith',
+  },
+];
+export const reverenceDuas = [
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ خَشْيَتَكَ فِي الْغَيْبِ وَالشَّهَادَةِ',
+    transliteration: 'Allahumma inni as’aluka khashyataka fil-ghaybi wash-shahadah',
+    translation: 'O Allah, I ask You for Your fear in the unseen and the seen.',
+    reference: 'Hadith',
+  },
+];
+export const ramadanDuas = [
+  {
+    arabic: 'اللَّهُمَّ أَهِلَّهُ عَلَيْنَا بِالْيُمْنِ وَالْإِيمَانِ وَالسَّلَامَةِ وَالْإِسْلَامِ',
+    transliteration: 'Allahumma ahillahu ‘alayna bil-yumni wal-iman was-salamati wal-islam',
+    translation: 'O Allah, bring this moon over us with blessings and faith, and with safety and Islam.',
+    reference: 'Hadith',
+  },
+];

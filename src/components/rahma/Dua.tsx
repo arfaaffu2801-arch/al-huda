@@ -13,9 +13,47 @@ import {
   TabsList,
   TabsTrigger,
 } from '@/components/ui/tabs';
-import { morningAzkar, eveningAzkar } from '@/lib/islamic';
-import { Sun, Moon, BookHeart } from 'lucide-react';
+import {
+  morningAzkar,
+  eveningAzkar,
+  jummahDuas,
+  mercyDuas,
+  forgivenessDuas,
+  happinessDuas,
+  rizqDuas,
+  repentanceDuas,
+  rectificationDuas,
+  goodnessDuas,
+  patienceDuas,
+  justiceDuas,
+  rabbanaDuas,
+  ruqyahDuas,
+  protectionDuas,
+  reverenceDuas,
+  ramadanDuas,
+} from '@/lib/islamic';
+import { Sun, Moon, BookHeart, ChevronLeft, ChevronRight } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
+
+const duaCategories = {
+  morning: { label: 'Morning', icon: Sun, data: morningAzkar },
+  evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
+  jummah: { label: 'Jummah', data: jummahDuas },
+  mercy: { label: 'Mercy', data: mercyDuas },
+  forgiveness: { label: 'Forgiveness', data: forgivenessDuas },
+  happiness: { label: 'Happiness', data: happinessDuas },
+  rizq: { label: 'Rizq', data: rizqDuas },
+  repentance: { label: 'Repentance', data: repentanceDuas },
+  rectification: { label: 'Rectification', data: rectificationDuas },
+  goodness: { label: 'Goodness', data: goodnessDuas },
+  patience: { label: 'Patience', data: patienceDuas },
+  justice: { label: 'Justice', data: justiceDuas },
+  rabbana: { label: 'Rabbana', data: rabbanaDuas },
+  ruqyah: { label: 'Ruqyah', data: ruqyahDuas },
+  protection: { label: 'Protection', data: protectionDuas },
+  reverence: { label: 'Reverence', data: reverenceDuas },
+  ramadan: { label: 'Ramadan', data: ramadanDuas },
+};
 
 export function Dua() {
   return (
@@ -25,66 +63,53 @@ export function Dua() {
           <BookHeart className="h-6 w-6 text-primary" />
           daily routine
         </CardTitle>
-        <CardDescription>
-          daily routine
-        </CardDescription>
+        <CardDescription>daily routine</CardDescription>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="morning" className="w-full">
-          <TabsList className="grid w-full grid-cols-2">
-            <TabsTrigger value="morning" className="flex items-center gap-2">
-              <Sun className="h-5 w-5" />
-              Morning
-            </TabsTrigger>
-            <TabsTrigger value="evening" className="flex items-center gap-2">
-              <Moon className="h-5 w-5" />
-              Evening
-            </TabsTrigger>
-          </TabsList>
-          <TabsContent value="morning">
-            <ScrollArea className="h-[400px] w-full">
-              <div className="space-y-4 p-1">
-                {morningAzkar.map((azkar, index) => (
-                  <div
-                    key={index}
-                    className="rounded-lg border bg-secondary/30 p-4"
-                  >
-                    <p className="mb-2 text-lg text-primary" dir="rtl">
-                      {azkar.arabic}
-                    </p>
-                    <p className="mb-2 text-sm text-muted-foreground">
-                      {azkar.transliteration}
-                    </p>
-                    <p className="italic text-foreground">
-                      &ldquo;{azkar.translation}&rdquo;
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </ScrollArea>
-          </TabsContent>
-          <TabsContent value="evening">
-            <ScrollArea className="h-[400px] w-full">
-              <div className="space-y-4 p-1">
-                {eveningAzkar.map((azkar, index) => (
-                  <div
-                    key={index}
-                    className="rounded-lg border bg-secondary/30 p-4"
-                  >
-                    <p className="mb-2 text-lg text-primary" dir="rtl">
-                      {azkar.arabic}
-                    </p>
-                    <p className="mb-2 text-sm text-muted-foreground">
-                      {azkar.transliteration}
-                    </p>
-                    <p className="italic text-foreground">
-                      &ldquo;{azkar.translation}&rdquo;
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </ScrollArea>
-          </TabsContent>
+          <ScrollArea className="w-full whitespace-nowrap rounded-lg border">
+            <TabsList className="inline-flex h-auto w-max p-1">
+              {Object.entries(duaCategories).map(([key, { label, icon: Icon }]) => (
+                <TabsTrigger
+                  key={key}
+                  value={key}
+                  className="flex items-center gap-2"
+                >
+                  {Icon && <Icon className="h-5 w-5" />}
+                  {label}
+                </TabsTrigger>
+              ))}
+            </TabsList>
+          </ScrollArea>
+          {Object.entries(duaCategories).map(([key, { data }]) => (
+            <TabsContent key={key} value={key}>
+              <ScrollArea className="h-[400px] w-full">
+                <div className="space-y-4 p-1">
+                  {data.map((dua, index) => (
+                    <div
+                      key={index}
+                      className="rounded-lg border bg-secondary/30 p-4"
+                    >
+                      <p className="mb-2 text-lg text-primary" dir="rtl">
+                        {dua.arabic}
+                      </p>
+                      <p className="mb-2 text-sm text-muted-foreground">
+                        {dua.transliteration}
+                      </p>
+                      <p className="italic text-foreground">
+                        &ldquo;{dua.translation}&rdquo;
+                      </p>
+                      {dua.reference && (
+                        <p className="mt-2 text-right text-xs text-muted-foreground">
+                          - {dua.reference}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </ScrollArea>
+            </TabsContent>
+          ))}
         </Tabs>
       </CardContent>
     </Card>
