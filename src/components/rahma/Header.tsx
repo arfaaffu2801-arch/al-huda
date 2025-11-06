@@ -30,7 +30,7 @@ export function Header() {
             href="/names-of-allah"
             className="text-foreground/70 transition-colors hover:text-foreground"
           >
-            Names of Allah
+            99 allah name
           </Link>
           <Link
             href="/duas"
