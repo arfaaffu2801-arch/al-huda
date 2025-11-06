@@ -136,8 +136,10 @@ export const morningAzkar = [
     arabic: 'بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الَْأرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ.',
     transliteration: 'Bismil-lahil-lathee la yadurru maAAas-mihi shay-on fil-ardi wala fis-sama-i wahuwas-sameeAAul-AAaleem.',
     translation: 'In the name of Allah with whose name nothing is harmed on earth nor in the heavens and He is The All-Seeing, The All-Knowing.',
+  },
+  {
+    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلِيهِ وَسَلَّمَ نَبِيَّاً.',
+    transliteration: 'Radiytu billahi rabbān wa bil-islāmi dīnān wa bi-Muḥammadin ṣallallāhu ʿalayhi wa sallam nabīyā.',
+    translation: 'I am pleased with Allah as a Lord, and Islam as a religion and Muhammad peace be upon to him as a Prophet',
   }
 ];
-
-
-
