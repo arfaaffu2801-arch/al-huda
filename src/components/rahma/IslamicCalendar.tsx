@@ -7,12 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { islamicEvents } from '@/lib/islamic';
-import { CalendarDays, Star } from 'lucide-react';
+import { Calendar } from '@/components/ui/calendar';
+import { CalendarDays } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 export function IslamicCalendar() {
   const [hijriDate, setHijriDate] = useState('');
+  const [date, setDate] = useState<Date | undefined>(new Date());
 
   useEffect(() => {
     const today = new Date();
@@ -35,27 +36,13 @@ export function IslamicCalendar() {
           {hijriDate || 'Loading Hijri date...'}
         </CardDescription>
       </CardHeader>
-      <CardContent>
-        <h3 className="mb-4 font-semibold">Important Dates</h3>
-        <div className="space-y-3">
-          {islamicEvents.map((event) => (
-            <div key={event.name} className="flex items-start gap-3">
-              <div className="mt-1">
-                <Star className="h-4 w-4 text-accent" />
-              </div>
-              <div>
-                <p className="font-medium">{event.name}</p>
-                <p className="text-sm text-muted-foreground">
-                  {new Date(event.date).toLocaleDateString('en-US', {
-                    year: 'numeric',
-                    month: 'long',
-                    day: 'numeric',
-                  })}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <CardContent className="flex justify-center">
+        <Calendar
+          mode="single"
+          selected={date}
+          onSelect={setDate}
+          className="rounded-md border"
+        />
       </CardContent>
     </Card>
   );

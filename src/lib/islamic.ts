@@ -15,15 +15,6 @@ export const prayerTimesData = {
   Isha: '08:00',
 };
 
-export const islamicEvents = [
-  { name: 'Ramadan Starts', date: '2025-02-28' },
-  { name: 'Eid al-Fitr', date: '2025-03-30' },
-  { name: 'Day of Arafah', date: '2025-06-05' },
-  { name: 'Eid al-Adha', date: '2025-06-06' },
-  { name: 'Islamic New Year (1447 AH)', date: '2025-06-26' },
-  { name: 'Ashura', date: '2025-07-05' },
-];
-
 export const juzData = [
     { juzNumber: 1, name: "Alif Lam Meem", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-1.pdf" },
     { juzNumber: 2, name: "Sayaqool", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-2.pdf" },
