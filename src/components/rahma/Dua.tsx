@@ -61,7 +61,7 @@ export function Dua() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookHeart className="h-6 w-6 text-primary" />
-          daily routine
+          Azkar
         </CardTitle>
         <CardDescription>daily routine</CardDescription>
       </CardHeader>
