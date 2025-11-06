@@ -21,10 +21,16 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="#quran"
+            href="/#quran"
             className="text-foreground/70 transition-colors hover:text-foreground"
           >
             Qur'an
+          </Link>
+          <Link
+            href="/duas"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Du'as
           </Link>
         </nav>
         <div className="text-sm text-muted-foreground">
