@@ -14,6 +14,13 @@ import {
   TabsTrigger,
 } from '@/components/ui/tabs';
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import {
   morningAzkar,
   eveningAzkar,
   jummahDuas,
@@ -32,12 +39,16 @@ import {
   reverenceDuas,
   ramadanDuas,
 } from '@/lib/islamic';
-import { Sun, Moon, BookHeart, ChevronLeft, ChevronRight } from 'lucide-react';
+import { Sun, Moon, BookHeart, ChevronDown } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
+import { useState } from 'react';
 
-const duaCategories = {
+const azkarCategories = {
   morning: { label: 'Morning', icon: Sun, data: morningAzkar },
   evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
+};
+
+const duaCategories = {
   jummah: { label: 'Jummah', data: jummahDuas },
   mercy: { label: 'Mercy', data: mercyDuas },
   forgiveness: { label: 'Forgiveness', data: forgivenessDuas },
@@ -55,7 +66,14 @@ const duaCategories = {
   ramadan: { label: 'Ramadan', data: ramadanDuas },
 };
 
+type DuaCategoryKey = keyof typeof duaCategories;
+
 export function Dua() {
+  const [selectedDuaCategory, setSelectedDuaCategory] =
+    useState<DuaCategoryKey>('jummah');
+
+  const selectedDuaData = duaCategories[selectedDuaCategory].data;
+
   return (
     <Card>
       <CardHeader>
@@ -67,9 +85,9 @@ export function Dua() {
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="morning" className="w-full">
-          <ScrollArea className="w-full whitespace-nowrap rounded-lg border">
-            <TabsList className="inline-flex h-auto w-max p-1">
-              {Object.entries(duaCategories).map(([key, { label, icon: Icon }]) => (
+          <TabsList>
+            {Object.entries(azkarCategories).map(
+              ([key, { label, icon: Icon }]) => (
                 <TabsTrigger
                   key={key}
                   value={key}
@@ -78,10 +96,11 @@ export function Dua() {
                   {Icon && <Icon className="h-5 w-5" />}
                   {label}
                 </TabsTrigger>
-              ))}
-            </TabsList>
-          </ScrollArea>
-          {Object.entries(duaCategories).map(([key, { data }]) => (
+              )
+            )}
+            <TabsTrigger value="duas">Du'as</TabsTrigger>
+          </TabsList>
+          {Object.entries(azkarCategories).map(([key, { data }]) => (
             <TabsContent key={key} value={key}>
               <ScrollArea className="h-[400px] w-full">
                 <div className="space-y-4 p-1">
@@ -110,6 +129,52 @@ export function Dua() {
               </ScrollArea>
             </TabsContent>
           ))}
+          <TabsContent value="duas">
+            <div className="mb-4">
+              <Select
+                value={selectedDuaCategory}
+                onValueChange={(value) =>
+                  setSelectedDuaCategory(value as DuaCategoryKey)
+                }
+              >
+                <SelectTrigger className="w-full">
+                  <SelectValue placeholder="Select a Du'a category" />
+                </SelectTrigger>
+                <SelectContent>
+                  {Object.entries(duaCategories).map(([key, { label }]) => (
+                    <SelectItem key={key} value={key}>
+                      {label}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+            <ScrollArea className="h-[340px] w-full">
+              <div className="space-y-4 p-1">
+                {selectedDuaData.map((dua, index) => (
+                  <div
+                    key={index}
+                    className="rounded-lg border bg-secondary/30 p-4"
+                  >
+                    <p className="mb-2 text-lg text-primary" dir="rtl">
+                      {dua.arabic}
+                    </p>
+                    <p className="mb-2 text-sm text-muted-foreground">
+                      {dua.transliteration}
+                    </p>
+                    <p className="italic text-foreground">
+                      &ldquo;{dua.translation}&rdquo;
+                    </p>
+                    {dua.reference && (
+                      <p className="mt-2 text-right text-xs text-muted-foreground">
+                        - {dua.reference}
+                      </p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </ScrollArea>
+          </TabsContent>
         </Tabs>
       </CardContent>
     </Card>
