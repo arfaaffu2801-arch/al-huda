@@ -23,10 +23,10 @@ export function Dua() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookHeart className="h-6 w-6 text-primary" />
-          Du'a & Azkar
+          Daily Use Du'a
         </CardTitle>
         <CardDescription>
-          Daily remembrances for morning and evening.
+          Daily supplications for morning and evening.
         </CardDescription>
       </CardHeader>
       <CardContent>
