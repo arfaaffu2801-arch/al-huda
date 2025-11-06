@@ -21,7 +21,7 @@ export function Header() {
             Home
           </Link>
           <Link
-            href="/#quran"
+            href="/quran"
             className="text-foreground/70 transition-colors hover:text-foreground"
           >
             Qur'an
