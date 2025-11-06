@@ -29,6 +29,10 @@ export function MorningAzkar() {
             <p className="mb-2 text-lg text-primary" dir="rtl">
               {azkar.arabic}
             </p>
+            <p className="mb-2 text-sm text-muted-foreground">
+              {azkar.transliteration}
+            </p>
+            <p className="italic text-foreground">&ldquo;{azkar.translation}&rdquo;</p>
           </div>
         ))}
       </CardContent>
