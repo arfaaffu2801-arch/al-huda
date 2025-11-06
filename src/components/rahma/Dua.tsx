@@ -26,7 +26,7 @@ export function Dua() {
           Daily Use Du'a
         </CardTitle>
         <CardDescription>
-          Daily supplications for morning and evening.
+          daily routine
         </CardDescription>
       </CardHeader>
       <CardContent>
