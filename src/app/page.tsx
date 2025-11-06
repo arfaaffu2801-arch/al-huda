@@ -4,7 +4,6 @@ import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
-import { AllahNames } from '@/components/rahma/AllahNames';
 import { Shahada } from '@/components/rahma/Shahada';
 import { TasbihCounter } from '@/components/rahma/TasbihCounter';
 
@@ -18,9 +17,6 @@ export default function Home() {
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <Shahada />
-        </div>
-        <div className="mx-auto w-full max-w-screen-2xl">
-          <AllahNames />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <TasbihCounter />

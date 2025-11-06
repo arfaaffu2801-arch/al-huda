@@ -27,6 +27,12 @@ export function Header() {
             Qur'an
           </Link>
           <Link
+            href="/names-of-allah"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Names of Allah
+          </Link>
+          <Link
             href="/duas"
             className="text-foreground/70 transition-colors hover:text-foreground"
           >

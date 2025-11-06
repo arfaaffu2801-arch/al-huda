@@ -46,7 +46,7 @@ export function AllahNames() {
             />
           </div>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid h-[600px] grid-cols-1 gap-4 overflow-y-auto sm:grid-cols-2 lg:grid-cols-3">
           {filteredNames.map((name, index) => (
             <div
               key={index}
