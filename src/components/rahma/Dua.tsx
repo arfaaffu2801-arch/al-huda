@@ -23,7 +23,7 @@ export function Dua() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookHeart className="h-6 w-6 text-primary" />
-          Daily Use Du'a
+          daily routine
         </CardTitle>
         <CardDescription>
           daily routine
