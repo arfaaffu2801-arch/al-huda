@@ -13,7 +13,7 @@ export function Header() {
             Qudrat-AI-Quran
           </span>
         </Link>
-        <nav className="hidden items-center gap-6 text-sm font-medium md:flex">
+        <nav className="flex items-center gap-6 text-sm font-medium">
           <Link
             href="/"
             className="text-foreground/70 transition-colors hover:text-foreground"
@@ -33,7 +33,7 @@ export function Header() {
             Du'as
           </Link>
         </nav>
-        <div className="text-sm text-muted-foreground">
+        <div className="hidden text-sm text-muted-foreground md:block">
           Your Daily Islamic Companion
         </div>
       </div>
