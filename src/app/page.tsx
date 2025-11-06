@@ -7,6 +7,7 @@ import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
 import { AllahNames } from '@/components/rahma/AllahNames';
+import { Shahada } from '@/components/rahma/Shahada';
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
       <main className="flex flex-1 flex-col gap-6 p-4 sm:p-6 md:p-8">
         <div className="mx-auto w-full max-w-screen-2xl">
           <QuranVerse />
+        </div>
+        <div className="mx-auto w-full max-w-screen-2xl">
+          <Shahada />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <DuaSuggester />
