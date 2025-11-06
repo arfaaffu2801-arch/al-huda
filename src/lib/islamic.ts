@@ -1,4 +1,5 @@
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -48,7 +49,6 @@ export const juzData = [
     { juzNumber: 30, name: "Amma", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-30.pdf" }
 ];
 
-
 export const KAABA_COORDS = {
   lat: 21.4225,
   lng: 39.8262,
@@ -82,6 +82,15 @@ export function getQiblaDirection(userCoords: { lat: number; lng: number }) {
 
   return bearing;
 }
+
+export const islamicFestivals2025 = [
+  { name: 'Ramadan Starts', date: new Date('2025-02-28') },
+  { name: 'Eid al-Fitr', date: new Date('2025-03-30') },
+  { name: 'Day of Arafah', date: new Date('2025-06-05') },
+  { name: 'Eid al-Adha', date: new Date('2025-06-06') },
+  { name: 'Islamic New Year (1447 AH)', date: new Date('2025-06-26') },
+  { name: 'Ashura', date: new Date('2025-07-05') },
+];
 
 export const morningAzkar = [
   {
