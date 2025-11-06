@@ -38,6 +38,12 @@ export function Header() {
           >
             Du'as
           </Link>
+          <Link
+            href="/azkar"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Azkar
+          </Link>
         </nav>
         <div className="hidden text-sm text-muted-foreground md:block">
           Your Daily Islamic Companion

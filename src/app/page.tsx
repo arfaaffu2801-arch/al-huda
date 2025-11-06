@@ -1,4 +1,3 @@
-import { Dua } from '@/components/rahma/Dua';
 import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
@@ -23,9 +22,6 @@ export default function Home() {
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <QuranList />
-        </div>
-        <div className="mx-auto w-full max-w-screen-2xl">
-          <Dua />
         </div>
         <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="flex flex-col gap-6 lg:col-span-2">
