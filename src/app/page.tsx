@@ -1,4 +1,3 @@
-import { DuaSuggester } from '@/components/rahma/DuaSuggester';
 import { EveningAzkar } from '@/components/rahma/EveningAzkar';
 import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
@@ -19,9 +18,6 @@ export default function Home() {
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <Shahada />
-        </div>
-        <div className="mx-auto w-full max-w-screen-2xl">
-          <DuaSuggester />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <AllahNames />
