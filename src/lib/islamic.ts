@@ -151,5 +151,10 @@ export const morningAzkar = [
     arabic: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ .',
     transliteration: 'Subhanal-lahi wabihamdih.',
     translation: 'How perfect Allah is and I praise Him',
+  },
+  {
+    arabic: 'يَاحَيُّ، يَا قَيُّومُ، بِرَحْمَتِكَ أَسْتَغِيثُ، أَصْلِحْ لِي شَأْنِي كُلَّهُ، وَلَا تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ.',
+    transliteration: 'Ya hayyu ya qayyoom, birahmatika astagheeth, aslih lee sha/nee kullah, wala takilnee ila nafsee tarfata AAayn.',
+    translation: 'O Ever Living, O Self-Subsisting and Supporter of all, by Your mercy I seek assistance, rectify for me all of my affairs and do not leave me to myself, even for the blink of an eye.',
   }
 ];
