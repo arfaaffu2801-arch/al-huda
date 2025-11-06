@@ -94,7 +94,5 @@ export function getQiblaDirection(userCoords: { lat: number; lng: number }) {
 export const morningAzkar = [
   {
     arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
-    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas * malikin-naas * ilaahin-naas * min sharril-waswaasil-khannaas * alladhee yuwaswisu fee ṣudoorin-naas * minal-jinnati wan-naas',
-    translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (God) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."'
   }
 ];
