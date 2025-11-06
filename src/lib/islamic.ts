@@ -239,5 +239,13 @@ export const eveningAzkar = [
     arabic: 'حَسْبِيَ اللَّهُ لَآ إِلَهَ إِلَّا هُوَ عَلَيْهِ تَوَكَّلْتُ وَهُوَ رَبُّ الْعَرْشِ الْعَظِيمِ.',
     transliteration: 'Hasbiyal-lahu la ilaha illa huwa, AAalayhi tawakkalt, wahuwa rabbul-AAarshil-AAatheem',
     translation: 'Allah is Sufficient for me, none has the right to be worshipped except Him, upon Him I rely and He is Lord of the exalted throne.'
+  },
+  {
+    arabic: 'أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ مِنْ شَرِّ مَا خَلَقَ.',
+    transliteration: 'aAAoothu bikalimatil-lahit-tammati min sharri ma khalaq.',
+    translation: 'I take refuge in Allah’s perfect words from the evil He has created.',
   }
 ];
+
+
+    
