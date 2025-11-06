@@ -122,4 +122,10 @@ export const morningAzkar = [
     transliteration: "Astaghfirullaaha wa 'atoobu 'ilayhi",
     translation: 'I seek Allaah’s forgiveness and I turn to Him in repentance.',
   },
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً، وَرِزْقاً طَيِّباً، وَعَمَلاً مُتَقَبَّلاً',
+    transliteration: 'Allahumma innee as-aluka AAilman nafiAAan, warizqan tayyiban, waAAamalan mutaqabbalan.',
+    translation: 'O Allah, I ask You for knowledge which is beneficial and sustenance which is good, and deeds which are acceptable.',
+  },
 ];
+
