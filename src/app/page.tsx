@@ -1,7 +1,6 @@
-import { EveningAzkar } from '@/components/rahma/EveningAzkar';
+import { Dua } from '@/components/rahma/Dua';
 import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
-import { MorningAzkar } from '@/components/rahma/MorningAzkar';
 import { PrayerTimes } from '@/components/rahma/PrayerTimes';
 import { QuranList } from '@/components/rahma/QuranList';
 import { QuranVerse } from '@/components/rahma/QuranVerse';
@@ -25,9 +24,8 @@ export default function Home() {
         <div className="mx-auto w-full max-w-screen-2xl">
           <QuranList />
         </div>
-        <div className="mx-auto grid w-full max-w-screen-2xl grid-cols-1 gap-6 md:grid-cols-2">
-          <MorningAzkar />
-          <EveningAzkar />
+        <div className="mx-auto w-full max-w-screen-2xl">
+          <Dua />
         </div>
         <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6 lg:grid-cols-3">
           <div className="flex flex-col gap-6 lg:col-span-2">
