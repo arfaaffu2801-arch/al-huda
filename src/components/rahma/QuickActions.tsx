@@ -9,8 +9,14 @@ import { TrackerIcon } from './TrackerIcon';
 import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
 import { QiblaIcon } from './QiblaIcon';
+import { AllahNamesIcon } from './AllahNamesIcon';
 
 const actions = [
+  {
+    href: '/names-of-allah',
+    label: '99 Names',
+    icon: <AllahNamesIcon className="h-12 w-12" />,
+  },
   {
     href: '/quran',
     label: 'Quran',
@@ -51,7 +57,7 @@ const actions = [
 export function QuickActions() {
   return (
     <Card>
-      <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7">
+      <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-4 lg:grid-cols-8">
         {actions.map((action) => (
           <Link
             href={action.href}
