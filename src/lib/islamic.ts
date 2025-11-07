@@ -402,6 +402,11 @@ export const sleepingAzkar = [
     transliteration: 'Allahumma aslamtu nafsee ilayk, wafawwadtu amree ilayk, wawajjahtu wajhee ilayk, wa-alja/tu thahree ilayk, raghbatan warahbatan ilayk, la maljaa wala manja minka illa ilayk, amantu bikitabikal-lathee anzalt, wabinabiyyikal-lathee arsalt.',
     translation: 'O Allah, I submit my soul unto You, and I entrust my affair unto You, and I turn my face towards You, and I totally rely on You, in hope and fear of You. Verily there is no refuge nor safe haven from You except with You. I believe in Your Book which You have revealed and in Your Prophet whom You have sent.',
     reference: 'Bukhari',
+  },
+  {
+    arabic: 'اللهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، اللهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ، وَأَغْنِنَا مِنَ الْفَقْرِ.',
+    transliteration: 'allaahumma rabbas-samaawaati, wa rabb-al-‛arshil-‛aẓeemi, rabbanaa wa rabba kulli shay’in, faaliq-al-ḥabbi wan-nawaa, wa munazzilat-tawraati wal-injeeli wal-furqaani, a‛oodhu bika min sharri kulli shay’in anta aakhidhun bi naaṣiyatih allaahumma antal-awwalu fa laysa qablaka shay’un, wa antal-aakhiru fa laysa ba‛daka shay’un, wa antaẓ-ẓaahiru fa laysa fawqaka shay’un, wa antal-baaṭinu fa laysa doonaka shay’un, iqḍi ‛annid-dayna wa aghni mi-nal-faqr.',
+    translation: 'O Allah, Lord of the heavens, lord of the earth and lord of the exalted throne, our Lord and the Lord of all things, Splitter of the seed and the date stone, Revealer of the Torah, the Injeel and the Furqan, I seek refuge with You from the evil of all things You seize by the forelock (i.e. You have total mastery over). O Allah, You are The First so there is nothing before You and You are The Last so there is nothing after You. You are Aẓ-ẓaahir so there is nothing above You and You are Al-baaṭin so there is nothing closer than You, settle my debt for me and spare me from poverty.',
   }
 ];
 
@@ -526,10 +531,3 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
-
-
-
-
-
-
-
