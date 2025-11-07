@@ -303,12 +303,6 @@ export const eveningAzkar = [
 
 export const sleepingAzkar = [
   {
-    arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.',
-    transliteration: 'bismika-l-laahumma amoo-tu wa aḥyaa.',
-    translation: 'In Your name O Allah, I live and die.',
-    reference: 'Bukhari',
-  },
-  {
     arabic:
       'سُورَةُ الإِخْلَاصِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللهُ أَحَدٌ ۝ ٱللهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ',
     transliteration:
@@ -378,6 +372,12 @@ export const sleepingAzkar = [
       'O Allah, protect me from Your punishment on the day Your servants are resurrected.',
   },
   {
+    arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.',
+    transliteration: 'bismika-l-laahumma amoo-tu wa aḥyaa.',
+    translation: 'In Your name O Allah, I live and die.',
+    reference: 'Bukhari',
+  },
+  {
     arabic: 'سُبْحَانَ اللهِ (33) الْحَمْدُ لِلهِ (33) اللهُ أَكْبَرُ (34)',
     transliteration: 'subḥaan-allaah (33) al-ḥamdu lillaah (33) allaahu akbar (34)',
     translation: 'How far from imperfections Allah is. (33) All praise is for Allah. (33) Allah is the greatest. (34)',
@@ -413,8 +413,8 @@ export const sleepingAzkar = [
 
 export const wakingUpAzkar = [
   {
-    arabic: 'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ.',
-    transliteration: "Alhamdu lillahil-lathee ahyana baAAda ma amatana wa-ilayhin-nushoor.",
+    arabic: 'اَلْحَمْدُ لِلَّهِ الَّذي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ.',
+    transliteration: "Alḥamdu lillāhil-ladhī 'aḥyānā ba`da mā 'amātanā wa 'ilayhin-nushūr.",
     translation: 'All praise is for Allah who gave us life after having taken it from us and unto Him is the resurrection.',
     reference: 'Bukhari',
   },
@@ -547,3 +547,4 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
