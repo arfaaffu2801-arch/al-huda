@@ -300,6 +300,52 @@ export const eveningAzkar = [
   }
 ];
 
+export const sleepingAzkar = [
+  {
+    arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا',
+    transliteration: 'Bismika Allahumma amutu wa ahya',
+    translation: 'In Your name, O Allah, I die and I live.',
+    reference: 'Bukhari',
+  },
+  {
+    arabic: 'اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ',
+    transliteration: "Allahumma qini 'adhabaka yawma tab'athu 'ibadaka",
+    translation: 'O Allah, save me from Your punishment on the day You resurrect Your servants. (Recite 3 times)',
+    reference: 'Abu Dawud',
+  },
+  {
+    arabic: 'سُبْحَانَ اللَّهِ (33x) الْحَمْدُ لِلَّهِ (33x) اللَّهُ أَكْبَرُ (34x)',
+    transliteration: 'SubhanAllah (33x), Alhamdulillah (33x), Allahu Akbar (34x)',
+    translation: 'Glory is to Allah (33 times), Praise is to Allah (33 times), Allah is the Most Great (34 times).',
+    reference: 'Bukhari',
+  },
+  {
+    arabic: 'اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ...',
+    transliteration: "Allahu la ilaha illa Huwal-Hayyul-Qayyum...",
+    translation: "Recite Ayatul Kursi (Quran 2:255). Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence...",
+    reference: 'Quran 2:255',
+  },
+  {
+    arabic: 'قُلْ هُوَ اللَّهُ أَحَدٌ... (3x)',
+    transliteration: 'Qul Huwallahu Ahad... (3x)',
+    translation: 'Recite Surah Al-Ikhlas (3 times).',
+    reference: 'Al-Ikhlas',
+  },
+  {
+    arabic: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ... (3x)',
+    transliteration: "Qul a'udhu birabbil-falaq... (3x)",
+    translation: 'Recite Surah Al-Falaq (3 times).',
+    reference: 'Al-Falaq',
+  },
+  {
+    arabic: 'قُلْ أَعُوذُ بِرَبِّ النَّاسِ... (3x)',
+    transliteration: "Qul a'udhu birabbin-nas... (3x)",
+    translation: 'Recite Surah An-Nas (3 times).',
+    reference: 'An-Nas',
+  },
+];
+
+
 export const jummahDuas = [
   {
     arabic: 'اللَّهُمَّ اغْفِرْ لَنَا وَلِلْمُؤْمِنِينَ وَالْمُؤْمِنَاتِ، الْأَحْيَاءِ مِنْهُمْ وَالْأَمْوَاتِ',

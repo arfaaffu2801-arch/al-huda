@@ -13,13 +13,14 @@ import {
   TabsList,
   TabsTrigger,
 } from '@/components/ui/tabs';
-import { morningAzkar, eveningAzkar } from '@/lib/islamic';
-import { Sun, Moon, BookHeart } from 'lucide-react';
+import { morningAzkar, eveningAzkar, sleepingAzkar } from '@/lib/islamic';
+import { Sun, Moon, BookHeart, Bed } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
 const azkarCategories = {
   morning: { label: 'Morning', icon: Sun, data: morningAzkar },
   evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
+  sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
 };
 
 export function Dua() {
