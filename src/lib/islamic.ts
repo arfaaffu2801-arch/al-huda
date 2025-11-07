@@ -225,7 +225,7 @@ export const eveningAzkar = [
     translation: 'How perfect Allah is and I praise Him by the number of His creation and His pleasure, and by the weight of His throne, and the ink of His words.',
   },
   {
-    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلِيهِ وَسَلَّمَ نَبِيَّاً.',
+    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ dِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلِيهِ وَسَلَّمَ نَبِيَّاً.',
     transliteration: 'Radiytu billahi rabbān wa bil-islāmi dīnān wa bi-Muḥammadin ṣallallāhu ʿalayhi wa sallam nabīyā.',
     translation: 'I am pleased with Allah as a Lord, and Islam as a religion and Muhammad peace be upon to him as a Prophet.',
   },
@@ -303,6 +303,12 @@ export const eveningAzkar = [
 
 export const sleepingAzkar = [
   {
+    arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.',
+    transliteration: 'bismika-l-laahumma amoo-tu wa aḥyaa.',
+    translation: 'In Your name O Allah, I live and die.',
+    reference: 'Bukhari',
+  },
+  {
     arabic:
       'سُورَةُ الإِخْلَاصِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللهُ أَحَدٌ ۝ ٱللهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ',
     transliteration:
@@ -372,12 +378,6 @@ export const sleepingAzkar = [
       'O Allah, protect me from Your punishment on the day Your servants are resurrected.',
   },
   {
-    arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا.',
-    transliteration: 'bismika-l-laahumma amoo-tu wa aḥyaa.',
-    translation: 'In Your name O Allah, I live and die.',
-    reference: 'Bukhari',
-  },
-  {
     arabic: 'سُبْحَانَ اللهِ (33) الْحَمْدُ لِلهِ (33) اللهُ أَكْبَرُ (34)',
     transliteration: 'subḥaan-allaah (33) al-ḥamdu lillaah (33) allaahu akbar (34)',
     translation: 'How far from imperfections Allah is. (33) All praise is for Allah. (33) Allah is the greatest. (34)',
@@ -407,6 +407,22 @@ export const sleepingAzkar = [
     arabic: 'اللهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، اللهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ، وَأَغْنِنَا مِنَ الْفَقْرِ.',
     transliteration: 'allaahumma rabbas-samaawaati, wa rabb-al-‛arshil-‛aẓeemi, rabbanaa wa rabba kulli shay’in, faaliq-al-ḥabbi wan-nawaa, wa munazzilat-tawraati wal-injeeli wal-furqaani, a‛oodhu bika min sharri kulli shay’in anta aakhidhun bi naaṣiyatih allaahumma antal-awwalu fa laysa qablaka shay’un, wa antal-aakhiru fa laysa ba‛daka shay’un, wa antaẓ-ẓaahiru fa laysa fawqaka shay’un, wa antal-baaṭinu fa laysa doonaka shay’un, iqḍi ‛annid-dayna wa aghni mi-nal-faqr.',
     translation: 'O Allah, Lord of the heavens, lord of the earth and lord of the exalted throne, our Lord and the Lord of all things, Splitter of the seed and the date stone, Revealer of the Torah, the Injeel and the Furqan, I seek refuge with You from the evil of all things You seize by the forelock (i.e. You have total mastery over). O Allah, You are The First so there is nothing before You and You are The Last so there is nothing after You. You are Aẓ-ẓaahir so there is nothing above You and You are Al-baaṭin so there is nothing closer than You, settle my debt for me and spare me from poverty.',
+  }
+];
+
+
+export const wakingUpAzkar = [
+  {
+    arabic: 'الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ.',
+    transliteration: "Alhamdu lillahil-lathee ahyana baAAda ma amatana wa-ilayhin-nushoor.",
+    translation: 'All praise is for Allah who gave us life after having taken it from us and unto Him is the resurrection.',
+    reference: 'Bukhari',
+  },
+  {
+    arabic: 'لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ. سُبْحَانَ اللهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللهُ، وَاللهُ أَكْبَرُ، وَلَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ الْعَلِيِّ الْعَظِيمِ. رَبِّ اغْفِرْ لِي.',
+    transliteration: "La ilaha illal-lahu wahdahu la shareeka lah, lahul-mulku walahul-hamd, wahuwa AAala kulli shay-in qadeer. Subhanal-lah, walhamdu lillah, wala ilaha illal-lah, wallahu akbar, wala hawla wala quwwata illa billahil-AAaliyyil AAatheem. Rabbigh-fir lee.",
+    translation: "There is none worthy of worship but Allah alone, Who has no partner, His is the dominion and to Him belongs all praise, and He is able to do all things. Glory is to Allah. Praise is to Allah. There is none worthy of worship but Allah. Allah is the Most Great. There is no might and no power except by Allah's leave, the Exalted, the Mighty. My Lord, forgive me.",
+    reference: 'Bukhari',
   }
 ];
 
