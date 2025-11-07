@@ -12,13 +12,13 @@ export default function Home() {
       <Header />
       <main className="flex flex-1 flex-col gap-6 p-4 sm:p-6 md:p-8">
         <div className="mx-auto w-full max-w-screen-2xl">
-          <QuranVerse />
-        </div>
-        <div className="mx-auto w-full max-w-screen-2xl">
           <QuickActions />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <Shahada />
+        </div>
+        <div className="mx-auto w-full max-w-screen-2xl">
+          <QuranVerse />
         </div>
         <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6">
           <PrayerTimes />
