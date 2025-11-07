@@ -1,3 +1,4 @@
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -280,7 +281,7 @@ export const eveningAzkar = [
   },
   {
     arabic: 'اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ',
-    transliteration: "Allaahu laa 'ilaaha 'illaa Huwal-Hayyul-Qayyoom, laa ta'khuthuhu sinatun wa laa nawm, lahu maa fis-samaawaati wa maafil-'ardh, man thal-lathee yashfa'u 'indahu 'illaa bi'ithnih, ya'lamu maa bayna 'aydeehim wa maa khalfahum, wa laa yuheetoona bishay'im-min 'ilmihi 'illaa bimaa shaa'a, wasi'a kursiyyuhus-samaawaati wal'ardh, wa laa ya'ooduhu hifdhuhumaa, wa Huwal-'Aliyyul- 'Adheem",
+    transliteration: "Allaahu laa 'ilaaha 'illaa Huwal-Hayyul-Qayyoom, laa ta'khuthuhu sinatun wa laa nawm, lahu maa fis-samaawaati wa maafil-'ardh, man thal-lathee yashfa'u 'indahu 'illaa bi'ithnih, ya'lamu maa bayna 'aydeehim wa maa khalfahum, wa laa yuheetoona bishay'im-min 'ilmihi 'illaa bimaa shaa'a, wasi'a kursiyyuhus-samaawaati wal'ardh, wa laa ya'ooduhu hifdhuhumaa, wa Huwal-'Aliyyul-'Adheem",
     translation: "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
   },
   {
@@ -302,12 +303,6 @@ export const eveningAzkar = [
 
 export const sleepingAzkar = [
   {
-    arabic: 'بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا',
-    transliteration: 'Bismika Allahumma amutu wa ahya',
-    translation: 'In Your name, O Allah, I die and I live.',
-    reference: 'Bukhari',
-  },
-  {
     arabic: 'اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ',
     transliteration: "Allahumma qini 'adhabaka yawma tab'athu 'ibadaka",
     translation: 'O Allah, save me from Your punishment on the day You resurrect Your servants. (Recite 3 times)',
@@ -326,22 +321,22 @@ export const sleepingAzkar = [
     reference: 'Quran 2:255',
   },
   {
-    arabic: 'قُلْ هُوَ اللَّهُ أَحَدٌ... (3x)',
-    transliteration: 'Qul Huwallahu Ahad... (3x)',
-    translation: 'Recite Surah Al-Ikhlas (3 times).',
-    reference: 'Al-Ikhlas',
+    arabic: 'سُورَةُ الإِخْلَاصِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللهُ أَحَدٌ ۝ ٱللهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ',
+    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul huwa-llaahu aḥad * allaahuṣ-ṣamad * lam yalid wa lam yoolad * wa lam yakul-lahuۥ kufuwan aḥad',
+    translation: 'Surah Al-Ikhlas: In the name of Allah, the Beneficent, the Merciful. Say (O Muhammad (SAW)): "He is Allâh, (the) One. Allâh the Self-Sufficient Master, Whom all creatures need, (He neither eats nor drinks). He begets not, nor was He begotten. And there is none co-equal or comparable unto Him."',
+    reference: 'Al-Ikhlas'
   },
   {
-    arabic: 'قُلْ أَعُوذُ بِرَبِّ الْفَلَقِ... (3x)',
-    transliteration: "Qul a'udhu birabbil-falaq... (3x)",
-    translation: 'Recite Surah Al-Falaq (3 times).',
-    reference: 'Al-Falaq',
+    arabic: 'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodhu birabbil-falaq * min sharri maa khalaq * wa min sharri ghaasiqin idhaa waqab * wa min sharrin-naffaathaati fil-‛uqad * wa min sharri ḥaasidin idhaa ḥasad',
+    translation: 'Surah Al-Falaq: In the name of Allah, the Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of the daybreak, From the evil of what He has created; And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away) And from the evil of those who practice witchcrafts when they blow in the knots, And from the evil of the envier when he envies."',
+    reference: 'Al-Falaq'
   },
   {
-    arabic: 'قُلْ أَعُوذُ بِرَبِّ النَّاسِ... (3x)',
-    transliteration: "Qul a'udhu birabbin-nas... (3x)",
-    translation: 'Recite Surah An-Nas (3 times).',
-    reference: 'An-Nas',
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
+    transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas * malikin-naas * ilaahin-naas * min sharril-waswaasil-khannaas * alladhee yuwaswisu fee ṣudoorin-naas * minal-jinnati wan-naas',
+    translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, The King of mankind, The Ilâh (Allah) of mankind, From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), Who whispers in the breasts of mankind, Of jinn and men."',
+    reference: 'An-Nas'
   },
 ];
 
