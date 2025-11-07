@@ -127,42 +127,30 @@ export function PrayerTimes() {
         ) : error ? (
           <div className="text-center text-destructive">{error}</div>
         ) : (
-          <div className="grid grid-cols-1 items-center gap-6 md:grid-cols-2">
-            <div className="space-y-4">
-              {prayerTimesList.map(([name, time]) => (
-                <div
-                  key={name}
-                  className="flex items-center justify-between rounded-lg bg-background p-3 transition-colors hover:bg-secondary/50"
-                >
-                  <div className="flex items-center gap-4">
-                    {prayerIcons[name]}
-                    <span className="w-20 font-semibold">{name}</span>
-                    <span className="font-mono text-lg text-foreground">
-                      {new Date(`1970-01-01T${time}`).toLocaleTimeString('en-US', {
-                        hour: 'numeric',
-                        minute: '2-digit',
-                      })}
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Label htmlFor={`notif-${name}`} className="sr-only">
-                      Enable notification for {name}
-                    </Label>
-                    <Switch id={`notif-${name}`} />
-                  </div>
+          <div className="space-y-4">
+            {prayerTimesList.map(([name, time]) => (
+              <div
+                key={name}
+                className="flex items-center justify-between rounded-lg bg-background p-3 transition-colors hover:bg-secondary/50"
+              >
+                <div className="flex items-center gap-4">
+                  {prayerIcons[name]}
+                  <span className="w-20 font-semibold">{name}</span>
+                  <span className="font-mono text-lg text-foreground">
+                    {new Date(`1970-01-01T${time}`).toLocaleTimeString('en-US', {
+                      hour: 'numeric',
+                      minute: '2-digit',
+                    })}
+                  </span>
                 </div>
-              ))}
-            </div>
-            <div className="flex items-center justify-center">
-              <Image
-                src="https://picsum.photos/seed/mosque/300/400"
-                alt="Mosque"
-                width={300}
-                height={400}
-                className="rounded-lg object-cover"
-                data-ai-hint="mosque"
-              />
-            </div>
+                <div className="flex items-center gap-2">
+                  <Label htmlFor={`notif-${name}`} className="sr-only">
+                    Enable notification for {name}
+                  </Label>
+                  <Switch id={`notif-${name}`} />
+                </div>
+              </div>
+            ))}
           </div>
         )}
       </CardContent>
