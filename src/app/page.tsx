@@ -15,10 +15,10 @@ export default function Home() {
           <QuickActions />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
-          <Shahada />
+          <QuranVerse />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
-          <QuranVerse />
+          <Shahada />
         </div>
         <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6">
           <PrayerTimes />
