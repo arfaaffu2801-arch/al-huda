@@ -3,12 +3,18 @@
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { QuranIcon } from './QuranIcon';
+import { AzkarIcon } from './AzkarIcon';
 
 const actions = [
   {
     href: '/quran',
     label: 'Quran',
     icon: <QuranIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/azkar',
+    label: 'Azkar',
+    icon: <AzkarIcon className="h-12 w-12" />,
   },
 ];
 
