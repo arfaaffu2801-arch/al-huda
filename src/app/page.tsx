@@ -20,13 +20,8 @@ export default function Home() {
         <div className="mx-auto w-full max-w-screen-2xl">
           <Shahada />
         </div>
-        <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6 lg:grid-cols-3">
-          <div className="flex flex-col gap-6 lg:col-span-2">
-            <PrayerTimes />
-          </div>
-          <div className="flex flex-col gap-6 lg:col-span-1">
-            <IslamicCalendar />
-          </div>
+        <div className="mx-auto grid max-w-screen-2xl grid-cols-1 gap-6">
+          <PrayerTimes />
         </div>
       </main>
     </div>

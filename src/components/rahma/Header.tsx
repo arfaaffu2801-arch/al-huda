@@ -50,6 +50,12 @@ export function Header() {
           >
             Tasbih
           </Link>
+          <Link
+            href="/calendar"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Calendar
+          </Link>
         </nav>
         <div className="hidden text-sm text-muted-foreground md:block">
           Your Daily Islamic Companion

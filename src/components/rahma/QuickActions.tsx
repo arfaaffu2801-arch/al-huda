@@ -7,6 +7,7 @@ import { AzkarIcon } from './AzkarIcon';
 import { TasbihIcon } from './TasbihIcon';
 import { TrackerIcon } from './TrackerIcon';
 import { DuasIcon } from './DuasIcon';
+import { CalendarIcon } from './CalendarIcon';
 
 const actions = [
   {
@@ -33,6 +34,11 @@ const actions = [
     href: '/duas',
     label: 'Duas',
     icon: <DuasIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/calendar',
+    label: 'Calendar',
+    icon: <CalendarIcon className="h-12 w-12" />,
   },
 ];
 
