@@ -377,6 +377,12 @@ export const sleepingAzkar = [
     translation: 'In Your name O Allah, I live and die.',
     reference: 'Bukhari',
   },
+  {
+    arabic: 'سُبْحَانَ اللهِ (33) الْحَمْدُ لِلهِ (33) اللهُ أَكْبَرُ (34)',
+    transliteration: 'subḥaan-allaah (33) al-ḥamdu lillaah (33) allaahu akbar (34)',
+    translation: 'How far from imperfections Allah is. (33) All praise is for Allah. (33) Allah is the greatest. (34)',
+    reference: 'Bukhari',
+  },
 ];
 
 
@@ -500,6 +506,7 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
 
 
 
