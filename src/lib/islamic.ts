@@ -303,6 +303,12 @@ export const eveningAzkar = [
 
 export const sleepingAzkar = [
   {
+    arabic: 'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.',
+    transliteration: 'Bismika rabbee wadaAAtu janbee wabika arfaAAuh, fa-in amsakta nafsee farhamha, wa-in arsaltaha fahfathha bima tahfathu bihi AAibadakas-saliheen.',
+    translation: 'In Your name my Lord, I lie down and in Your name I rise, so if You should take my soul then have mercy upon it, and if You should return my soul then protect it in the manner You do so with Your righteous servants.',
+    reference: 'Bukhari/Muslim',
+  },
+  {
     arabic: 'اللَّهُمَّ قِنِي عَذَابَكَ يَوْمَ تَبْعَثُ عِبَادَكَ',
     transliteration: "Allahumma qini 'adhabaka yawma tab'athu 'ibadaka",
     translation: 'O Allah, save me from Your punishment on the day You resurrect Your servants. (Recite 3 times)',
