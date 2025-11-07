@@ -423,6 +423,12 @@ export const wakingUpAzkar = [
     transliteration: "La ilaha illal-lahu wahdahu la shareeka lah, lahul-mulku walahul-hamd, wahuwa AAala kulli shay-in qadeer. Subhanal-lah, walhamdu lillah, wala ilaha illal-lah, wallahu akbar, wala hawla wala quwwata illa billahil-AAaliyyil AAatheem. Rabbigh-fir lee.",
     translation: "None has the right to be worshipped except Allah, alone without associate, to Him belongs sovereignty and praise and He is over all things wholly capable. How perfect Allah is, and all praise is for Allah, and none has the right to be worshipped except Allah, Allah is the greatest and there is no power nor might except with Allah, The Most High, The Supreme. O my Lord forgive me.",
     reference: 'Bukhari',
+  },
+  {
+    arabic: 'اَلْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لِي بِذِكْرِهِ.',
+    transliteration: 'Alhamdu lillahil-lathee AAafanee fee jasadee waradda AAalayya roohee wa-athina lee bithikrih.',
+    translation: 'All praise is for Allah who restored to me my health and returned my soul and has allowed me to remember Him.',
+    reference: 'Tirmidhi',
   }
 ];
 
@@ -547,5 +553,6 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
 
 
