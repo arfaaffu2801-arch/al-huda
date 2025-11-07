@@ -333,11 +333,17 @@ export const sleepingAzkar = [
     reference: 'Al-Falaq'
   },
   {
-    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas * malikin-naas * ilaahin-naas * min sharril-waswaasil-khannaas * alladhee yuwaswisu fee ṣudoorin-naas * minal-jinnati wan-naas',
     translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, The King of mankind, The Ilâh (Allah) of mankind, From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), Who whispers in the breasts of mankind, Of jinn and men."',
     reference: 'An-Nas'
   },
+  {
+    arabic: 'ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَـتِهِۦ وَكُـتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِۦ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّـنَا وَإِلَيْكَ ٱلْمَصِيرُ* لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْـتَسَبَتْ رَبَّـنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّـنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُ عَلَى ٱلَّذِينَ مِن قَبْلِنَا رَبَّـنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ أَنْتَ مَوْلَـٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ *',
+    transliteration: 'aamanar-rasoolu bimaa unzila ilayhi min rabbihi wal-mu’minoon, kullun aamana billaahi wa malaaٓ’ikatihi wa kutubihi wa rusulih, laa nufarriqu bayna aḥadin min rusulih, wa qaaloo sami‛naa wa aṭa‛naa ghufraanaka rabbanaa wa ilaykal-maṣeer * laa yukallif-ullaahu nafsan illaa wus‛ahaa, lahaa maa kasabat wa ‛alayhaa mak-tasabat, rabbanaa laa tu’aakhidhnaa in naseenaa aw akhṭa’naa rabbanaa wa laa taḥmil ‛alaynaa iṣran kamaa ḥamaltahu ‛alal-ladheena min qablinaa, rabbanaa wa laa tuḥammilnaa maa laa ṭaaqata lanaa bih, wa‛fu ‛annaa waghfir lanaa warḥamnaa, anta mawlaanaa fanṣurnaa ‛alal-qawmil-kaafireen',
+    translation: 'The Messenger (Muhammad SAW) believes in what has been sent down to him from his Lord, and (so do) the believers. Each one believes in Allâh, His Angels, His Books, and His Messengers. (They say), "We make no distinction between one another of His Messengers" and they say, "We hear, and we obey. (We seek) Your Forgiveness, our Lord, and to You is the return (of all)." * Allâh burdens not a person beyond his scope. He gets reward for that (good) which he has earned, and he is punished for that (evil) which he has earned. "Our Lord! Punish us not if we forget or fall into error, our Lord! Lay not on us a burden like that which You did lay on those before us (Jews and Christians); our Lord! Put not on us a burden greater than we have strength to bear. Pardon us and grant us Forgiveness. Have mercy on us. You are our Maulâ (Patron, Supporter and Protector, etc.) and give us victory over the disbelieving people."',
+    reference: 'Quran 2:285-286',
+  }
 ];
 
 
