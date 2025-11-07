@@ -156,7 +156,7 @@ export function PrayerTimes() {
                 </div>
               ))}
             </div>
-            <div className="hidden items-center justify-center md:flex">
+            <div className="flex items-center justify-center">
               <Image
                 src="https://picsum.photos/seed/man-praying/300/400"
                 alt="Man praying"
