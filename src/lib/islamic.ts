@@ -66,7 +66,7 @@ function toDegrees(radians: number): number {
 export function getQiblaDirection(userCoords: { lat: number; lng: number }) {
   const userLatRad = toRadians(userCoords.lat);
   const userLngRad = toRadians(userCoords.lng);
-  const kaabaLatRad = toRadians(KAABA_COORDS.lat);
+  const kaabaLatRad = toRadians(KAABA_COORds.lat);
   const kaabaLngRad = toRadians(KAABA_COORDS.lng);
 
   const deltaLng = kaabaLngRad - userLngRad;
@@ -303,6 +303,12 @@ export const eveningAzkar = [
 
 export const sleepingAzkar = [
   {
+    arabic: 'اللَّهمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا لَكَ مَمَاتُهَا وَمَحْيَاهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.',
+    transliteration: 'Allahumma innaka khalaqta nafsee wa-anta tawaffaha, laka mamatuha wamahyaha in ahyaytaha fahfathha, wa-in amattaha faghfir laha. Allahumma innee as-alukal-AAafiyah.',
+    translation: 'O Allah, verily You have created my soul and You shall take its life, to You belongs its life and death. If You should keep my soul alive then protect it, and if You should take its life then forgive it. O Allah, I ask You to grant me good health.',
+    reference: 'Muslim',
+  },
+  {
     arabic: 'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْفَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.',
     transliteration: 'Bismika rabbee wadaAAtu janbee wabika arfaAAuh, fa-in amsakta nafsee farhamha, wa-in arsaltaha fahfathha bima tahfathu bihi AAibadakas-saliheen.',
     translation: 'In Your name my Lord, I lie down and in Your name I rise, so if You should take my soul then have mercy upon it, and if You should return my soul then protect it in the manner You do so with Your righteous servants.',
@@ -473,3 +479,4 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
