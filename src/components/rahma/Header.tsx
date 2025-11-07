@@ -56,6 +56,12 @@ export function Header() {
           >
             Calendar
           </Link>
+          <Link
+            href="/qibla"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Qibla
+          </Link>
         </nav>
         <div className="hidden text-sm text-muted-foreground md:block">
           Your Daily Islamic Companion
