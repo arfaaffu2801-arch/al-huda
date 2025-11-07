@@ -10,6 +10,7 @@ import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
 import { QiblaIcon } from './QiblaIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
+import { Book } from 'lucide-react';
 
 const actions = [
   {
@@ -64,7 +65,13 @@ export function QuickActions() {
             key={action.href}
             className="group flex flex-col items-center gap-2 rounded-lg p-4 text-center transition-colors hover:bg-secondary/50"
           >
-            {action.icon}
+            {action.href === '/names-of-allah' ? (
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                <Book className="h-8 w-8" />
+              </div>
+            ) : (
+              action.icon
+            )}
             <span className="font-semibold text-foreground">
               {action.label}
             </span>
