@@ -5,6 +5,7 @@ import { Card } from '@/components/ui/card';
 import { QuranIcon } from './QuranIcon';
 import { AzkarIcon } from './AzkarIcon';
 import { TasbihIcon } from './TasbihIcon';
+import { TrackerIcon } from './TrackerIcon';
 
 const actions = [
   {
@@ -21,6 +22,11 @@ const actions = [
     href: '/tasbih',
     label: 'Tasbih',
     icon: <TasbihIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/tracker',
+    label: 'Tracker',
+    icon: <TrackerIcon className="h-12 w-12" />,
   },
 ];
 
