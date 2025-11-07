@@ -52,7 +52,6 @@ export function PrayerTimes() {
         .then((data) => {
           if (data.code === 200) {
             const timings = data.data.timings;
-            // The API returns Dhuhr, but the old UI used Zohar. Let's stick to the API.
             const relevantTimings: PrayerTimesData = {
               Fajr: timings.Fajr,
               Sunrise: timings.Sunrise,
@@ -89,14 +88,12 @@ export function PrayerTimes() {
         () => {
           setError('Location access denied. Please enable location services to see prayer times.');
           setLoading(false);
-          // Fallback to a default location (Mecca) if permission is denied
           fetchPrayerTimes(21.4225, 39.8262); 
         }
       );
     } else {
       setError('Geolocation is not supported by your browser.');
       setLoading(false);
-       // Fallback to a default location (Mecca)
       fetchPrayerTimes(21.4225, 39.8262);
     }
   }, []);
@@ -158,12 +155,12 @@ export function PrayerTimes() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="https://picsum.photos/seed/man-praying/300/400"
-                alt="Man praying"
+                src="https://picsum.photos/seed/mosque/300/400"
+                alt="Mosque"
                 width={300}
                 height={400}
                 className="rounded-lg object-cover"
-                data-ai-hint="man praying"
+                data-ai-hint="mosque"
               />
             </div>
           </div>
