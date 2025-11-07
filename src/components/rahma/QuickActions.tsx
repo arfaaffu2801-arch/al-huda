@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { QuranIcon } from './QuranIcon';
 import { AzkarIcon } from './AzkarIcon';
+import { TasbihIcon } from './TasbihIcon';
 
 const actions = [
   {
@@ -15,6 +16,11 @@ const actions = [
     href: '/azkar',
     label: 'Azkar',
     icon: <AzkarIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/tasbih',
+    label: 'Tasbih',
+    icon: <TasbihIcon className="h-12 w-12" />,
   },
 ];
 

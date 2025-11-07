@@ -44,6 +44,12 @@ export function Header() {
           >
             Azkar
           </Link>
+          <Link
+            href="/tasbih"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Tasbih
+          </Link>
         </nav>
         <div className="hidden text-sm text-muted-foreground md:block">
           Your Daily Islamic Companion

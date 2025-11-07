@@ -10,6 +10,7 @@ import {
 import { Button } from '@/components/ui/button';
 import { RotateCcw, Repeat } from 'lucide-react';
 import { useState } from 'react';
+import { TasbihIcon } from './TasbihIcon';
 
 const tasbihOptions = [
   { text: 'SubhanAllah', target: 33 },
@@ -53,7 +54,7 @@ export function TasbihCounter() {
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-xl font-headline">
-            <Repeat className="h-6 w-6 text-primary" />
+            <TasbihIcon className="h-6 w-6 text-primary" />
             Tasbih Counter
           </div>
           <Button variant="ghost" size="icon" onClick={reset}>
