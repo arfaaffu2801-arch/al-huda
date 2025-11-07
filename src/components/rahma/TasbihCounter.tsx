@@ -11,6 +11,7 @@ import { Button } from '@/components/ui/button';
 import { RotateCcw, Repeat } from 'lucide-react';
 import { useState } from 'react';
 import { TasbihIcon } from './TasbihIcon';
+import Image from 'next/image';
 
 const tasbihOptions = [
   { text: 'SubhanAllah', target: 33 },
@@ -50,7 +51,7 @@ export function TasbihCounter() {
   }
 
   return (
-    <Card>
+    <Card className="relative overflow-hidden">
       <CardHeader>
         <CardTitle className="flex items-center justify-between">
           <div className="flex items-center gap-2 text-xl font-headline">
@@ -67,7 +68,14 @@ export function TasbihCounter() {
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col items-center justify-center gap-6">
-        <div className="relative flex h-48 w-48 items-center justify-center">
+        <Image
+          src="https://picsum.photos/seed/prayer-beads/600/400"
+          alt="Tasbih background"
+          fill
+          className="absolute inset-0 z-0 object-cover opacity-10"
+          data-ai-hint="prayer beads"
+        />
+        <div className="relative z-10 flex h-48 w-48 items-center justify-center">
           <svg className="absolute h-full w-full" viewBox="0 0 100 100">
             <circle
               className="text-secondary"
@@ -100,7 +108,7 @@ export function TasbihCounter() {
             </span>
           </div>
         </div>
-        <div className="text-center">
+        <div className="relative z-10 text-center">
           <p className="text-2xl font-semibold font-headline">
             {currentTasbih.text}
           </p>
@@ -110,7 +118,7 @@ export function TasbihCounter() {
         </div>
         <Button
           onClick={increment}
-          className="h-24 w-24 rounded-full bg-primary/20 text-primary shadow-lg hover:bg-primary/30"
+          className="relative z-10 h-24 w-24 rounded-full bg-primary/20 text-primary shadow-lg hover:bg-primary/30"
         >
           <span className="sr-only">Increment</span>
         </Button>
