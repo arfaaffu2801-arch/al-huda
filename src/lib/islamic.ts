@@ -383,6 +383,11 @@ export const sleepingAzkar = [
     translation: 'How far from imperfections Allah is. (33) All praise is for Allah. (33) Allah is the greatest. (34)',
     reference: 'Bukhari',
   },
+  {
+    arabic: 'اَلْحَمْدُ للهِ الَّذِي أَطْعَمَنَا وَسَقَانَا، وَكَفَانَا، وَآوَانَا، فَكَمْ مِمَّنْ لا كَافِيَ لَه ُُ وَلا مُؤْوِي.',
+    transliteration: 'Alhamdu lillahil-lathee atAAamana wasaqana, wakafana, wa-awana, fakam mimman la kafiya lahu wala mu/wee.',
+    translation: 'All praise is for Allah, Who fed us and gave us drink, and Who is sufficient for us and has sheltered us, for how many have none to suffice them or shelter them.',
+  }
 ];
 
 
@@ -506,6 +511,7 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
 
 
 
