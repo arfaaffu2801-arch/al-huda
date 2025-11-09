@@ -438,7 +438,13 @@ export const wakingUpAzkar = [
   }
 ];
 
-export const afterPrayerAzkar = [];
+export const afterPrayerAzkar = [
+  {
+    arabic: 'أَسْتَغْفِرُ اللَّهَ . (ثَلاثاً) اللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلَامُ، تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالإِكْرَامِ .',
+    transliteration: 'Astaghfirul-lah (three times) Allahumma antas-salam waminkas-salam, tabarakta ya thal-jalali wal-ikram.',
+    translation: 'I ask Allah for forgiveness.(three times) O Allah, You are As-Salam and from You is all peace, blessed are You, O Possessor of majesty and honour.’ AS-Salam: The One Who is free from all defects and deficiencies.',
+  }
+];
 
 
 export const jummahDuas = [
@@ -561,6 +567,7 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
 
 
 
