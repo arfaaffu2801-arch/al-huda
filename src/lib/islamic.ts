@@ -486,6 +486,11 @@ export const afterPrayerAzkar = [
     transliteration: 'Allahumma innee as-aluka AAilman nafiAAan, warizqan tayyiban, waAAamalan mutaqabbalan.',
     translation: 'O Allah, I ask You for knowledge which is beneficial and sustenance which is good, and deeds which are acceptable.',
   },
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً وَرِزْقاً طَيِّباً، وَعَمَلاً مُتَقَبَّلاً .',
+    transliteration: 'Allahumma innee as-aluka AAilman nafiAAan, warizqan tayyiban, waAAamalan mutaqabbalan.',
+    translation: 'O Allah, I ask You for knowledge which is beneficial and sustenance which is good, and deeds which are acceptable.',
+  },
 ];
 
 
@@ -610,6 +615,13 @@ export const ramadanDuas = [
   },
 ];
 
-export const openingTakbeerDuas = [];
+export const openingTakbeerDuas = [
+  {
+    arabic: 'اللَّهُمَّ بَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الأَ بْيَضُ مِنَ الدَّنَسِ ، اللّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالثَّلْجِ وَالْمَاءِ وَالْبَرْدِ.',
+    transliteration: 'allaahumma baa‛id baynee wa bayna khaṭaayaa-ya kamaa baa‛adta baynal-mashriqi wal-maghrib, allaahumma naqqinee min khaṭaayaa-ya kamaa yunaqqath-thawbul-abyaḍu minad-danas, allaahummagh-silnee min khaṭaayaa-ya bith-thalji wal-maa’i wal-barad.',
+    translation: 'O Allah, distance me from my sins just as You have distanced The East from The West, O Allah, purify me of my sins as a white robe is purified of filth, O Allah, cleanse me of my sins with snow, water, and ice.'
+  }
+];
     
+
 
