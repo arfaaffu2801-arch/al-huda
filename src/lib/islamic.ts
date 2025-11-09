@@ -438,6 +438,8 @@ export const wakingUpAzkar = [
   }
 ];
 
+export const afterPrayerAzkar = [];
+
 
 export const jummahDuas = [
   {
@@ -559,6 +561,7 @@ export const ramadanDuas = [
     reference: 'Hadith',
   },
 ];
+
 
 
 
