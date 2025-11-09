@@ -19,8 +19,9 @@ import {
   sleepingAzkar,
   wakingUpAzkar,
   afterPrayerAzkar,
+  openingTakbeerDuas,
 } from '@/lib/islamic';
-import { Sun, Moon, BookHeart, Bed, Sunrise, Hand } from 'lucide-react';
+import { Sun, Moon, BookHeart, Bed, Sunrise, Hand, Voicemail } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
 const azkarCategories = {
@@ -29,6 +30,11 @@ const azkarCategories = {
   sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
   waking: { label: 'Waking Up', icon: Sunrise, data: wakingUpAzkar },
   afterPrayer: { label: 'After Prayer', icon: Hand, data: afterPrayerAzkar },
+  openingTakbeer: {
+    label: 'After Takbeer',
+    icon: Voicemail,
+    data: openingTakbeerDuas,
+  },
 };
 
 export function Dua() {
