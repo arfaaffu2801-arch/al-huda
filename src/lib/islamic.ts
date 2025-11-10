@@ -487,7 +487,7 @@ export const afterPrayerAzkar = [
     translation: 'O Allah, I ask You for knowledge which is beneficial and sustenance which is good, and deeds which are acceptable.',
   },
   {
-    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً وَرِزْقاً طَيِّباً، وَعَمَلاً مُتَقَبَّلاً .',
+    arabic: 'اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْماً نَافِعاً وَرِZْقاً طَيِّباً، وَعَمَلاً مُتَقَبَّلاً .',
     transliteration: 'Allahumma innee as-aluka AAilman nafiAAan, warizqan tayyiban, waAAamalan mutaqabbalan.',
     translation: 'O Allah, I ask You for knowledge which is beneficial and sustenance which is good, and deeds which are acceptable.',
   },
@@ -635,6 +635,11 @@ export const openingTakbeerDuas = [
     arabic: 'اللَّهُمَّ رَبَّ جِبْرَائِيلَ، وَمِيْكَائِيلَ، وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الغَيْبِ وَالشَّهَادَةِ أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ. اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقيمٍ.',
     transliteration: 'alla-humma rab-ba jibraa-’eel-a wa meekaa-’eela wa ’israa-feela, faaṭir-as sama-waati wal’arḍi , ‛aalimil-ghaybi wash-shahaa-dah , anta taḥkum-u baina ‛ibaa-dika feemaa kaa-noo feehi yakh-talifoon\nihdi-nee li-makh-tulifa feehi mi-nal-ḥaq-qi bi-’idh-nika in-naka tah-dee man tashaa’-u ilaa ṣiraaṭ-im mustaqeem-in.',
     translation: 'O Allah, Lord of Jibra\'eel, Meeka\'eel and Israfeel (great angels), Creator of the heavens and the Earth, Knower of the seen and the unseen. You are the arbitrator between Your slaves in that which they have disputed. \nGuide me to the truth by Your leave, in that which they have differed, for verily You guide whom You will to a straight path.'
+  },
+  {
+    arabic: "اللَّهُ أَكْبَرُ كَبِيرَاً، اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً (ثلاثاً) أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ",
+    transliteration: "allaahu akbaru kabeer-an, walḥamdu lillaahi katheer-an, wa subḥaan-allaahi bukrat-an wa-aṣeel-an, (three times) a‛oodhu billaahi minash-shayṭaan, min nafkhihi wa nafthihi wa hamzih.",
+    translation: "Allah is Most Great, Allah is Most Great, Allah is Most Great.(Three times) \nI seek refuge with Allah from the devil, from his pride, his poetry and his madness."
   }
 ];
     
@@ -643,4 +648,5 @@ export const openingTakbeerDuas = [
 
 
     
+
 
