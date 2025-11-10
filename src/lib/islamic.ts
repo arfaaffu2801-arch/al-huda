@@ -358,7 +358,7 @@ export const sleepingAzkar = [
   },
   {
     arabic:
-      'اللَّهمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا لَكَ مَمَاتُهَا وَمَحْيَاهَا، إِنْ أَحْيَيْتَهَا فَاحْفَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.',
+      'اللَّهمَّ إِنَّكَ خَلَقْتَ نَفْسِي وَأَنْتَ تَوَفَّاهَا لَكَ مَمَاتُهَا وَمَحْيَاهَا، إِنْ أَحْيَيْتَهَا فَاحْfَظْهَا، وَإِنْ أَمَتَّهَا فَاغْفِرْ لَهَا. اللَّهمَّ إِنِّي أَسْأَلُكَ العَافِيَةَ.',
     transliteration:
       'Allahumma innaka khalaqta nafsee wa-anta tawaffaha, laka mamatuha wamahyaha in ahyaytaha fahfathha, wa-in amattaha faghfir laha. Allahumma innee as-alukal-AAafiyah.',
     translation:
@@ -631,6 +631,11 @@ export const openingTakbeerDuas = [
     transliteration: 'wajjahtu wajhiya lil-ladhee faṭarad-samaawaati wal-arḍa ḥaneefan, wa maa ana minal-mushrikeen, inna ṣalaatee wa nusukee wa maḥyaa-ya wa mamaatee lillaahi rabbil-‛aalameena, laa shareeka lahu wa bidhaalika umirtu wa ana minal-muslimeen, allaahumma antal-maliku laa ilaaha illaa ant, anta rabbee wa ana ‛abduk, ẓalamtu nafsee wa‛taraftu bidhambee faghfir lee dhunoobee jamee‛an innahu laa yaghfir-udh-dhunooba illaa ant, wahdinee li aḥsanil-akhlaaqi laa yahdee li aḥsanihaa illaa ant, waṣrif ‛annee sayyi’ahaa laa yaṣrifu ‛annee sayyi’ahaa illaa ant, labbayka wa sa‛dayka, wal-khayru kulluhu bi yadayka wash-sharru laysa ilayka, ana bika wa ilayka, tabaarakta wa ta‛aalayta, astaghfiruka wa atoobu ilayk.',
     translation: 'I have turned my face sincerely towards He who has brought forth the heavens and the Earth and I am not of those who associate (others with Allah). Indeed my prayer, my sacrifice, my life and my death are for Allah, Lord of the worlds, no partner has He, with this I am commanded and I am of the Muslims. O Allah, You are the Sovereign, none has the right to be worshipped except You. You are my Lord and I am Your servant, I have wronged my own soul and have acknowledged my sin, so forgive me all my sins for no one forgives sins except You. Guide me to the best of characters for none can guide to it other than You, and deliver me from the worst of characters for none can deliver me from it other than You. Here I am, in answer to Your call, happy to serve you. All good is within Your hands and evil does not stem from You. I exist by your will and will return to you. Blessed and High are You, I seek Your forgiveness and repent unto You.',
   },
+  {
+    arabic: 'اللَّهُمَّ رَبَّ جِبْرَائِيلَ، وَمِيْكَائِيلَ، وَإِسْرَافِيلَ، فَاطِرَ السَّمَوَاتِ وَالأَرْضِ، عَالِمَ الغَيْبِ وَالشَّهَادَةِ أَنْتَ تَحْكُمُ بَيْنَ عِبَادِكَ فِيمَا كَانُوا فِيهِ يَخْتَلِفُونَ. اهْدِنِي لِمَا اخْتُلِفَ فِيهِ مِنَ الْحَقِّ بِإِذْنِكَ إِنَّكَ تَهْدِي مَنْ تَشَاءُ إِلَى صِرَاطٍ مُسْتَقيمٍ.',
+    transliteration: 'alla-humma rab-ba jibraa-’eel-a wa meekaa-’eela wa ’israa-feela, faaṭir-as sama-waati wal’arḍi , ‛aalimil-ghaybi wash-shahaa-dah , anta taḥkum-u baina ‛ibaa-dika feemaa kaa-noo feehi yakh-talifoon\nihdi-nee li-makh-tulifa feehi mi-nal-ḥaq-qi bi-’idh-nika in-naka tah-dee man tashaa’-u ilaa ṣiraaṭ-im mustaqeem-in.',
+    translation: 'O Allah, Lord of Jibra\'eel, Meeka\'eel and Israfeel (great angels), Creator of the heavens and the Earth, Knower of the seen and the unseen. You are the arbitrator between Your slaves in that which they have disputed. \nGuide me to the truth by Your leave, in that which they have differed, for verily You guide whom You will to a straight path.'
+  }
 ];
     
 
@@ -638,3 +643,4 @@ export const openingTakbeerDuas = [
 
 
     
+
