@@ -349,7 +349,7 @@ export const sleepingAzkar = [
   },
   {
     arabic:
-      'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْفَظْهَا، بِمَا تَحْfَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.',
+      'بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي، وَبِكَ أَرْفَعُهُ، فَإِنْ أَمْسَكْتَ نَفْسِي فَارْحَمْهَا، وَإِنْ أَرْسَلْتَهَا فَاحْfَظْهَا، بِمَا تَحْfَظُ بِهِ عِبَادَكَ الصَّالِحِينَ.',
     transliteration:
       'Bismika rabbee wadaAAtu janbee wabika arfaAAuh, fa-in amsakta nafsee farhamha, wa-in arsaltaha fahfathha bima tahfathu bihi AAibadakas-saliheen.',
     translation:
@@ -672,6 +672,11 @@ export const rukuDuas = [
     transliteration: 'Subhaanaka Allaahumma Rabbanaa wa bihamdika Allaahum-maghfir lee.',
     translation: 'Glory is to You , O Allah , our Lord , and praise is Yours . O Allah , forgive me.',
   },
+  {
+    arabic: 'سُبُّوحٌ، قُدُوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.',
+    transliteration: 'Subboohun, Quddoosun, Rabbul-malaa\'ikati warrooh.',
+    translation: 'Glory (to You) , Most Holy (are You) , Lord of the angels and the Spirit',
+  },
 ];
     
 
@@ -679,6 +684,7 @@ export const rukuDuas = [
 
 
     
+
 
 
 
