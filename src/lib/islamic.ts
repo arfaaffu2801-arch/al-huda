@@ -677,6 +677,11 @@ export const rukuDuas = [
     transliteration: 'Subboohun, Quddoosun, Rabbul-malaa\'ikati warrooh.',
     translation: 'Glory (to You) , Most Holy (are You) , Lord of the angels and the Spirit',
   },
+  {
+    arabic: 'اللَّهُمَّ لَكَ رَكَعْتُ، وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ خَشَعَ لَكَ سَمْعِي، وَبَصَرِي وَمُخِّي، وَعَظْمِي، وَعَصَبِي، وَمَا اسْتَقَلَّ بِهِ قَدَمِي.',
+    transliteration: "Allaahumma laka raka'tu, wa bika 'aamantu, wa laka 'aslamtu khasha'a laka sam'ee, wa basaree, wa mukhkhee, wa 'adhmee, wa 'asabee, wa mastaqalla bihi qadamee.",
+    translation: 'O Allah! to You I bow (in prayer) and in You I believe and to You I have submitted. Before You my hearing is humbled, as is my sight, my mind, my bones, my nerves and what my feet have mounted upon (for travel).',
+  }
 ];
     
 
@@ -684,6 +689,7 @@ export const rukuDuas = [
 
 
     
+
 
 
 
