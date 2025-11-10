@@ -21,6 +21,7 @@ import {
   afterPrayerAzkar,
   openingTakbeerDuas,
   afterTashahhudDuas,
+  rukuDuas,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -31,6 +32,7 @@ import {
   Hand,
   Voicemail,
   Milestone,
+  ArrowDownCircle,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -49,6 +51,11 @@ const azkarCategories = {
     label: 'After Tashahhud',
     icon: Milestone,
     data: afterTashahhudDuas,
+  },
+  ruku: {
+    label: 'During Ruku',
+    icon: ArrowDownCircle,
+    data: rukuDuas,
   },
 };
 
