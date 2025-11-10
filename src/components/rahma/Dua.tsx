@@ -37,26 +37,26 @@ import {
 import { ScrollArea } from '../ui/scroll-area';
 
 const azkarCategories = {
-  morning: { label: 'Morning', icon: Sun, data: morningAzkar },
-  evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
-  sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
   waking: { label: 'Waking Up', icon: Sunrise, data: wakingUpAzkar },
-  afterPrayer: { label: 'After Prayer', icon: Hand, data: afterPrayerAzkar },
+  morning: { label: 'Morning', icon: Sun, data: morningAzkar },
   openingTakbeer: {
     label: 'After Takbeer',
     icon: Voicemail,
     data: openingTakbeerDuas,
-  },
-  afterTashahhud: {
-    label: 'After Tashahhud',
-    icon: Milestone,
-    data: afterTashahhudDuas,
   },
   ruku: {
     label: 'During Ruku',
     icon: ArrowDownCircle,
     data: rukuDuas,
   },
+  afterTashahhud: {
+    label: 'After Tashahhud',
+    icon: Milestone,
+    data: afterTashahhudDuas,
+  },
+  afterPrayer: { label: 'After Prayer', icon: Hand, data: afterPrayerAzkar },
+  evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
+  sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
 };
 
 export function Dua() {
@@ -70,7 +70,7 @@ export function Dua() {
         <CardDescription>daily routine</CardDescription>
       </CardHeader>
       <CardContent>
-        <Tabs defaultValue="morning" className="w-full">
+        <Tabs defaultValue="waking" className="w-full">
           <TabsList>
             {Object.entries(azkarCategories).map(
               ([key, { label, icon: Icon }]) => (
