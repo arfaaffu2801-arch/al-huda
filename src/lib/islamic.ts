@@ -667,6 +667,11 @@ export const rukuDuas = [
     transliteration: "Subhaana Rabbiyal-'Adheem.",
     translation: 'Glory to my Lord the Exalted.',
   },
+  {
+    arabic: 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي.',
+    transliteration: 'Subhaanaka Allaahumma Rabbanaa wa bihamdika Allaahum-maghfir lee.',
+    translation: 'Glory is to You , O Allah , our Lord , and praise is Yours . O Allah , forgive me.',
+  },
 ];
     
 
@@ -674,6 +679,7 @@ export const rukuDuas = [
 
 
     
+
 
 
 
