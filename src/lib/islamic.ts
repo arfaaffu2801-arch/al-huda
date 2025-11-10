@@ -653,6 +653,11 @@ export const afterTashahhudDuas = [
     arabic: "اللَّهُمَّ إِنِّي ظَلَمْتُ نَفْسِي ظُلْماً كَثِيراً، وَلَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ، فَاغْفِرْ لِي مَغْفِرَةً مِنْ عِنْدِكَ وَارْحَمْنِي إِنَّكَ أَنْتَ الْغَفُورُ الرَّحِيمُ.",
     transliteration: "Allaahumma 'innee dhalamtu nafsee dhulman katheeran, wa laa yaghfiruth-thunooba 'illaa 'Anta, faghfir lee maghfiratan min 'indika warhamnee 'innaka 'Antal-Ghafoorur-Raheem.",
     translation: "O Allah, I have greatly wronged myself and no one forgives sins but You. So, grant me forgiveness and have mercy on me. Surely, you are Forgiving, Merciful."
+  },
+  {
+    arabic: "اللَّهُمَّ اغْفِرْ لِي مَا قَدَّمْتُ وَمَا أَخَّرْتُ، وَمَا أَسْرَرْتُ، وَمَا أَعْلَنْتُ، وَمَا أَسْرَفْتُ، وَمَا أَنْتَ أَعْلَمُ بِهِ مِنِّي. أَنْتَ الْمُقَدِّمُ، وَأَنْتَ الْمُؤَخِّرُ لَا إِلهَ إِلَاَّ أَنْتَ.",
+    transliteration: "Allaahum-maghfir lee maa qaddamtu, wa maa 'akhkhartu, wa maa 'asrartu, wa maa 'a'lantu, wa maa 'asraftu, wa maa 'Anta 'a'lamu bihi minnee. 'Antal-Muqaddimu, wa 'Antal-Mu'akhkhiru laa 'ilaaha 'illaa 'Anta.",
+    translation: "O Allah, forgive me what I have sent before me and what I have left behind me, what I have concealed and what I have done openly, what I have done in excess , and what You are better aware of than I . You are the One Who sends forth and You are the One Who delays . There is none worthy of worship but You."
   }
 ];
     
@@ -661,6 +666,7 @@ export const afterTashahhudDuas = [
 
 
     
+
 
 
 
