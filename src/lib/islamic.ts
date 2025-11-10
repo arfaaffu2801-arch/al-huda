@@ -661,13 +661,20 @@ export const afterTashahhudDuas = [
   }
 ];
 
-export const rukuDuas = [];
+export const rukuDuas = [
+  {
+    arabic: 'سُبْحَانَ رَبِّيَ الْعَظِيمِ.',
+    transliteration: "Subhaana Rabbiyal-'Adheem.",
+    translation: 'Glory to my Lord the Exalted.',
+  },
+];
     
 
 
 
 
     
+
 
 
 
