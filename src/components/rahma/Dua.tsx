@@ -20,8 +20,18 @@ import {
   wakingUpAzkar,
   afterPrayerAzkar,
   openingTakbeerDuas,
+  afterTashahhudDuas,
 } from '@/lib/islamic';
-import { Sun, Moon, BookHeart, Bed, Sunrise, Hand, Voicemail } from 'lucide-react';
+import {
+  Sun,
+  Moon,
+  BookHeart,
+  Bed,
+  Sunrise,
+  Hand,
+  Voicemail,
+  Milestone,
+} from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
 const azkarCategories = {
@@ -34,6 +44,11 @@ const azkarCategories = {
     label: 'After Takbeer',
     icon: Voicemail,
     data: openingTakbeerDuas,
+  },
+  afterTashahhud: {
+    label: 'After Tashahhud',
+    icon: Milestone,
+    data: afterTashahhudDuas,
   },
 };
 

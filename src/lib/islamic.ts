@@ -642,11 +642,14 @@ export const openingTakbeerDuas = [
     translation: "Allah is Most Great, Allah is Most Great, Allah is Most Great.(Three times) \nI seek refuge with Allah from the devil, from his pride, his poetry and his madness."
   }
 ];
+
+export const afterTashahhudDuas = [];
     
 
 
 
 
     
+
 
 
