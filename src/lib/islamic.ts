@@ -467,7 +467,7 @@ export const afterPrayerAzkar = [
   {
     arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
-    translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (Allah) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
+    translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (Allah) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
     reference: 'An-Nas',
   },
   {
@@ -643,13 +643,20 @@ export const openingTakbeerDuas = [
   }
 ];
 
-export const afterTashahhudDuas = [];
+export const afterTashahhudDuas = [
+  {
+    arabic: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ، وَأَعُوذُ بِكَ مِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ. اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْمَأْثَمِ وَالْمَغْرَمِ.",
+    transliteration: "Allaahumma 'innee 'a'oothu bika min 'athaabil-qabri, wa 'a'oothu bika min fitnatil-maseehid-dajjaali, wa 'a'oothu bika min fitnatil-mahyaa walmamaati. Allaahumma 'innee 'a'oothu bika minal-ma'thami walmaghrami.",
+    translation: "O Allah, I seek refuge in You from the punishment of the grave, and I seek refuge in You from the trial of the False Messiah, and I seek refuge in You from the trials of life and death. O Allah, I seek refuge in You from sin and from debt."
+  }
+];
     
 
 
 
 
     
+
 
 
 
