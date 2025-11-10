@@ -260,7 +260,7 @@ export const eveningAzkar = [
     translation: 'O Allah, I ask You for pardon and well-being in this life and the next. O Allah, I ask You for pardon and well-being in my religious and worldly affairs, and my family and my wealth. O Allah, veil my weaknesses and set at ease my dismay. O Allah, preserve me from the front and from behind and on my right and on my left and from above, and I take refuge with You lest I be swallowed up by the earth.',
   },
   {
-    arabic: 'اللَّهُمَّ أَنْتَ رَبِّي لَّا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِر لِي فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلَّا أَنْتَ.',
+    arabic: 'اللَّهُمَّ أَنْتَ رَبِّي لَّا إِلَهَ إِلَّا أَنْتَ، خَلَقْتَنِي وَأَنَا عَبْدُكَ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ، أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ، أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَيَّ، وَأَبُوءُ بِذَنْبِي فَاغْفِر لِي فَإِنَّهُ لَا يَغْfِرُ الذُّنُوبَ إِلَّا أَنْتَ.',
     transliteration: 'Allahumma anta rabbee la ilaha illa ant, khalaqtanee wa-ana AAabduk, wa-ana AAala AAahdika wawaAAdika mas-tataAAt, aAAoothu bika min sharri ma sanaAAt, aboo-o laka biniAAmatika AAalay, wa-aboo-o bithanbee, faghfir lee fa-innahu la yaghfiruth-thunooba illa ant.',
     translation: 'O Allah, You are my Lord, none has the right to be worshipped except You, You created me and I am Your servant and I abide to Your covenant and promise as best I can, I take refuge in You from the evil of which I have committed. I acknowledge Your favour upon me and I acknowledge my sin, so forgive me, for verily none can forgive sin except You.',
   },
@@ -397,7 +397,7 @@ export const sleepingAzkar = [
     translation: 'All praise is for Allah, Who fed us and gave us drink, and Who is sufficient for us and has sheltered us, for how many have none to suffice them or shelter them.',
   },
   {
-    arabic: 'اللَّهُمَّ أَسْلَمْتُ نفِسي إِلَيكَ، وَفَوَّضتُ أَمري إِلَيْكَ، وَأَلَجَأْتُ ظَهرِي إِلَيْكَ، رغبةً ورهْبَةً إِلَيْكَ، لامَلجأَ ولا مَنجى مِنْكَ إِلاَّ إِليكَ، آمنتُ بِكِتَابِكَ الذِي أَنزَلْت، وَبِنَبِيِّكَ الذِي أَرسَلتَ.',
+    arabic: 'اللَّهُمَّ أَسْلَمْتُ نفِسي إِلَيكَ، وَفَوَّضتُ أَمري إِلَيْكَ، وَأَلَجَأْتُ ظَهرِي إِلَيْكَ، رغبةً ورهْبَةً إِلَيْكَ، لامَلجأَ ولا mَنجى مِنْكَ إِلاَّ إِليكَ، آمنتُ بِكِتَابِكَ الذِي أَنزَلْت، وَبِنَبِيِّكَ الذِي أَرسَلتَ.',
     transliteration: 'Allahumma aslamtu nafsee ilayk, wafawwadtu amree ilayk, wawajjahtu wajhee ilayk, wa-alja/tu thahree ilayk, raghbatan warahbatan ilayk, la maljaa wala manja minka illa ilayk, amantu bikitabikal wabinabiyyikal-lathee arsalt.',
     translation: 'O Allah, I submit my soul unto You, and I entrust my affair unto You, and I turn my face towards You, and I totally rely on You, in hope and fear of You. Verily there is no refuge nor safe haven from You except with You. I believe in Your Book which You have revealed and in Your Prophet whom You have sent.',
   },
@@ -625,7 +625,12 @@ export const openingTakbeerDuas = [
     arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ وَتَبَارَكَ اسْمُكَ وَتَعَالَى جَدُّكَ وَلَا إِلَهَ غَيْرُكَ.',
     transliteration: 'subḥaanak-allaahumma wa biḥamdika, wa tabaarakas-muka wa ta‛aalaa jadduka wa laa ilaaha ghayruk.',
     translation: 'How far from imperfections You are O Allah, and I praise You. Blessed be Your name, and lofty is Your position and none has the right to be worshipped except You.'
-  }
+  },
+  {
+    arabic: 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفَاً وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي، وَنُسُكِي، وَمَحْيَايَ، وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ المَلِكُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبي جَمِيعَاً إِنَّهُ لاَ يَغْفِرُ الذُّنوبَ إِلاَّ أَنْتَ. وَاهْدِنِي لِأَحْسَنِ الأَخْلاقِ لاَ يَهْدِي لِأَحْسَنِها إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالخَيْرُ كُلُّهُ بِيَـــــــدَيْكَ، وَالشَّـــــرُّ لَيْسَ إِلَيْــــــكَ، أَنَا بِكَ وَإِلَيْكَ، تَبارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتوبُ إِلَيْكَ.',
+    transliteration: 'wajjahtu wajhiya lil-ladhee faṭarad-samaawaati wal-arḍa ḥaneefan, wa maa ana minal-mushrikeen, inna ṣalaatee wa nusukee wa maḥyaa-ya wa mamaatee lillaahi rabbil-‛aalameena, laa shareeka lahu wa bidhaalika umirtu wa ana minal-muslimeen, allaahumma antal-maliku laa ilaaha illaa ant, anta rabbee wa ana ‛abduk, ẓalamtu nafsee wa‛taraftu bidhambee faghfir lee dhunoobee jamee‛an innahu laa yaghfir-udh-dhunooba illaa ant, wahdinee li aḥsanil-akhlaaqi laa yahdee li aḥsanihaa illaa ant, waṣrif ‛annee sayyi’ahaa laa yaṣrifu ‛annee sayyi’ahaa illaa ant, labbayka wa sa‛dayka, wal-khayru kulluhu bi yadayka wash-sharru laysa ilayka, ana bika wa ilayka, tabaarakta wa ta‛aalayta, astaghfiruka wa atoobu ilayk.',
+    translation: 'I have turned my face sincerely towards He who has brought forth the heavens and the Earth and I am not of those who associate (others with Allah). Indeed my prayer, my sacrifice, my life and my death are for Allah, Lord of the worlds, no partner has He, with this I am commanded and I am of the Muslims. O Allah, You are the Sovereign, none has the right to be worshipped except You. You are my Lord and I am Your servant, I have wronged my own soul and have acknowledged my sin, so forgive me all my sins for no one forgives sins except You. Guide me to the best of characters for none can guide to it other than You, and deliver me from the worst of characters for none can deliver me from it other than You. Here I am, in answer to Your call, happy to serve you. All good is within Your hands and evil does not stem from You. I exist by your will and will return to you. Blessed and High are You, I seek Your forgiveness and repent unto You.',
+  },
 ];
     
 
