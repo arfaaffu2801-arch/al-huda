@@ -24,6 +24,7 @@ import {
   rukuDuas,
   sujoodDuas,
   athanAzkar,
+  betweenSujoodDuas,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -37,6 +38,7 @@ import {
   ArrowDownCircle,
   ArrowDownToDot,
   Megaphone,
+  ChevronsUpDown,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -58,6 +60,11 @@ const azkarCategories = {
     label: 'During Sujood',
     icon: ArrowDownToDot,
     data: sujoodDuas,
+  },
+  betweenSujood: {
+    label: 'Between Sujood',
+    icon: ChevronsUpDown,
+    data: betweenSujoodDuas,
   },
   afterTashahhud: {
     label: 'After Tashahhud',
