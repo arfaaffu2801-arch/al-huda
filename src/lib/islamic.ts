@@ -1,5 +1,6 @@
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -705,6 +706,11 @@ export const sujoodDuas = [
     arabic: 'سُبُّوحٌ، قُدُوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.',
     transliteration: 'Subboohun, Quddoosun, Rabbul-malaa\'ikati warrooh.',
     translation: 'Glory (to You) , Most Holy (are You) , Lord of the angels and the Spirit.',
+  },
+  {
+    arabic: 'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللهُ أَحْسَنُ الْخَالِقِينَ.',
+    transliteration: "Allaahumma laka sajadtu wa bika 'aamantu, wa laka 'aslamtu, sajada wajhiya lillathee khalaqahu, wa sawwarahu, wa shaqqa sam'ahu wa basarahu, tabaarakallaahu 'ahsanul-khaaliqeen.",
+    translation: 'O Allah, to You I prostrate myself and in You I believe. To You I have submitted. My face is prostrated to the One Who created it, fashioned it, and gave it hearing and sight. Blessed is Allah, the Best of creators.',
   }
 ];
     
@@ -713,6 +719,7 @@ export const sujoodDuas = [
 
 
     
+
 
 
 
