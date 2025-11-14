@@ -3,6 +3,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -770,4 +771,11 @@ export const leavingMosqueAzkar = [
   }
 ];
 
-export const beforeAblutionAzkar = [];
+export const beforeAblutionAzkar = [
+  {
+    arabic: 'بِسْمِ اللَّهِ',
+    transliteration: 'Bismil-lah',
+    translation: 'In the name of Allah.',
+    reference: "An-Nasa'i, Abu Dawud",
+  }
+];
