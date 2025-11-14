@@ -1,4 +1,5 @@
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -699,6 +700,11 @@ export const sujoodDuas = [
     arabic: 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي.',
     transliteration: 'Subhaanaka Allaahumma Rabbanaa wa bihamdika Allaahum-maghfir lee.',
     translation: 'Glory is to You , O Allah , our Lord , and praise is Yours . O Allah , forgive me.',
+  },
+  {
+    arabic: 'سُبُّوحٌ، قُدُوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.',
+    transliteration: 'Subboohun, Quddoosun, Rabbul-malaa\'ikati warrooh.',
+    translation: 'Glory (to You) , Most Holy (are You) , Lord of the angels and the Spirit.',
   }
 ];
     
@@ -707,6 +713,7 @@ export const sujoodDuas = [
 
 
     
+
 
 
 
