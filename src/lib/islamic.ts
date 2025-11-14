@@ -4,6 +4,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -93,7 +94,7 @@ export const islamicFestivals2025 = [
   { name: 'Day of Arafah', date: new Date('2025-06-05') },
   { name: 'Eid al-Adha', date: new Date('2025-06-06') },
   { name: 'Islamic New Year (1447 AH)', date: new Date('2025-06-26') },
-  { name: 'Ashura', date: new Date('2025-07-05') },
+  { name: 'Ashura', date: new Date('20_25-07-05') },
 ];
 
 export const morningAzkar = [
@@ -713,7 +714,7 @@ export const sujoodDuas = [
   {
     arabic: 'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللهُ أَحْسَنُ الْخَالِقِينَ.',
     transliteration: "Allaahumma laka sajadtu wa bika 'aamantu, wa laka 'aslamtu, sajada wajhiya lillathee khalaqahu, wa sawwarahu, wa shaqqa sam'ahu wa basarahu, tabaarakallaahu 'ahsanul-khaaliqeen.",
-    translation: 'O Allah, to You I prostrate myself and in You I believe. To You I have submitted. My face is prostrated to the One Who created it, fashioned it, and gave it hearing and sight. Blessed is Allah, the Best of creators.'
+    translation: 'O Allah, to You I prostrate myself and in You I believe. To You I have submitted. My face is prostrated to the One Who created it, fashioned it, and gave it hearing and sight. Blessed is Allah, the Best of creators.',
   },
   {
     arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.',
@@ -778,4 +779,7 @@ export const beforeAblutionAzkar = [
     translation: 'In the name of Allah.',
     reference: "An-Nasa'i, Abu Dawud",
   }
+];
+
+export const afterAblutionAzkar = [
 ];

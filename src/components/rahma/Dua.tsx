@@ -28,6 +28,7 @@ import {
   enteringMosqueAzkar,
   leavingMosqueAzkar,
   beforeAblutionAzkar,
+  afterAblutionAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -45,6 +46,7 @@ import {
   DoorOpen,
   DoorClosed,
   Droplet,
+  Waves,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -55,6 +57,11 @@ const azkarCategories = {
     label: 'Before Ablution',
     icon: Droplet,
     data: beforeAblutionAzkar,
+  },
+  afterAblution: {
+    label: 'After Ablution',
+    icon: Waves,
+    data: afterAblutionAzkar,
   },
   athan: { label: 'Athan', icon: Megaphone, data: athanAzkar },
   enteringMosque: {
