@@ -5,6 +5,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -722,14 +723,14 @@ export const sujoodDuas = [
     translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness',
   },
   {
-    arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ.',
-    transliteration: "Allaahum-maghfir lee thanbee kullahu, diqqahu wa jillahu, wa 'awwalahu wa 'aakhirahu wa 'alaaniyatahu wa sirrahu.",
-    translation: 'O Allah, forgive me all of my sins, the small and great of them, the first and last of them, and the public and private of them.'
-  },
-  {
     arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مَنْ عُقُوبَتِكَ، وَاَعُوذُ بِكَ مِنْكَ، لَا أُحصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.',
     transliteration: "Allaahumma 'innee 'a'oothu biridhaaka min sakhatika, wa bimu'aafaatika min 'uqoobatika wa 'a'oothu bika minka, laa 'uhsee thanaa'an 'alayka 'Anta kamaa 'athnayta 'alaa nafsika.",
     translation: "O Allah, I seek protection in Your pleasure from Your anger, and I seek protection in Your forgiveness from Your punishment. I seek protection in You from You. I cannot count Your praises. You are as You have praised Yourself."
+  },
+  {
+    arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ.',
+    transliteration: "Allaahum-maghfir lee thanbee kullahu, diqqahu wa jillahu, wa 'awwalahu wa 'aakhirahu wa 'alaaniyatahu wa sirrahu.",
+    translation: 'O Allah, forgive me all of my sins, the small and great of them, the first and last of them, and the public and private of them.'
   }
 ];
     
@@ -740,8 +741,15 @@ export const athanAzkar = [
     translation: "One repeats just as the mu-aththin (one who calls to prayer) says, except when he says: Hayya 'alas-salah (or) hayya 'alal-falah ‘come to prayer, come to success’ instead, one should say: La hawla wala quwwata illa billah. ‘There is no might nor power except with Allah.’",
     reference: 'Bukhari, Muslim',
   },
+  {
+    arabic: 'اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلَاةِ الْقَائِمَةِ، آتِ مُحَمَّداً الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَاماً مَحْمُوداً الَّذِي وَعَدْتَهُ، إَنَّكَ لَا تُخْلِفُ الْمِيعَادَ.',
+    transliteration: "Allaahumma Rabba haathid - da'watit - taammati wassalaatil-qaa'imati, 'aati Muhammadanil-waseelata walfadheelata, wab 'ath-hu maqaamam-mahmoodanil-lathee wa'adtahu, 'innaka laa tukhliful-mee'aad.",
+    translation: "O Allah , Lord of this perfect call and established prayer. Grant Muhammad the intercession and favor, and raise him to the honored station You have promised him, [verily You do not neglect promises].",
+    reference: 'Bukhari',
+  },
 ];
 
 
 
     
+
