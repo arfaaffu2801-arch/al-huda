@@ -25,6 +25,7 @@ import {
   sujoodDuas,
   athanAzkar,
   betweenSujoodDuas,
+  enteringMosqueAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -39,6 +40,7 @@ import {
   ArrowDownToDot,
   Megaphone,
   ChevronsUpDown,
+  DoorOpen,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -46,6 +48,11 @@ const azkarCategories = {
   waking: { label: 'Waking Up', icon: Sunrise, data: wakingUpAzkar },
   morning: { label: 'Morning', icon: Sun, data: morningAzkar },
   athan: { label: 'Athan', icon: Megaphone, data: athanAzkar },
+  enteringMosque: {
+    label: 'Entering Mosque',
+    icon: DoorOpen,
+    data: enteringMosqueAzkar,
+  },
   openingTakbeer: {
     label: 'After Takbeer',
     icon: Voicemail,
@@ -88,7 +95,7 @@ export function Dua() {
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="waking" className="w-full">
-          <TabsList>
+          <TabsList className="flex-wrap h-auto">
             {Object.entries(azkarCategories).map(
               ([key, { label, icon: Icon }]) => (
                 <TabsTrigger
