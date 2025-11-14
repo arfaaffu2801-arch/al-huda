@@ -23,6 +23,7 @@ import {
   afterTashahhudDuas,
   rukuDuas,
   sujoodDuas,
+  athanAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -35,12 +36,14 @@ import {
   Milestone,
   ArrowDownCircle,
   ArrowDownToDot,
+  Megaphone,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
 const azkarCategories = {
   waking: { label: 'Waking Up', icon: Sunrise, data: wakingUpAzkar },
   morning: { label: 'Morning', icon: Sun, data: morningAzkar },
+  athan: { label: 'Athan', icon: Megaphone, data: athanAzkar },
   openingTakbeer: {
     label: 'After Takbeer',
     icon: Voicemail,

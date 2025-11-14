@@ -3,6 +3,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -720,13 +721,18 @@ export const sujoodDuas = [
     translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness',
   },
   {
+    arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلَانِيَتَهُ وَسِرَّهُ.',
+    transliteration: "Allaahum-maghfir lee thanbee kullahu, diqqahu wa jillahu, wa 'awwalahu wa 'aakhirahu wa 'alaaniyatahu wa sirrahu.",
+    translation: 'O Allah, forgive me all of my sins, the small and great of them, the first and last of them, and the public and private of them.'
+  },
+  {
     arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِرِضَاكَ مِنْ سَخَطِكَ، وَبِمُعَافَاتِكَ مَنْ عُقُوبَتِكَ، وَاَعُوذُ بِكَ مِنْكَ، لَا أُحصِي ثَنَاءً عَلَيْكَ أَنْتَ كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ.',
     transliteration: "Allaahumma 'innee 'a'oothu biridhaaka min sakhatika, wa bimu'aafaatika min 'uqoobatika wa 'a'oothu bika minka, laa 'uhsee thanaa'an 'alayka 'Anta kamaa 'athnayta 'alaa nafsika.",
     translation: "O Allah, I seek protection in Your pleasure from Your anger, and I seek protection in Your forgiveness from Your punishment. I seek protection in You from You. I cannot count Your praises. You are as You have praised Yourself."
   }
 ];
     
-
+export const athanAzkar = [];
 
 
 
