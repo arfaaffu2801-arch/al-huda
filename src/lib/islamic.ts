@@ -1,6 +1,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -760,4 +761,10 @@ export const enteringMosqueAzkar = [
   }
 ];
 
-export const leavingMosqueAzkar = [];
+export const leavingMosqueAzkar = [
+  {
+    arabic: 'بِسْمِ اللّهِ وَالصَّلاَةُ وَالسَّلاَمُ عَلَى رَسُولِ اللّهِ، اَللَّهُـمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْـلِكَ، اَللَّهُـمَّ اعْصِمْنِـي مِنَ الشَّيْـطَانِ الرَّجِـيمِ.',
+    transliteration: 'Bismil-lah wassalatu wassalamu AAala rasoolil-lah, allahumma innee as-aluka min fadlik, allahumma iAAsimnee minash-shaytanir-rajeem.',
+    translation: 'In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, I ask You from Your favour. O Allah, guard me from the accursed devil.'
+  }
+];
