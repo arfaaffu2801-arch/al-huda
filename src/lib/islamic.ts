@@ -1,5 +1,6 @@
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -298,7 +299,7 @@ export const eveningAzkar = [
   {
     arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱلنَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
-    translation: 'Surah An-Nas: In the name of Allah, the Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
+    translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
   }
 ];
 
@@ -758,3 +759,5 @@ export const enteringMosqueAzkar = [
     translation: 'I take refuge with Allah, The Supreme and with His Noble Face, and His eternal authority from the accursed devil. In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, open the gates of Your mercy for me.'
   }
 ];
+
+export const leavingMosqueAzkar = [];
