@@ -694,6 +694,11 @@ export const sujoodDuas = [
     arabic: 'سُبْحَانَ رَبِّيَ الأَعْلَى.',
     transliteration: "Subhaana Rabbiyal-A 'laa.",
     translation: 'Glory is to my Lord, the Most High',
+  },
+  {
+    arabic: 'سُبْحَانَكَ اللَّهُمَّ رَبَّنَا وَبِحَمْدِكَ اللَّهُمَّ اغْفِرْ لِي.',
+    transliteration: 'Subhaanaka Allaahumma Rabbanaa wa bihamdika Allaahum-maghfir lee.',
+    translation: 'Glory is to You , O Allah , our Lord , and praise is Yours . O Allah , forgive me.',
   }
 ];
     
@@ -702,6 +707,7 @@ export const sujoodDuas = [
 
 
     
+
 
 
 
