@@ -22,6 +22,7 @@ import {
   openingTakbeerDuas,
   afterTashahhudDuas,
   rukuDuas,
+  sujoodDuas,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -33,6 +34,7 @@ import {
   Voicemail,
   Milestone,
   ArrowDownCircle,
+  ArrowDownToDot,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -48,6 +50,11 @@ const azkarCategories = {
     label: 'During Ruku',
     icon: ArrowDownCircle,
     data: rukuDuas,
+  },
+  sujood: {
+    label: 'During Sujood',
+    icon: ArrowDownToDot,
+    data: sujoodDuas,
   },
   afterTashahhud: {
     label: 'After Tashahhud',

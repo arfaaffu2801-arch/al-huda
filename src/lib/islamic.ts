@@ -688,12 +688,15 @@ export const rukuDuas = [
     translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness',
   }
 ];
+
+export const sujoodDuas = [];
     
 
 
 
 
     
+
 
 
 
