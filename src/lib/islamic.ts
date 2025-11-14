@@ -689,13 +689,20 @@ export const rukuDuas = [
   }
 ];
 
-export const sujoodDuas = [];
+export const sujoodDuas = [
+  {
+    arabic: 'سُبْحَانَ رَبِّيَ الأَعْلَى.',
+    transliteration: "Subhaana Rabbiyal-A 'laa.",
+    translation: 'Glory is to my Lord, the Most High',
+  }
+];
     
 
 
 
 
     
+
 
 
 
