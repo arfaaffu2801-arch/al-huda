@@ -12,6 +12,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -283,7 +284,7 @@ export const eveningAzkar = [
     translation: 'O, Allah, we have reached the evening, calling You to witness, and calling the carriers of Your Throne to witness, and Your angels, and all of Your creation, that You are Allah, none has the right to be worshipped but You, Alone, without a partner, and that Muhammad (S.A.W.) is Your slave and Your Messenger.'
   },
   {
-    arabic: 'اللَّهُمَّ مَا أََمْسَ بِي مِنْ نِعْمَةٍ أَوْ بِأََحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.',
+    arabic: 'اللَّهُمَّ مَا أََمْسَ بِي مِنْ نِعْمَةٍ أََوْ بِأََحَدٍ مِنْ خَلْقِكَ فَمِنْكَ وَحْدَكَ لَا شَرِيكَ لَكَ، فَلَكَ الْحَمْدُ وَلَكَ الشُّكْرُ.',
     transliteration: 'Allahumma ma amsa bee min niAAmatin, aw bi-ahadin min khalqik, faminka wahdaka la shareeka lak, falakal-hamdu walakash-shukr.',
     translation: 'O Allah, what blessing I or any of Your creation have risen upon, is from You alone, without partner, so for You is all praise and unto You all thanks.'
   },
@@ -726,7 +727,7 @@ export const sujoodDuas = [
   {
     arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.',
     transliteration: "Subhaana thil-jabarooti, walmalakooti, walkibriyaa'i, wal'adhamati.",
-    translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness',
+    translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness.',
   },
   {
     arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَّتَهُ وَسِرَّهُ.',
@@ -827,4 +828,11 @@ export const afterEatingAzkar = [
   }
 ];
 
+export const beforeEatingAzkar = [
+  {
+    arabic: 'بِسْمِ اللهِ.',
+    transliteration: 'bismillaah.',
+    translation: 'In the name of Allah.'
+  }
+];
     

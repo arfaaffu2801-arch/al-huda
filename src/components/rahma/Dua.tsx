@@ -30,6 +30,7 @@ import {
   beforeAblutionAzkar,
   afterAblutionAzkar,
   afterEatingAzkar,
+  beforeEatingAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -102,6 +103,11 @@ const azkarCategories = {
     data: afterTashahhudDuas,
   },
   afterPrayer: { label: 'After Prayer', icon: Hand, data: afterPrayerAzkar },
+  beforeEating: {
+    label: 'Before Eating',
+    icon: Utensils,
+    data: beforeEatingAzkar,
+  },
   afterEating: {
     label: 'After Eating',
     icon: Utensils,
