@@ -1,4 +1,5 @@
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -617,7 +618,7 @@ export const ramadanDuas = [
 
 export const openingTakbeerDuas = [
   {
-    arabic: 'اللَّهُمَّ bَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الأَ بْيَضُ مِنَ الدَّنَسِ ، اللّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالثَّلْجِ وَالْمَاءِ وَالْبَرْدِ.',
+    arabic: 'اللَّهُمَّ bَاعِدْ بَيْنِي وَبَيْنَ خَطَايَايَ كَمَا بَاعَدْتَ بَيْنَ الْمَشْرِقِ وَالْمَغْرِبِ ، اللَّهُمَّ نَقِّنِي مِنْ خَطَايَايَ كَمَا يُنَقَّى الثَّوْبُ الأَ bْيَضُ مِنَ الدَّنَسِ ، اللّهُمَّ اغْسِلْنِي مِنْ خَطَايَايَ بِالثَّلْجِ وَالْمَاءِ وَالْبَرْدِ.',
     transliteration: 'allaahumma baa‛id baynee wa bayna khaṭaayaa-ya kamaa baa‛adta baynal-mashriqi wal-maghrib, allaahumma naqqinee min khaṭaayaa-ya kamaa yunaqqath-thawbul-abyaḍu minad-danas, allaahummagh-silnee min khaṭaayaa-ya bith-thalji wal-maa’i wal-barad.',
     translation: 'O Allah, distance me from my sins just as You have distanced The East from The West, O Allah, purify me of my sins as a white robe is purified of filth, O Allah, cleanse me of my sins with snow, water, and ice.'
   },
@@ -702,8 +703,8 @@ export const sujoodDuas = [
   },
   {
     arabic: 'سُبُّوحٌ، قُدُوسٌ، رَبُّ الْمَلَائِكَةِ وَالرُّوحِ.',
-    transliteration: 'Subboohun, Quddoosun, Rabbul-malaa\'ikati warrooh.',
     translation: 'Glory (to You) , Most Holy (are You) , Lord of the angels and the Spirit.',
+    transliteration: 'Subboohun, Quddoosun, Rabbul-malaa’ikati warrooh.',
   },
   {
     arabic: 'اللَّهُمَّ لَكَ سَجَدْتُ وَبِكَ آمَنْتُ، وَلَكَ أَسْلَمْتُ، سَجَدَ وَجْهِيَ لِلَّذِي خَلَقَهُ، وَصَوَّرَهُ، وَشَقَّ سَمْعَهُ وَبَصَرَهُ، تَبَارَكَ اللهُ أَحْسَنُ الْخَالِقِينَ.',
@@ -845,5 +846,13 @@ export const enteringHomeAzkar = [
   }
 ];
 
-export const leavingHomeAzkar = [];
+export const leavingHomeAzkar = [
+  {
+    arabic: 'بِسْمِ اللَّهِ تَوَكَّلْـتُ عَلَى اللَّهِ، وَلاَ حَوْلَ وَلاَ قُـوَّةَ إِلاَّ بِاللَّهِ.',
+    transliteration: 'Bismil-lah, tawakkaltu AAalal-lah, wala hawla wala quwwata illa billah.',
+    translation: 'In the name of Allah, I place my trust in Allah, and there is no might nor power except with Allah.',
+    reference: 'Abu Dawud, Tirmidhi'
+  }
+];
     
+
