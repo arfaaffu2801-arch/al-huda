@@ -1,24 +1,4 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -360,7 +340,7 @@ export const sleepingAzkar = [
   },
   {
     arabic:
-      'ءَامَنَ ٱلرَّسُولُ بِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَـتِهِۦ وَكُـتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِۦ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّـنَا وَإِلَيْكَ ٱلْمَصِيرُ* لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْـتَسَبَتْ رَبَّـنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّـنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُ عَلَى ٱلَّذِينَ مِن قَبْلِنَا رَبَّـنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ أَنْتَ مَوْلَـٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ *',
+      'ءَامَنَ ٱلرَّسُولُ bِمَآ أُنزِلَ إِلَيْهِ مِن رَّبِّهِۦ وَٱلْمُؤْمِنُونَ كُلٌّ ءَامَنَ بِٱللَّهِ وَمَلَـٰٓئِكَـتِهِۦ وَكُـتُبِهِۦ وَرُسُلِهِۦ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِّن رُّسُلِهِۦ وَقَالُوا۟ سَمِعْنَا وَأَطَعْنَا غُفْرَانَكَ رَبَّـنَا وَإِلَيْكَ ٱلْمَصِيرُ* لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا ٱكْـتَسَبَتْ رَبَّـنَا لَا تُؤَاخِذْنَآ إِن نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّـنَا وَلَا تَحْمِلْ عَلَيْنَآ إِصْرًا كَمَا حَمَلْتَهُ عَلَى ٱلَّذِينَ مِن قَبْلِنَا رَبَّـنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِۦ وَٱعْفُ عَنَّا وَٱغْفِرْ لَنَا وَٱرْحَمْنَآ أَنْتَ مَوْلَـٰنَا فَٱنصُرْنَا عَلَى ٱلْقَوْمِ ٱلْكَـٰفِرِينَ *',
     transliteration:
       'aamanar-rasoolu bimaa unzila ilayhi min rabbihi wal-mu’minoon, kullun aamana billaahi wa malaaٓ’ikatihi wa kutubihi wa rusulih, laa nufarriqu bayna aḥadin min rusulih, wa qaaloo sami‛naa wa aṭa‛naa ghufraanaka rabbanaa wa ilaykal-maṣeer * laa yukallif-ullaahu nafsan illaa wus‛ahaa, lahaa maa kasabat wa ‛alayhaa mak-tasabat, rabbanaa laa tu’aakhidhnaa in naseenaa aw akhṭa’naa rabbanaa wa laa taḥmil ‛alaynaa iṣran kamaa ḥamaltahu ‛alal-ladheena min qablinaa, rabbanaa wa laa tuḥammilnaa maa laa ṭaaqata lanaa bih, wa‛fu ‛annaa waghfir lanaa warḥamnaa, anta mawlaanaa fanṣurnaa ‛alal-qawmil-kaafireen',
     translation:
@@ -864,4 +844,6 @@ export const enteringHomeAzkar = [
     translation: 'In the name of Allah we enter and in the name of Allah we leave, and upon our Lord we place our trust.',
   }
 ];
+
+export const leavingHomeAzkar = [];
     
