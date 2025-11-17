@@ -29,6 +29,7 @@ import {
   leavingMosqueAzkar,
   beforeAblutionAzkar,
   afterAblutionAzkar,
+  afterEatingAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -47,6 +48,7 @@ import {
   DoorClosed,
   Droplet,
   Waves,
+  Utensils,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -100,6 +102,11 @@ const azkarCategories = {
     data: afterTashahhudDuas,
   },
   afterPrayer: { label: 'After Prayer', icon: Hand, data: afterPrayerAzkar },
+  afterEating: {
+    label: 'After Eating',
+    icon: Utensils,
+    data: afterEatingAzkar,
+  },
   evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
   sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
 };
@@ -134,27 +141,33 @@ export function Dua() {
             <TabsContent key={key} value={key}>
               <ScrollArea className="h-[400px] w-full">
                 <div className="space-y-4 p-1">
-                  {data.map((dua, index) => (
-                    <div
-                      key={index}
-                      className="rounded-lg border bg-secondary/30 p-4"
-                    >
-                      <p className="mb-2 text-lg text-primary" dir="rtl">
-                        {dua.arabic}
-                      </p>
-                      <p className="mb-2 text-sm text-muted-foreground">
-                        {dua.transliteration}
-                      </p>
-                      <p className="italic text-foreground">
-                        &ldquo;{dua.translation}&rdquo;
-                      </p>
-                      {dua.reference && (
-                        <p className="mt-2 text-right text-xs text-muted-foreground">
-                          - {dua.reference}
+                  {data.length > 0 ? (
+                    data.map((dua, index) => (
+                      <div
+                        key={index}
+                        className="rounded-lg border bg-secondary/30 p-4"
+                      >
+                        <p className="mb-2 text-lg text-primary" dir="rtl">
+                          {dua.arabic}
                         </p>
-                      )}
+                        <p className="mb-2 text-sm text-muted-foreground">
+                          {dua.transliteration}
+                        </p>
+                        <p className="italic text-foreground">
+                          &ldquo;{dua.translation}&rdquo;
+                        </p>
+                        {dua.reference && (
+                          <p className="mt-2 text-right text-xs text-muted-foreground">
+                            - {dua.reference}
+                          </p>
+                        )}
+                      </div>
+                    ))
+                  ) : (
+                    <div className="flex h-48 items-center justify-center text-muted-foreground">
+                      <p>No Azkar added for this category yet.</p>
                     </div>
-                  ))}
+                  )}
                 </div>
               </ScrollArea>
             </TabsContent>
