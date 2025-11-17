@@ -14,6 +14,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -328,7 +329,7 @@ export const sleepingAzkar = [
   },
   {
     arabic:
-      'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+      'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ fِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
     transliteration:
       'bismillaahir-raḥmaanir-raḥeem qul a‛oodhu birabbil-falaq * min sharri maa khalaq * wa min sharri ghaasiqin idhaa waqab * wa min sharrin-naffaathaati fil-‛uqad * wa min sharri ḥaasidin idhaa ḥasad',
     translation:
@@ -731,7 +732,7 @@ export const sujoodDuas = [
     translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness.',
   },
   {
-    arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَّتَهُ وَسِرَّهُ.',
+    arabic: 'اللَّهُمَّ اغْفِرْ لِي ذَنْبِي كُلَّهُ: dِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَّتَهُ وَسِرَّهُ.',
     transliteration: "Allaahum-maghfir lee thanbee kullahu, diqqahu wa jillahu, wa 'awwalahu wa 'aakhirahu wa 'alaaniyatahu wa sirrahu.",
     translation: "O Allah, forgive me all my sins, great and small, the first and the last, those that are apparent and those that are hidden.",
   },
@@ -837,5 +838,13 @@ export const beforeEatingAzkar = [
   }
 ];
 
-export const journeyAzkar = [];
+export const journeyAzkar = [
+  {
+    arabic: "اللهُ أَكْبَرُ ، اللهُ أَكْبَرُ ، اللهُ أَكْبَرُ، (سُبْحَانَ الَّذِي سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ * وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ *) اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى ، وَمِنَ الْعَمَلِ مَا تَرْضَى ، اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ ، اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ ، وَالْخَلِيفَةُ فِي الأَهْلِ ، اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ ، وَكَآبَةِ الْمَنْظَرِ ، وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالأَهْلِ.",
+    transliteration: "allaahu akbar, allaahu akbar, allaahu akbar, (subḥaan-alladhee sakhkhara lanaa haadhaa wa maa kunnaa lahu muqrineen, wa innaa ilaa rabbinaa la munqaliboon), allaahumma innaa nas’aluka fee safarinaa haadhal-birra wat-taqwaa, wa minal-‛amali maa tarḍaaa, allaahumma hawwin ‛alaynaa safaranaa haadhaa waṭwi ‛annaa bu‛dah, allaahumma antaṣ-ṣaaḥibu fis-safar, wal-khaleefatu fil-ahl, allaahumma innee a‛oodhu bika min wa‛thaa’-is-safar, wa ka’aabat-il-manẓari, wa soo’-il-munqalabi fil-maali wal-ahl.",
+    translation: "Allah is the greatest, Allah is the greatest, Allah is the greatest. (How far from imperfections He is, The One Who has placed this (transport) at our service, and we ourselves would not have been capable of doing so, and to our Lord is our final destination), O Allah, we ask You for piety (Birr), and fear of You (Taqwa) in this journey of ours, and we ask You for deeds which please You, O Allah, facilitate our journey and let us cover it’s distance quickly. O Allah, You are The Companion on the journey and The Successor over the family, O Allah, I seek refuge with You from the difficulties of travel, and from having a change of hearts and being in a bad predicament, and I take refuge with You from an ill fated outcome with wealth and family."
+  }
+];
+    
+
     
