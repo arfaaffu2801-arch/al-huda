@@ -15,6 +15,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -104,7 +105,7 @@ export const islamicFestivals2025 = [
   { name: 'Day of Arafah', date: new Date('2025-06-05') },
   { name: 'Eid al-Adha', date: new Date('2025-06-06') },
   { name: 'Islamic New Year (1447 AH)', date: new Date('2025-06-26') },
-  { name: 'Ashura', date: new Date('20_25-07-05') },
+  { name: 'Ashura', date: new Date('2025-07-05') },
 ];
 
 export const morningAzkar = [
@@ -487,7 +488,7 @@ export const afterPrayerAzkar = [
     reference: 'An-Nas',
   },
   {
-    arabic: 'اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ.',
+    arabic: 'اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ.',
     transliteration: "Allaahu laa 'ilaaha 'illaa Huwal-Hayyul-Qayyoom, laa ta'khuthuhu sinatun wa laa nawm, lahu maa fis-samaawaati wa maafil-'ardh, man thal-lathee yashfa'u 'indahu 'illaa bi'ithnih, ya'lamu maa bayna 'aydeehim wa maa khalfahum, wa laa yuheetoona bishay'im-min 'ilmihi 'illaa bimaa shaa'a, wasi'a kursiyyuhus-samaawaati wal'ardh, wa laa ya'ooduhu hifdhuhumaa, wa Huwal-'Aliyyul- 'Adheem.",
     translation: "Allah! There is none worthy of worship but He, the Ever Living, the One Who sustains and protects all that exists. Neither slumber nor sleep overtakes Him. To Him belongs whatever is in the heavens and whatever is on the earth. Who is he that can intercede with Him except with His Permission? He knows what happens to them in this world, and what will happen to them in the Hereafter. And they will never compass anything of His Knowledge except that which He wills. His Throne extends over the heavens and the earth, and He feels no fatigue in guarding and preserving them. And He is the Most High, the Most Great.",
     reference: 'Quran 2:255',
@@ -653,7 +654,7 @@ export const openingTakbeerDuas = [
     translation: 'O Allah, Lord of Jibra\'eel, Meeka\'eel and Israfeel (great angels), Creator of the heavens and the Earth, Knower of the seen and the unseen. You are the arbitrator between Your slaves in that which they have disputed. \nGuide me to the truth by Your leave, in that which they have differed, for verily You guide whom You will to a straight path.'
   },
   {
-    arabic: "اللَّهُ أَكْبَرُ كَبِيرَاً، اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ كَبِيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً (ثلاثاً) أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ",
+    arabic: "اللَّهُ أَكْبَرُ كَبِيرَاً، اللَّهُ أَكْبَرُ كَبِيراً، اللَّهُ أَكْبَرُ kَبِيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَالْحَمْدُ لِلَّهِ كَثيراً، وَسُبْحَانَ اللَّهِ بُكْرَةً وَأَصِيلاً (ثلاثاً) أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ: مِنْ نَفْخِهِ، وَنَفْثِهِ، وَهَمْزِهِ",
     transliteration: "allaahu akbaru kabeer-an, walḥamdu lillaahi katheer-an, wa subḥaan-allaahi bukrat-an wa-aṣeel-an, (three times) a‛oodhu billaahi minash-shayṭaan, min nafkhihi wa nafthihi wa hamzih.",
     translation: "Allah is Most Great, Allah is Most Great, Allah is Most Great.(Three times) \nI seek refuge with Allah from the devil, from his pride, his poetry and his madness."
   }
@@ -742,7 +743,7 @@ export const sujoodDuas = [
     translation: "O Allah, I seek protection in Your pleasure from Your anger, and I seek protection in Your forgiveness from Your punishment. I seek protection in You from You. I cannot count Your praises. You are as You have praised Yourself."
   }
 ];
-    
+
 export const athanAzkar = [
   {
     arabic: 'يَقُولُ مِثْلَ مَا يَقُولُ المُؤَذِّنُ إِلاَّ فِي ((حَيَّ عَلَى الصَّلَاةِ وَحَيَّ عَلَى الْفَلَاحِ)) فَيقُولُ: ((لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ)).',
@@ -773,7 +774,7 @@ export const betweenSujoodDuas = [
 
 export const enteringMosqueAzkar = [
   {
-    arabic: 'أَعوذُ بِاللّهِ العَظِيـمِ، وَبِوَجْهِـهِ الكَرِيـمِ وَسُلْطـَانِه القَدِيـمِ، مِنَ الشَّيْـطَانِ الرَّجِـيمِ، [ بِسْـمِ اللّهِ وَالصَّلَاةُ ] [وَالسَّلامُ عَلَى رَسُولِ اللّهِ]، اَللَّهُـمَّ افْتَـحْ لِي أَبْوَابَ رَحْمَتـِكَ.',
+    arabic: 'aَٔعوذُ بِاللّهِ العَظِيـمِ، وَبِوَجْهِـهِ الكَرِيـمِ وَسُلْطـَانِه القَدِيـمِ، مِنَ الشَّيْـطَانِ الرَّجِـيمِ، [ بِسْـمِ اللّهِ وَالصَّلَاةُ ] [وَالسَّلامُ عَلَى رَسُولِ اللّهِ]، اَللَّهُـمَّ افْتَـحْ لِي أَبْوَابَ رَحْمَتـِكَ.',
     transliteration: 'aAAoothu billahil-AAatheem wabiwajhihil-kareem wasultanihil-qadeem minash-shaytanir-rajeem, [bismil-lah, wassalatu] [wassalamu AAala rasoolil-lah] , allahumma iftah lee abwaba rahmatik.',
     translation: 'I take refuge with Allah, The Supreme and with His Noble Face, and His eternal authority from the accursed devil. In the name of Allah, and prayers and peace be upon the Messenger of Allah. O Allah, open the gates of Your mercy for me.'
   }
@@ -844,6 +845,9 @@ export const journeyAzkar = [
     transliteration: "allaahu akbar, allaahu akbar, allaahu akbar, (subḥaan-alladhee sakhkhara lanaa haadhaa wa maa kunnaa lahu muqrineen, wa innaa ilaa rabbinaa la munqaliboon), allaahumma innaa nas’aluka fee safarinaa haadhal-birra wat-taqwaa, wa minal-‛amali maa tarḍaaa, allaahumma hawwin ‛alaynaa safaranaa haadhaa waṭwi ‛annaa bu‛dah, allaahumma antaṣ-ṣaaḥibu fis-safar, wal-khaleefatu fil-ahl, allaahumma innee a‛oodhu bika min wa‛thaa’-is-safar, wa ka’aabat-il-manẓari, wa soo’-il-munqalabi fil-maali wal-ahl.",
     translation: "Allah is the greatest, Allah is the greatest, Allah is the greatest. (How far from imperfections He is, The One Who has placed this (transport) at our service, and we ourselves would not have been capable of doing so, and to our Lord is our final destination), O Allah, we ask You for piety (Birr), and fear of You (Taqwa) in this journey of ours, and we ask You for deeds which please You, O Allah, facilitate our journey and let us cover it’s distance quickly. O Allah, You are The Companion on the journey and The Successor over the family, O Allah, I seek refuge with You from the difficulties of travel, and from having a change of hearts and being in a bad predicament, and I take refuge with You from an ill fated outcome with wealth and family."
   }
+];
+
+export const istikharahDuas = [
 ];
     
 
