@@ -17,6 +17,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -855,5 +856,6 @@ export const istikharahDuas = [
   },
 ];
     
-
+export const enteringHomeAzkar = [];
     
+

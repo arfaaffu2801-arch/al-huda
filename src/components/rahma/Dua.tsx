@@ -33,6 +33,7 @@ import {
   beforeEatingAzkar,
   journeyAzkar,
   istikharahDuas,
+  enteringHomeAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -80,6 +81,11 @@ const azkarCategories = {
     label: 'Leaving Mosque',
     icon: DoorClosed,
     data: leavingMosqueAzkar,
+  },
+  enteringHome: {
+    label: 'Entering Home',
+    icon: DoorOpen,
+    data: enteringHomeAzkar,
   },
   openingTakbeer: {
     label: 'After Takbeer',
