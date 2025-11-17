@@ -31,6 +31,7 @@ import {
   afterAblutionAzkar,
   afterEatingAzkar,
   beforeEatingAzkar,
+  journeyAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -50,6 +51,7 @@ import {
   Droplet,
   Waves,
   Utensils,
+  Plane,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -115,6 +117,7 @@ const azkarCategories = {
   },
   evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
   sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
+  journey: { label: 'Journey', icon: Plane, data: journeyAzkar },
 };
 
 export function Dua() {

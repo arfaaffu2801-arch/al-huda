@@ -13,6 +13,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -699,7 +700,7 @@ export const rukuDuas = [
   {
     arabic: 'سُبْحَانَ ذِي الْجَبَرُوتِ، وَالْمَلَكُوتِ، وَالْكِبْرِيَاءِ، وَالْعَظَمَةِ.',
     transliteration: "Subhaana thil-jabarooti, walmalakooti, walkibriyaa'i, wal'adhamati.",
-    translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness',
+    translation: 'Glory is to You, Master of power, of dominion, of majesty and greatness.',
   }
 ];
 
@@ -835,4 +836,6 @@ export const beforeEatingAzkar = [
     translation: 'In the name of Allah.'
   }
 ];
+
+export const journeyAzkar = [];
     
