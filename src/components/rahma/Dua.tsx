@@ -89,7 +89,7 @@ const azkarCategories = {
     icon: Bath,
     data: leavingRestroomAzkar,
   },
-  athan: { label: 'Athan', icon: Megaphone, data: athanAzkar },
+  athan: { label: 'Azkar on hearing Athan', icon: Megaphone, data: athanAzkar },
   enteringMosque: {
     label: 'Entering Mosque',
     icon: DoorOpen,
