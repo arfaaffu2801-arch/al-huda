@@ -131,7 +131,7 @@ const azkarCategories = {
     data: openingTakbeerDuas,
   },
   ruku: {
-    label: 'During Ruku',
+    label: 'Duas during ruku',
     icon: ArrowDownCircle,
     data: rukuDuas,
   },
