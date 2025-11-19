@@ -101,7 +101,7 @@ const azkarCategories = {
     data: leavingMosqueAzkar,
   },
   enteringHome: {
-    label: 'Entering Home',
+    label: 'When entering the home',
     icon: DoorOpen,
     data: enteringHomeAzkar,
   },
