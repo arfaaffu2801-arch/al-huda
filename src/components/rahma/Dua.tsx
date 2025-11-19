@@ -52,7 +52,7 @@ import {
   Milestone,
   ArrowDownCircle,
   ArrowDownToDot,
-  Megaphone,
+Megaphone,
   ChevronsUpDown,
   DoorOpen,
   DoorClosed,
@@ -152,7 +152,7 @@ const azkarCategories = {
   },
   afterPrayer: { label: 'After Prayer', icon: Hand, data: afterPrayerAzkar },
   beforeEating: {
-    label: 'Before Eating',
+    label: 'Before Eating and Drinking',
     icon: Utensils,
     data: beforeEatingAzkar,
   },
