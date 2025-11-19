@@ -121,7 +121,7 @@ const azkarCategories = {
     data: undressingAzkar,
   },
   newClothes: {
-    label: 'New Clothes',
+    label: 'When putting on new clothes',
     icon: Shirt,
     data: newClothesAzkar,
   },
@@ -163,7 +163,11 @@ const azkarCategories = {
   },
   evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
   sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
-  journey: { label: 'when Undertaking A Journey', icon: Plane, data: journeyAzkar },
+  journey: {
+    label: 'when Undertaking A Journey',
+    icon: Plane,
+    data: journeyAzkar,
+  },
   istikharah: { label: 'Istikharah', icon: Shuffle, data: istikharahDuas },
 };
 
