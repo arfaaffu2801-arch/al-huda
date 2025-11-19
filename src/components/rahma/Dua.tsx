@@ -163,7 +163,7 @@ const azkarCategories = {
   },
   evening: { label: 'Evening', icon: Moon, data: eveningAzkar },
   sleeping: { label: 'Before Sleeping', icon: Bed, data: sleepingAzkar },
-  journey: { label: 'Journey', icon: Plane, data: journeyAzkar },
+  journey: { label: 'when Undertaking A Journey', icon: Plane, data: journeyAzkar },
   istikharah: { label: 'Istikharah', icon: Shuffle, data: istikharahDuas },
 };
 
