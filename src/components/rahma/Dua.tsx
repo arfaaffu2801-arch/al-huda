@@ -146,7 +146,7 @@ const azkarCategories = {
     data: betweenSujoodDuas,
   },
   afterTashahhud: {
-    label: 'After Tashahhud',
+    label: 'After Tashahhud Azkar',
     icon: Milestone,
     data: afterTashahhudDuas,
   },
