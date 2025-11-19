@@ -38,6 +38,7 @@ import {
   newClothesAzkar,
   gettingDressedAzkar,
   undressingAzkar,
+  enteringRestroomAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -60,6 +61,7 @@ import {
   Plane,
   Shuffle,
   Shirt,
+  Bath,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -75,6 +77,11 @@ const azkarCategories = {
     label: 'After Ablution',
     icon: Waves,
     data: afterAblutionAzkar,
+  },
+  enteringRestroom: {
+    label: 'Entering Restroom',
+    icon: Bath,
+    data: enteringRestroomAzkar,
   },
   athan: { label: 'Athan', icon: Megaphone, data: athanAzkar },
   enteringMosque: {
