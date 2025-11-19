@@ -865,4 +865,10 @@ export const gettingDressedAzkar = [
   }
 ];
 
-export const undressingAzkar = [];
+export const undressingAzkar = [
+  {
+    arabic: 'بِسْمِ اللَّهِ.',
+    transliteration: 'Bismil-lah',
+    translation: 'In the name of Allah.',
+  }
+];
