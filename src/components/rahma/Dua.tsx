@@ -126,7 +126,7 @@ const azkarCategories = {
     data: newClothesAzkar,
   },
   openingTakbeer: {
-    label: 'After Takbeer',
+    label: 'Dua after the opening takbeer',
     icon: Voicemail,
     data: openingTakbeerDuas,
   },
