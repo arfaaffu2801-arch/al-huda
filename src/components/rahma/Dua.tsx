@@ -157,7 +157,7 @@ const azkarCategories = {
     data: beforeEatingAzkar,
   },
   afterEating: {
-    label: 'After Eating',
+    label: 'After Eating and Drinking',
     icon: Utensils,
     data: afterEatingAzkar,
   },
