@@ -16,7 +16,6 @@ import {
 import {
   morningAzkar,
   eveningAzkar,
-  sleepingAzkar,
   wakingUpAzkar,
   afterPrayerAzkar,
   openingTakbeerDuas,
@@ -40,6 +39,7 @@ import {
   undressingAzkar,
   enteringRestroomAzkar,
   leavingRestroomAzkar,
+  jummahDuas,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -63,6 +63,7 @@ Megaphone,
   Shuffle,
   Shirt,
   Bath,
+  Calendar,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -168,6 +169,7 @@ const azkarCategories = {
     data: journeyAzkar,
   },
   istikharah: { label: 'Istikharah', icon: Shuffle, data: istikharahDuas },
+  jummah: { label: 'Jummah', icon: Calendar, data: jummahDuas },
 };
 
 export function Dua() {
