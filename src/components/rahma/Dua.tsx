@@ -35,6 +35,7 @@ import {
   istikharahDuas,
   enteringHomeAzkar,
   leavingHomeAzkar,
+  newClothesAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -56,6 +57,7 @@ import {
   Utensils,
   Plane,
   Shuffle,
+  Shirt,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -92,6 +94,11 @@ const azkarCategories = {
     label: 'Leaving Home',
     icon: DoorClosed,
     data: leavingHomeAzkar,
+  },
+  newClothes: {
+    label: 'New Clothes',
+    icon: Shirt,
+    data: newClothesAzkar,
   },
   openingTakbeer: {
     label: 'After Takbeer',
