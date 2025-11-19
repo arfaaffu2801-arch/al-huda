@@ -136,7 +136,7 @@ const azkarCategories = {
     data: rukuDuas,
   },
   sujood: {
-    label: 'During Sujood',
+    label: 'Duas during sujood',
     icon: ArrowDownToDot,
     data: sujoodDuas,
   },
