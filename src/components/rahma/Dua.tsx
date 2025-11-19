@@ -141,7 +141,7 @@ const azkarCategories = {
     data: sujoodDuas,
   },
   betweenSujood: {
-    label: 'Between Sujood',
+    label: 'Between two sujood',
     icon: ChevronsUpDown,
     data: betweenSujoodDuas,
   },
