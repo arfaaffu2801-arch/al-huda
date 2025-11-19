@@ -864,3 +864,5 @@ export const gettingDressedAzkar = [
     translation: 'All Praise is for Allah who has clothed me with this garment and provided it for me, with no power nor might from myself.'
   }
 ];
+
+export const undressingAzkar = [];
