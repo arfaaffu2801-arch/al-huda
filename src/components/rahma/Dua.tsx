@@ -111,7 +111,7 @@ const azkarCategories = {
     data: leavingHomeAzkar,
   },
   gettingDressed: {
-    label: 'Getting Dressed',
+    label: 'When getting dressed',
     icon: Shirt,
     data: gettingDressedAzkar,
   },
