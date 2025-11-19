@@ -36,6 +36,7 @@ import {
   enteringHomeAzkar,
   leavingHomeAzkar,
   newClothesAzkar,
+  gettingDressedAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -94,6 +95,11 @@ const azkarCategories = {
     label: 'Leaving Home',
     icon: DoorClosed,
     data: leavingHomeAzkar,
+  },
+  gettingDressed: {
+    label: 'Getting Dressed',
+    icon: Shirt,
+    data: gettingDressedAzkar,
   },
   newClothes: {
     label: 'New Clothes',
