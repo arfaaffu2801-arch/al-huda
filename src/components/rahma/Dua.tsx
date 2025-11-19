@@ -106,7 +106,7 @@ const azkarCategories = {
     data: enteringHomeAzkar,
   },
   leavingHome: {
-    label: 'Leaving Home',
+    label: 'When leaving the home',
     icon: DoorClosed,
     data: leavingHomeAzkar,
   },
