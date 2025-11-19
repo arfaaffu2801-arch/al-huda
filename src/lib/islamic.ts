@@ -873,4 +873,10 @@ export const undressingAzkar = [
   }
 ];
 
-export const enteringRestroomAzkar = [];
+export const enteringRestroomAzkar = [
+  {
+    arabic: 'اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبائِث',
+    transliteration: 'allahumma innee aAAoothu bika minal-khubthi wal-khaba-ith',
+    translation: 'O Allah, I take refuge with you from all evil and evil-doers.',
+  }
+];
