@@ -39,6 +39,7 @@ import {
   gettingDressedAzkar,
   undressingAzkar,
   enteringRestroomAzkar,
+  leavingRestroomAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -82,6 +83,11 @@ const azkarCategories = {
     label: 'Entering Restroom',
     icon: Bath,
     data: enteringRestroomAzkar,
+  },
+  leavingRestroom: {
+    label: 'Leaving Restroom',
+    icon: Bath,
+    data: leavingRestroomAzkar,
   },
   athan: { label: 'Athan', icon: Megaphone, data: athanAzkar },
   enteringMosque: {
