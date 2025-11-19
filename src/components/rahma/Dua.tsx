@@ -68,7 +68,7 @@ import { ScrollArea } from '../ui/scroll-area';
 
 const azkarCategories = {
   waking: { label: 'Morning azkar', icon: Sunrise, data: wakingUpAzkar },
-  morning: { label: 'Evening azkar', icon: Sun, data: morningAzkar },
+  morning: { label: 'Before sleeping azkar', icon: Sun, data: morningAzkar },
   beforeAblution: {
     label: 'BEFORE PERFORMING ABLUTION',
     icon: Droplet,
