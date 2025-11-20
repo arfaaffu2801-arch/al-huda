@@ -11,6 +11,7 @@ import { CalendarIcon } from './CalendarIcon';
 import { QiblaIcon } from './QiblaIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { Book } from 'lucide-react';
+import { JummahIcon } from './JummahIcon';
 
 const actions = [
   {
@@ -53,12 +54,17 @@ const actions = [
     label: 'Qibla',
     icon: <QiblaIcon className="h-12 w-12" />,
   },
+   {
+    href: '/jummah',
+    label: 'Jummah',
+    icon: <JummahIcon className="h-12 w-12" />,
+  },
 ];
 
 export function QuickActions() {
   return (
     <Card>
-      <div className="grid grid-cols-2 gap-4 p-4 sm:grid-cols-4 lg:grid-cols-8">
+      <div className="grid grid-cols-3 gap-4 p-4 sm:grid-cols-4 lg:grid-cols-9">
         {actions.map((action) => (
           <Link
             href={action.href}

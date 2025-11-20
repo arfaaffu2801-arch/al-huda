@@ -44,6 +44,12 @@ export function Header() {
           >
             Azkar
           </Link>
+           <Link
+            href="/jummah"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Jummah
+          </Link>
           <Link
             href="/tasbih"
             className="text-foreground/70 transition-colors hover:text-foreground"
