@@ -40,6 +40,7 @@ import {
   enteringRestroomAzkar,
   leavingRestroomAzkar,
   jummahDuas,
+  sleepingAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
@@ -52,7 +53,7 @@ import {
   Milestone,
   ArrowDownCircle,
   ArrowDownToDot,
-Megaphone,
+  Megaphone,
   ChevronsUpDown,
   DoorOpen,
   DoorClosed,
@@ -64,8 +65,11 @@ Megaphone,
   Shirt,
   Bath,
   Calendar,
+  Search,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
+import { useState } from 'react';
+import { Input } from '../ui/input';
 
 const azkarCategories = {
   waking: { label: 'Morning azkar', icon: Sunrise, data: wakingUpAzkar },
@@ -172,7 +176,34 @@ const azkarCategories = {
   jummah: { label: 'Jummah', icon: Calendar, data: jummahDuas },
 };
 
+type AzkarCategoryKey = keyof typeof azkarCategories;
+
 export function Dua() {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredCategories = Object.entries(azkarCategories).filter(
+    ([key, { label, data }]) =>
+      label.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      data.some(
+        (dua) =>
+          dua.arabic.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          dua.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          dua.translation.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+  );
+
+  const displayedCategories = searchTerm ? Object.fromEntries(filteredCategories) : azkarCategories;
+
+  const getFilteredData = (data: typeof morningAzkar) => {
+    if (!searchTerm) return data;
+    return data.filter(
+      (dua) =>
+        dua.arabic.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        dua.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        dua.translation.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  };
+  
   return (
     <Card>
       <CardHeader>
@@ -183,9 +214,21 @@ export function Dua() {
         <CardDescription>daily routine</CardDescription>
       </CardHeader>
       <CardContent>
+        <div className="mb-4">
+          <div className="relative">
+            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+            <Input
+              type="text"
+              placeholder="Search for an Azkar..."
+              className="pl-10"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+            />
+          </div>
+        </div>
         <Tabs defaultValue="waking" className="w-full">
           <TabsList className="h-auto flex-wrap">
-            {Object.entries(azkarCategories).map(
+            {Object.entries(displayedCategories).map(
               ([key, { label, icon: Icon }]) => (
                 <TabsTrigger
                   key={key}
@@ -198,41 +241,44 @@ export function Dua() {
               )
             )}
           </TabsList>
-          {Object.entries(azkarCategories).map(([key, { data }]) => (
-            <TabsContent key={key} value={key}>
-              <ScrollArea className="h-[400px] w-full">
-                <div className="space-y-4 p-1">
-                  {data.length > 0 ? (
-                    data.map((dua, index) => (
-                      <div
-                        key={index}
-                        className="rounded-lg border bg-secondary/30 p-4"
-                      >
-                        <p className="mb-2 text-lg text-primary" dir="rtl">
-                          {dua.arabic}
-                        </p>
-                        <p className="mb-2 text-sm text-muted-foreground">
-                          {dua.transliteration}
-                        </p>
-                        <p className="italic text-foreground">
-                          &ldquo;{dua.translation}&rdquo;
-                        </p>
-                        {dua.reference && (
-                          <p className="mt-2 text-right text-xs text-muted-foreground">
-                            - {dua.reference}
+          {Object.entries(displayedCategories).map(([key, { data }]) => {
+            const filteredData = getFilteredData(data);
+            return (
+              <TabsContent key={key} value={key}>
+                <ScrollArea className="h-[400px] w-full">
+                  <div className="space-y-4 p-1">
+                    {filteredData.length > 0 ? (
+                      filteredData.map((dua, index) => (
+                        <div
+                          key={index}
+                          className="rounded-lg border bg-secondary/30 p-4"
+                        >
+                          <p className="mb-2 text-lg text-primary" dir="rtl">
+                            {dua.arabic}
                           </p>
-                        )}
+                          <p className="mb-2 text-sm text-muted-foreground">
+                            {dua.transliteration}
+                          </p>
+                          <p className="italic text-foreground">
+                            &ldquo;{dua.translation}&rdquo;
+                          </p>
+                          {dua.reference && (
+                            <p className="mt-2 text-right text-xs text-muted-foreground">
+                              - {dua.reference}
+                            </p>
+                          )}
+                        </div>
+                      ))
+                    ) : (
+                      <div className="flex h-48 items-center justify-center text-muted-foreground">
+                        <p>No Azkar found for this category.</p>
                       </div>
-                    ))
-                  ) : (
-                    <div className="flex h-48 items-center justify-center text-muted-foreground">
-                      <p>No Azkar added for this category yet.</p>
-                    </div>
-                  )}
-                </div>
-              </ScrollArea>
-            </TabsContent>
-          ))}
+                    )}
+                  </div>
+                </ScrollArea>
+              </TabsContent>
+            );
+          })}
         </Tabs>
       </CardContent>
     </Card>
