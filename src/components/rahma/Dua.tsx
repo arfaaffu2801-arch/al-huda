@@ -39,14 +39,11 @@ import {
   undressingAzkar,
   enteringRestroomAzkar,
   leavingRestroomAzkar,
-  jummahDuas,
-  sleepingAzkar,
 } from '@/lib/islamic';
 import {
   Sun,
   Moon,
   BookHeart,
-  Bed,
   Sunrise,
   Hand,
   Voicemail,
@@ -64,7 +61,6 @@ import {
   Shuffle,
   Shirt,
   Bath,
-  Calendar,
   Search,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
@@ -173,7 +169,6 @@ const azkarCategories = {
     data: journeyAzkar,
   },
   istikharah: { label: 'Istikharah', icon: Shuffle, data: istikharahDuas },
-  jummah: { label: 'Jummah', icon: Calendar, data: jummahDuas },
 };
 
 type AzkarCategoryKey = keyof typeof azkarCategories;
