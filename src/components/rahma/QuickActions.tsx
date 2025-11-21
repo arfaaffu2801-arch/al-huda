@@ -56,7 +56,7 @@ const actions = [
   },
    {
     href: '/jummah',
-    label: 'Jummah',
+    label: 'Jummah & Surah Kahf',
     icon: <JummahIcon className="h-12 w-12" />,
   },
 ];
@@ -78,7 +78,7 @@ export function QuickActions() {
             ) : (
               action.icon
             )}
-            <span className="font-semibold text-foreground">
+            <span className="text-center font-semibold text-foreground">
               {action.label}
             </span>
           </Link>
