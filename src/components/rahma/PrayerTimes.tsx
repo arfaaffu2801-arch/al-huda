@@ -9,9 +9,20 @@ import {
 } from '@/components/ui/card';
 import { Label } from '@/components/ui/label';
 import { Switch } from '@/components/ui/switch';
-import { Bell, MapPin, Moon, Sun, Sunrise, Sunset, Loader2 } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import {
+  Bell,
+  MapPin,
+  Moon,
+  Sun,
+  Sunrise,
+  Sunset,
+  Loader2,
+  PlayCircle,
+  Volume2,
+} from 'lucide-react';
+import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
+import { generateAzan } from '@/ai/flows/azan-flow';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
   Fajr: <Sunrise className="h-5 w-5 text-accent" />,
@@ -46,6 +57,45 @@ export function PrayerTimes() {
   } | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
+  const [playingAzan, setPlayingAzan] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  const playAzan = async (prayerName: string) => {
+    if (playingAzan === prayerName) {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+      setPlayingAzan(null);
+      return;
+    }
+
+    setPlayingAzan(prayerName);
+    try {
+      const { audioDataUri } = await generateAzan({ prayerName });
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingAzan(null);
+        };
+      }
+    } catch (e) {
+      console.error('Failed to play Azan', e);
+      setError('Could not generate Azan audio.');
+      setPlayingAzan(null);
+    }
+  };
+
+  useEffect(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
 
   useEffect(() => {
     const fetchPrayerTimes = (latitude: number, longitude: number) => {
@@ -95,7 +145,7 @@ export function PrayerTimes() {
         () => {
           setError('Location access denied. Using default location (Mecca).');
           setLoading(false);
-          fetchPrayerTimes(21.4225, 39.8262); 
+          fetchPrayerTimes(21.4225, 39.8262);
         }
       );
     } else {
@@ -127,13 +177,12 @@ export function PrayerTimes() {
         }
       }
 
-      // If all prayers for today have passed, next is Fajr of tomorrow
       if (!nextPrayerInfo) {
-        const fajrTime = prayerTimesList.find(p => p.name === 'Fajr');
+        const fajrTime = prayerTimesList.find((p) => p.name === 'Fajr');
         if (fajrTime) {
-            const tomorrowFajr = new Date(fajrTime.time);
-            tomorrowFajr.setDate(tomorrowFajr.getDate() + 1);
-            nextPrayerInfo = { name: 'Fajr', time: tomorrowFajr };
+          const tomorrowFajr = new Date(fajrTime.time);
+          tomorrowFajr.setDate(tomorrowFajr.getDate() + 1);
+          nextPrayerInfo = { name: 'Fajr', time: tomorrowFajr };
         }
       }
 
@@ -157,7 +206,7 @@ export function PrayerTimes() {
 
     return () => clearInterval(interval);
   }, [prayerTimes]);
-  
+
   const prayerTimesList = prayerTimes
     ? Object.entries(prayerTimes).filter(([name]) => prayerIcons[name])
     : [];
@@ -188,7 +237,7 @@ export function PrayerTimes() {
           <div className="text-center text-destructive">{error}</div>
         ) : (
           <div className="space-y-4">
-             {nextPrayer && (
+            {nextPrayer && (
               <div className="mb-6 rounded-lg border-2 border-primary bg-primary/10 p-4 text-center">
                 <p className="text-lg font-semibold text-primary">
                   Next Prayer: {nextPrayer.name}
@@ -207,7 +256,11 @@ export function PrayerTimes() {
             {prayerTimesList.map(([name, time]) => (
               <div
                 key={name}
-                className={`flex items-center justify-between rounded-lg p-3 transition-colors ${nextPrayer?.name === name ? 'bg-primary/20' : 'bg-background hover:bg-secondary/50'}`}
+                className={`flex items-center justify-between rounded-lg p-3 transition-colors ${
+                  nextPrayer?.name === name
+                    ? 'bg-primary/20'
+                    : 'bg-background hover:bg-secondary/50'
+                }`}
               >
                 <div className="flex items-center gap-4">
                   {prayerIcons[name]}
@@ -220,6 +273,18 @@ export function PrayerTimes() {
                   </span>
                 </div>
                 <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => playAzan(name)}
+                    disabled={playingAzan === name}
+                    className="p-2 text-muted-foreground hover:text-primary disabled:cursor-wait disabled:text-primary"
+                    aria-label={`Play Azan for ${name}`}
+                  >
+                    {playingAzan === name ? (
+                      <Loader2 className="h-5 w-5 animate-spin" />
+                    ) : (
+                      <Volume2 className="h-5 w-5" />
+                    )}
+                  </button>
                   <Label htmlFor={`notif-${name}`} className="sr-only">
                     Enable notification for {name}
                   </Label>
