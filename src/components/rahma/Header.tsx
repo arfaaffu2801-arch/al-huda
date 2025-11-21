@@ -50,6 +50,12 @@ export function Header() {
           >
             Azkar
           </Link>
+          <Link
+            href="/ofter-namaaz"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Ofter Namaaz
+          </Link>
            <Link
             href="/jummah"
             className="text-foreground/70 transition-colors hover:text-foreground"

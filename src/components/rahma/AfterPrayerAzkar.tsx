@@ -1,0 +1,55 @@
+'use client';
+
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card';
+import { afterPrayerAzkar } from '@/lib/islamic';
+import { Hand } from 'lucide-react';
+import { ScrollArea } from '../ui/scroll-area';
+
+export function AfterPrayerAzkar() {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle className="flex items-center gap-2 text-xl font-headline">
+          <Hand className="h-6 w-6 text-primary" />
+          After Prayer Azkar
+        </CardTitle>
+        <CardDescription>
+          Supplications to be recited after prayers.
+        </CardDescription>
+      </CardHeader>
+      <CardContent>
+        <ScrollArea className="h-[600px] w-full">
+          <div className="space-y-4 p-1">
+            {afterPrayerAzkar.map((dua, index) => (
+              <div
+                key={index}
+                className="rounded-lg border bg-secondary/30 p-4"
+              >
+                <p className="mb-2 text-lg text-primary" dir="rtl">
+                  {dua.arabic}
+                </p>
+                <p className="mb-2 text-sm text-muted-foreground">
+                  {dua.transliteration}
+                </p>
+                <p className="italic text-foreground">
+                  &ldquo;{dua.translation}&rdquo;
+                </p>
+                {dua.reference && (
+                  <p className="mt-2 text-right text-xs text-muted-foreground">
+                    - {dua.reference}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </ScrollArea>
+      </CardContent>
+    </Card>
+  );
+}
