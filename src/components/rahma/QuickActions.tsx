@@ -65,6 +65,11 @@ const actions = [
     label: 'Jummah',
     icon: <JummahIcon className="h-12 w-12" />,
   },
+  {
+    href: '/azkar?category=afterPrayer',
+    label: 'Ofter Namaaz',
+    icon: <Hand className="h-12 w-12 text-primary" />,
+  },
 ];
 
 export function QuickActions() {
