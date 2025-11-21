@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -10,7 +11,7 @@ import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
 import { QiblaIcon } from './QiblaIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
-import { Book, Hand } from 'lucide-react';
+import { Book, BookMarked, Hand } from 'lucide-react';
 import { JummahIcon } from './JummahIcon';
 import { HadisIcon } from './HadisIcon';
 
@@ -24,6 +25,11 @@ const actions = [
     href: '/quran',
     label: 'Quran',
     icon: <QuranIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/surah',
+    label: 'Surah',
+    icon: <BookMarked className="h-12 w-12 text-primary" />,
   },
   {
     href: '/hadis',

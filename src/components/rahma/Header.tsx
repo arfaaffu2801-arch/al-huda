@@ -1,3 +1,4 @@
+
 import { Book } from 'lucide-react';
 import Link from 'next/link';
 
@@ -25,6 +26,12 @@ export function Header() {
             className="text-foreground/70 transition-colors hover:text-foreground"
           >
             Qur'an
+          </Link>
+          <Link
+            href="/surah"
+            className="text-foreground/70 transition-colors hover:text-foreground"
+          >
+            Surah
           </Link>
           <Link
             href="/hadis"
