@@ -11,6 +11,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { surahData } from '@/lib/surahs';
 import { BookMarked, Search } from 'lucide-react';
+import Link from 'next/link';
 import { useState } from 'react';
 import { ScrollArea } from '../ui/scroll-area';
 
@@ -51,8 +52,9 @@ export function SurahList() {
         <ScrollArea className="h-[600px] w-full">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filteredSurahs.map((surah) => (
-              <div
+              <Link
                 key={surah.number}
+                href={`/surah?number=${surah.number}`}
                 className="group flex cursor-pointer items-center gap-4 rounded-lg border p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
               >
                 <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
@@ -69,7 +71,7 @@ export function SurahList() {
                     {surah.translation} ({surah.verses} verses)
                   </p>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </ScrollArea>
