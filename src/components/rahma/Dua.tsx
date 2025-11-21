@@ -173,7 +173,7 @@ const azkarCategories = {
 
 type AzkarCategoryKey = keyof typeof azkarCategories;
 
-export function Dua() {
+export function Dua({ initialCategory }: { initialCategory?: string }) {
   const [searchTerm, setSearchTerm] = useState('');
 
   const filteredCategories = Object.entries(azkarCategories).filter(
@@ -221,7 +221,7 @@ export function Dua() {
             />
           </div>
         </div>
-        <Tabs defaultValue="waking" className="w-full">
+        <Tabs defaultValue={initialCategory || 'waking'} className="w-full">
           <TabsList className="h-auto flex-wrap">
             {Object.entries(displayedCategories).map(
               ([key, { label, icon: Icon }]) => (

@@ -10,7 +10,7 @@ import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
 import { QiblaIcon } from './QiblaIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
-import { Book } from 'lucide-react';
+import { Book, Hand } from 'lucide-react';
 import { JummahIcon } from './JummahIcon';
 import { HadisIcon } from './HadisIcon';
 
@@ -65,25 +65,28 @@ const actions = [
     label: 'Jummah',
     icon: <JummahIcon className="h-12 w-12" />,
   },
+  {
+    href: '/azkar?category=afterPrayer',
+    label: 'After Prayer',
+    icon: (
+      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+        <Hand className="h-8 w-8" />
+      </div>
+    ),
+  },
 ];
 
 export function QuickActions() {
   return (
     <Card>
-      <div className="grid grid-cols-3 gap-4 p-4 sm:grid-cols-5 lg:grid-cols-10">
+      <div className="grid grid-cols-3 gap-4 p-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-11">
         {actions.map((action) => (
           <Link
             href={action.href}
             key={action.href}
             className="group flex flex-col items-center gap-2 rounded-lg p-4 text-center transition-colors hover:bg-secondary/50"
           >
-            {action.href === '/names-of-allah' ? (
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-                <Book className="h-8 w-8" />
-              </div>
-            ) : (
-              action.icon
-            )}
+            {action.icon}
             <span className="text-center font-semibold text-foreground">
               {action.label}
             </span>
