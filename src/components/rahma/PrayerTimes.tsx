@@ -24,7 +24,6 @@ import { generateAzan } from '@/ai/flows/azan-flow';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
   Fajr: <Sunrise className="h-5 w-5 text-accent" />,
-  Sunrise: <Sunrise className="h-5 w-5 text-yellow-500" />,
   Dhuhr: <Sun className="h-5 w-5 text-accent" />,
   Asr: <Sun className="h-5 w-5 text-accent opacity-70" />,
   Maghrib: <Sunset className="h-5 w-5 text-accent" />,
