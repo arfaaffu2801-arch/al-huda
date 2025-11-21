@@ -24,7 +24,7 @@ import { generateAzan } from '@/ai/flows/azan-flow';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
   Fajr: <Sunrise className="h-5 w-5 text-accent" />,
-  Dhuhr: <Sun className="h-5 w-5 text-accent" />,
+  Zuhar: <Sun className="h-5 w-5 text-accent" />,
   Asr: <Sun className="h-5 w-5 text-accent opacity-70" />,
   Maghrib: <Sunset className="h-5 w-5 text-accent" />,
   Isha: <Moon className="h-5 w-5 text-accent" />,
@@ -32,8 +32,7 @@ const prayerIcons: { [key: string]: React.ReactNode } = {
 
 type PrayerTimesData = {
   Fajr: string;
-  Sunrise: string;
-  Dhuhr: string;
+  Zuhar: string;
   Asr: string;
   Maghrib: string;
   Isha: string;
@@ -69,7 +68,7 @@ export function PrayerTimes() {
 
     setPlayingAzan(prayerName);
     try {
-      const { audioDataUri } = await generateAzan({ prayerName });
+      const { audioDataUri } = await generateAzan({ prayerName: prayerName === 'Zuhar' ? 'Dhuhr' : prayerName });
       if (audioRef.current) {
         audioRef.current.src = audioDataUri;
         audioRef.current.play();
@@ -105,8 +104,7 @@ export function PrayerTimes() {
             const timings = data.data.timings;
             const relevantTimings: PrayerTimesData = {
               Fajr: timings.Fajr,
-              Sunrise: timings.Sunrise,
-              Dhuhr: timings.Dhuhr,
+              Zuhar: timings.Dhuhr,
               Asr: timings.Asr,
               Maghrib: timings.Maghrib,
               Isha: timings.Isha,
@@ -304,3 +302,5 @@ export function PrayerTimes() {
     </Card>
   );
 }
+
+    
