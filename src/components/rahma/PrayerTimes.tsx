@@ -17,11 +17,9 @@ import {
   Sunrise,
   Sunset,
   Loader2,
-  PlayCircle,
   Volume2,
 } from 'lucide-react';
 import { useEffect, useState, useRef } from 'react';
-import Image from 'next/image';
 import { generateAzan } from '@/ai/flows/azan-flow';
 
 const prayerIcons: { [key: string]: React.ReactNode } = {
@@ -98,11 +96,8 @@ export function PrayerTimes() {
   }, []);
 
   useEffect(() => {
-    const fetchPrayerTimes = (latitude: number, longitude: number) => {
-      const date = new Date();
-      const url = `https://api.aladhan.com/v1/timings/${date.getDate()}-${
-        date.getMonth() + 1
-      }-${date.getFullYear()}?latitude=${latitude}&longitude=${longitude}&method=2`;
+    const fetchPrayerTimes = (city: string, country: string) => {
+      const url = `https://api.aladhan.com/v1/timingsByCity?city=${city}&country=${country}&method=2`;
 
       fetch(url)
         .then((response) => response.json())
@@ -118,12 +113,9 @@ export function PrayerTimes() {
               Isha: timings.Isha,
             };
             setPrayerTimes(relevantTimings);
-            setLocation({
-              city: data.data.meta.timezone.split('/')[1].replace('_', ' '),
-              country: data.data.meta.timezone.split('/')[0],
-            });
+            setLocation({ city, country });
           } else {
-            setError('Could not fetch prayer times. Please try again later.');
+            setError('Could not fetch prayer times for your location. Please try again later.');
           }
         })
         .catch(() => {
@@ -134,24 +126,39 @@ export function PrayerTimes() {
         });
     };
 
+    const fetchLocationAndPrayerTimes = (latitude: number, longitude: number) => {
+        fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
+            .then(response => response.json())
+            .then(data => {
+                if (data.city && data.countryName) {
+                    fetchPrayerTimes(data.city, data.countryName);
+                } else {
+                    setError('Could not determine city and country. Using default (Mecca).');
+                    fetchPrayerTimes('Mecca', 'Saudi Arabia');
+                }
+            })
+            .catch(() => {
+                setError('Failed to fetch location data. Using default (Mecca).');
+                fetchPrayerTimes('Mecca', 'Saudi Arabia');
+            });
+    }
+
     if ('geolocation' in navigator) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
-          fetchPrayerTimes(
+          fetchLocationAndPrayerTimes(
             position.coords.latitude,
             position.coords.longitude
           );
         },
         () => {
           setError('Location access denied. Using default location (Mecca).');
-          setLoading(false);
-          fetchPrayerTimes(21.4225, 39.8262);
+          fetchPrayerTimes('Mecca', 'Saudi Arabia');
         }
       );
     } else {
       setError('Geolocation is not supported. Using default location (Mecca).');
-      setLoading(false);
-      fetchPrayerTimes(21.4225, 39.8262);
+      fetchPrayerTimes('Mecca', 'Saudi Arabia');
     }
   }, []);
 
