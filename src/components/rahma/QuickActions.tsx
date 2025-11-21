@@ -56,7 +56,7 @@ const actions = [
   },
    {
     href: '/jummah',
-    label: 'Jummah & Surah Kahf',
+    label: 'Jummah',
     icon: <JummahIcon className="h-12 w-12" />,
   },
 ];
