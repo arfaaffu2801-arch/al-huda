@@ -355,7 +355,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 61,
-        arabic: 'وَإِذْ قُلْتُمْ يَـٰمُوسَىٰ لَن nَّصْبِرَ عَلَىٰ طَعَamٍۢ وَٰحِدٍۢ فَٱدْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُnۢbِتُ ٱlْأَرْضُ مِن بَقْلِهَا وَقِثَّآئِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا ۖ قَالَ أَتَسْتَبْدِلُونَ ٱlَّذِى هُوَ أَدْنَىٰ بِٱlَّذِى هُوَ خَيْرٌ ۚ ٱهْبِطُوا۟ مِصْرًۭا فَإِنَّ لَكُم mَّا سَأَلْتُمْ ۗ وَضُرِبَتْ عَلَيْهِمُ ٱlذِّلَّةُ وَٱlْمَسْكَنَةُ وَbَآءُو بِغَضَبٍۢ مِّنَ ٱllَّهِ ۗ ذَٰلِكَ بِأَنَّهُمْ كَانُوا۟ يَكْفُرُونَ بِـَٔايَـٰtِ ٱllَّهِ وَيَقْتُلُونَ ٱlْأَنۢbِيَآءَ بِغَيْرِ ٱlْحَقِّ ۗ ذَٰلِكَ بِمَا عَصَوا۟ وَّكَانُوا۟ يَعْتَدُونَ',
+        arabic: 'وَإِذْ قُلْتُمْ يَـٰمُوسَىٰ لَن nَّصْبِرَ عَلَىٰ طَعَamٍۢ وَٰحِدٍۢ فَٱدْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُnۢbِتُ ٱlْأَرْضُ مِن بَقْلِهَا وَقِثَّآئِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا ۖ قَالَ أَتَسْتَبْدِلُونَ ٱlَّذِى هُوَ أَدْنَىٰ بِٱlَّذِى هُوَ خَيْرٌ ۚ ٱهْبِطُوا۟ مِصْرًۭا فَإِنَّ لَكُم mَّا سَأَلْتُمْ ۗ وَضُرِبَتْ عَلَيْهِمُ ٱlذِّلَّةُ وَٱlْمَسْكَنَةُ وَbَآءُو بِغَضَبٍۢ mِّنَ ٱllَّهِ ۗ ذَٰلِكَ بِأَنَّهُمْ كَانُوا۟ يَكْفُرُونَ بِـَٔايَـٰtِ ٱllَّهِ وَيَقْتُلُونَ ٱlْأَنۢbِيَآءَ بِغَيْرِ ٱlْحَقِّ ۗ ذَٰلِكَ بِمَا عَصَوا۟ وَّكَانُوا۟ يَعْتَدُونَ',
         translation: 'And [recall] when you said, "O Moses, we can never endure one [kind of] food. So call upon your Lord to bring forth for us from the earth its green herbs and its cucumbers and its garlic and its lentils and its onions." [Moses] said, "Would you exchange what is better for what is less? Go into [any] settlement and indeed, you will have what you have asked." And they were covered with humiliation and poverty and returned with anger from Allah [upon them]. That was because they [repeatedly] disbelieved in the signs of Allah and killed the prophets without right. That was because they disobeyed and were [habitually] transgressing.'
     },
     {
@@ -515,7 +515,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 103,
-        arabic: 'وَلَوْ أَنَّهُمْ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَمَثُوبَةٌۭ مِّنْ عِندِ ٱللَّهِ خَيْرٌۭ ۖ lَّوْ كَانُوا۟ يَعْلَمُونَ',
+        arabic: 'وَلَوْ أَنَّهُمْ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَمَثُوبَةٌۭ mِّنْ عِندِ ٱللَّهِ خَيْرٌۭ ۖ lَّوْ كَانُوا۟ يَعْلَمُونَ',
         translation: 'And if they had believed and feared Allah, then the reward from Allah would have been [far] better, if they only knew.'
     },
     {
@@ -595,7 +595,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 119,
-        arabic: 'إِنَّآ أَرْسَلْنَـٰكَ بِٱلْحَقِّ بَشِيرًۭا وَنَذِيرًۭا ۖ وَلَا تُسْـَٔلُ عَنْ أَصْحَـٰبِ ٱلْجَحِيمِ',
+        arabic: 'إِنَّآ أَرْسَلْنَـٰكَ بِٱلْحَقِّ bَشِيرًۭا وَنَذِيرًۭا ۖ وَلَا تُسْـَٔلُ عَنْ أَصْحَـٰbِ ٱلْجَحِيمِ',
         translation: 'Indeed, We have sent you, [O Muhammad], with the truth as a bringer of good tidings and a warner, and you will not be asked about the companions of Hellfire.'
     },
     {
@@ -730,7 +730,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 146,
-        arabic: 'ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ يَعْرِفُونَهُۥ كَمَا يَعْرِفُونَ أَبْنَآءَهُمْ ۖ وَإِنَّ فَرِيقًۭا mِّنْهُمْ لَيَكْتُمُونَ ٱلْحَقَّ وَهُمْ يَعْلَمُونَ',
+        arabic: 'ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰbَ يَعْرِفُونَهُۥ كَمَا يَعْرِفُونَ أَبْنَآءَهُمْ ۖ وَإِنَّ فَرِيقًۭa mِّنْهُمْ لَيَكْتُمُونَ ٱlْحَقَّ وَهُمْ يَعْلَمُونَ',
         translation: 'Those to whom We gave the Scripture know him as they know their own sons. But indeed, a party of them conceal the truth while they know [it].'
     },
     {
@@ -815,7 +815,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 163,
-        arabic: 'وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ',
+        arabic: 'وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ lَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ',
         translation: 'And your god is one God. There is no deity [worthy of worship] except Him, the Entirely Merciful, the Especially Merciful.'
     },
     {
@@ -840,7 +840,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 168,
-        arabic: 'يَـٰٓأَيُّهَا ٱلنَّاسُ كُلُوا۟ مِمَّا فِى ٱلْأَرْضِ حَلَـٰلًۭا طَيِّbًۭا وَلَا تَتَّbِcُوا۟ خُطُوَٰtِ ٱlشَّيْطَـٰnِ ۚ إِنَّهُۥ لَكُمْ عَدُوٌّۭ mُّbِينٌ',
+        arabic: 'يَـٰٓأَيُّهَا ٱlnَّاسُ كُلُوا۟ مِمَّا فِى ٱlْأَرْضِ حَلَـٰلًۭا طَيِّbًۭa وَلَا تَتَّbِcُوا۟ خُطُوَٰtِ ٱlشَّيْطَـٰnِ ۚ إِنَّهُۥ لَكُمْ عَدُوٌّۭ mُّbِينٌ',
         translation: 'O mankind, eat from whatever is on earth [that is] lawful and good and do not follow the footsteps of Satan. Indeed, he is to you a clear enemy.'
     },
     {
@@ -850,7 +850,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 170,
-        arabic: 'وَإِذَا قِيلَ لَهُمُ ٱtَّbِcُوا۟ مَآ أَنzَلَ ٱllَّهُ قَالُوا۟ بَلْ نَتَّbِcُ مَآ أَلْfَيْنَا عَلَيْهِ ءَابَآءَنَآ ۗ أَوَلَوْ كَانَ ءَابَآؤُهُمْ لَا يَعْqِلُونَ شَيْـًۭٔا وَلَا يَهْتَدُونَ',
+        arabic: 'وَإِذَا قِيلَ لَهُمُ ٱtَّbِcُوا۟ مَآ أَنzَلَ ٱllَّهُ قَالُوا۟ بَلْ نَتَّbِcُ مَآ أَلْfَيْنَا عَلَيْهِ ءَابَآءَنَآ ۗ أَوَلَوْ كَانَ ءَابَآؤُهُمْ لَا يَعْqِلُونَ شَيْـًۭٔa وَلَا يَهْتَدُونَ',
         translation: 'And when it is said to them, "Follow what Allah has revealed," they say, "Rather, we will follow that upon which we found our fathers." Even if their fathers understood nothing, nor were they guided?'
     },
     {
@@ -940,7 +940,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 188,
-        arabic: 'وَلَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱlْبَـٰطِلِ وَتُdْلُوا۟ بِهَآ إِلَى ٱlْحُkَّامِ لِتَأْكُلُوا۟ فَرِيقًۭا mِّنْ أَمْوَٰlِ ٱlnَّاسِ بِٱlْإِثْمِ وَأَنتُمْ تَعْلَمُونَ',
+        arabic: 'وَلَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱlْبَـٰطِلِ وَتُdْلُوا۟ بِهَآ إِلَى ٱlْحُkَّامِ لِتَأْكُلُوا۟ فَرِيقًۭa mِّنْ أَمْوَٰlِ ٱlnَّاسِ بِٱlْإِثْمِ وَأَنتُمْ تَعْلَمُونَ',
         translation: 'And do not consume one another\'s wealth unjustly or send it [in bribery] to the rulers in order that [they might aid] you [to] consume a portion of the wealth of the people in sin, while you know [it is unlawful].'
     },
     {
@@ -950,7 +950,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 190,
-        arabic: 'وَqَـٰtِلُوا۟ فِى سَبِيلِ ٱllَّهِ ٱlَّذِينَ يُqَـٰtِلُونَكُمْ وَلَا تَعْتَدُوٓا۟ ۚ إِنَّ ٱllَّهَ لَا يُحِبُّ ٱlْمُcْتَدِينَ',
+        arabic: 'وَqَـٰtِلُوا۟ فِى sَبِيلِ ٱllَّهِ ٱlَّذِينَ يُqَـٰtِلُونَكُمْ وَلَا تَعْتَدُوٓا۟ ۚ إِنَّ ٱllَّهَ لَا يُحِبُّ ٱlْمُcْتَدِينَ',
         translation: 'Fight in the way of Allah those who fight you but do not transgress. Indeed. Allah does not like transgressors.'
     },
     {
@@ -970,12 +970,12 @@ const alBaqarahVerses = [
     },
     {
         verse: 194,
-        arabic: 'ٱlشَّهْرُ ٱlْحَرَامُ بِٱlشَّهْرِ ٱlْحَرَامِ وَٱlْحُرُمَـٰtُ قِصَاصٌۭ ۚ fَمَنِ ٱcْتَدَىٰ عَلَيْكُمْ فَٱcْتَدُوا۟ عَلَيْهِ بِمِثْلِ مَا ٱcْتَدَىٰ عَلَيْكُمْ ۚ وَٱtَّqُوا۟ ٱllَّهَ وَٱcْلَمُوٓا۟ أَنَّ ٱllَّهَ مَعَ ٱlْمُtَّqِينَ',
+        arabic: 'ٱlشَّهْرُ ٱlْحَرَامُ بِٱlشَّهْرِ ٱlْحَرَامِ وَٱlْحُرُمَـٰtُ قِصَاصٌۭ ۚ fَمَنِ ٱcْتَدَىٰ عَلَيْكُمْ فَٱcْتَدُوا۟ عَلَيْهِ بِمِثْلِ مَا ٱcْتَدَىٰ عَلَيْكُمْ ۚ وَٱtَّqُوا۟ ٱllَّهَ وَٱcْلَمُوٓا۟ أَنَّ ٱllَّهَ mَعَ ٱlْمُtَّqِينَ',
         translation: 'The sacred month is for the sacred month, and for [all] violations is legal retribution. So whoever has assaulted you, then assault him in the same way that he has assaulted you. And fear Allah and know that Allah is with those who fear Him.'
     },
     {
         verse: 195,
-        arabic: 'وَأَنfِqُوا۟ فِى سَبِيلِ ٱllَّهِ وَلَا تُلْqُوا۟ بِأَيْdِيكُمْ إِلَى ٱltَّhْلُkَةِ ۛ وَأَحْسِنُوٓا۟ ۛ إِنَّ ٱllَّهَ يُحِبُّ ٱlْمُحْسِنِينَ',
+        arabic: 'وَأَنfِqُوا۟ فِى sَبِيلِ ٱllَّهِ وَلَا تُلْqُوا۟ بِأَيْdِيكُمْ إِلَى ٱltَّhْلُkَةِ ۛ وَأَحْسِنُوٓا۟ ۛ إِنَّ ٱllَّهَ يُحِبُّ ٱlْمُحْسِنِينَ',
         translation: 'And spend in the way of Allah and do not throw [yourselves] with your [own] hands into destruction [by refraining]. And do good; indeed, Allah loves the doers of good.'
     },
     {
@@ -1000,8 +1000,33 @@ const alBaqarahVerses = [
     },
     {
         verse: 200,
-        arabic: 'فَإِذَا qَضَيْتُم mَّnَـٰsِkَكُمْ فَٱzْkُرُوا۟ ٱllَّهَ كَذِkْرِكُمْ ءَابَآءَكُمْ أَوْ أَشَدَّ ذِkْرًۭا ۗ fَمِنَ ٱlnَّاسِ مَن يَقُولُ رَبَّnَآ ءَاتِنَا فِى ٱldُّnْyَا وَمَا لَهُۥ فِى ٱlْـَٔاخِرَةِ مِنْ خَلَـٰqٍۢ',
+        arabic: 'فَإِذَا qَضَيْتُم mَّnَـٰsِkَكُمْ فَٱzْkُرُوا۟ ٱllَّهَ كَذِkْرِكُمْ ءَابَآءَكُمْ أَوْ أَشَدَّ ذِkْرًۭا ۗ fَمِنَ ٱlnَّاسِ مَن يَقُولُ رَبَّnَآ ءَاتِنَا فِى ٱldُّnْyَا وَمَا لَهُۥ fِى ٱlْـَٔاخِرَةِ مِنْ خَلَـٰqٍۢ',
         translation: 'And when you have completed your rites, remember Allah like your [previous] remembrance of your fathers or with [much] greater remembrance. And among the people is he who says, "Our Lord, give us in this world," and he will have in the Hereafter no share.'
+    },
+    {
+        verse: 201,
+        arabic: 'وَمِنْهُم مَّن يَقُولُ رَبَّنَآ ءَاتِنَا فِى ٱldُّnْyَا حَسَنَةًۭ وَفِى ٱlْـَٔاخِرَةِ حَسَنَةًۭ وَقِنَا عَذَابَ ٱlnَّارِ',
+        translation: 'But among them is he who says, "Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire."'
+    },
+    {
+        verse: 202,
+        arabic: 'أُو۟لَـٰٓئِكَ لَهُمْ نَصِيبٌۭ mِّمَّا كَسَبُوا۟ ۚ وَٱllَّهُ sَرِيعُ ٱlْحِسَاbِ',
+        translation: 'Those will have a share of what they have earned, and Allah is swift in account.'
+    },
+    {
+        verse: 203,
+        arabic: 'وَٱذْكُرُوا۟ ٱللَّهَ فِىٓ أَيَّامٍۢ مَّعْدُودَٰتٍۢ ۚ فَمَن تَعَجَّلَ فِى يَوْمَيْنِ فَلَآ إِثْمَ عَلَيْهِ وَمَن تَأَخَّرَ فَلَآ إِثْمَ عَلَيْهِ ۚ لِمَنِ ٱtَّqَىٰ ۗ وَٱtَّqُوا۟ ٱllَّهَ وَٱcْلَمُوٓا۟ أَنَّكُمْ إِلَيْهِ تُحْشَرُونَ',
+        translation: 'And remember Allah during [specific] numbered days. Then whoever hastens [his departure] in two days - there is no sin upon him; and whoever delays [until the third] - there is no sin upon him - for him who fears Allah. And fear Allah and know that unto Him you will be gathered.'
+    },
+    {
+        verse: 204,
+        arabic: 'وَمِنَ ٱلنَّاسِ مَن يُعْجِبُكَ قَوْلُهُۥ فِى ٱلْحَيَوٰةِ ٱلدُّنْيَا وَيُشْهِدُ ٱللَّهَ عَلَىٰ مَا فِى قَلْبِهِۦ وَهُوَ أَلَدُّ ٱلْخِصَامِ',
+        translation: 'And of the people is one whose speech impresses you in worldly life, and he calls Allah to witness as to what is in his heart, yet he is the fiercest of opponents.'
+    },
+    {
+        verse: 205,
+        arabic: 'وَإِذَا تَوَلَّىٰ سَعَىٰ فِى ٱلْأَرْضِ لِيُفْسِدَ فِيهَا وَيُهْلِكَ ٱلْحَرْثَ وَٱلنَّسْلَ ۗ وَٱللَّهُ لَا يُحِبُّ ٱلْفَسَادَ',
+        translation: 'And when he goes away, he strives throughout the land to cause corruption therein and destroy crops and livestock. And Allah does not like corruption.'
     }
 ];
 
