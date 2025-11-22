@@ -262,6 +262,11 @@ const alBaqarahVerses = [
         verse: 42,
         arabic: 'وَلَا تَلْبِسُوا۟ ٱلْحَقَّ بِٱلْبَـٰطِلِ وَتَكْتُمُوا۟ ٱلْحَقَّ وَأَنتُمْ تَعْلَمُونَ',
         translation: 'And do not mix the truth with falsehood or conceal the truth while you know [it].'
+    },
+    {
+        verse: 43,
+        arabic: 'وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ',
+        translation: 'And establish prayer and give zakah and bow with those who bow [in worship and obedience].'
     }
 ];
 
