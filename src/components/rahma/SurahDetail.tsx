@@ -355,7 +355,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 61,
-        arabic: 'وَإِذْ قُلْتُمْ يَـٰمُوسَىٰ لَن nَّصْبِرَ عَلَىٰ طَعَamٍۢ وَٰحِدٍۢ فَٱدْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُnۢbِتُ ٱلْأَرْضُ مِن بَقْلِهَا وَقِثَّآئِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا ۖ قَالَ أَتَسْتَبْدِلُونَ ٱلَّذِى هُوَ أَدْنَىٰ بِٱلَّذِى هُوَ خَيْرٌ ۚ ٱهْبِطُوا۟ مِصْرًۭا فَإِنَّ لَكُم mَّا سَأَلْتُمْ ۗ وَضُرِبَتْ عَلَيْهِمُ ٱلذِّلَّةُ وَٱلْمَسْكَنَةُ وَbَآءُو بِغَضَبٍۢ مِّنَ ٱللَّهِ ۗ ذَٰلِكَ بِأَنَّهُمْ كَانُوا۟ يَكْفُرُونَ بِـَٔايَـٰتِ ٱللَّهِ وَيَقْتُلُونَ ٱلْأَنۢbِيَآءَ بِغَيْرِ ٱلْحَقِّ ۗ ذَٰلِكَ بِمَا عَصَوا۟ وَّكَانُوا۟ يَعْتَدُونَ',
+        arabic: 'وَإِذْ قُلْتُمْ يَـٰمُوسَىٰ لَن nَّصْبِرَ عَلَىٰ طَعَamٍۢ وَٰحِدٍۢ فَٱدْعُ لَنَا رَبَّكَ يُخْرِجْ لَنَا مِمَّا تُnۢbِتُ ٱlْأَرْضُ مِن بَقْلِهَا وَقِثَّآئِهَا وَفُومِهَا وَعَدَسِهَا وَبَصَلِهَا ۖ قَالَ أَتَسْتَبْدِلُونَ ٱlَّذِى هُوَ أَدْنَىٰ بِٱlَّذِى هُوَ خَيْرٌ ۚ ٱهْبِطُوا۟ مِصْرًۭا فَإِنَّ لَكُم mَّا سَأَلْتُمْ ۗ وَضُرِبَتْ عَلَيْهِمُ ٱlذِّلَّةُ وَٱlْمَسْكَنَةُ وَbَآءُو بِغَضَبٍۢ مِّنَ ٱllَّهِ ۗ ذَٰلِكَ بِأَنَّهُمْ كَانُوا۟ يَكْفُرُونَ بِـَٔايَـٰtِ ٱllَّهِ وَيَقْتُلُونَ ٱlْأَنۢbِيَآءَ بِغَيْرِ ٱlْحَقِّ ۗ ذَٰلِكَ بِمَا عَصَوا۟ وَّكَانُوا۟ يَعْتَدُونَ',
         translation: 'And [recall] when you said, "O Moses, we can never endure one [kind of] food. So call upon your Lord to bring forth for us from the earth its green herbs and its cucumbers and its garlic and its lentils and its onions." [Moses] said, "Would you exchange what is better for what is less? Go into [any] settlement and indeed, you will have what you have asked." And they were covered with humiliation and poverty and returned with anger from Allah [upon them]. That was because they [repeatedly] disbelieved in the signs of Allah and killed the prophets without right. That was because they disobeyed and were [habitually] transgressing.'
     },
     {
@@ -455,7 +455,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 91,
-        arabic: 'وَإِذَا قِيلَ لَهُمْ ءَامِنُوا۟ bِمَآ أَنزَلَ ٱللَّهُ قَالُوا۟ نُؤْمِنُ bِمَآ أُنزِلَ عَلَيْنَا وَيَكْفُرُونَ bِمَا وَرَآءَهُۥ وَهُوَ ٱlْحَقُّ مُصَدِّqًۭa lِّمَا mَعَهُمْ ۗ قُلْ فَلِمَ تَقْتُلُونَ أَنۢbِيَآءَ ٱللَّهِ مِن قَبْلُ إِن كُنتُم mُّؤْمِنِينَ',
+        arabic: 'وَإِذَا قِيلَ لَهُمْ ءَامِنُوا۟ bِمَآ أَنZَلَ ٱللَّهُ قَالُوا۟ نُؤْمِنُ bِمَآ أُنزِلَ عَلَيْنَا وَيَكْفُرُونَ bِمَا وَرَآءَهُۥ وَهُوَ ٱlْحَقُّ مُصَدِّqًۭa lِّمَا mَعَهُمْ ۗ قُلْ فَلِمَ تَقْتُلُونَ أَنۢbِيَآءَ ٱللَّهِ مِن قَبْلُ إِن كُنتُم mُّؤْمِنِينَ',
         translation: 'And when it is said to them, "Believe in what Allah has revealed," they say, "We believe [only] in what was revealed to us." And they disbelieve in what came after it, while it is the truth confirming that which is with them. Say, "Then why did you kill the prophets of Allah before, if you are [indeed] believers?"'
     },
     {
@@ -515,7 +515,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 103,
-        arabic: 'وَلَوْ أَنَّهُمْ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَمَثُوبَةٌۭ مِّنْ عِندِ ٱللَّهِ خَيْرٌۭ ۖ لَّوْ كَانُوا۟ يَعْلَمُونَ',
+        arabic: 'وَلَوْ أَنَّهُمْ ءَامَنُوا۟ وَٱتَّقَوْا۟ لَمَثُوبَةٌۭ مِّنْ عِندِ ٱللَّهِ خَيْرٌۭ ۖ lَّوْ كَانُوا۟ يَعْلَمُونَ',
         translation: 'And if they had believed and feared Allah, then the reward from Allah would have been [far] better, if they only knew.'
     },
     {
@@ -545,7 +545,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 109,
-        arabic: 'وَدَّ كَثِيرٌۭ mِّنْ أَهْلِ ٱلْكِتَـٰbِ لَوْ يَرُدُّونَكُم mِّنۢ bَعْدِ إِيمَـٰnِكُمْ كُfَّارًا حَسَدًۭا mِّنْ عِندِ أَنfُsِهِم mِّنۢ bَعْدِ مَا تَبَيَّنَ لَهُمُ ٱlْحَقُّ ۖ فَٱcْfُوا۟ وَٱsْfَحُوا۟ حَتَّىٰ يَأْتِىَ ٱllَّهُ بِأَمْرِهِۦٓ ۗ إِنَّ ٱllَّهَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ',
+        arabic: 'وَدَّ كَثِيرٌۭ mِّنْ أَهْلِ ٱlْكِتَـٰbِ لَوْ يَرُدُّونَكُم mِّنۢ bَعْدِ إِيمَـٰnِكُمْ كُfَّارًا حَسَدًۭا mِّنْ عِندِ أَنfُsِهِم mِّنۢ bَعْدِ مَا تَبَيَّنَ لَهُمُ ٱlْحَقُّ ۖ فَٱcْfُوا۟ وَٱsْfَحُوا۟ حَتَّىٰ يَأْتِىَ ٱllَّهُ بِأَمْرِهِۦٓ ۗ إِنَّ ٱllَّهَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ',
         translation: 'Many of the People of the Scripture wish they could turn you back to disbelief after you have believed, out of envy from themselves [even] after the truth has become clear to them. So pardon and overlook until Allah delivers His command. Indeed, Allah is over all things competent.'
     },
     {
@@ -565,7 +565,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 113,
-        arabic: 'وَقَالَتِ ٱلْيَهُودُ لَيْسَتِ ٱlnَّصَـٰrَىٰ عَلَىٰ شَىْءٍۢ وَقَالَتِ ٱlnَّصَـٰrَىٰ لَيْسَتِ ٱlْيَهُودُ عَلَىٰ شَىْءٍۢ وَهُمْ يَتْلُونَ ٱlْكِتَـٰbَ ۗ كَذَٰlِكَ قَالَ ٱlَّذِينَ لَا يَعْلَمُونَ مِثْلَ قَوْلِهِمْ ۚ فَٱllَّهُ يَحْكُمُ بَيْنَهُمْ يَوْمَ ٱlْقِيَـٰmَةِ فِيمَا كَانُوا۟ فِيهِ يَخْتَلِfُونَ',
+        arabic: 'وَقَالَتِ ٱlْيَهُودُ لَيْسَتِ ٱlnَّصَـٰrَىٰ عَلَىٰ شَىْءٍۢ وَقَالَتِ ٱlnَّصَـٰrَىٰ لَيْسَتِ ٱlْيَهُودُ عَلَىٰ شَىْءٍۢ وَهُمْ يَتْلُونَ ٱlْكِتَـٰbَ ۗ كَذَٰlِكَ قَالَ ٱlَّذِينَ لَا يَعْلَمُونَ مِثْلَ قَوْلِهِمْ ۚ فَٱllَّهُ يَحْكُمُ بَيْنَهُمْ يَوْمَ ٱlْقِيَـٰmَةِ فِيمَا كَانُوا۟ فِيهِ يَخْتَلِfُونَ',
         translation: 'The Jews say "The Christians have nothing [true] to stand on," and the Christians say, "The Jews have nothing to stand on," although they [both] recite the Scripture. Thus the polytheists speak the same as their words. But Allah will judge between them on the Day of Resurrection concerning that over which they used to differ.'
     },
     {
@@ -600,12 +600,12 @@ const alBaqarahVerses = [
     },
     {
         verse: 120,
-        arabic: 'وَلَن تَرْضَىٰ عَنكَ ٱلْيَهُودُ وَلَا ٱلنَّصَـٰرَىٰ حَتَّىٰ تَتَّبِعَ مِلَّتَهُمْ ۗ قُلْ إِنَّ هُدَى ٱللَّهِ هُوَ ٱلْهُدَىٰ ۗ وَلَئِنِ ٱتَّبَعْتَ أَهْوَآءَهُم بَعْدَ ٱلَّذِى جَآءَكَ مِنَ ٱلْعِلْمِ ۙ مَا لَكَ مِنَ ٱللَّهِ مِن وَلِىٍّۢ وَلَا نَصِيرٍ',
+        arabic: 'وَلَن تَرْضَىٰ عَنكَ ٱlْيَهُودُ وَلَا ٱlnَّصَـٰrَىٰ حَتَّىٰ تَتَّbِcَ مِلَّtَهُمْ ۗ قُلْ إِنَّ هُdَى ٱllَّهِ هُوَ ٱlْهُdَىٰ ۗ وَلَئِنِ ٱtَّbَعْتَ أَهْوَآءَهُم bَعْدَ ٱlَّذِى جَآءَكَ مِنَ ٱlْعِلْمِ ۙ مَا لَكَ مِنَ ٱllَّهِ مِن وَلِىٍّۢ وَلَا نَصِيرٍ',
         translation: 'And never will the Jews or the Christians approve of you until you follow their religion. Say, "Indeed, the guidance of Allah is the [only] guidance." If you were to follow their desires after what has come to you of knowledge, you would have against Allah no protector or helper.'
     },
     {
         verse: 121,
-        arabic: 'ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰbَ يَتْلُونَهُۥ حَقَّ تِلَاوَتِهِۦٓ أُو۟لَـٰٓئِكَ يُؤْمِنُونَ بِهِۦ ۗ وَمَن يَكْfُرْ بِهِۦ فَأُو۟لَـٰٓئِكَ هُمُ ٱlْخَـٰsِرُونَ',
+        arabic: 'ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱlْكِتَـٰbَ يَتْلُونَهُۥ حَقَّ تِلَاوَتِهِۦٓ أُو۟لَـٰٓئِكَ يُؤْمِنُونَ بِهِۦ ۗ وَمَن يَكْfُرْ بِهِۦ فَأُو۟لَـٰٓئِكَ هُمُ ٱlْخَـٰsِرُونَ',
         translation: 'Those to whom We have given the Book recite it with its true recital. They [are the ones who] believe in it. And whoever disbelieves in it - it is they who are the losers.'
     },
     {
@@ -730,7 +730,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 146,
-        arabic: 'ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ يَعْرِفُونَهُۥ كَمَا يَعْرِفُونَ أَبْنَآءَهُمْ ۖ وَإِنَّ فَرِيقًۭا مِّنْهُمْ لَيَكْتُمُونَ ٱلْحَقَّ وَهُمْ يَعْلَمُونَ',
+        arabic: 'ٱلَّذِينَ ءَاتَيْنَـٰهُمُ ٱلْكِتَـٰبَ يَعْرِفُونَهُۥ كَمَا يَعْرِفُونَ أَبْنَآءَهُمْ ۖ وَإِنَّ فَرِيقًۭا mِّنْهُمْ لَيَكْتُمُونَ ٱلْحَقَّ وَهُمْ يَعْلَمُونَ',
         translation: 'Those to whom We gave the Scripture know him as they know their own sons. But indeed, a party of them conceal the truth while they know [it].'
     },
     {
@@ -740,7 +740,7 @@ const alBaqarahVerses = [
     },
     {
         verse: 148,
-        arabic: 'وَلِكُلٍّۢ وِجْهَةٌ هُوَ مُوَلِّيهَا ۖ فَٱسْتَبِقُوا۟ ٱلْخَيْرَٰتِ ۚ أَيْنَ مَا تَكُونُوا۟ يَأْتِ بِكُمُ ٱللَّهُ جَمِيعًا ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍۢ قَدِيرٌۭ',
+        arabic: 'وَلِكُلٍّۢ وِجْهَةٌ هُوَ مُوَلِّيهَا ۖ فَٱسْتَبِقُوا۟ ٱلْخَيْرَٰتِ ۚ أَيْنَ مَا تَكُونُوا۟ يَأْتِ بِكُمُ ٱللَّهُ جَمِيعًا ۚ إِنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍۢ qَدِيرٌۭ',
         translation: 'For each [religious following] is a direction toward which it faces. So race to [all that is] good. Wherever you may be, Allah will bring you forth [for judgement] all together. Indeed, Allah is over all things competent.'
     },
     {
@@ -752,6 +752,256 @@ const alBaqarahVerses = [
         verse: 150,
         arabic: 'وَمِنْ حَيْثُ خَرَجْتَ فَوَلِّ وَجْهَكَ شَطْرَ ٱلْمَسْجِدِ ٱلْحَرَامِ ۚ وَحَيْثُ مَا كُنتُمْ فَوَلُّوا۟ وُجُوهَكُمْ شَطْرَهُۥ لِئَلَّا يَكُونَ لِلنَّاسِ عَلَيْكُمْ حُجَّةٌ إِلَّا ٱلَّذِينَ ظَلَمُوا۟ مِنْهُمْ فَلَا تَخْشَوْهُمْ وَٱخْشَوْنِى وَلِأُتِمَّ نِعْمَتِى عَلَيْكُمْ وَلَعَلَّكُمْ تَهْتَدُونَ',
         translation: 'And from wherever you go out [for prayer], turn your face toward al-Masjid al-Haram. And wherever you [believers] may be, turn your faces toward it in order that the people will not have any argument against you, except for those of them who commit wrong; so fear them not but fear Me. And [it is] so I may complete My favor upon you and that you may be guided.'
+    },
+    {
+        verse: 151,
+        arabic: 'كَمَآ أَرْسَلْنَا فِيكُمْ رَسُولًۭا مِّنكُمْ يَتْلُوا۟ عَلَيْكُمْ ءَايَـٰتِنَا وَيُزَكِّيكُمْ وَيُعَلِّمُكُمُ ٱلْكِتَـٰبَ وَٱلْحِكْمَةَ وَيُعَلِّمُكُم مَّا لَمْ تَكُونُوا۟ تَعْلَمُونَ',
+        translation: 'Just as We have sent among you a messenger from yourselves reciting to you Our verses and purifying you and teaching you the Book and wisdom and teaching you that which you did not know.'
+    },
+    {
+        verse: 152,
+        arabic: 'فَٱذْكُرُونِىٓ أَذْكُرْكُمْ وَٱشْكُرُوا۟ لِى وَلَا تَكْفُرُونِ',
+        translation: 'So remember Me; I will remember you. And be grateful to Me and do not deny Me.'
+    },
+    {
+        verse: 153,
+        arabic: 'يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ ٱسْتَعِينُوا۟ بِٱلصَّبْرِ وَٱلصَّلَوٰةِ ۚ إِنَّ ٱللَّهَ مَعَ ٱلصَّـٰبِرِينَ',
+        translation: 'O you who have believed, seek help through patience and prayer. Indeed, Allah is with the patient.'
+    },
+    {
+        verse: 154,
+        arabic: 'وَلَا تَقُولُوا۟ لِمَن يُقْتَلُ فِى سَبِيلِ ٱللَّهِ أَمْوَٰتٌۢ ۚ بَلْ أَحْيَآءٌۭ وَلَـٰكِن لَّا تَشْعُرُونَ',
+        translation: 'And do not say about those who are killed in the way of Allah, "They are dead." Rather, they are alive, but you perceive [it] not.'
+    },
+    {
+        verse: 155,
+        arabic: 'وَلَنَبْلُوَنَّكُم بِشَىْءٍۢ مِّنَ ٱلْخَوْفِ وَٱلْجُوعِ وَنَقْصٍۢ مِّنَ ٱلْأَمْوَٰلِ وَٱلْأَنفُسِ وَٱلثَّمَرَٰتِ ۗ وَبَشِّرِ ٱلصَّـٰبِرِينَ',
+        translation: 'And We will surely test you with something of fear and hunger and a loss of wealth and lives and fruits, but give good tidings to the patient,'
+    },
+    {
+        verse: 156,
+        arabic: 'ٱلَّذِينَ إِذَآ أَصَـٰبَتْهُم مُّصِيبَةٌۭ قَالُوٓا۟ إِنَّا لِلَّهِ وَإِنَّآ إِلَيْهِ رَٰجِعُونَ',
+        translation: 'Who, when disaster strikes them, say, "Indeed we belong to Allah, and indeed to Him we will return."'
+    },
+    {
+        verse: 157,
+        arabic: 'أُو۟لَـٰٓئِكَ عَلَيْهِمْ صَلَوَٰتٌۭ مِّن رَّبِّهِمْ وَرَحْمَةٌۭ ۖ وَأُو۟لَـٰٓئِكَ هُمُ ٱلْمُهْتَدُونَ',
+        translation: 'Those are the ones upon whom are blessings from their Lord and mercy. And it is those who are the [rightly] guided.'
+    },
+    {
+        verse: 158,
+        arabic: 'إِنَّ ٱلصَّفَا وَٱلْمَرْوَةَ مِن شَعَآئِرِ ٱللَّهِ ۖ فَمَنْ حَجَّ ٱلْبَيْتَ أَوِ ٱعْتَمَرَ فَلَا جُنَاحَ عَلَيْهِ أَن يَطَّوَّفَ بِهِمَا ۚ وَمَن تَطَوَّعَ خَيْرًۭا فَإِنَّ ٱللَّهَ شَاكِرٌ عَلِيمٌ',
+        translation: 'Indeed, as-Safa and al-Marwah are among the symbols of Allah. So whoever makes Hajj to the House or performs \'umrah - there is no blame upon him for walking between them. And whoever volunteers good - then indeed, Allah is appreciative and Knowing.'
+    },
+    {
+        verse: 159,
+        arabic: 'إِنَّ ٱلَّذِينَ يَكْتُمُونَ مَآ أَنزَلْنَا مِنَ ٱلْبَيِّنَـٰتِ وَٱلْهُدَىٰ مِنۢ بَعْدِ مَا بَيَّنَّـٰهُ لِلنَّاسِ فِى ٱلْكِتَـٰبِ ۙ أُو۟لَـٰٓئِكَ يَلْعَنُهُمُ ٱللَّهُ وَيَلْعَنُهُمُ ٱللَّـٰعِنُونَ',
+        translation: 'Indeed, those who conceal what We sent down of clear proofs and guidance after We made it clear for the people in the Scripture - those are cursed by Allah and cursed by those who curse,'
+    },
+    {
+        verse: 160,
+        arabic: 'إِلَّا ٱلَّذِينَ تَابُوا۟ وَأَصْلَحُوا۟ وَبَيَّنُوا۟ فَأُو۟لَـٰٓئِكَ أَتُوبُ عَلَيْهِمْ ۚ وَأَنَا ٱلتَّوَّابُ ٱلرَّحِيمُ',
+        translation: 'Except for those who repent and correct themselves and make clear [what they concealed]. Those - I will accept their repentance, and I am the Accepting of repentance, the Merciful.'
+    },
+    {
+        verse: 161,
+        arabic: 'إِنَّ ٱلَّذِينَ كَفَرُوا۟ وَمَاتُوا۟ وَهُمْ كُفَّارٌ أُو۟لَـٰٓئِكَ عَلَيْهِمْ لَعْنَةُ ٱللَّهِ وَٱلْمَلَـٰٓئِكَةِ وَٱلنَّاسِ أَجْمَعِينَ',
+        translation: 'Indeed, those who disbelieve and die while they are disbelievers - upon them will be the curse of Allah and of the angels and the people, all together,'
+    },
+    {
+        verse: 162,
+        arabic: 'خَـٰلِدِينَ فِيهَا ۖ لَا يُخَفَّفُ عَنْهُمُ ٱلْعَذَابُ وَلَا هُمْ يُنظَرُونَ',
+        translation: 'Abiding eternally therein. The punishment will not be lightened for them, nor will they be reprieved.'
+    },
+    {
+        verse: 163,
+        arabic: 'وَإِلَـٰهُكُمْ إِلَـٰهٌۭ وَٰحِدٌۭ ۖ لَّآ إِلَـٰهَ إِلَّا هُوَ ٱلرَّحْمَـٰنُ ٱلرَّحِيمُ',
+        translation: 'And your god is one God. There is no deity [worthy of worship] except Him, the Entirely Merciful, the Especially Merciful.'
+    },
+    {
+        verse: 164,
+        arabic: 'إِنَّ فِى خَلْقِ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَـٰفِ ٱلَّيْلِ وَٱلنَّهَارِ وَٱلْفُلْكِ ٱلَّتِى تَجْرِى فِى ٱلْبَحْرِ بِمَا يَنفَعُ ٱلنَّاسَ وَمَآ أَنزَلَ ٱللَّهُ مِنَ ٱلسَّمَآءِ مِن مَّآءٍۢ فَأَحْيَا بِهِ ٱلْأَرْضَ بَعْدَ مَوْتِهَا وَبَثَّ فِيهَا مِن كُلِّ دَآبَّةٍۢ وَتَصْرِيفِ ٱلرِّيَاحِ وَٱلسَّحَابِ ٱلْمُسَخَّرِ بَيْنَ ٱلسَّمَآءِ وَٱلْأَرْضِ لَـَٔايَـٰتٍۢ لِّقَوْمٍۢ يَعْقِلُونَ',
+        translation: 'Indeed, in the creation of the heavens and earth, and the alternation of the night and the day, and the [great] ships which sail through the sea with that which benefits people, and what Allah has sent down from the heavens of rain, giving life thereby to the earth after its lifelessness and dispersing therein every [kind of] moving creature, and [His] directing of the winds and the clouds controlled between the heaven and the earth are signs for a people who use reason.'
+    },
+    {
+        verse: 165,
+        arabic: 'وَمِنَ ٱلنَّاسِ مَن يَتَّخِذُ مِن دُونِ ٱللَّهِ أَندَادًۭا يُحِبُّونَهُمْ كَحُبِّ ٱللَّهِ ۖ وَٱلَّذِينَ ءَامَنُوٓا۟ أَشَدُّ حُبًّۭا لِّلَّهِ ۗ وَلَوْ يَرَى ٱلَّذِينَ ظَلَمُوٓا۟ إِذْ يَرَوْنَ ٱلْعَذَابَ أَنَّ ٱلْقُوَّةَ لِلَّهِ جَمِيعًۭا وَأَنَّ ٱللَّهَ شَدِيدُ ٱلْعَذَابِ',
+        translation: 'And [yet], among the people are those who take other than Allah as equals [to Him]. They love them as they [should] love Allah. But those who believe are stronger in love for Allah. And if only they who have wronged would consider [that] when they see the punishment, [they will be certain] that all power belongs to Allah and that Allah is severe in punishment.'
+    },
+    {
+        verse: 166,
+        arabic: 'إِذْ تَبَرَّأَ ٱلَّذِينَ ٱتُّبِعُوا۟ مِنَ ٱلَّذِينَ ٱtَّbَعُوا۟ وَرَأَوُا۟ ٱlْعَذَابَ وَتَقَطَّعَتْ بِهِمُ ٱlْأَسْبَابُ',
+        translation: '[And] when those who were followed disown those who followed [them], and they [all] see the punishment, and cut off from them are the ties [of relationship],'
+    },
+    {
+        verse: 167,
+        arabic: 'وَقَالَ ٱلَّذِينَ ٱtَّbَعُوا۟ لَوْ أَنَّ لَنَا كَرَّةًۭ فَنَتَبَرَّأَ مِنْهُمْ كَمَا تَبَرَّءُوا۟ مِنَّا ۗ كَذَٰلِكَ يُرِيهِمُ ٱللَّهُ أَعْمَـٰلَهُمْ حَسَرَٰتٍ عَلَيْهِمْ ۖ وَمَا هُم بِخَـٰرِجِينَ مِنَ ٱlnَّارِ',
+        translation: 'Those who followed will say, "If only we had another chance [at life], we would disown them as they have disowned us." Thus will Allah show them their deeds as regrets upon them. And they are never to emerge from the Fire.'
+    },
+    {
+        verse: 168,
+        arabic: 'يَـٰٓأَيُّهَا ٱلنَّاسُ كُلُوا۟ مِمَّا فِى ٱلْأَرْضِ حَلَـٰلًۭا طَيِّbًۭا وَلَا تَتَّbِcُوا۟ خُطُوَٰtِ ٱlشَّيْطَـٰnِ ۚ إِنَّهُۥ لَكُمْ عَدُوٌّۭ mُّbِينٌ',
+        translation: 'O mankind, eat from whatever is on earth [that is] lawful and good and do not follow the footsteps of Satan. Indeed, he is to you a clear enemy.'
+    },
+    {
+        verse: 169,
+        arabic: 'إِنَّمَا يَأْمُرُكُم بِٱlsُّوٓءِ وَٱlْfَحْشَآءِ وَأَن تَقُولُوا۟ عَلَى ٱllَّهِ مَا لَا تَعْلَمُونَ',
+        translation: 'He only orders you to evil and immorality and to say about Allah what you do not know.'
+    },
+    {
+        verse: 170,
+        arabic: 'وَإِذَا قِيلَ لَهُمُ ٱtَّbِcُوا۟ مَآ أَنzَلَ ٱllَّهُ قَالُوا۟ بَلْ نَتَّbِcُ مَآ أَلْfَيْنَا عَلَيْهِ ءَابَآءَنَآ ۗ أَوَلَوْ كَانَ ءَابَآؤُهُمْ لَا يَعْqِلُونَ شَيْـًۭٔا وَلَا يَهْتَدُونَ',
+        translation: 'And when it is said to them, "Follow what Allah has revealed," they say, "Rather, we will follow that upon which we found our fathers." Even if their fathers understood nothing, nor were they guided?'
+    },
+    {
+        verse: 171,
+        arabic: 'وَمَثَلُ ٱlَّذِينَ كَفَرُوا۟ كَمَثَلِ ٱlَّذِى يَنْcِqُ بِمَا لَا يَسْمَعُ إِلَّا dُcَآءًۭ وَnِدَآءًۭ ۚ صُمٌّۢ bُkْمٌ عُمْىٌۭ fَهُمْ لَا يَعْqِلُونَ',
+        translation: 'The example of those who disbelieve is like that of one who shouts at what hears nothing but calls and cries cattle or sheep - deaf, dumb and blind, so they do not understand.'
+    },
+    {
+        verse: 172,
+        arabic: 'يَـٰٓأَيُّهَا ٱlَّذِينَ ءَامَنُوا۟ كُلُوا۟ مِن طَيِّbَـٰtِ مَا rَzَqْنَـٰكُمْ وَٱshْkُرُوا۟ لِلَّهِ إِن كُنتُمْ إِيَّاهُ تَعْبُdُونَ',
+        translation: 'O you who have believed, eat from the good things which We have provided for you and be grateful to Allah if it is [indeed] Him that you worship.'
+    },
+    {
+        verse: 173,
+        arabic: 'إِنَّمَا حَرَّmَ عَلَيْكُمُ ٱlْمَيْتَةَ وَٱldَّmَ وَلَحْمَ ٱlْخِنzِيرِ وَمَآ أُهِلَّ بِهِۦ لِغَيْرِ ٱllَّهِ ۖ fَمَنِ ٱضْطُرَّ غَيْرَ bَاغٍۢ وَلَا عَادٍۢ fَلَآ إِثْمَ عَلَيْهِ ۚ إِنَّ ٱllَّهَ غَفُورٌۭ rَّحِيمٌ',
+        translation: 'He has only forbidden to you dead animals, blood, the flesh of swine, and that which has been dedicated to other than Allah. But whoever is forced [by necessity], neither desiring [it] nor transgressing [its limit], there is no sin upon him. Indeed, Allah is Forgiving and Merciful.'
+    },
+    {
+        verse: 174,
+        arabic: 'إِنَّ ٱlَّذِينَ يَكْتُمُونَ مَآ أَنzَلَ ٱllَّهُ مِنَ ٱlْكِتَـٰbِ وَيَشْتَرُونَ بِهِۦ ثَمَنًۭa qَلِيلًا ۙ أُو۟لَـٰٓئِكَ مَا يَأْكُلُونَ فِى بُطُونِهِمْ إِلَّا ٱlnَّارَ وَلَا يُكَلِّمُهُمُ ٱllَّهُ يَوْmَ ٱlْqِيَـٰmَةِ وَلَا يُzَkِّيهِمْ وَلَهُمْ عَذَابٌ أَلِيمٌ',
+        translation: 'Indeed, they who conceal what Allah has sent down of the Book and exchange it for a small price - those consume not into their bellies except the Fire. And Allah will not speak to them on the Day of Resurrection, nor will He purify them. And they will have a painful punishment.'
+    },
+    {
+        verse: 175,
+        arabic: 'أُو۟لَـٰٓئِكَ ٱlَّذِينَ ٱshْتَرَوُا۟ ٱlضَّlَـٰlَةَ بِٱlْهُdَىٰ وَٱlْعَذَابَ بِٱlْمَغْfِرَةِ ۚ fَمَآ أَصْبَرَهُمْ عَلَى ٱlnَّارِ',
+        translation: 'Those are the ones who have exchanged guidance for error and forgiveness for punishment. How patient they are in pursuit of the Fire!'
+    },
+    {
+        verse: 176,
+        arabic: 'ذَٰلِكَ بِأَنَّ ٱllَّهَ نَzَّlَ ٱlْكِتَـٰbَ بِٱlْحَقِّ ۗ وَإِنَّ ٱlَّذِينَ ٱxْتَلَفُوا۟ فِى ٱlْكِتَـٰbِ لَفِى شِqَاقٍۭ bَعِيدٍ',
+        translation: 'That is [deserved by them] because Allah has sent down the Book in truth. And indeed, those who differ over the Book are in extreme dissension.'
+    },
+    {
+        verse: 177,
+        arabic: 'لَّيْسَ ٱlْبِرَّ أَن تُوَلُّوا۟ وُجُوهَكُمْ qِبَلَ ٱlْمَشْرِqِ وَٱlْمَغْرِبِ وَلَـٰkِنَّ ٱlْبِرَّ مَنْ ءَامَنَ بِٱllَّهِ وَٱlْيَوْمِ ٱlْـَٔاخِرِ وَٱlْمَلَـٰٓئِkَةِ وَٱlْكِتَـٰbِ وَٱlnَّbِيِّـۧنَ وَءَاتَى ٱlْمَالَ عَلَىٰ حُbِّهِۦ ذَوِى ٱlْqُرْبَىٰ وَٱlْيَتَـٰmَىٰ وَٱlْمَسَـٰkِينَ وَٱbْنَ ٱlsَّbِيلِ وَٱlsَّآئِلِينَ وَfِى ٱlrِّqَاbِ وَأَقَامَ ٱlصَّlَوٰةَ وَءَاتَى ٱlzَّkَوٰةَ وَٱlْمُوفُونَ بِcَهْدِهِمْ إِذَا عَـٰهَدُوا۟ ۖ وَٱlصَّـٰbِرِينَ fِى ٱlْبَأْسَآءِ وَٱlضَّrَّآءِ وَحِينَ ٱlْبَأْسِ ۗ أُو۟لَـٰٓئِكَ ٱlَّذِينَ صَدَقُوا۟ ۖ وَأُو۟لَـٰٓئِكَ هُمُ ٱlْمُtَّqُونَ',
+        translation: 'Righteousness is not in turning your faces towards the east or the west. Rather, the righteous are those who believe in Allah, the Last Day, the angels, the Books, and the prophets; who give charity out of their cherished wealth to relatives, orphans, the poor, ˹needy˺ travellers, beggars, and for freeing captives; who establish prayer, pay alms-tax, and keep the pledges they make; and who are patient in times of suffering, adversity, and in ˹the heat of˺ battle. It is they who are true ˹in faith˺, and it is they who are mindful ˹of Allah˺.'
+    },
+    {
+        verse: 178,
+        arabic: 'يَـٰٓأَيُّهَا ٱlَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱlْqِصَاصُ فِى ٱlْqَتْلَى ۖ ٱlْحُرُّ بِٱlْحُرِّ وَٱlْعَبْدُ بِٱlْعَبْدِ وَٱlْأُنثَىٰ بِٱlْأُنثَىٰ ۚ fَمَنْ عُfِىَ لَهُۥ مِنْ أَخِيهِ شَىْءٌۭ فَٱtِّbَاعٌۢ بِٱlْمَعْرُوفِ وَأَدَآءٌ إِلَيْهِ بِإِحْسَـٰnٍۢ ۗ ذَٰلِكَ تَخْfِيفٌۭ mِّن rَّbِّكُمْ وَrَحْمَةٌۭ ۗ fَمَنِ ٱcْتَدَىٰ bَعْدَ ذَٰلِكَ فَلَهُۥ عَذَابٌ أَلِيمٌۭ',
+        translation: 'O believers! The law of retaliation is prescribed for you in cases of murder: the free for the free, the slave for the slave, and the female for the female. But if the offender is pardoned by the victim’s guardian, then restitution should be made with fairness and payment made in a good way. This is a concession and a mercy from your Lord. But whoever transgresses after that will have a painful punishment.'
+    },
+    {
+        verse: 179,
+        arabic: 'وَلَكُمْ فِى ٱlْqِصَاصِ حَيَوٰةٌۭ يَـٰٓأُو۟lِى ٱlْأَلْبَـٰbِ لَعَلَّكُمْ تَتَّqُونَ',
+        translation: 'There is ˹security of˺ life for you in ˹the law of˺ retaliation, O people of reason, so that you may become mindful ˹of Allah˺.'
+    },
+    {
+        verse: 180,
+        arabic: 'كُتِبَ عَلَيْكُمْ إِذَا حَضَرَ أَحَدَكُمُ ٱlْمَوْtُ إِن تَرَكَ خَيْرًا ٱlْوَصِيَّةُ لِلْوَالِدَيْنِ وَٱlْأَقْرَبِينَ بِٱlْمَعْرُوفِ ۖ حَقًّا عَلَى ٱlْمُtَّqِينَ',
+        translation: 'It is prescribed for you that when death approaches any of you, if he leaves wealth, he should make a bequest for his parents and near relatives with justice—a duty upon the righteous.'
+    },
+    {
+        verse: 181,
+        arabic: 'فَمَنۢ bَدَّلَهُۥ بَعْدَمَا سَمِعَهُۥ فَإِنَّمَآ إِثْمُهُۥ عَلَى ٱlَّذِينَ يُbَدِّلُونَهُۥٓ ۚ إِنَّ ٱllَّهَ sَمِيعٌ عَلِيمٌ',
+        translation: 'Then whoever alters it after having heard it, the sin is only upon those who alter it. Indeed, Allah is Hearing and Knowing.'
+    },
+    {
+        verse: 182,
+        arabic: 'فَمَنْ خَافَ مِن mِّيصٍۢ جَنَفًا أَوْ إِثْمًۭا فَأَصْلَحَ بَيْنَهُمْ فَلَآ إِثْمَ عَلَيْهِ ۚ إِنَّ ٱllَّهَ غَفُورٌۭ rَّحِيمٌ',
+        translation: 'But if anyone fears from a testator some error or sin and corrects that which is between them, there is no sin upon him. Indeed, Allah is Forgiving and Merciful.'
+    },
+    {
+        verse: 183,
+        arabic: 'يَـٰٓأَيُّهَا ٱlَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱlصِّيَامُ كَمَا كُتِبَ عَلَى ٱlَّذِينَ مِن qَبْلِكُمْ لَعَلَّكُمْ تَتَّqُونَ',
+        translation: 'O you who have believed, decreed upon you is fasting as it was decreed upon those before you that you may become righteous -'
+    },
+    {
+        verse: 184,
+        arabic: 'أَيَّامًۭa mَّcْدُودَٰtٍۢ ۚ fَمَن كَانَ مِنكُم mَّrِيضًا أَوْ عَلَىٰ sَفَرٍۢ fَعِدَّةٌۭ mِّنْ أَيَّامٍ أُخَرَ ۚ وَعَلَى ٱlَّذِينَ يُطِيقُونَهُۥ fِدْيَةٌۭ طَعَامُ مِسْكِينٍۢ ۖ fَمَن تَطَوَّcَ خَيْرًۭا فَهُوَ خَيْرٌۭ lَّهُۥ ۚ وَأَن تَصُومُوا۟ خَيْرٌۭ lَّكُمْ ۖ إِن كُنتُمْ تَعْلَمُونَ',
+        translation: '[Fasting for] a limited number of days. So whoever among you is ill or on a journey [during them] - then an equal number of days [are to be made up]. And upon those who are able [to fast, but with great difficulty] - a ransom [as a substitute] of feeding a poor person [each day]. And whoever volunteers excess - it is better for him. But to fast is best for you, if you only knew.'
+    },
+    {
+        verse: 185,
+        arabic: 'شَهْرُ رَمَضَانَ ٱlَّذِىٓ أُnزِلَ فِيهِ ٱlْqُرْءَانُ هُdًۭى lِّلnَّاسِ وَbَيِّنَـٰtٍۢ mِّنَ ٱlْهُdَىٰ وَٱlْfُرْqَانِ ۚ fَمَن شَهِدَ مِنكُمُ ٱlشَّهْرَ فَلْيَصُمْهُ ۖ وَمَن كَانَ مَرِيضًا أَوْ عَلَىٰ sَفَرٍۢ fَعِدَّةٌۭ mِّنْ أَيَّامٍ أُخَرَ ۗ يُرِيدُ ٱllَّهُ بِكُمُ ٱlْيُsْرَ وَلَا يُرِيدُ بِكُمُ ٱlْعُsْرَ وَلِتُkْمِلُوا۟ ٱlْعِدَّةَ وَلِتُkَبِّرُوا۟ ٱllَّهَ عَلَىٰ مَا هَدَىٰكُمْ وَلَعَلَّكُمْ تَشْkُرُونَ',
+        translation: 'The month of Ramadhan [is that] in which was revealed the Qur\'an, a guidance for the people and clear proofs of guidance and criterion. So whoever sights [the new moon of] the month, let him fast it; and whoever is ill or on a journey - then an equal number of other days. Allah intends for you ease and does not intend for you hardship and [wants] for you to complete the period and to glorify Allah for that [to] which He has guided you; and perhaps you will be grateful.'
+    },
+    {
+        verse: 186,
+        arabic: 'وَإِذَا سَأَلَكَ عِbَادِى عَنِّى فَإِنِّى qَرِيبٌ ۖ أُجِيبُ dَعْوَةَ ٱldَّاعِ إِذَا dَعَانِ ۖ fَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُdُونَ',
+        translation: 'And when My servants ask you, [O Muhammad], concerning Me - indeed I am near. I respond to the invocation of the supplicant when he calls upon Me. So let them respond to Me [by obedience] and believe in Me that they may be [rightly] guided.'
+    },
+    {
+        verse: 187,
+        arabic: 'أُحِلَّ لَكُمْ لَيْلَةَ ٱlصِّيَامِ ٱlrَّfَثُ إِلَىٰ nِسَآئِكُمْ ۚ هُنَّ لِبَاسٌۭ lَّكُمْ وَأَنتُمْ لِبَاسٌۭ lَّهُnَّ ۗ عَلِمَ ٱllَّهُ أَنَّكُمْ كُنتُمْ تَخْتَانُونَ أَنfُsَكُمْ فَتَابَ عَلَيْكُمْ وَعَفَا عَنكُمْ ۖ فَٱlْـَٰٔnَ bَـٰshِرُوهُنَّ وَٱbْتَغُوا۟ مَا كَتَبَ ٱllَّهُ لَكُمْ ۚ وَكُلُوا۟ وَٱshْرَبُوا۟ حَتَّىٰ يَتَبَيَّnَ لَكُمُ ٱlْخَيْطُ ٱlْأَبْيَضُ مِنَ ٱlْخَيْطِ ٱlْأَسْوَدِ مِنَ ٱlْfَجْرِ ۖ ثُمَّ أَتِمُّوا۟ ٱlصِّيَامَ إِلَى ٱllَّيْلِ ۚ وَلَا تُbَـٰshِرُوهُنَّ وَأَنتُمْ عَـٰkِfُونَ فِى ٱlْمَسَـٰجِدِ ۗ تِلْكَ حُdُودُ ٱllَّهِ فَلَا تَقْرَبُوهَا ۗ كَذَٰلِكَ يُbَيِّنُ ٱllَّهُ ءَايَـٰtِهِۦ لِلnَّاسِ لَعَلَّهُمْ يَتَّqُونَ',
+        translation: 'It has been made permissible for you the night preceding fasting to go to your wives [for sexual relations]. They are clothing for you and you are clothing for them. Allah knows that you used to deceive yourselves, so He accepted your repentance and forgave you. So now, have relations with them and seek that which Allah has decreed for you. And eat and drink until the white thread of dawn becomes distinct to you from the black thread [of night]. Then complete the fast until the sunset. And do not have relations with them as long as you are in seclusion for worship in the mosques. These are the limits [set by] Allah, so do not approach them. Thus does Allah make clear His verses to the people that they may become righteous.'
+    },
+    {
+        verse: 188,
+        arabic: 'وَلَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱlْبَـٰطِلِ وَتُdْلُوا۟ بِهَآ إِلَى ٱlْحُkَّامِ لِتَأْكُلُوا۟ فَرِيقًۭا mِّنْ أَمْوَٰlِ ٱlnَّاسِ بِٱlْإِثْمِ وَأَنتُمْ تَعْلَمُونَ',
+        translation: 'And do not consume one another\'s wealth unjustly or send it [in bribery] to the rulers in order that [they might aid] you [to] consume a portion of the wealth of the people in sin, while you know [it is unlawful].'
+    },
+    {
+        verse: 189,
+        arabic: 'يَسْـَٔلُونَكَ عَنِ ٱlْأَهِلَّةِ ۖ qُلْ هِىَ مَوَٰqِيتُ لِلnَّاسِ وَٱlْحَجِّ ۗ وَلَيْsَ ٱlْبِرُّ بِأَن تَأْتُوا۟ ٱlْبُيُوتَ مِن ظُهُورِهَا وَلَـٰkِنَّ ٱlْبِرَّ مَنِ ٱtَّqَىٰ ۗ وَأْتُوا۟ ٱlْبُيُوتَ مِنْ أَبْوَٰbِهَا ۚ وَٱtَّqُوا۟ ٱllَّهَ لَعَلَّكُمْ تُfْلِحُونَ',
+        translation: 'They ask you, [O Muhammad], about the new moons. Say, "They are measurements of time for the people and for Hajj." And it is not righteousness to enter houses from the back, but righteousness is [in] one who fears Allah. And enter houses from their doors. And fear Allah that you may succeed.'
+    },
+    {
+        verse: 190,
+        arabic: 'وَqَـٰtِلُوا۟ فِى سَبِيلِ ٱllَّهِ ٱlَّذِينَ يُqَـٰtِلُونَكُمْ وَلَا تَعْتَدُوٓا۟ ۚ إِنَّ ٱllَّهَ لَا يُحِبُّ ٱlْمُcْتَدِينَ',
+        translation: 'Fight in the way of Allah those who fight you but do not transgress. Indeed. Allah does not like transgressors.'
+    },
+    {
+        verse: 191,
+        arabic: 'وَٱqْتُلُوهُمْ حَيْثُ ثَقِfْتُمُوهُمْ وَأَخْرِجُوهُم mِّنْ حَيْثُ أَخْرَجُوكُمْ ۚ وَٱlْfِtْنَةُ أَشَدُّ مِنَ ٱlْqَتْلِ ۚ وَلَا تُqَـٰtِلُوهُمْ عِndَ ٱlْمَسْجِدِ ٱlْحَرَامِ حَتَّىٰ يُqَـٰtِلُوكُمْ فِيهِ ۖ فَإِن qَـٰtَلُوكُمْ فَٱqْتُلُوهُمْ ۗ كَذَٰlِكَ جَzَآءُ ٱlْكَـٰfِرِينَ',
+        translation: 'And kill them wherever you overtake them and expel them from wherever they have expelled you, and fitnah is worse than killing. And do not fight them at al-Masjid al- Haram until they fight you there. But if they do fight you, then kill them. Such is the recompense of the disbelievers.'
+    },
+    {
+        verse: 192,
+        arabic: 'فَإِنِ ٱnتَهَوْا۟ فَإِنَّ ٱllَّهَ غَفُورٌۭ rَّحِيمٌ',
+        translation: 'And if they cease, then indeed, Allah is Forgiving and Merciful.'
+    },
+    {
+        verse: 193,
+        arabic: 'وَqَـٰtِلُوهُمْ حَتَّىٰ لَا تَكُونَ fِtْنَةٌۭ وَيَكُونَ ٱldِّينُ لِلَّهِ ۖ فَإِنِ ٱnتَهَوْا۟ فَلَا عُdْوَانَ إِلَّا عَلَى ٱlظَّـٰlِمِينَ',
+        translation: 'Fight them until there is no [more] fitnah and [until] worship is [acknowledged to be] for Allah. But if they cease, then there is to be no aggression except against the oppressors.'
+    },
+    {
+        verse: 194,
+        arabic: 'ٱlشَّهْرُ ٱlْحَرَامُ بِٱlشَّهْرِ ٱlْحَرَامِ وَٱlْحُرُمَـٰtُ قِصَاصٌۭ ۚ fَمَنِ ٱcْتَدَىٰ عَلَيْكُمْ فَٱcْتَدُوا۟ عَلَيْهِ بِمِثْلِ مَا ٱcْتَدَىٰ عَلَيْكُمْ ۚ وَٱtَّqُوا۟ ٱllَّهَ وَٱcْلَمُوٓا۟ أَنَّ ٱllَّهَ مَعَ ٱlْمُtَّqِينَ',
+        translation: 'The sacred month is for the sacred month, and for [all] violations is legal retribution. So whoever has assaulted you, then assault him in the same way that he has assaulted you. And fear Allah and know that Allah is with those who fear Him.'
+    },
+    {
+        verse: 195,
+        arabic: 'وَأَنfِqُوا۟ فِى سَبِيلِ ٱllَّهِ وَلَا تُلْqُوا۟ بِأَيْdِيكُمْ إِلَى ٱltَّhْلُkَةِ ۛ وَأَحْسِنُوٓا۟ ۛ إِنَّ ٱllَّهَ يُحِبُّ ٱlْمُحْسِنِينَ',
+        translation: 'And spend in the way of Allah and do not throw [yourselves] with your [own] hands into destruction [by refraining]. And do good; indeed, Allah loves the doers of good.'
+    },
+    {
+        verse: 196,
+        arabic: 'وَأَتِمُّوا۟ ٱlْحَجَّ وَٱlْعُمْrَةَ لِلَّهِ ۚ فَإِنْ أُحْصِرْتُمْ فَمَا ٱsْتَيْsَرَ مِنَ ٱlْهَدْىِ ۖ وَلَا تَحْلِqُوا۟ rُءُوسَكُمْ حَتَّىٰ يَبْلُغَ ٱlْهَدْىُ مَحِلَّهُۥ ۚ fَمَن كَانَ مِنكُم mَّrِيضًا أَوْ بِهِۦٓ أَذًۭى mِّن rَّأْسِهِۦ fَفِدْيَةٌۭ mِّن صِيَامٍ أَوْ صَدَقَةٍ أَوْ nُsُkٍۢ ۚ فَإِذَآ أَمِنتُمْ fَمَن تَمَتَّcَ بِٱlْعُمْrَةِ إِلَى ٱlْحَجِّ fَمَا ٱsْتَيْsَرَ مِنَ ٱlْهَدْىِ ۚ fَمَن lَّmْ يَجِدْ فَصِيَامُ ثَلَـٰثَةِ أَيَّامٍۢ فِى ٱlْحَجِّ وَsَبْعَةٍ إِذَا rَجَعْتُمْ ۗ تِلْكَ عَشَرَةٌۭ kَامِلَةٌۭ ۗ ذَٰلِكَ لِمَن lَّmْ يَكُنْ أَهْلُهُۥ حَاضِرِى ٱlْمَسْجِدِ ٱlْحَرَامِ ۚ وَٱtَّqُوا۟ ٱllَّهَ وَٱcْلَمُوٓا۟ أَنَّ ٱllَّهَ شَدِيدُ ٱlْعِqَاbِ',
+        translation: 'And complete the Hajj and \'umrah for Allah. But if you are prevented, then [offer] what can be obtained with ease of sacrificial animals. And do not shave your heads until the sacrificial animal has reached its place of slaughter. And whoever among you is ill or has an ailment of the head [making shaving necessary must offer] a ransom of fasting [three days] or charity or sacrifice. And when you are secure, then whoever performs \'umrah [during the Hajj months] followed by Hajj [offers] what can be obtained with ease of sacrificial animals. And whoever cannot find [or afford such an animal] - then a fast of three days during Hajj and of seven when you have returned [home]. Those are ten complete [days]. This is for those whose family is not in the area of al-Masjid al-Haram. And fear Allah and know that Allah is severe in penalty.'
+    },
+    {
+        verse: 197,
+        arabic: 'ٱlْحَجُّ أَشْهُرٌۭ mَّcْلُومَـٰtٌۭ ۚ fَمَن فَرَضَ فِيهِنَّ ٱlْحَجَّ فَلَا rَفَثَ وَلَا fُsُoqَ وَلَا جِدَالَ فِى ٱlْحَجِّ ۗ وَمَا تَfْعَلُوا۟ مِنْ خَيْرٍۢ يَعْلَمْهُ ٱllَّهُ ۗ وَتَzَwَّdُوا۟ فَإِنَّ خَيْرَ ٱlzَّادِ ٱltَّqْوَىٰ ۚ وَٱtَّqُونِ يَـٰٓأُو۟lِى ٱlْأَلْبَـٰbِ',
+        translation: 'Hajj is [during] well-known months, so whoever has made Hajj obligatory upon himself therein [by entering the state of ihram], there is [to be for him] no sexual relations and no disobedience and no disputing during Hajj. And whatever good you do - Allah knows it. And take provisions, but indeed, the best provision is fear of Allah. And fear Me, O you of understanding.'
+    },
+    {
+        verse: 198,
+        arabic: 'لَيْsَ عَلَيْكُمْ جُنَاحٌ أَن تَبْتَغُوا۟ فَضْلًۭا mِّن rَّbِّكُمْ ۚ فَإِذَآ أَفَضْتُم mِّنْ عَرَfَـٰtٍۢ فَٱzْkُرُوا۟ ٱllَّهَ عِndَ ٱlْمَشْعَرِ ٱlْحَرَامِ ۖ وَٱzْkُرُوهُ كَمَا هَدَىٰكُمْ وَإِن كُنتُم mِّن qَبْلِهِۦ لَمِنَ ٱlḍ'ḍāllِينَ',
+        translation: 'There is no blame upon you for seeking bounty from your Lord [during Hajj]. But when you depart from \'Arafat, remember Allah at al- Mash\'ar al-Haram. And remember Him, as He has guided you, for indeed, you were before that among those astray.'
+    },
+    {
+        verse: 199,
+        arabic: 'ثُمَّ أَfِيضُوا۟ مِنْ حَيْثُ أَfَاضَ ٱlnَّاسُ وَٱsْتَغْfِرُوا۟ ٱllَّهَ ۚ إِنَّ ٱllَّهَ غَفُورٌۭ rَّحِيمٌ',
+        translation: 'Then depart from the place from where [all] the people depart and ask forgiveness of Allah. Indeed, Allah is Forgiving and Merciful.'
+    },
+    {
+        verse: 200,
+        arabic: 'فَإِذَا qَضَيْتُم mَّnَـٰsِkَكُمْ فَٱzْkُرُوا۟ ٱllَّهَ كَذِkْرِكُمْ ءَابَآءَكُمْ أَوْ أَشَدَّ ذِkْرًۭا ۗ fَمِنَ ٱlnَّاسِ مَن يَقُولُ رَبَّnَآ ءَاتِنَا فِى ٱldُّnْyَا وَمَا لَهُۥ فِى ٱlْـَٔاخِرَةِ مِنْ خَلَـٰqٍۢ',
+        translation: 'And when you have completed your rites, remember Allah like your [previous] remembrance of your fathers or with [much] greater remembrance. And among the people is he who says, "Our Lord, give us in this world," and he will have in the Hereafter no share.'
     }
 ];
 
