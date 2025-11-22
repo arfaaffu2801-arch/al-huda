@@ -12,6 +12,45 @@ import { BookMarked } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '../ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { ScrollArea } from '../ui/scroll-area';
+
+const alFatihahVerses = [
+  {
+    verse: 1,
+    arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
+    translation: 'In the name of Allah, the Entirely Merciful, the Especially Merciful.',
+  },
+  {
+    verse: 2,
+    arabic: 'الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ',
+    translation: '[All] praise is [due] to Allah, Lord of the worlds -',
+  },
+  {
+    verse: 3,
+    arabic: 'الرَّحْمَٰنِ الرَّحِيمِ',
+    translation: 'The Entirely Merciful, the Especially Merciful,',
+  },
+  {
+    verse: 4,
+    arabic: 'مَالِكِ يَوْمِ الدِّينِ',
+    translation: 'Sovereign of the Day of Recompense.',
+  },
+  {
+    verse: 5,
+    arabic: 'إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ',
+    translation: 'It is You we worship and You we ask for help.',
+  },
+  {
+    verse: 6,
+    arabic: 'اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ',
+    translation: 'Guide us to the straight path -',
+  },
+  {
+    verse: 7,
+    arabic: 'صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ',
+    translation: 'The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.',
+  },
+];
 
 export function SurahDetail({ surahNumber }: { surahNumber: number }) {
   const surah = surahData.find((s) => s.number === surahNumber);
@@ -23,6 +62,8 @@ export function SurahDetail({ surahNumber }: { surahNumber: number }) {
       </div>
     );
   }
+
+  const isFatiha = surah.number === 1;
 
   return (
     <Card>
@@ -44,9 +85,29 @@ export function SurahDetail({ surahNumber }: { surahNumber: number }) {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="flex h-[600px] items-center justify-center rounded-lg border-2 border-dashed bg-secondary/30">
-          <p className="text-muted-foreground">Surah content coming soon...</p>
-        </div>
+        <ScrollArea className="h-[600px] w-full">
+          <div className="space-y-6 p-1">
+            {isFatiha ? (
+              alFatihahVerses.map((verse) => (
+                <div key={verse.verse} className="rounded-lg border bg-secondary/30 p-4">
+                  <p className="mb-4 text-right font-headline text-3xl leading-relaxed text-primary" dir="rtl">
+                    {verse.arabic}
+                    <span className="ml-2 text-sm font-sans text-muted-foreground">({verse.verse})</span>
+                  </p>
+                  <p className="italic text-foreground">
+                    &ldquo;{verse.translation}&rdquo;
+                  </p>
+                </div>
+              ))
+            ) : (
+              <div className="flex h-[600px] items-center justify-center rounded-lg border-2 border-dashed bg-secondary/30">
+                <p className="text-muted-foreground">
+                  Surah content coming soon...
+                </p>
+              </div>
+            )}
+          </div>
+        </ScrollArea>
       </CardContent>
     </Card>
   );
