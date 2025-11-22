@@ -52,6 +52,45 @@ const alFatihahVerses = [
   },
 ];
 
+const alBaqarahVerses = [
+    {
+        verse: 1,
+        arabic: 'الۤمۤ',
+        translation: 'Alif-Lãm-Mĩm.'
+    },
+    {
+        verse: 2,
+        arabic: 'ذَٰلِكَ الْكِتَابُ لَا رَيْبَ ۛ فِيهِ ۛ هُدًى لِلْمُتَّقِينَ',
+        translation: 'This is the Book about which there is no doubt, a guidance for those conscious of Allah -'
+    },
+    {
+        verse: 3,
+        arabic: 'الَّذِينَ يُؤْمِنُونَ بِالْغَيْبِ وَيُقِيمُونَ الصَّلَاةَ وَمِمَّا رَزَقْنَاهُمْ يُنْفِقُونَ',
+        translation: 'Who believe in the unseen, establish prayer, and spend out of what We have provided for them,'
+    },
+    {
+        verse: 4,
+        arabic: 'وَالَّذِينَ يُؤْمِنُونَ بِمَا أُنْزِلَ إِلَيْكَ وَمَا أُنْزِلَ مِنْ قَبْلِكَ وَبِالْآخِرَةِ هُمْ يُوقِنُونَ',
+        translation: 'And who believe in what has been revealed to you, [O Muhammad], and what was revealed before you, and of the Hereafter they are certain [in faith].'
+    },
+    {
+        verse: 5,
+        arabic: 'أُولَٰئِكَ عَلَىٰ هُدًى مِنْ رَبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ',
+        translation: 'Those are upon [right] guidance from their Lord, and it is those who are the successful.'
+    },
+    {
+        verse: 257,
+        arabic: 'اللَّهُ وَلِيُّ الَّذِينَ آمَنُوا يُخْرِجُهُمْ مِنَ الظُّلُمَاتِ إِلَى النُّورِ ۖ وَالَّذِينَ كَفَرُوا أَوْلِيَاؤُهُمُ الطَّاغُوتُ يُخْرِجُونَهُمْ مِنَ النُّورِ إِلَى الظُّلُمَاتِ ۗ أُولَٰئِكَ أَصْحَابُ النَّارِ ۖ هُمْ فِيهَا خَالِدُونَ',
+        translation: "Allah is the ally of those who believe. He brings them out from darknesses into the light. And those who disbelieve - their allies are Taghut. They take them out of the light into darknesses. Those are the companions of the Fire; they will abide eternally therein."
+    }
+];
+
+const surahContent: { [key: number]: any[] } = {
+  1: alFatihahVerses,
+  2: alBaqarahVerses,
+};
+
+
 export function SurahDetail({ surahNumber }: { surahNumber: number }) {
   const surah = surahData.find((s) => s.number === surahNumber);
 
@@ -63,7 +102,7 @@ export function SurahDetail({ surahNumber }: { surahNumber: number }) {
     );
   }
 
-  const isFatiha = surah.number === 1;
+  const verses = surahContent[surah.number];
 
   return (
     <Card>
@@ -87,8 +126,8 @@ export function SurahDetail({ surahNumber }: { surahNumber: number }) {
       <CardContent>
         <ScrollArea className="h-[600px] w-full">
           <div className="space-y-6 p-1">
-            {isFatiha ? (
-              alFatihahVerses.map((verse) => (
+            {verses ? (
+              verses.map((verse) => (
                 <div key={verse.verse} className="rounded-lg border bg-secondary/30 p-4">
                   <p className="mb-4 text-right font-headline text-3xl leading-relaxed text-primary" dir="rtl">
                     {verse.arabic}
@@ -101,8 +140,10 @@ export function SurahDetail({ surahNumber }: { surahNumber: number }) {
               ))
             ) : (
               <div className="flex h-[600px] items-center justify-center rounded-lg border-2 border-dashed bg-secondary/30">
-                <p className="text-muted-foreground">
-                  Surah content coming soon...
+                <p className="text-center text-muted-foreground">
+                  The content for Surah {surah.transliteration} is not yet available.
+                  <br />
+                  We are working on adding all Surahs soon.
                 </p>
               </div>
             )}
