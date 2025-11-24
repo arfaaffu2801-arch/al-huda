@@ -1,5 +1,5 @@
 
-import { Book } from 'lucide-react';
+import Image from 'next/image';
 import Link from 'next/link';
 
 export function Header() {
@@ -7,9 +7,13 @@ export function Header() {
     <header className="sticky top-0 z-10 w-full border-b bg-card shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-3">
-          <div className="rounded-full bg-primary/10 p-2 text-primary">
-            <Book className="h-6 w-6" />
-          </div>
+          <Image
+            src="/light.png"
+            alt="Qudrat-AI-Quran logo"
+            width={40}
+            height={40}
+            className="rounded-full"
+          />
           <span className="text-2xl font-bold font-headline text-peach-pink">
             Qudrat-AI-Quran
           </span>
