@@ -16,6 +16,11 @@ import Image from 'next/image';
 
 const tasbihOptions = [
   { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', meaning: 'I seek forgiveness from Allah', target: 100 },
+  { text: 'SubhanAllahi wa bihamdihi', arabic: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ', meaning: 'Glory is to Allah and praise is to Him', target: 100 },
+  { text: 'SubhanAllahil Adheem', arabic: 'سُبْحَانَ اللَّهِ الْعَظِيمِ', meaning: 'Glory is to Allah, the Great', target: 100 },
+  { text: 'SubhanAllahi wa bihamdihi, SubhanAllahil Adheem', arabic: 'سُبْحَانَ اللَّهِ وَبِحَمْدِهِ، سُبْحَانَ اللَّهِ الْعَظِيمِ', meaning: 'Glory is to Allah and praise is to Him, Glory is to Allah, the Great', target: 100 },
+  { text: 'SubhanAllah, Alhamdulillah, La ilaha illallah, Allahu Akbar', arabic: 'سُبْحَانَ اللَّهِ، وَالْحَمْدُ لِلَّهِ، وَلَا إِلَهَ إِلَّا اللَّهُ، وَاللَّهُ أَكْبَرُ', meaning: 'Glory be to Allah, Praise be to Allah, There is no god but Allah, Allah is the Greatest', target: 100 },
+  { text: 'La ilaha illallahu wahdahu la shareeka lah...', arabic: 'لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ', meaning: 'There is no god but Allah, alone, without partner, to Him belongs all sovereignty and praise, and He is over all things omnipotent.', target: 100 },
   { text: 'SubhanAllah', arabic: 'سُبْحَانَ اللّٰهِ', meaning: 'Glory be to Allah', target: 33 },
   { text: 'Alhamdulillah', arabic: 'الْحَمْدُ لِلّٰهِ', meaning: 'Praise be to Allah', target: 33 },
   { text: 'Allahu Akbar', arabic: 'اللّٰهُ أَكْبَرُ', meaning: 'Allah is the Greatest', target: 33 },
@@ -135,7 +140,7 @@ export function TasbihCounter() {
                 )}
             </div>
         </div>
-        <div className="relative z-10 mt-8 w-full max-w-md">
+        <div className="relative z-10 mt-8 w-full max-w-2xl">
             <h3 className="mb-4 text-center text-lg font-semibold text-foreground">
                 Available Tasbih
             </h3>
@@ -150,12 +155,12 @@ export function TasbihCounter() {
                             : 'bg-secondary/30 hover:bg-secondary/50'
                         }`}
                     >
-                        <div className="flex justify-between items-center">
-                          <div>
+                        <div className="flex justify-between items-center flex-wrap">
+                          <div className='mb-2 md:mb-0'>
                               <p className="font-semibold">{tasbih.text} ({tasbih.target})</p>
                               <p className="text-sm italic text-muted-foreground">&ldquo;{tasbih.meaning}&rdquo;</p>
                           </div>
-                          <p className="text-lg text-primary" dir="rtl">{tasbih.arabic}</p>
+                          <p className="text-lg text-primary text-right" dir="rtl">{tasbih.arabic}</p>
                         </div>
                     </button>
                 ))}
