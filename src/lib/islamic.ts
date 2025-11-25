@@ -1,6 +1,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -139,7 +140,7 @@ export const morningAzkar = [
     translation: 'In the name of Allah with whose name nothing is harmed on earth nor in the heavens and He is The All-Seeing, The All-Knowing.',
   },
   {
-    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلِيهِ وَسَلَّمَ نَبِيَّاً.',
+    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ دِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيَّاً.',
     transliteration: 'Radiytu billahi rabbān wa bil-islāmi dīnān wa bi-Muḥammadin ṣallallāhu ʿalayhi wa sallam nabīyā.',
     translation: 'I am pleased with Allah as a Lord, and Islam as a religion and Muhammad peace be upon to him as a Prophet',
   },
@@ -235,7 +236,7 @@ export const eveningAzkar = [
     translation: 'How perfect Allah is and I praise Him by the number of His creation and His pleasure, and by the weight of His throne, and the ink of His words.',
   },
   {
-    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ dِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلِيهِ وَسَلَّمَ نَبِيَّاً.',
+    arabic: 'رَضِيتُ باللَّهِ رَبًّا، وَبِالْإِسْلَامِ dِيناً، وَبِمُحَمَّدٍ صَلَى اللَّهُ عَلَيْهِ وَسَلَّمَ نَبِيَّاً.',
     transliteration: 'Radiytu billahi rabbān wa bil-islāmi dīnān wa bi-Muḥammadin ṣallallāhu ʿalayhi wa sallam nabīyā.',
     translation: 'I am pleased with Allah as a Lord, and Islam as a religion and Muhammad peace be upon to him as a Prophet.',
   },
@@ -637,6 +638,18 @@ export const ramadanDuas = [
     translation: 'O Allah, bring this moon over us with blessings and faith, and with safety and Islam.',
     reference: 'Hadith',
   },
+  {
+    arabic: 'وَبِصَوْمِ غَدٍ نَّوَيْتُ مِنْ شَهْرِ رَمَضَانَ',
+    transliteration: 'Wa bisawmi ghadin nawaitu min shahri ramadan',
+    translation: 'I intend to keep the fast for tomorrow in the month of Ramadan.',
+    reference: 'Dua for Suhoor (starting fast)',
+  },
+  {
+    arabic: 'اللَّهُمَّ إِنِّي لَكَ صُمْتُ وَبِكَ آمَنْتُ وَعَلَيْكَ تَوَكَّلْتُ وَعَلَى رِزْقِكَ أَفْطَرْتُ',
+    transliteration: 'Allahumma inni laka sumtu wa bika aamantu wa alayka tawakkaltu wa ala rizq-ika-aftartu',
+    translation: 'O Allah! I fasted for You and I believe in You and I put my trust in You and I break my fast with Your sustenance.',
+    reference: 'Dua for Iftar (breaking fast)',
+  }
 ];
 
 export const openingTakbeerDuas = [
@@ -912,3 +925,4 @@ export const leavingRestroomAzkar = [
     translation: 'I ask You (Allah) for forgiveness.',
   }
 ];
+
