@@ -14,11 +14,11 @@ import { TasbihIcon } from './TasbihIcon';
 import Image from 'next/image';
 
 const tasbihOptions = [
+  { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', target: 100 },
   { text: 'SubhanAllah', arabic: 'سُبْحَانَ اللّٰهِ', target: 33 },
   { text: 'Alhamdulillah', arabic: 'الْحَمْدُ لِلّٰهِ', target: 33 },
   { text: 'Allahu Akbar', arabic: 'اللّٰهُ أَكْبَرُ', target: 33 },
   { text: 'La ilaha illallah', arabic: 'لَا إِلَٰهَ إِلَّا اللّٰهُ', target: 100 },
-  { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', target: 100 },
 ];
 
 export function TasbihCounter() {
