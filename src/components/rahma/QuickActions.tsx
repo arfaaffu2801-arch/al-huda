@@ -12,7 +12,6 @@ import { CalendarIcon } from './CalendarIcon';
 import { QiblaIcon } from './QiblaIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { Book, BookMarked, Hand } from 'lucide-react';
-import { JummahIcon } from './JummahIcon';
 import { HadisIcon } from './HadisIcon';
 
 const actions = [
@@ -60,11 +59,6 @@ const actions = [
     href: '/qibla',
     label: 'Qibla',
     icon: <QiblaIcon className="h-12 w-12" />,
-  },
-   {
-    href: '/jummah',
-    label: 'Jummah',
-    icon: <JummahIcon className="h-12 w-12" />,
   },
 ];
 
