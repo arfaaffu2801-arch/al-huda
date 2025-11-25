@@ -41,11 +41,6 @@ const actions = [
     icon: <TasbihIcon className="h-12 w-12" />,
   },
   {
-    href: '/tracker',
-    label: 'Tracker',
-    icon: <TrackerIcon className="h-12 w-12" />,
-  },
-  {
     href: '/duas',
     label: 'Duas',
     icon: <DuasIcon className="h-12 w-12" />,
