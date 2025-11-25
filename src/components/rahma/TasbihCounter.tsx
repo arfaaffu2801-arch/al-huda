@@ -67,7 +67,7 @@ export function TasbihCounter() {
           through common tasbih.
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex flex-col items-center justify-center gap-6">
+      <CardContent className="flex flex-col items-center justify-center gap-6 md:flex-row md:justify-around p-8">
         <Image
           src="https://picsum.photos/seed/prayer-beads/600/400"
           alt="Tasbih background"
@@ -75,56 +75,60 @@ export function TasbihCounter() {
           className="absolute inset-0 z-0 object-cover opacity-10"
           data-ai-hint="prayer beads"
         />
-        <div className="relative z-10 flex h-48 w-48 items-center justify-center">
-          <svg className="absolute h-full w-full" viewBox="0 0 100 100">
-            <circle
-              className="text-secondary"
-              strokeWidth="10"
-              stroke="currentColor"
-              fill="transparent"
-              r="45"
-              cx="50"
-              cy="50"
-            />
-            <circle
-              className="text-primary transition-all duration-300"
-              strokeWidth="10"
-              strokeLinecap="round"
-              stroke="currentColor"
-              fill="transparent"
-              r="45"
-              cx="50"
-              cy="50"
-              strokeDasharray={2 * Math.PI * 45}
-              strokeDashoffset={
-                2 * Math.PI * 45 * (1 - count / currentTasbih.target)
-              }
-            />
-          </svg>
-          <div className="flex flex-col items-center">
-            <span className="text-4xl font-bold">{count}</span>
-            <span className="text-muted-foreground">
-              / {currentTasbih.target}
-            </span>
-          </div>
+        <div className="relative z-10 flex flex-col items-center gap-4">
+            <div className="relative flex h-48 w-48 items-center justify-center">
+              <svg className="absolute h-full w-full" viewBox="0 0 100 100">
+                <circle
+                  className="text-secondary"
+                  strokeWidth="10"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="45"
+                  cx="50"
+                  cy="50"
+                />
+                <circle
+                  className="text-primary transition-all duration-300"
+                  strokeWidth="10"
+                  strokeLinecap="round"
+                  stroke="currentColor"
+                  fill="transparent"
+                  r="45"
+                  cx="50"
+                  cy="50"
+                  strokeDasharray={2 * Math.PI * 45}
+                  strokeDashoffset={
+                    2 * Math.PI * 45 * (1 - count / currentTasbih.target)
+                  }
+                />
+              </svg>
+              <div className="flex flex-col items-center">
+                <span className="text-4xl font-bold">{count}</span>
+                <span className="text-muted-foreground">
+                  / {currentTasbih.target}
+                </span>
+              </div>
+            </div>
+             <Button
+              onClick={increment}
+              className="relative z-10 h-24 w-24 rounded-full bg-primary/20 text-primary shadow-lg hover:bg-primary/30"
+            >
+              <span className="sr-only">Increment</span>
+            </Button>
         </div>
-        <div className="relative z-10 text-center">
-          <p className="font-headline text-3xl text-primary" dir="rtl">
+
+        <div className="relative z-10 text-center md:text-left">
+          <p className="font-headline text-5xl text-primary" dir="rtl">
             {currentTasbih.arabic}
           </p>
-          <p className="text-xl font-semibold text-foreground">
+          <p className="mt-2 text-3xl font-semibold text-foreground">
             {currentTasbih.text}
           </p>
           {cycle > 0 && (
-            <p className="text-sm text-muted-foreground">Cycle: {cycle}</p>
+            <p className="mt-4 text-sm text-muted-foreground">Cycle: {cycle}</p>
           )}
         </div>
-        <Button
-          onClick={increment}
-          className="relative z-10 h-24 w-24 rounded-full bg-primary/20 text-primary shadow-lg hover:bg-primary/30"
-        >
-          <span className="sr-only">Increment</span>
-        </Button>
+
       </CardContent>
     </Card>
   );
