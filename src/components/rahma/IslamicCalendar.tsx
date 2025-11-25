@@ -13,10 +13,16 @@ import { useEffect, useState } from 'react';
 import { islamicFestivals2025 } from '@/lib/islamic';
 import { Badge } from '../ui/badge';
 
+type Festival = {
+  name: string;
+  date: Date;
+  hijri: string;
+};
+
 export function IslamicCalendar() {
   const [hijriDate, setHijriDate] = useState('');
   const [date, setDate] = useState<Date | undefined>(new Date());
-  const [selectedFestival, setSelectedFestival] = useState<string | null>(
+  const [selectedFestival, setSelectedFestival] = useState<Festival | null>(
     null
   );
 
@@ -35,7 +41,7 @@ export function IslamicCalendar() {
         f.date.getMonth() === today.getMonth() &&
         f.date.getFullYear() === today.getFullYear()
     );
-    setSelectedFestival(festival ? festival.name : null);
+    setSelectedFestival(festival || null);
   }, [date]);
 
   const festivalDates = islamicFestivals2025.map((f) => f.date);
@@ -66,8 +72,13 @@ export function IslamicCalendar() {
         />
         <div className="mt-4 w-full text-center">
           {selectedFestival ? (
-            <Badge variant="secondary" className="text-base font-semibold">
-              {selectedFestival}
+            <Badge variant="secondary" className="h-auto text-base font-semibold">
+              <div className="flex flex-col p-2">
+                <span>{selectedFestival.name}</span>
+                <span className="text-sm font-normal text-muted-foreground">
+                  {selectedFestival.hijri}
+                </span>
+              </div>
             </Badge>
           ) : (
             <p className="text-sm text-muted-foreground">

@@ -1,5 +1,6 @@
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -84,12 +85,20 @@ export function getQiblaDirection(userCoords: { lat: number; lng: number }) {
 }
 
 export const islamicFestivals2025 = [
-  { name: 'Ramadan Starts', date: new Date('2025-02-28') },
-  { name: 'Eid al-Fitr', date: new Date('2025-03-30') },
-  { name: 'Day of Arafah', date: new Date('2025-06-05') },
-  { name: 'Eid al-Adha', date: new Date('2025-06-06') },
-  { name: 'Islamic New Year (1447 AH)', date: new Date('2025-06-26') },
-  { name: 'Ashura', date: new Date('2025-07-05') },
+  {
+    name: 'Ramadan Starts',
+    date: new Date('2025-02-28'),
+    hijri: '1 Ramadan 1446',
+  },
+  { name: 'Eid al-Fitr', date: new Date('2025-03-30'), hijri: '1 Shawwal 1446' },
+  { name: 'Day of Arafah', date: new Date('2025-06-05'), hijri: '9 Dhul-Hijjah 1446' },
+  { name: 'Eid al-Adha', date: new Date('2025-06-06'), hijri: '10 Dhul-Hijjah 1446' },
+  {
+    name: 'Islamic New Year',
+    date: new Date('2025-06-26'),
+    hijri: '1 Muharram 1447',
+  },
+  { name: 'Ashura', date: new Date('2025-07-05'), hijri: '10 Muharram 1447' },
 ];
 
 export const morningAzkar = [
@@ -296,7 +305,7 @@ export const eveningAzkar = [
     translation: 'Surah Al-Falaq: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of the daybreak, ۝ From the evil of what He has created; ۝ And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away) ۝ And from the evil of those who practice witchcrafts when they blow in the knots, ۝ And from the evil of the envier when he envies."',
   },
   {
-    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
     translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
   }
