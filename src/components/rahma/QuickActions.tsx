@@ -6,12 +6,9 @@ import { Card } from '@/components/ui/card';
 import { QuranIcon } from './QuranIcon';
 import { AzkarIcon } from './AzkarIcon';
 import { TasbihIcon } from './TasbihIcon';
-import { TrackerIcon } from './TrackerIcon';
 import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
-import { QiblaIcon } from './QiblaIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
-import { Book, BookMarked, Hand } from 'lucide-react';
 import { HadisIcon } from './HadisIcon';
 
 const actions = [
@@ -49,11 +46,6 @@ const actions = [
     href: '/calendar',
     label: 'Calendar',
     icon: <CalendarIcon className="h-12 w-12" />,
-  },
-  {
-    href: '/qibla',
-    label: 'Qibla',
-    icon: <QiblaIcon className="h-12 w-12" />,
   },
 ];
 
