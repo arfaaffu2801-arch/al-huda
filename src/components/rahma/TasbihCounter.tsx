@@ -15,11 +15,11 @@ import { TasbihIcon } from './TasbihIcon';
 import Image from 'next/image';
 
 const tasbihOptions = [
-  { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', target: 100 },
-  { text: 'SubhanAllah', arabic: 'سُبْحَانَ اللّٰهِ', target: 33 },
-  { text: 'Alhamdulillah', arabic: 'الْحَمْدُ لِلّٰهِ', target: 33 },
-  { text: 'Allahu Akbar', arabic: 'اللّٰهُ أَكْبَرُ', target: 33 },
-  { text: 'La ilaha illallah', arabic: 'لَا إِلَٰهَ إِلَّا اللّٰهُ', target: 100 },
+  { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', meaning: 'I seek forgiveness from Allah', target: 100 },
+  { text: 'SubhanAllah', arabic: 'سُبْحَانَ اللّٰهِ', meaning: 'Glory be to Allah', target: 33 },
+  { text: 'Alhamdulillah', arabic: 'الْحَمْدُ لِلّٰهِ', meaning: 'Praise be to Allah', target: 33 },
+  { text: 'Allahu Akbar', arabic: 'اللّٰهُ أَكْبَرُ', meaning: 'Allah is the Greatest', target: 33 },
+  { text: 'La ilaha illallah', arabic: 'لَا إِلَٰهَ إِلَّا اللّٰهُ', meaning: 'There is no god but Allah', target: 100 },
 ];
 
 export function TasbihCounter() {
@@ -127,6 +127,9 @@ export function TasbihCounter() {
                 <p className="mt-2 text-3xl font-semibold text-foreground">
                     {currentTasbih.text}
                 </p>
+                <p className="mt-2 text-lg italic text-muted-foreground">
+                    &ldquo;{currentTasbih.meaning}&rdquo;
+                </p>
                 {cycle > 0 && (
                     <p className="mt-4 text-sm text-muted-foreground">Cycle: {cycle}</p>
                 )}
@@ -147,8 +150,13 @@ export function TasbihCounter() {
                             : 'bg-secondary/30 hover:bg-secondary/50'
                         }`}
                     >
-                        <p className="font-semibold">{tasbih.text} ({tasbih.target})</p>
-                        <p className="text-sm text-muted-foreground" dir="rtl">{tasbih.arabic}</p>
+                        <div className="flex justify-between items-center">
+                          <div>
+                              <p className="font-semibold">{tasbih.text} ({tasbih.target})</p>
+                              <p className="text-sm italic text-muted-foreground">&ldquo;{tasbih.meaning}&rdquo;</p>
+                          </div>
+                          <p className="text-lg text-primary" dir="rtl">{tasbih.arabic}</p>
+                        </div>
                     </button>
                 ))}
             </div>
