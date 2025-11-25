@@ -27,11 +27,6 @@ const actions = [
     icon: <QuranIcon className="h-12 w-12" />,
   },
   {
-    href: '/surah',
-    label: 'Surah',
-    icon: <BookMarked className="h-12 w-12 text-primary" />,
-  },
-  {
     href: '/hadis',
     label: 'Hadis',
     icon: <HadisIcon className="h-12 w-12" />,
@@ -76,7 +71,7 @@ const actions = [
 export function QuickActions() {
   return (
     <Card>
-      <div className="grid grid-cols-3 gap-4 p-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-11">
+      <div className="grid grid-cols-3 gap-4 p-4 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-10">
         {actions.map((action) => (
           <Link
             href={action.href}
