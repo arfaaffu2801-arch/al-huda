@@ -14,11 +14,11 @@ import { TasbihIcon } from './TasbihIcon';
 import Image from 'next/image';
 
 const tasbihOptions = [
-  { text: 'SubhanAllah', target: 33 },
-  { text: 'Alhamdulillah', target: 33 },
-  { text: 'Allahu Akbar', target: 33 },
-  { text: 'La ilaha illallah', target: 100 },
-  { text: 'Astaghfirullah', target: 100 },
+  { text: 'SubhanAllah', arabic: 'سُبْحَانَ اللّٰهِ', target: 33 },
+  { text: 'Alhamdulillah', arabic: 'الْحَمْدُ لِلّٰهِ', target: 33 },
+  { text: 'Allahu Akbar', arabic: 'اللّٰهُ أَكْبَرُ', target: 33 },
+  { text: 'La ilaha illallah', arabic: 'لَا إِلَٰهَ إِلَّا اللّٰهُ', target: 100 },
+  { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', target: 100 },
 ];
 
 export function TasbihCounter() {
@@ -109,7 +109,10 @@ export function TasbihCounter() {
           </div>
         </div>
         <div className="relative z-10 text-center">
-          <p className="text-2xl font-semibold font-headline">
+          <p className="font-headline text-3xl text-primary" dir="rtl">
+            {currentTasbih.arabic}
+          </p>
+          <p className="text-xl font-semibold text-foreground">
             {currentTasbih.text}
           </p>
           {cycle > 0 && (
