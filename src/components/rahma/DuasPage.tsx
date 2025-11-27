@@ -29,6 +29,7 @@ import {
   protectionDuas,
   reverenceDuas,
   ramadanDuas,
+  istikharahDuas,
 } from '@/lib/islamic';
 import { BookHeart } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
@@ -46,6 +47,7 @@ const duaCategories = {
   patience: { label: 'Patience', data: patienceDuas },
   justice: { label: 'Justice', data: justiceDuas },
   rabbana: { label: 'Rabbana', data: rabbanaDuas },
+  istikharah: { label: 'Istikhara', data: istikharahDuas },
   ruqyah: { label: 'Ruqyah', data: ruqyahDuas },
   protection: { label: 'Protection', data: protectionDuas },
   reverence: { label: 'Reverence', data: reverenceDuas },
