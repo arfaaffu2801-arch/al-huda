@@ -68,10 +68,10 @@ export function Header() {
             Ofter Namaaz
           </Link>
            <Link
-            href="/jummah"
+            href="/istikhara"
             className="text-foreground/70 transition-colors hover:text-foreground"
           >
-            Jummah
+            Istikhara
           </Link>
           <Link
             href="/tasbih"
