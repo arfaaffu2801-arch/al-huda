@@ -8,12 +8,11 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger,
+} from '@/components/ui/tabs';
 import {
   jummahDuas,
   mercyDuas,
@@ -56,11 +55,6 @@ const duaCategories = {
 type DuaCategoryKey = keyof typeof duaCategories;
 
 export function DuasPage() {
-  const [selectedDuaCategory, setSelectedDuaCategory] =
-    useState<DuaCategoryKey>('jummah');
-
-  const selectedDuaData = duaCategories[selectedDuaCategory].data;
-
   return (
     <Card>
       <CardHeader>
@@ -73,50 +67,44 @@ export function DuasPage() {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="mb-4">
-          <Select
-            value={selectedDuaCategory}
-            onValueChange={(value) =>
-              setSelectedDuaCategory(value as DuaCategoryKey)
-            }
-          >
-            <SelectTrigger className="w-full md:w-1/3">
-              <SelectValue placeholder="Select a Du'a category" />
-            </SelectTrigger>
-            <SelectContent>
-              {Object.entries(duaCategories).map(([key, { label }]) => (
-                <SelectItem key={key} value={key}>
-                  {label}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
-        <ScrollArea className="h-[600px] w-full">
-          <div className="space-y-4 p-1">
-            {selectedDuaData.map((dua, index) => (
-              <div
-                key={index}
-                className="rounded-lg border bg-secondary/30 p-4"
-              >
-                <p className="mb-2 text-lg text-primary" dir="rtl">
-                  {dua.arabic}
-                </p>
-                <p className="mb-2 text-sm text-muted-foreground">
-                  {dua.transliteration}
-                </p>
-                <p className="italic text-foreground">
-                  &ldquo;{dua.translation}&rdquo;
-                </p>
-                {dua.reference && (
-                  <p className="mt-2 text-right text-xs text-muted-foreground">
-                    - {dua.reference}
-                  </p>
-                )}
-              </div>
+        <Tabs defaultValue="jummah" className="w-full">
+          <TabsList className="mb-4 h-auto flex-wrap justify-start">
+            {Object.entries(duaCategories).map(([key, { label }]) => (
+              <TabsTrigger key={key} value={key}>
+                {label}
+              </TabsTrigger>
             ))}
-          </div>
-        </ScrollArea>
+          </TabsList>
+          {Object.entries(duaCategories).map(([key, { data }]) => (
+            <TabsContent key={key} value={key}>
+              <ScrollArea className="h-[600px] w-full">
+                <div className="space-y-4 p-1">
+                  {data.map((dua, index) => (
+                    <div
+                      key={index}
+                      className="rounded-lg border bg-secondary/30 p-4"
+                    >
+                      <p className="mb-2 text-lg text-primary" dir="rtl">
+                        {dua.arabic}
+                      </p>
+                      <p className="mb-2 text-sm text-muted-foreground">
+                        {dua.transliteration}
+                      </p>
+                      <p className="italic text-foreground">
+                        &ldquo;{dua.translation}&rdquo;
+                      </p>
+                      {dua.reference && (
+                        <p className="mt-2 text-right text-xs text-muted-foreground">
+                          - {dua.reference}
+                        </p>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              </ScrollArea>
+            </TabsContent>
+          ))}
+        </Tabs>
       </CardContent>
     </Card>
   );
