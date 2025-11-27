@@ -1,9 +1,7 @@
 
 import { Header } from '@/components/rahma/Header';
 import { IslamicCalendar } from '@/components/rahma/IslamicCalendar';
-import { QuranVerse } from '@/components/rahma/QuranVerse';
 import { Shahada } from '@/components/rahma/Shahada';
-import { TasbihCounter } from '@/components/rahma/TasbihCounter';
 import { QuickActions } from '@/components/rahma/QuickActions';
 
 export default function Home() {
@@ -15,12 +13,7 @@ export default function Home() {
           <QuickActions />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-auto w-full max-w-screen-2xl">
-          <div>
-            <QuranVerse />
-            <div className="mt-6">
-              <Shahada />
-            </div>
-          </div>
+          <Shahada />
           <IslamicCalendar />
         </div>
       </main>
