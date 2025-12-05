@@ -5,6 +5,7 @@ import { Toaster } from "@/components/ui/toaster";
 export const metadata: Metadata = {
   title: 'Qudrat-AI-Quran',
   description: 'Your daily Islamic companion.',
+  manifest: '/manifest.json',
 };
 
 export default function RootLayout({
@@ -21,6 +22,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
           rel="stylesheet"
         />
+        <meta name="application-name" content="Qudrat-AI-Quran" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+        <meta name="apple-mobile-web-app-title" content="Qudrat-AI-Quran" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="theme-color" content="#000000" />
       </head>
       <body className="font-body antialiased">
         {children}
