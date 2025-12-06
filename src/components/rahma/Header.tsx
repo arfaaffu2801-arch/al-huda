@@ -9,13 +9,13 @@ export function Header() {
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/light.png"
-            alt="Qudrat-AI-Quran logo"
+            alt="al-Huda logo"
             width={40}
             height={40}
             className="rounded-full"
           />
           <span className="text-2xl font-bold font-headline text-peach-pink">
-            Qudrat-AI-Quran
+            al-Huda
           </span>
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium md:flex">

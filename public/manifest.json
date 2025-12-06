@@ -1,11 +1,11 @@
 {
-  "name": "Qudrat-AI-Quran",
-  "short_name": "Qudrat-AI",
+  "name": "al-Huda",
+  "short_name": "al-Huda",
   "description": "Your daily Islamic companion.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
-  "theme_color": "#000000",
+  "background_color": "#F0F2F5",
+  "theme_color": "#3B5998",
   "icons": [
     {
       "src": "/light.png",
