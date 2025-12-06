@@ -9,7 +9,7 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { allahNames } from '@/lib/allah-names';
-import { Search, Star } from 'lucide-react';
+import { Search } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
 
@@ -27,7 +27,13 @@ export function AllahNames() {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
-          <Star className="h-6 w-6 text-primary" />
+          <Image
+            src="/light.png"
+            alt="Allah calligraphy"
+            width={24}
+            height={24}
+            className="rounded-sm"
+          />
           99 Names of Allah
         </CardTitle>
         <CardDescription>
