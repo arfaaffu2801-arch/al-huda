@@ -78,7 +78,7 @@ export function AllahNames() {
           99 Names of Allah
         </CardTitle>
         <CardDescription>
-          Explore the beautiful names of Allah and their meanings.
+          Explore the beautiful names of Allah and their meanings. Click a name to hear it.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -99,7 +99,10 @@ export function AllahNames() {
             {filteredNames.map((name, index) => (
               <div
                 key={index}
-                className="group flex flex-col gap-2 rounded-lg border p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
+                onClick={() =>
+                  playAudio(name.transliteration, name.transliteration)
+                }
+                className="group flex cursor-pointer flex-col gap-2 rounded-lg border p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
               >
                 <div className="flex items-start justify-between">
                   <div className="flex flex-col">
@@ -111,20 +114,16 @@ export function AllahNames() {
                     </p>
                   </div>
                   <div className="flex items-center gap-2">
-                    <button
-                      onClick={() =>
-                        playAudio(name.transliteration, name.transliteration)
-                      }
-                      disabled={playingName === name.transliteration}
-                      className="p-2 text-muted-foreground hover:text-primary disabled:cursor-wait disabled:text-primary"
+                    <div
+                      className="p-2 text-muted-foreground"
                       aria-label={`Listen to ${name.transliteration}`}
                     >
                       {playingName === name.transliteration ? (
-                        <Loader2 className="h-5 w-5 animate-spin" />
+                        <Loader2 className="h-5 w-5 animate-spin text-primary" />
                       ) : (
                         <Volume2 className="h-5 w-5" />
                       )}
-                    </button>
+                    </div>
                     <span className="text-sm font-bold text-muted-foreground">
                       {index + 1}
                     </span>
