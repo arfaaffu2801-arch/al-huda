@@ -25,7 +25,6 @@ export function Shahada() {
           <Heart className="h-6 w-6 text-primary" />
           The Shahada
         </CardTitle>
-        <CardDescription>{shahada.reference}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4 text-center">
         <p
