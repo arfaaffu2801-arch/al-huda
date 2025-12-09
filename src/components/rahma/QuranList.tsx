@@ -1,3 +1,4 @@
+
 'use client';
 
 import {
@@ -37,9 +38,6 @@ export function QuranList() {
           />
           Qur'an
         </CardTitle>
-        <CardDescription>
-          Browse through the 30 Juz of the Holy Qur'an.
-        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="mb-6">
