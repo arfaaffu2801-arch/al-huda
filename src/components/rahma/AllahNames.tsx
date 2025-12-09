@@ -1,10 +1,8 @@
-
 'use client';
 
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
@@ -86,10 +84,6 @@ export function AllahNames() {
             <AllahNamesIcon className="h-6 w-6" />
             99 Names of Allah
           </CardTitle>
-          <CardDescription>
-            Explore the beautiful names of Allah and their meanings. Click a name
-            to hear it.
-          </CardDescription>
         </CardHeader>
         <CardContent>
           <div>
