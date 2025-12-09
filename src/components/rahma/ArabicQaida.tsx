@@ -37,6 +37,8 @@ const arabicAlphabet = [
   { letter: 'ه', name: 'Ha' },
   { letter: 'و', name: 'Waw' },
   { letter: 'ي', name: 'Ya' },
+  { letter: 'ﻻ', name: 'Lam Alif' },
+  { letter: 'ء', name: 'Hamza' },
 ];
 
 export function ArabicQaida() {
