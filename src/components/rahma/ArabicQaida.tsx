@@ -34,9 +34,9 @@ const arabicAlphabet = [
   { letter: 'ل', name: 'Lam' },
   { letter: 'م', name: 'Mim' },
   { letter: 'ن', name: 'Nun' },
+  { letter: 'و', name: 'Waw' },
   { letter: 'ه', name: 'Ha' },
   { letter: 'ء', name: 'Hamza' },
-  { letter: 'و', name: 'Waw' },
   { letter: 'ي', name: 'Ya' },
   { letter: 'ﻻ', name: 'Lam Alif' },
 ];
