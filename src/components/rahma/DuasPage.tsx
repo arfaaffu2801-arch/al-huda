@@ -64,9 +64,6 @@ export function DuasPage() {
           <BookHeart className="h-6 w-6 text-primary" />
           Collection of Du'as
         </CardTitle>
-        <CardDescription>
-          Browse supplications for various needs and occasions.
-        </CardDescription>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="jummah" className="w-full">
