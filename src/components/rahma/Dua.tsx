@@ -1,3 +1,4 @@
+
 'use client';
 
 import {
@@ -215,7 +216,6 @@ export function Dua({ initialCategory }: { initialCategory?: string }) {
             <BookHeart className="h-6 w-6 text-primary" />
             Azkar
           </CardTitle>
-          <CardDescription>daily routine</CardDescription>
         </CardHeader>
         <CardContent>
           <div className="mb-4">
