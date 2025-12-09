@@ -22,6 +22,7 @@ export function HadisPage() {
       hadis.arabic.toLowerCase().includes(searchTerm.toLowerCase()) ||
       hadis.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
       hadis.translation.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      hadis.kannada_translation.toLowerCase().includes(searchTerm.toLowerCase()) ||
       hadis.reference.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
@@ -64,6 +65,9 @@ export function HadisPage() {
                 </p>
                 <p className="italic text-foreground">
                   &ldquo;{hadis.translation}&rdquo;
+                </p>
+                <p className="mt-2 font-semibold text-primary">
+                  {hadis.kannada_translation}
                 </p>
                 <p className="mt-2 text-right text-xs text-muted-foreground">
                   - {hadis.reference}
