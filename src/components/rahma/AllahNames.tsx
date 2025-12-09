@@ -12,6 +12,7 @@ import { allahNames } from '@/lib/allah-names';
 import { Search } from 'lucide-react';
 import { useState } from 'react';
 import Image from 'next/image';
+import { AllahNamesIcon } from './AllahNamesIcon';
 
 export function AllahNames() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -27,13 +28,7 @@ export function AllahNames() {
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
-          <Image
-            src="/light.png"
-            alt="Allah calligraphy"
-            width={24}
-            height={24}
-            className="rounded-sm"
-          />
+          <AllahNamesIcon className="h-6 w-6" />
           99 Names of Allah
         </CardTitle>
         <CardDescription>
