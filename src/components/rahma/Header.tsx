@@ -1,4 +1,3 @@
-
 'use client';
 
 import Image from 'next/image';
@@ -37,9 +36,6 @@ export function Header() {
               Al-Huda
             </span>
           </Link>
-        </div>
-        <div className="hidden text-sm text-muted-foreground md:block">
-          Your Daily Islamic Companion
         </div>
       </div>
     </header>
