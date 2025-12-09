@@ -1,3 +1,4 @@
+
 'use client';
 
 import {
@@ -26,7 +27,8 @@ export function AllahNames() {
     (name) =>
       name.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       name.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      name.meaning.toLowerCase().includes(searchTerm.toLowerCase())
+      name.meaning.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      name.kannada_meaning.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const playAudio = async (text: string, transliteration: string) => {
@@ -78,7 +80,8 @@ export function AllahNames() {
           99 Names of Allah
         </CardTitle>
         <CardDescription>
-          Explore the beautiful names of Allah and their meanings. Click a name to hear it.
+          Explore the beautiful names of Allah and their meanings. Click a name
+          to hear it.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -106,7 +109,10 @@ export function AllahNames() {
               >
                 <div className="flex items-start justify-between">
                   <div className="flex flex-col">
-                    <p className="text-2xl font-headline text-primary" dir="rtl">
+                    <p
+                      className="text-2xl font-headline text-primary"
+                      dir="rtl"
+                    >
                       {name.name}
                     </p>
                     <p className="font-semibold text-foreground">
@@ -132,6 +138,9 @@ export function AllahNames() {
                 <p className="text-sm italic text-muted-foreground">
                   &ldquo;{name.meaning}&rdquo;
                 </p>
+                <p className="text-sm font-semibold text-primary">
+                  {name.kannada_meaning}
+                </p>
               </div>
             ))}
           </div>
@@ -140,3 +149,5 @@ export function AllahNames() {
     </Card>
   );
 }
+
+    
