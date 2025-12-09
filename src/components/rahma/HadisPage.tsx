@@ -33,9 +33,6 @@ export function HadisPage() {
           <HadisIcon className="h-6 w-6" />
           40 Hadis
         </CardTitle>
-        <CardDescription>
-          A collection of 40 short and authentic Hadis.
-        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="mb-6">
