@@ -27,8 +27,7 @@ export function AllahNames() {
     (name) =>
       name.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       name.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      name.meaning.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      name.kannada_meaning.toLowerCase().includes(searchTerm.toLowerCase())
+      name.meaning.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const playAudio = async (text: string, transliteration: string) => {
@@ -138,9 +137,6 @@ export function AllahNames() {
                 <p className="text-sm italic text-muted-foreground">
                   &ldquo;{name.meaning}&rdquo;
                 </p>
-                <p className="text-sm font-semibold text-primary">
-                  {name.kannada_meaning}
-                </p>
               </div>
             ))}
           </div>
@@ -149,5 +145,3 @@ export function AllahNames() {
     </Card>
   );
 }
-
-    
