@@ -51,14 +51,14 @@ export function ArabicQaida() {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
           {arabicAlphabet.map((char) => (
             <div
               key={char.name}
-              className="group flex flex-col items-center justify-center gap-2 rounded-lg border bg-background/50 p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
+              className="group flex flex-col justify-center gap-2 rounded-lg border bg-background/50 p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
             >
               <p
-                className="font-headline text-6xl text-primary"
+                className="text-right font-headline text-6xl text-primary"
                 dir="rtl"
               >
                 {char.letter}
