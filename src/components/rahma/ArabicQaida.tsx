@@ -26,7 +26,7 @@ const arabicAlphabet = [
   { letter: 'ض', name: 'Dad' },
   { letter: 'ط', name: 'Ta' },
   { letter: 'ظ', name: 'Dha' },
-  { letter: 'ع', name: "'Ayn" },
+  { letter: "'ع", name: "'Ayn" },
   { letter: 'غ', name: 'Ghayn' },
   { letter: 'ف', name: 'Fa' },
   { letter: 'ق', name: 'Qaf' },
@@ -64,10 +64,6 @@ export function ArabicQaida() {
                 {char.letter}
               </p>
               <p className="font-semibold text-foreground">{char.name}</p>
-              <div className="flex gap-4 text-2xl" dir="rtl">
-                <span>{char.letter + 'ا'}</span>
-                <span>{char.letter + 'ب'}</span>
-              </div>
             </div>
           ))}
         </div>
