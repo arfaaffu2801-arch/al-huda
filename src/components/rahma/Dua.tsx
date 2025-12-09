@@ -66,6 +66,7 @@ import {
 import { ScrollArea } from '../ui/scroll-area';
 import { useState } from 'react';
 import { Input } from '../ui/input';
+import Image from 'next/image';
 
 const azkarCategories = {
   waking: { label: 'Morning azkar', icon: Sunrise, data: wakingUpAzkar },
@@ -200,82 +201,91 @@ export function Dua({ initialCategory }: { initialCategory?: string }) {
   };
   
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-xl font-headline">
-          <BookHeart className="h-6 w-6 text-primary" />
-          Azkar
-        </CardTitle>
-        <CardDescription>daily routine</CardDescription>
-      </CardHeader>
-      <CardContent>
-        <div className="mb-4">
-          <div className="relative">
-            <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-            <Input
-              type="text"
-              placeholder="Search for an Azkar..."
-              className="pl-10"
-              value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
-            />
+    <Card className="relative overflow-hidden">
+        <Image
+          src="https://picsum.photos/seed/islamic-pattern/1200/800"
+          alt="Islamic pattern background"
+          fill
+          className="absolute inset-0 z-0 object-cover opacity-5"
+          data-ai-hint="islamic pattern"
+        />
+      <div className='relative z-10'>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-xl font-headline">
+            <BookHeart className="h-6 w-6 text-primary" />
+            Azkar
+          </CardTitle>
+          <CardDescription>daily routine</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="mb-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
+              <Input
+                type="text"
+                placeholder="Search for an Azkar..."
+                className="pl-10"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+              />
+            </div>
           </div>
-        </div>
-        <Tabs defaultValue={initialCategory || 'waking'} className="w-full">
-          <TabsList className="h-auto flex-wrap">
-            {Object.entries(displayedCategories).map(
-              ([key, { label, icon: Icon }]) => (
-                <TabsTrigger
-                  key={key}
-                  value={key}
-                  className="flex items-center gap-2"
-                >
-                  {Icon && <Icon className="h-5 w-5" />}
-                  {label}
-                </TabsTrigger>
-              )
-            )}
-          </TabsList>
-          {Object.entries(displayedCategories).map(([key, { data }]) => {
-            const filteredData = getFilteredData(data);
-            return (
-              <TabsContent key={key} value={key}>
-                <ScrollArea className="h-[400px] w-full">
-                  <div className="space-y-4 p-1">
-                    {filteredData.length > 0 ? (
-                      filteredData.map((dua, index) => (
-                        <div
-                          key={index}
-                          className="rounded-lg border bg-secondary/30 p-4"
-                        >
-                          <p className="mb-2 text-lg text-primary" dir="rtl">
-                            {dua.arabic}
-                          </p>
-                          <p className="mb-2 text-sm text-muted-foreground">
-                            {dua.transliteration}
-                          </p>
-                          <p className="italic text-foreground">
-                            &ldquo;{dua.translation}&rdquo;
-                          </p>
-                          {dua.reference && (
-                            <p className="mt-2 text-right text-xs text-muted-foreground">
-                              - {dua.reference}
+          <Tabs defaultValue={initialCategory || 'waking'} className="w-full">
+            <TabsList className="h-auto flex-wrap bg-transparent">
+              {Object.entries(displayedCategories).map(
+                ([key, { label, icon: Icon }]) => (
+                  <TabsTrigger
+                    key={key}
+                    value={key}
+                    className="flex items-center gap-2"
+                  >
+                    {Icon && <Icon className="h-5 w-5" />}
+                    {label}
+                  </TabsTrigger>
+                )
+              )}
+            </TabsList>
+            {Object.entries(displayedCategories).map(([key, { data }]) => {
+              const filteredData = getFilteredData(data);
+              return (
+                <TabsContent key={key} value={key}>
+                  <ScrollArea className="h-[400px] w-full">
+                    <div className="space-y-4 p-1">
+                      {filteredData.length > 0 ? (
+                        filteredData.map((dua, index) => (
+                          <div
+                            key={index}
+                            className="rounded-lg border bg-background/70 p-4 backdrop-blur-sm"
+                          >
+                            <p className="mb-2 text-lg text-primary" dir="rtl">
+                              {dua.arabic}
                             </p>
-                          )}
+                            <p className="mb-2 text-sm text-muted-foreground">
+                              {dua.transliteration}
+                            </p>
+                            <p className="italic text-foreground">
+                              &ldquo;{dua.translation}&rdquo;
+                            </p>
+                            {dua.reference && (
+                              <p className="mt-2 text-right text-xs text-muted-foreground">
+                                - {dua.reference}
+                              </p>
+                            )}
+                          </div>
+                        ))
+                      ) : (
+                        <div className="flex h-48 items-center justify-center text-muted-foreground">
+                          <p>No Azkar found for this category.</p>
                         </div>
-                      ))
-                    ) : (
-                      <div className="flex h-48 items-center justify-center text-muted-foreground">
-                        <p>No Azkar found for this category.</p>
-                      </div>
-                    )}
-                  </div>
-                </ScrollArea>
-              </TabsContent>
-            );
-          })}
-        </Tabs>
-      </CardContent>
+                      )}
+                    </div>
+                  </ScrollArea>
+                </TabsContent>
+              );
+            })}
+          </Tabs>
+        </CardContent>
+      </div>
     </Card>
   );
 }
