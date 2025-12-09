@@ -35,10 +35,10 @@ const arabicAlphabet = [
   { letter: 'م', name: 'Mim' },
   { letter: 'ن', name: 'Nun' },
   { letter: 'ه', name: 'Ha' },
+  { letter: 'ء', name: 'Hamza' },
   { letter: 'و', name: 'Waw' },
   { letter: 'ي', name: 'Ya' },
   { letter: 'ﻻ', name: 'Lam Alif' },
-  { letter: 'ء', name: 'Hamza' },
 ];
 
 export function ArabicQaida() {
@@ -51,14 +51,14 @@ export function ArabicQaida() {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+        <div className="grid grid-cols-2 gap-4 text-left sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
           {arabicAlphabet.map((char) => (
             <div
               key={char.name}
               className="group flex flex-col justify-center gap-2 rounded-lg border bg-background/50 p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
             >
               <p
-                className="text-right font-headline text-6xl text-primary"
+                className="text-left font-headline text-6xl text-primary"
                 dir="rtl"
               >
                 {char.letter}
