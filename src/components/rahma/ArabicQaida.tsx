@@ -26,7 +26,7 @@ const arabicAlphabet = [
   { letter: 'ض', name: 'Dad' },
   { letter: 'ط', name: 'Ta' },
   { letter: 'ظ', name: 'Dha' },
-  { letter: "'ع", name: "'Ayn" },
+  { letter: 'ع', name: "'Ayn" },
   { letter: 'غ', name: 'Ghayn' },
   { letter: 'ف', name: 'Fa' },
   { letter: 'ق', name: 'Qaf' },
@@ -34,10 +34,10 @@ const arabicAlphabet = [
   { letter: 'ل', name: 'Lam' },
   { letter: 'م', name: 'Mim' },
   { letter: 'ن', name: 'Nun' },
-  { letter: 'و', name: 'Waw' },
   { letter: 'ه', name: 'Ha' },
-  { letter: 'ء', name: 'Hamza' },
+  { letter: 'و', name: 'Waw' },
   { letter: 'ي', name: 'Ya' },
+  { letter: 'ء', name: 'Hamza' },
   { letter: 'ﻻ', name: 'Lam Alif' },
 ];
 
