@@ -9,13 +9,18 @@ import {
 } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { allahNames } from '@/lib/allah-names';
-import { Search } from 'lucide-react';
-import { useState } from 'react';
+import { Search, Volume2, Loader2 } from 'lucide-react';
+import { useState, useRef } from 'react';
 import Image from 'next/image';
 import { AllahNamesIcon } from './AllahNamesIcon';
+import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useToast } from '@/hooks/use-toast';
 
 export function AllahNames() {
   const [searchTerm, setSearchTerm] = useState('');
+  const [playingName, setPlayingName] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const { toast } = useToast();
 
   const filteredNames = allahNames.filter(
     (name) =>
@@ -23,6 +28,47 @@ export function AllahNames() {
       name.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
       name.meaning.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  const playAudio = async (text: string, transliteration: string) => {
+    if (playingName === transliteration) {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+      setPlayingName(null);
+      return;
+    }
+
+    setPlayingName(transliteration);
+    try {
+      const { audioDataUri } = await generateAudio({ text });
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingName(null);
+        };
+      }
+    } catch (e) {
+      console.error('Failed to play audio', e);
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'Could not generate audio for this name.',
+      });
+      setPlayingName(null);
+    }
+  };
+
+  useState(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  });
 
   return (
     <Card>
@@ -55,17 +101,35 @@ export function AllahNames() {
                 key={index}
                 className="group flex flex-col gap-2 rounded-lg border p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
               >
-                <div className="flex items-center justify-between">
-                  <p className="text-2xl font-headline text-primary" dir="rtl">
-                    {name.name}
-                  </p>
-                  <span className="text-sm font-bold text-muted-foreground">
-                    {index + 1}
-                  </span>
+                <div className="flex items-start justify-between">
+                  <div className="flex flex-col">
+                    <p className="text-2xl font-headline text-primary" dir="rtl">
+                      {name.name}
+                    </p>
+                    <p className="font-semibold text-foreground">
+                      {name.transliteration}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <button
+                      onClick={() =>
+                        playAudio(name.transliteration, name.transliteration)
+                      }
+                      disabled={playingName === name.transliteration}
+                      className="p-2 text-muted-foreground hover:text-primary disabled:cursor-wait disabled:text-primary"
+                      aria-label={`Listen to ${name.transliteration}`}
+                    >
+                      {playingName === name.transliteration ? (
+                        <Loader2 className="h-5 w-5 animate-spin" />
+                      ) : (
+                        <Volume2 className="h-5 w-5" />
+                      )}
+                    </button>
+                    <span className="text-sm font-bold text-muted-foreground">
+                      {index + 1}
+                    </span>
+                  </div>
                 </div>
-                <p className="font-semibold text-foreground">
-                  {name.transliteration}
-                </p>
                 <p className="text-sm italic text-muted-foreground">
                   &ldquo;{name.meaning}&rdquo;
                 </p>
