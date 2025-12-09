@@ -11,7 +11,7 @@ import {
 import { Calendar } from '@/components/ui/calendar';
 import { CalendarDays, Star } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { islamicFestivals2025 } from '@/lib/islamic';
+import { islamicFestivals2026 } from '@/lib/islamic';
 import { Badge } from '../ui/badge';
 
 type Festival = {
@@ -36,7 +36,7 @@ export function IslamicCalendar() {
     }).format(today);
     setHijriDate(hijriDateString);
 
-    const festival = islamicFestivals2025.find(
+    const festival = islamicFestivals2026.find(
       (f) =>
         f.date.getDate() === today.getDate() &&
         f.date.getMonth() === today.getMonth() &&
@@ -45,7 +45,7 @@ export function IslamicCalendar() {
     setSelectedFestival(festival || null);
   }, [date]);
 
-  const festivalDates = islamicFestivals2025.map((f) => f.date);
+  const festivalDates = islamicFestivals2026.map((f) => f.date);
 
   return (
     <Card>
@@ -88,9 +88,9 @@ export function IslamicCalendar() {
           )}
         </div>
         <div className="w-full max-w-md rounded-lg border p-4">
-            <h3 className="mb-4 text-center text-lg font-semibold">Upcoming Festivals 2025</h3>
+            <h3 className="mb-4 text-center text-lg font-semibold">Upcoming Festivals 2026</h3>
             <ul className="space-y-2">
-                {islamicFestivals2025.map((festival, index) => (
+                {islamicFestivals2026.map((festival, index) => (
                     <li key={index} className="flex justify-between items-center text-sm p-2 rounded-md hover:bg-secondary/50">
                         <div className="flex items-center gap-2">
                            <Star className="h-4 w-4 text-accent" />
@@ -108,3 +108,5 @@ export function IslamicCalendar() {
     </Card>
   );
 }
+
+    

@@ -2,6 +2,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -85,21 +86,21 @@ export function getQiblaDirection(userCoords: { lat: number; lng: number }) {
   return bearing;
 }
 
-export const islamicFestivals2025 = [
+export const islamicFestivals2026 = [
   {
     name: 'Ramadan Starts',
-    date: new Date('2025-02-28'),
-    hijri: '1 Ramadan 1446',
+    date: new Date('2026-02-18'),
+    hijri: '1 Ramadan 1447',
   },
-  { name: 'Eid al-Fitr', date: new Date('2025-03-30'), hijri: '1 Shawwal 1446' },
-  { name: 'Day of Arafah', date: new Date('2025-06-05'), hijri: '9 Dhul-Hijjah 1446' },
-  { name: 'Eid al-Adha', date: new Date('2025-06-06'), hijri: '10 Dhul-Hijjah 1446' },
+  { name: 'Eid al-Fitr', date: new Date('2026-03-20'), hijri: '1 Shawwal 1447' },
+  { name: 'Day of Arafah', date: new Date('2026-05-26'), hijri: '9 Dhul-Hijjah 1447' },
+  { name: 'Eid al-Adha', date: new Date('2026-05-27'), hijri: '10 Dhul-Hijjah 1447' },
   {
     name: 'Islamic New Year',
-    date: new Date('2025-06-26'),
-    hijri: '1 Muharram 1447',
+    date: new Date('2026-06-16'),
+    hijri: '1 Muharram 1448',
   },
-  { name: 'Ashura', date: new Date('2025-07-05'), hijri: '10 Muharram 1447' },
+  { name: 'Ashura', date: new Date('2026-06-25'), hijri: '10 Muharram 1448' },
 ];
 
 export const morningAzkar = [
@@ -926,3 +927,4 @@ export const leavingRestroomAzkar = [
   }
 ];
 
+    
