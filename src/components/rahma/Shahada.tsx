@@ -1,6 +1,7 @@
 import {
   Card,
   CardContent,
+  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
@@ -24,6 +25,7 @@ export function Shahada() {
           <Heart className="h-6 w-6 text-primary" />
           The Shahada
         </CardTitle>
+        <CardDescription>{shahada.reference}</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4 text-center">
         <p
@@ -38,11 +40,6 @@ export function Shahada() {
           &ldquo;{shahada.translation}&rdquo;
         </p>
       </CardContent>
-      <CardFooter>
-        <p className="w-full text-right text-sm text-muted-foreground">
-          {shahada.reference}
-        </p>
-      </CardFooter>
     </Card>
   );
 }
