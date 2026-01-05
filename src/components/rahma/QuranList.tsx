@@ -56,9 +56,7 @@ export function QuranList() {
           {filteredJuz.map((juz) => (
             <Link
               key={juz.juzNumber}
-              href={juz.url}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/quran/${juz.juzNumber}`}
               className="group flex cursor-pointer items-center gap-4 rounded-lg border p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
             >
               <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">

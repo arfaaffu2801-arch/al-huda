@@ -3,6 +3,8 @@
 
 
 
+
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -20,36 +22,36 @@ export const prayerTimesData = {
 };
 
 export const juzData = [
-    { juzNumber: 1, name: "Alif Lam Meem", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-1.pdf" },
-    { juzNumber: 2, name: "Sayaqool", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-2.pdf" },
-    { juzNumber: 3, name: "Tilkal Rusul", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-3.pdf" },
-    { juzNumber: 4, name: "Lan Tana Loo", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-4.pdf" },
-    { juzNumber: 5, name: "Wal Mohsanat", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-5.pdf" },
-    { juzNumber: 6, name: "La Yuhibbullah", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-6.pdf" },
-    { juzNumber: 7, name: "Wa Iza Samiu", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-7.pdf" },
-    { juzNumber: 8, name: "Wa Lau Annana", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-8.pdf" },
-    { juzNumber: 9, name: "Qalal Malao", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-9.pdf" },
-    { juzNumber: 10, name: "Wa A'lamu", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-10.pdf" },
-    { juzNumber: 11, name: "Yatazeroon", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-11.pdf" },
-    { juzNumber: 12, name: "Wa Mamin Da'abat", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-12.pdf" },
-    { juzNumber: 13, name: "Wa Ma Ubrioo", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-13.pdf" },
-    { juzNumber: 14, name: "Rubama", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-14.pdf" },
-    { juzNumber: 15, name: "Subhanal lazi", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-15.pdf" },
-    { juzNumber: 16, name: "Qala Alam", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-16.pdf" },
-    { juzNumber: 17, name: "Iqtaraba lil'n-nasi", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-17.pdf" },
-    { juzNumber: 18, name: "Qadd Aflaha", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-18.pdf" },
-    { juzNumber: 19, name: "Wa Qala lladhina", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-19.pdf" },
-    { juzNumber: 20, name: "A'man Khalaqa", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-20.pdf" },
-    { juzNumber: 21, name: "Utlu Ma Oohiya", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-21.pdf" },
-    { juzNumber: 22, name: "Wa-Man yaqnut", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-22.pdf" },
-    { juzNumber: 23, name: "Wa Mali", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-23.pdf" },
-    { juzNumber: 24, name: "Fa-man Azlamu", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-24.pdf" },
-    { juzNumber: 25, name: "Ilayhi Yuruddu", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-25.pdf" },
-    { juzNumber: 26, name: "Ha Meem", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-26.pdf" },
-    { juzNumber: 27, name: "Qala Fama Khatbukum", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-27.pdf" },
-    { juzNumber: 28, name: "Qadd Sami Allah", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-28.pdf" },
-    { juzNumber: 29, name: "Tabaraka lladhi", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-29.pdf" },
-    { juzNumber: 30, name: "Amma", url: "https://onlinemadrasa.org/wp-content/uploads/2024/01/Holy-Quran-Para-30.pdf" }
+    { juzNumber: 1, name: "Alif Lam Meem", url: "/Holy-Quran-Para-1.pdf" },
+    { juzNumber: 2, name: "Sayaqool", url: "/Holy-Quran-Para-2.pdf" },
+    { juzNumber: 3, name: "Tilkal Rusul", url: "/Holy-Quran-Para-3.pdf" },
+    { juzNumber: 4, name: "Lan Tana Loo", url: "/Holy-Quran-Para-4.pdf" },
+    { juzNumber: 5, name: "Wal Mohsanat", url: "/Holy-Quran-Para-5.pdf" },
+    { juzNumber: 6, name: "La Yuhibbullah", url: "/Holy-Quran-Para-6.pdf" },
+    { juzNumber: 7, name: "Wa Iza Samiu", url: "/Holy-Quran-Para-7.pdf" },
+    { juzNumber: 8, name: "Wa Lau Annana", url: "/Holy-Quran-Para-8.pdf" },
+    { juzNumber: 9, name: "Qalal Malao", url: "/Holy-Quran-Para-9.pdf" },
+    { juzNumber: 10, name: "Wa A'lamu", url: "/Holy-Quran-Para-10.pdf" },
+    { juzNumber: 11, name: "Yatazeroon", url: "/Holy-Quran-Para-11.pdf" },
+    { juzNumber: 12, name: "Wa Mamin Da'abat", url: "/Holy-Quran-Para-12.pdf" },
+    { juzNumber: 13, name: "Wa Ma Ubrioo", url: "/Holy-Quran-Para-13.pdf" },
+    { juzNumber: 14, name: "Rubama", url: "/Holy-Quran-Para-14.pdf" },
+    { juzNumber: 15, name: "Subhanal lazi", url: "/Holy-Quran-Para-15.pdf" },
+    { juzNumber: 16, name: "Qala Alam", url: "/Holy-Quran-Para-16.pdf" },
+    { juzNumber: 17, name: "Iqtaraba lil'n-nasi", url: "/Holy-Quran-Para-17.pdf" },
+    { juzNumber: 18, name: "Qadd Aflaha", url: "/Holy-Quran-Para-18.pdf" },
+    { juzNumber: 19, name: "Wa Qala lladhina", url: "/Holy-Quran-Para-19.pdf" },
+    { juzNumber: 20, name: "A'man Khalaqa", url: "/Holy-Quran-Para-20.pdf" },
+    { juzNumber: 21, name: "Utlu Ma Oohiya", url: "/Holy-Quran-Para-21.pdf" },
+    { juzNumber: 22, name: "Wa-Man yaqnut", url: "/Holy-Quran-Para-22.pdf" },
+    { juzNumber: 23, name: "Wa Mali", url: "/Holy-Quran-Para-23.pdf" },
+    { juzNumber: 24, name: "Fa-man Azlamu", url: "/Holy-Quran-Para-24.pdf" },
+    { juzNumber: 25, name: "Ilayhi Yuruddu", url: "/Holy-Quran-Para-25.pdf" },
+    { juzNumber: 26, name: "Ha Meem", url: "/Holy-Quran-Para-26.pdf" },
+    { juzNumber: 27, name: "Qala Fama Khatbukum", url: "/Holy-Quran-Para-27.pdf" },
+    { juzNumber: 28, name: "Qadd Sami Allah", url: "/Holy-Quran-Para-28.pdf" },
+    { juzNumber: 29, name: "Tabaraka lladhi", url: "/Holy-Quran-Para-29.pdf" },
+    { juzNumber: 30, name: "Amma", url: "/Holy-Quran-Para-30.pdf" }
 ];
 
 export const KAABA_COORDS = {
@@ -477,7 +479,7 @@ export const afterPrayerAzkar = [
     reference: 'Al-Falaq',
   },
   {
-    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱلنَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
     translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (Allah) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
     reference: 'An-Nas',
@@ -665,7 +667,7 @@ export const openingTakbeerDuas = [
     translation: 'How far from imperfections You are O Allah, and I praise You. Blessed be Your name, and lofty is Your position and none has the right to be worshipped except You.'
   },
   {
-    arabic: 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفَاً وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي، وَنُسُكِي، وَمَحْيَايَ، وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ المَلِكُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ رَبِّي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبي جَمِيعَاً إِنَّهُ لاَ يَغْفِرُ الذُّنوبَ إِلاَّ أَنْتَ. وَاهْدِنِي لِأَحْسَنِ الأَخْلاقِ لاَ يَهْدِي لِأَحْسَنِها إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالخَيْرُ kُلُّهُ بِيَـــــــدَيْكَ، وَالشَّـــــرُّ لَيْسَ إِلَيْــــــكَ، أَنَا بِكَ وَإِلَيْكَ، تَبارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.',
+    arabic: 'وَجَّهْتُ وَجْهِيَ لِلَّذِي فَطَرَ السَّمَوَاتِ وَالأَرْضَ حَنِيفَاً وَمَا أَنَا مِنَ الْمُشْرِكِينَ، إِنَّ صَلاَتِي، وَنُسُكِي، وَمَحْيَايَ، وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ، لاَ شَرِيكَ لَهُ وَبِذَلِكَ أُمِرْتُ وَأَنَا مِنَ الْمُسْلِمِينَ. اللَّهُمَّ أَنْتَ المَلِكُ لاَ إِلَهَ إِلاَّ أَنْتَ، أَنْتَ رَب\'ِي وَأَنَا عَبْدُكَ، ظَلَمْتُ نَفْسِي وَاعْتَرَفْتُ بِذَنْبِي فَاغْفِرْ لِي ذُنُوبي جَمِيعَاً إِنَّهُ لاَ يَغْفِرُ الذُّنوبَ إِلاَّ أَنْتَ. وَاهْدِنِي لِأَحْسَنِ الأَخْلاقِ لاَ يَهْدِي لِأَحْسَنِها إِلاَّ أَنْتَ، وَاصْرِفْ عَنِّي سَيِّئَهَا، لاَ يَصْرِفُ عَنِّي سَيِّئَهَا إِلاَّ أَنْتَ، لَبَّيْكَ وَسَعْدَيْكَ، وَالخَيْرُ kُلُّهُ بِيَـــــــدَيْكَ، وَالشَّـــــرُّ لَيْسَ إِلَيْــــــكَ، أَنَا بِكَ وَإِلَيْكَ، تَبارَكْتَ وَتَعَالَيْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ.',
     transliteration: 'wajjahtu wajhiya lil-ladhee faṭarad-samaawaati wal-arḍa ḥaneefan, wa maa ana minal-mushrikeen, inna ṣalaatee wa nusukee wa maḥyaa-ya wa mamaatee lillaahi rabbil-‛aalameena, laa shareeka lahu wa bidhaalika umirtu wa ana minal-muslimeen, allaahumma antal-maliku laa ilaaha illaa ant, anta rabbee wa ana ‛abduk, ẓalamtu nafsee wa‛taraftu bidhambee faghfir lee dhunoobee jamee‛an innahu laa yaghfir-udh-dhunooba illaa ant, wahdinee li aḥsanil-akhlaaqi laa yahdee li aḥsanihaa illaa ant, waṣrif ‛annee sayyi’ahaa laa yaṣrifu ‛annee sayyi’ahaa illaa ant, labbayka wa sa‛dayka, wal-khayru kulluhu bi yadayka wash-sharru laysa ilayka, ana bika wa ilayka, tabaarakta wa ta‛aalayta, astaghfiruka wa atoobu ilayk.',
     translation: 'I have turned my face sincerely towards He who has brought forth the heavens and the Earth and I am not of those who associate (others with Allah). Indeed my prayer, my sacrifice, my life and my death are for Allah, Lord of the worlds, no partner has He, with this I am commanded and I am of the Muslims. O Allah, You are the Sovereign, none has the right to be worshipped except You. You are my Lord and I am Your servant, I have wronged my own soul and have acknowledged my sin, so forgive me all my sins for no one forgives sins except You. Guide me to the best of characters for none can guide to it other than You, and deliver me from the worst of characters for none can deliver me from it other than You. Here I am, in answer to Your call, happy to serve you. All good is within Your hands and evil does not stem from You. I exist by your will and will return to you. Blessed and High are You, I seek Your forgiveness and repent unto You.',
   },
