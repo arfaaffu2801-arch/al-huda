@@ -9,7 +9,6 @@ import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { HadisIcon } from './HadisIcon';
-import { ArabicQaidaIcon } from './ArabicQaidaIcon';
 
 const actions = [
   {
@@ -46,11 +45,6 @@ const actions = [
     href: '/calendar',
     label: 'Calendar',
     icon: <CalendarIcon className="h-12 w-12" />,
-  },
-  {
-    href: '/arabic-qaida',
-    label: 'Arabic Qaida',
-    icon: <ArabicQaidaIcon className="h-12 w-12" />,
   },
 ];
 
