@@ -1,3 +1,4 @@
+
 'use client';
 
 import {
@@ -9,7 +10,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { allahNames } from '@/lib/allah-names';
 import { Search, Volume2, Loader2 } from 'lucide-react';
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { generateAudio } from '@/ai/flows/text-to-speech-flow';
@@ -59,7 +60,7 @@ export function AllahNames() {
     }
   };
 
-  useState(() => {
+  useEffect(() => {
     audioRef.current = new Audio();
     return () => {
       if (audioRef.current) {
@@ -67,7 +68,7 @@ export function AllahNames() {
         audioRef.current = null;
       }
     };
-  });
+  }, []);
 
   return (
     <Card className="relative overflow-hidden">
