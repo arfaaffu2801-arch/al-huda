@@ -1,3 +1,4 @@
+
 'use client';
 
 import Link from 'next/link';
@@ -9,6 +10,7 @@ import { DuasIcon } from './DuasIcon';
 import { CalendarIcon } from './CalendarIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { HadisIcon } from './HadisIcon';
+import { HealthIcon } from './HealthIcon';
 
 const actions = [
   {
@@ -45,6 +47,11 @@ const actions = [
     href: '/calendar',
     label: 'Calendar',
     icon: <CalendarIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/health-and-wellness',
+    label: 'Health',
+    icon: <HealthIcon className="h-12 w-12" />,
   },
 ];
 
