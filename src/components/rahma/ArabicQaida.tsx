@@ -8,6 +8,10 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { ArabicQaidaIcon } from './ArabicQaidaIcon';
+import { Volume2, Loader2 } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useToast } from '@/hooks/use-toast';
 
 const arabicAlphabet = [
   { letter: 'ا', name: 'Alif' },
@@ -43,6 +47,76 @@ const arabicAlphabet = [
 ];
 
 export function ArabicQaida() {
+  const [playingChar, setPlayingChar] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioControllerRef = useRef<AbortController | null>(null);
+  const { toast } = useToast();
+
+  const playAudio = async (text: string) => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
+    if (audioControllerRef.current) {
+      audioControllerRef.current.abort();
+    }
+
+    if (playingChar === text) {
+      setPlayingChar(null);
+      return;
+    }
+
+    setPlayingChar(text);
+    const controller = new AbortController();
+    audioControllerRef.current = controller;
+
+    try {
+      const { audioDataUri } = await generateAudio({ text: `${text}, ${arabicAlphabet.find(c => c.letter === text)?.name}` });
+
+      if (controller.signal.aborted) {
+        return;
+      }
+
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingChar(null);
+        };
+      }
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        console.log('Audio generation aborted.');
+        return;
+      }
+      console.error('Failed to play audio', e);
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'Could not generate audio for this letter.',
+      });
+      setPlayingChar(null);
+    } finally {
+      if (audioControllerRef.current === controller) {
+        audioControllerRef.current = null;
+      }
+    }
+  };
+
+  useEffect(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+      if (audioControllerRef.current) {
+        audioControllerRef.current.abort();
+      }
+    };
+  }, []);
+
   return (
     <Card>
       <CardHeader>
@@ -56,14 +130,27 @@ export function ArabicQaida() {
           {arabicAlphabet.map((char) => (
             <div
               key={char.name}
-              className="group flex flex-col justify-center gap-2 rounded-lg border bg-background/50 p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
+              onClick={() => playAudio(char.letter)}
+              className="group flex cursor-pointer flex-col justify-between gap-2 rounded-lg border bg-background/50 p-4 transition-all hover:bg-secondary/50 hover:shadow-md"
             >
-              <p
-                className="text-left font-headline text-6xl text-primary"
-                dir="rtl"
-              >
-                {char.letter}
-              </p>
+              <div className="flex items-start justify-between">
+                <p
+                  className="text-left font-headline text-6xl text-primary"
+                  dir="rtl"
+                >
+                  {char.letter}
+                </p>
+                <div
+                  className="p-2 text-muted-foreground"
+                  aria-label={`Listen to ${char.name}`}
+                >
+                  {playingChar === char.letter ? (
+                    <Loader2 className="h-5 w-5 animate-spin text-primary" />
+                  ) : (
+                    <Volume2 className="h-5 w-5" />
+                  )}
+                </div>
+              </div>
               <p className="font-semibold text-foreground">{char.name}</p>
             </div>
           ))}
