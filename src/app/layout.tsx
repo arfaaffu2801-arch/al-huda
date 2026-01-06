@@ -39,7 +39,7 @@ export default function RootLayout({
           <Toaster />
           <footer className="w-full bg-card p-4 text-center border-t">
             <p className="text-sm text-muted-foreground">
-              Created by Arfa binth Mansoor, hosadurga
+              Created and designed by Arfa, SPR AI Edutech, Hosadurga
             </p>
           </footer>
         </LanguageProvider>
