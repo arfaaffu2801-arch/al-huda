@@ -10,6 +10,8 @@ import {
 } from '@/components/ui/card';
 import { HealthIcon } from './HealthIcon';
 import { ScrollArea } from '../ui/scroll-area';
+import { HealthChatbot } from './HealthChatbot';
+import { Separator } from '../ui/separator';
 
 const healthSuggestions = [
   {
@@ -68,51 +70,54 @@ const healthSuggestions = [
 
 export function HealthAndWellness() {
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2 text-xl font-headline">
-          <HealthIcon className="h-6 w-6 text-primary" />
-          Health & Wellness in Islam
-        </CardTitle>
-        <CardDescription>
-          Quran-based suggestions for a healthy and balanced life.
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
-        <ScrollArea className="h-[600px] w-full">
-          <div className="space-y-6 p-1">
-            {healthSuggestions.map((category) => (
-              <div key={category.category}>
-                <h3 className="mb-4 text-lg font-semibold text-primary">{category.category}</h3>
-                <div className="space-y-4">
-                  {category.points.map((point, index) => (
-                    <div
-                      key={index}
-                      className="rounded-lg border bg-secondary/30 p-4"
-                    >
-                      <h4 className="font-bold text-foreground mb-2">{point.title}</h4>
-                      <p className="mb-2 text-lg text-primary" dir="rtl">
-                        {point.arabic}
-                      </p>
-                      <p className="mb-2 text-sm text-muted-foreground">
-                        {point.transliteration}
-                      </p>
-                      <p className="italic text-foreground">
-                        &ldquo;{point.translation}&rdquo;
-                      </p>
-                      {point.reference && (
-                        <p className="mt-2 text-right text-xs text-muted-foreground">
-                          - {point.reference}
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <HealthChatbot />
+      <Card>
+        <CardHeader>
+          <CardTitle className="flex items-center gap-2 text-xl font-headline">
+            <HealthIcon className="h-6 w-6 text-primary" />
+            Health & Wellness in Islam
+          </CardTitle>
+          <CardDescription>
+            Quran-based suggestions for a healthy and balanced life.
+          </CardDescription>
+        </CardHeader>
+        <CardContent>
+          <ScrollArea className="h-[400px] w-full">
+            <div className="space-y-6 p-1">
+              {healthSuggestions.map((category) => (
+                <div key={category.category}>
+                  <h3 className="mb-4 text-lg font-semibold text-primary">{category.category}</h3>
+                  <div className="space-y-4">
+                    {category.points.map((point, index) => (
+                      <div
+                        key={index}
+                        className="rounded-lg border bg-secondary/30 p-4"
+                      >
+                        <h4 className="font-bold text-foreground mb-2">{point.title}</h4>
+                        <p className="mb-2 text-lg text-primary" dir="rtl">
+                          {point.arabic}
                         </p>
-                      )}
-                    </div>
-                  ))}
+                        <p className="mb-2 text-sm text-muted-foreground">
+                          {point.transliteration}
+                        </p>
+                        <p className="italic text-foreground">
+                          &ldquo;{point.translation}&rdquo;
+                        </p>
+                        {point.reference && (
+                          <p className="mt-2 text-right text-xs text-muted-foreground">
+                            - {point.reference}
+                          </p>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
-              </div>
-            ))}
-          </div>
-        </ScrollArea>
-      </CardContent>
-    </Card>
+              ))}
+            </div>
+          </ScrollArea>
+        </CardContent>
+      </Card>
+    </div>
   );
 }
