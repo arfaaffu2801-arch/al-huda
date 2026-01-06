@@ -3,18 +3,30 @@
 import { Header } from '@/components/rahma/Header';
 import { juzData } from '@/lib/islamic';
 import { useParams } from 'next/navigation';
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import {
   Card,
   CardContent,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import { Document, Page, pdfjs } from 'react-pdf';
+import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
+import 'react-pdf/dist/esm/Page/TextLayer.css';
+import { Loader2 } from 'lucide-react';
+
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
+
 
 function JuzContent() {
   const params = useParams();
   const juzNumber = parseInt(params.juz as string, 10);
   const juz = juzData.find((j) => j.juzNumber === juzNumber);
+  const [numPages, setNumPages] = useState<number | null>(null);
+
+  function onDocumentLoadSuccess({ numPages }: { numPages: number }) {
+    setNumPages(numPages);
+  }
 
   if (!juz) {
     return (
@@ -31,21 +43,28 @@ function JuzContent() {
           {juz.name} - Juz {juz.juzNumber}
         </CardTitle>
       </CardHeader>
-      <CardContent className="h-full pb-6">
-        <object
-          data={juz.url}
-          type="application/pdf"
-          width="100%"
-          height="100%"
-          className="rounded-md"
+      <CardContent className="h-full overflow-y-auto pb-6">
+        <Document
+          file={juz.url}
+          onLoadSuccess={onDocumentLoadSuccess}
+          loading={
+            <div className="flex justify-center items-center h-full">
+              <Loader2 className="h-8 w-8 animate-spin text-primary" />
+            </div>
+          }
+          error={
+             <p className="p-4 text-center text-destructive">
+                Failed to load PDF. You can try to{' '}
+                <a href={juz.url} className="text-primary underline" download>
+                  download it directly.
+                </a>
+            </p>
+          }
         >
-          <p className="p-4 text-center text-muted-foreground">
-            It appears your browser does not have a PDF plugin. You can{' '}
-            <a href={juz.url} className="text-primary underline">
-              click here to download the PDF file.
-            </a>
-          </p>
-        </object>
+          {Array.from(new Array(numPages), (el, index) => (
+            <Page key={`page_${index + 1}`} pageNumber={index + 1} renderTextLayer={false} />
+          ))}
+        </Document>
       </CardContent>
     </Card>
   );
