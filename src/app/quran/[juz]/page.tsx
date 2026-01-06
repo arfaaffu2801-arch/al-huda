@@ -6,8 +6,7 @@ import { juzData } from '@/lib/islamic';
 import React from 'react';
 
 export default function JuzPage({ params }: { params: { juz: string } }) {
-  const resolvedParams = React.use(Promise.resolve(params));
-  const juzNumber = parseInt(resolvedParams.juz, 10);
+  const juzNumber = parseInt(params.juz, 10);
   const juz = juzData.find((j) => j.juzNumber === juzNumber);
 
   return (
