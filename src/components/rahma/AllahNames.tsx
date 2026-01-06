@@ -1,4 +1,3 @@
-
 'use client';
 
 import {
@@ -20,6 +19,7 @@ export function AllahNames() {
   const [searchTerm, setSearchTerm] = useState('');
   const [playingName, setPlayingName] = useState<string | null>(null);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
 
   const filteredNames = allahNames.filter(
@@ -30,18 +30,33 @@ export function AllahNames() {
   );
 
   const playAudio = async (text: string, transliteration: string) => {
-    if (playingName === transliteration) {
-      if (audioRef.current) {
+    // If a name is already playing, stop it.
+    if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current.currentTime = 0;
-      }
+    }
+    
+    // If a request is already in flight, abort it.
+    if (audioControllerRef.current) {
+      audioControllerRef.current.abort();
+    }
+
+    if (playingName === transliteration) {
       setPlayingName(null);
       return;
     }
 
     setPlayingName(transliteration);
+    const controller = new AbortController();
+    audioControllerRef.current = controller;
+
     try {
       const { audioDataUri } = await generateAudio({ text });
+      
+      if (controller.signal.aborted) {
+        return; // Don't play if the request was aborted
+      }
+      
       if (audioRef.current) {
         audioRef.current.src = audioDataUri;
         audioRef.current.play();
@@ -49,7 +64,11 @@ export function AllahNames() {
           setPlayingName(null);
         };
       }
-    } catch (e) {
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        console.log('Audio generation aborted.');
+        return;
+      }
       console.error('Failed to play audio', e);
       toast({
         variant: 'destructive',
@@ -57,6 +76,10 @@ export function AllahNames() {
         description: 'Could not generate audio for this name.',
       });
       setPlayingName(null);
+    } finally {
+        if (audioControllerRef.current === controller) {
+            audioControllerRef.current = null;
+        }
     }
   };
 
@@ -66,6 +89,9 @@ export function AllahNames() {
       if (audioRef.current) {
         audioRef.current.pause();
         audioRef.current = null;
+      }
+      if (audioControllerRef.current) {
+        audioControllerRef.current.abort();
       }
     };
   }, []);
