@@ -87,35 +87,41 @@ const generateAzanFlow = ai.defineFlow(
     outputSchema: AzanOutputSchema,
   },
   async ({ prayerName }) => {
-    const azanText = prayerName === 'Fajr' ? FAJR_AZAN_TEXT : AZAN_TEXT;
+    try {
+      const azanText = prayerName === 'Fajr' ? FAJR_AZAN_TEXT : AZAN_TEXT;
 
-    const { media } = await ai.generate({
-      model: 'googleai/gemini-2.5-flash-preview-tts',
-      config: {
-        responseModalities: ['AUDIO'],
-        speechConfig: {
-          voiceConfig: {
-            prebuiltVoiceConfig: { voiceName: 'Algenib' },
+      const { media } = await ai.generate({
+        model: 'googleai/gemini-2.5-flash-preview-tts',
+        config: {
+          responseModalities: ['AUDIO'],
+          speechConfig: {
+            voiceConfig: {
+              prebuiltVoiceConfig: { voiceName: 'Algenib' },
+            },
           },
         },
-      },
-      prompt: azanText,
-    });
+        prompt: azanText,
+      });
 
-    if (!media) {
-      throw new Error('No media returned from TTS model.');
+      if (!media) {
+        throw new Error('No media returned from TTS model.');
+      }
+
+      const audioBuffer = Buffer.from(
+        media.url.substring(media.url.indexOf(',') + 1),
+        'base64'
+      );
+
+      const wavBase64 = await toWav(audioBuffer);
+
+      return {
+        audioDataUri: `data:audio/wav;base64,${wavBase64}`,
+      };
+    } catch (e: any) {
+      console.error(`[generateAzanFlow] Error: ${e.message}`);
+      // Throw a new error to ensure the client receives a proper error response.
+      throw new Error('Failed to generate Azan audio.');
     }
-
-    const audioBuffer = Buffer.from(
-      media.url.substring(media.url.indexOf(',') + 1),
-      'base64'
-    );
-
-    const wavBase64 = await toWav(audioBuffer);
-
-    return {
-      audioDataUri: `data:audio/wav;base64,${wavBase64}`,
-    };
   }
 );
 
