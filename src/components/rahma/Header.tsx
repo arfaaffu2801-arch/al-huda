@@ -26,7 +26,7 @@ export function Header() {
           )}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/light.png"
+              src="/al-huda.jpeg"
               alt="Al-Huda logo"
               width={40}
               height={40}
