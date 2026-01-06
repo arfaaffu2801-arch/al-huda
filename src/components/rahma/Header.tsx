@@ -5,10 +5,14 @@ import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Button } from '../ui/button';
 import { ArrowLeft } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
+import { Switch } from '../ui/switch';
+import { Label } from '../ui/label';
 
 export function Header() {
   const pathname = usePathname();
   const router = useRouter();
+  const { language, toggleLanguage } = useLanguage();
 
   return (
     <header className="sticky top-0 z-10 w-full border-b bg-card shadow-sm">
@@ -36,6 +40,20 @@ export function Header() {
               Al-Huda
             </span>
           </Link>
+        </div>
+        <div className="flex items-center gap-2">
+          <Label htmlFor="language-toggle" className="text-sm font-medium">
+            EN
+          </Label>
+          <Switch
+            id="language-toggle"
+            checked={language === 'kn'}
+            onCheckedChange={toggleLanguage}
+            aria-label="Toggle language"
+          />
+          <Label htmlFor="language-toggle" className="text-sm font-medium">
+            KN
+          </Label>
         </div>
       </div>
     </header>

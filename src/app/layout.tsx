@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
+import { LanguageProvider } from '@/context/LanguageContext';
 
 export const metadata: Metadata = {
   title: 'Al-Huda',
@@ -33,13 +34,15 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
       <body className="flex flex-col min-h-screen font-body antialiased">
-        <div className="flex-grow">{children}</div>
-        <Toaster />
-        <footer className="w-full bg-card p-4 text-center border-t">
-          <p className="text-sm text-muted-foreground">
-            Created by arfa bin ta mansoor hosadurga
-          </p>
-        </footer>
+        <LanguageProvider>
+          <div className="flex-grow">{children}</div>
+          <Toaster />
+          <footer className="w-full bg-card p-4 text-center border-t">
+            <p className="text-sm text-muted-foreground">
+              Created by Arfa binth Mansoor, hosadurga
+            </p>
+          </footer>
+        </LanguageProvider>
       </body>
     </html>
   );
