@@ -63,7 +63,7 @@ export function QuickActions() {
           <Link
             href={action.href}
             key={action.href}
-            className="group flex flex-col items-center gap-2 rounded-lg p-4 text-center transition-colors hover:bg-secondary/50"
+            className="group flex flex-col items-center gap-2 rounded-lg p-4 text-center transition-all hover:bg-secondary/50 hover:shadow-md"
           >
             {action.icon}
             <span className="text-center font-semibold text-foreground">
