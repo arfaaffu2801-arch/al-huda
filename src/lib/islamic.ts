@@ -5,6 +5,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -309,7 +310,7 @@ export const eveningAzkar = [
     translation: 'Surah Al-Falaq: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of the daybreak, ۝ From the evil of what He has created; ۝ And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away) ۝ And from the evil of those who practice witchcrafts when they blow in the knots, ۝ And from the evil of the envier when he envies."',
   },
   {
-    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱلنَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
     translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
   }
@@ -929,4 +930,101 @@ export const leavingRestroomAzkar = [
   }
 ];
 
+export const namazData = {
+  fajr: {
+    name: "Fajr",
+    steps: [
+      {
+        title: "Takbir",
+        arabic: "الله أكبر",
+        transliteration: "Allahu Akbar",
+        translation: "Allah is the Greatest.",
+        reference: "Opening of Prayer",
+      },
+      {
+        title: "Sana",
+        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
+        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
+        reference: "Before Al-Fatihah",
+      },
+    ],
+  },
+  dhuhr: {
+    name: "Dhuhr",
+    steps: [
+       {
+        title: "Takbir",
+        arabic: "الله أكبر",
+        transliteration: "Allahu Akbar",
+        translation: "Allah is the Greatest.",
+        reference: "Opening of Prayer",
+      },
+      {
+        title: "Sana",
+        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
+        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
+        reference: "Before Al-Fatihah",
+      },
+    ],
+  },
+  asr: {
+    name: "Asr",
+    steps: [
+       {
+        title: "Takbir",
+        arabic: "الله أكبر",
+        transliteration: "Allahu Akbar",
+        translation: "Allah is the Greatest.",
+        reference: "Opening of Prayer",
+      },
+      {
+        title: "Sana",
+        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
+        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
+        reference: "Before Al-Fatihah",
+      },
+    ],
+  },
+  maghrib: {
+    name: "Maghrib",
+    steps: [
+       {
+        title: "Takbir",
+        arabic: "الله أكبر",
+        transliteration: "Allahu Akbar",
+        translation: "Allah is the Greatest.",
+        reference: "Opening of Prayer",
+      },
+      {
+        title: "Sana",
+        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
+        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
+        reference: "Before Al-Fatihah",
+      },
+    ],
+  },
+  isha: {
+    name: "Isha",
+    steps: [
+       {
+        title: "Takbir",
+        arabic: "الله أكبر",
+        transliteration: "Allahu Akbar",
+        translation: "Allah is the Greatest.",
+        reference: "Opening of Prayer",
+      },
+      {
+        title: "Sana",
+        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
+        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
+        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
+        reference: "Before Al-Fatihah",
+      },
+    ],
+  },
+};
     

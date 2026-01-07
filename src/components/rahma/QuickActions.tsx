@@ -11,6 +11,7 @@ import { CalendarIcon } from './CalendarIcon';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { HadisIcon } from './HadisIcon';
 import { HealthIcon } from './HealthIcon';
+import { NamazIcon } from './NamazIcon';
 
 const actions = [
   {
@@ -27,6 +28,11 @@ const actions = [
     href: '/hadis',
     label: 'Hadis',
     icon: <HadisIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/namaz',
+    label: 'Namaz',
+    icon: <NamazIcon className="h-12 w-12" />,
   },
   {
     href: '/azkar',
