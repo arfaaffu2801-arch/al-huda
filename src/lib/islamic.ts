@@ -6,6 +6,7 @@
 
 
 
+
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -303,16 +304,19 @@ export const eveningAzkar = [
     arabic: 'سُورَةُ الإِخْلَاصِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللهُ أَحَدٌ ۝ ٱللهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul huwa-llaahu aḥad ۝ allaahuṣ-ṣamad ۝ lam yalid wa lam yoolad ۝ wa lam yakul-lahuۥ kufuwan aḥad',
     translation: 'Surah Al-Ikhlas: In the name of Allah, the Beneficent, the Merciful Say (O Muhammad (SAW)): "He is Allâh, (the) One.۝ Allâh the Self-Sufficient Master, Whom all creatures need, (He neither eats nor drinks). ۝ He begets not, nor was He begotten. ۝ And there is none co-equal or comparable unto Him."',
+    reference: 'Al-Ikhlas',
   },
   {
     arabic: 'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodhu birabbil-falaq ۝ min sharri maa khalaq ۝ wa min sharri ghaasiqin idhaa waqab ۝ wa min sharrin-naffaathaati fil-‛uqad ۝ wa min sharri ḥaasidin idhaa ḥasad',
     translation: 'Surah Al-Falaq: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of the daybreak, ۝ From the evil of what He has created; ۝ And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away) ۝ And from the evil of those who practice witchcrafts when they blow in the knots, ۝ And from the evil of the envier when he envies."',
+    reference: 'Al-Falaq',
   },
   {
     arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
     translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
+    reference: 'An-Nas',
   }
 ];
 
@@ -932,98 +936,178 @@ export const leavingRestroomAzkar = [
 
 export const namazData = {
   fajr: {
-    name: "Fajr",
+    name: 'Fajr',
     steps: [
       {
-        title: "Takbir",
-        arabic: "الله أكبر",
-        transliteration: "Allahu Akbar",
-        translation: "Allah is the Greatest.",
-        reference: "Opening of Prayer",
+        title: 'Niyyah (Intention)',
+        arabic: 'The Niyyah is a matter of the heart. You do not have to say it out loud, but many people find it helpful to say it quietly to focus their minds.',
+        transliteration: 'For 2 Rakats of Sunnah: "I intend to perform 2 Rakats of the Sunnah prayer of Fajr, for the sake of Allah, facing the Kaaba."\nFor 2 Rakats of Fard: "I intend to perform 2 Rakats of the Fard prayer of Fajr, for the sake of Allah, facing the Kaaba."',
+        translation: '(If you are following an Imam in a mosque, add: "...behind this Imam.")',
+        reference: 'Fajr Prayer',
       },
       {
-        title: "Sana",
-        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
-        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
-        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
-        reference: "Before Al-Fatihah",
+        title: 'Takbir',
+        arabic: 'الله أكبر',
+        transliteration: 'Allahu Akbar',
+        translation: 'Allah is the Greatest.',
+        reference: 'Opening of Prayer',
+      },
+      {
+        title: 'Sana',
+        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
+        transliteration:
+          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
+        translation:
+          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
+        reference: 'Before Al-Fatihah',
+      },
+      {
+        title: "Al-Fatihah",
+        arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
+        translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+        reference: "Quran 1",
+      },
+      {
+        title: "Ruku",
+        arabic: "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+        transliteration: "Subhana Rabbiyal Azeem",
+        translation: "Glory be to my Lord, the Great.",
+        reference: "Recited 3 times while bowing",
+      },
+       {
+        title: "Sujud",
+        arabic: "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+        transliteration: "Subhana Rabbiyal A'la",
+        translation: "Glory be to my Lord, the Most High.",
+        reference: "Recited 3 times during prostration",
+      },
+      {
+        title: 'Tashahhud, Durood & Dua',
+        arabic: 'التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ. اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ، اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ إِنَّكَ حَمِيدٌ مَجِيدٌ. رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ',
+        translation: 'All greetings, prayers and good things are for Allah. Peace be upon you, O Prophet, and the mercy of Allah and His blessings. Peace be upon us and upon the righteous servants of Allah. I bear witness that there is no god but Allah, and I bear witness that Muhammad is His servant and His messenger. O Allah, send prayers upon Muhammad and upon the family of Muhammad, as You sent prayers upon Ibrahim and upon the family of Ibrahim; You are indeed Worthy of Praise, Full of Glory. O Allah, bless Muhammad and the family of Muhammad as You blessed Ibrahim and the family of Ibrahim; You are indeed Worthy of Praise, Full of Glory. Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.',
+        transliteration: 'At-tahiyyatu lillahi was-salawatu wat-tayyibat, as-salamu \'alayka ayyuhan-Nabiyyu wa rahmatullahi wa barakatuh, as-salamu \'alayna wa \'ala \'ibadillahis-salihin, ash-hadu an la ilaha illallah wa ash-hadu anna Muhammadan \'abduhu wa rasuluh. Allahumma salli \'ala Muhammadin wa \'ala ali Muhammadin kama sallayta \'ala Ibrahima wa \'ala ali Ibrahima innaka Hamidum Majid, Allahumma barik \'ala Muhammadin wa \'ala ali Muhammadin kama barakta \'ala Ibrahima wa \'ala ali Ibrahima innaka Hamidum Majid. Rabbana atina fid-dunya hasanatan wa fil-akhirati hasanatan waqina \'adhaban-nar.',
+        reference: 'Final Sitting',
+      },
+      {
+        title: 'Taslim',
+        arabic: 'السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ',
+        transliteration: 'Assalamu Alaikum wa Rahmatullah',
+        translation: 'Peace and mercy of Allah be upon you.',
+        reference: 'End of Prayer',
       },
     ],
   },
   dhuhr: {
-    name: "Dhuhr",
+    name: 'Dhuhr',
     steps: [
-       {
-        title: "Takbir",
-        arabic: "الله أكبر",
-        transliteration: "Allahu Akbar",
-        translation: "Allah is the Greatest.",
-        reference: "Opening of Prayer",
+      {
+        title: 'Takbir',
+        arabic: 'الله أكبر',
+        transliteration: 'Allahu Akbar',
+        translation: 'Allah is the Greatest.',
+        reference: 'Opening of Prayer',
       },
       {
-        title: "Sana",
-        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
-        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
-        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
-        reference: "Before Al-Fatihah",
+        title: 'Sana',
+        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
+        transliteration:
+          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
+        translation:
+          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
+        reference: 'Before Al-Fatihah',
       },
+       {
+        title: "Al-Fatihah",
+        arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
+        translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+        reference: "Quran 1",
+      }
     ],
   },
   asr: {
-    name: "Asr",
+    name: 'Asr',
     steps: [
-       {
-        title: "Takbir",
-        arabic: "الله أكبر",
-        transliteration: "Allahu Akbar",
-        translation: "Allah is the Greatest.",
-        reference: "Opening of Prayer",
+      {
+        title: 'Takbir',
+        arabic: 'الله أكبر',
+        transliteration: 'Allahu Akbar',
+        translation: 'Allah is the Greatest.',
+        reference: 'Opening of Prayer',
       },
       {
-        title: "Sana",
-        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
-        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
-        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
-        reference: "Before Al-Fatihah",
+        title: 'Sana',
+        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
+        transliteration:
+          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
+        translation:
+          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
+        reference: 'Before Al-Fatihah',
       },
+       {
+        title: "Al-Fatihah",
+        arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
+        translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+        reference: "Quran 1",
+      }
     ],
   },
   maghrib: {
-    name: "Maghrib",
+    name: 'Maghrib',
     steps: [
-       {
-        title: "Takbir",
-        arabic: "الله أكبر",
-        transliteration: "Allahu Akbar",
-        translation: "Allah is the Greatest.",
-        reference: "Opening of Prayer",
+      {
+        title: 'Takbir',
+        arabic: 'الله أكبر',
+        transliteration: 'Allahu Akbar',
+        translation: 'Allah is the Greatest.',
+        reference: 'Opening of Prayer',
       },
       {
-        title: "Sana",
-        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
-        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
-        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
-        reference: "Before Al-Fatihah",
+        title: 'Sana',
+        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
+        transliteration:
+          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
+        translation:
+          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
+        reference: 'Before Al-Fatihah',
       },
+       {
+        title: "Al-Fatihah",
+        arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
+        translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+        reference: "Quran 1",
+      }
     ],
   },
   isha: {
-    name: "Isha",
+    name: 'Isha',
     steps: [
-       {
-        title: "Takbir",
-        arabic: "الله أكبر",
-        transliteration: "Allahu Akbar",
-        translation: "Allah is the Greatest.",
-        reference: "Opening of Prayer",
+      {
+        title: 'Takbir',
+        arabic: 'الله أكبر',
+        transliteration: 'Allahu Akbar',
+        translation: 'Allah is the Greatest.',
+        reference: 'Opening of Prayer',
       },
       {
-        title: "Sana",
-        arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ",
-        transliteration: "Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
-        translation: "Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.",
-        reference: "Before Al-Fatihah",
+        title: 'Sana',
+        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
+        transliteration:
+          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
+        translation:
+          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
+        reference: 'Before Al-Fatihah',
       },
+       {
+        title: "Al-Fatihah",
+        arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
+        transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
+        translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+        reference: "Quran 1",
+      }
     ],
   },
 };
