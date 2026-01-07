@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 export const verseOfTheDay = {
   arabic: 'بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ',
   transliteration: 'Bismillāhi r-raḥmāni r-raḥīm',
@@ -307,7 +299,7 @@ export const eveningAzkar = [
     reference: 'Al-Ikhlas',
   },
   {
-    arabic: 'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
+    arabic: 'سُورَةُ الْفَلَقِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ ۝ مِن شَرِّ مَا خَلَقَ ۝ وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ ۝ وَمِن شَرِّ ٱlnَّفَّـٰثَـٰتِ fِى ٱلْعُقَدِ ۝ وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodhu birabbil-falaq ۝ min sharri maa khalaq ۝ wa min sharri ghaasiqin idhaa waqab ۝ wa min sharrin-naffaathaati fil-‛uqad ۝ wa min sharri ḥaasidin idhaa ḥasad',
     translation: 'Surah Al-Falaq: In the name of Allah, the Beneficent, the Merciful Say: "I seek refuge with (Allâh) the Lord of the daybreak, ۝ From the evil of what He has created; ۝ And from the evil of the darkening (night) as it comes with its darkness; (or the moon as it sets or goes away) ۝ And from the evil of those who practice witchcrafts when they blow in the knots, ۝ And from the evil of the envier when he envies."',
     reference: 'Al-Falaq',
@@ -315,7 +307,7 @@ export const eveningAzkar = [
   {
     arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
-    translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, ۝ The King of mankind ۝ The Ilâh (God) of mankind, ۝ From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), ۝ Who whispers in the breasts of mankind, ۝ Of jinn and men."',
+    translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (God) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
     reference: 'An-Nas',
   }
 ];
@@ -484,7 +476,7 @@ export const afterPrayerAzkar = [
     reference: 'Al-Falaq',
   },
   {
-    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
+    arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
     translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (Allah) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
     reference: 'An-Nas',
@@ -940,9 +932,9 @@ export const namazData = {
     steps: [
       {
         title: 'Niyyah (Intention)',
-        arabic: 'The Niyyah is a matter of the heart. You do not have to say it out loud, but many people find it helpful to say it quietly to focus their minds.',
+        arabic: "The Niyyah is a matter of the heart. You do not have to say it out loud, but many people find it helpful to say it quietly to focus their minds. The structure of Fajr prayer is:\n- 2 Rakats Sunnah\n- 2 Rakats Fard",
         transliteration: 'For 2 Rakats of Sunnah: "I intend to perform 2 Rakats of the Sunnah prayer of Fajr, for the sake of Allah, facing the Kaaba."\nFor 2 Rakats of Fard: "I intend to perform 2 Rakats of the Fard prayer of Fajr, for the sake of Allah, facing the Kaaba."',
-        translation: '(If you are following an Imam in a mosque, add: "...behind this Imam.")',
+        translation: '(If you are following an Imam in a mosque, add: "...behind this Imam.")\nIn Fajr, the Quran is recited aloud by the Imam (or by you if praying alone) during the Fard rakats, while it is recited silently in the Sunnah rakats. The Sunnah prayer is highly emphasized, and the Fard is mandatory. Ensure you have performed Wudu and pray between the break of dawn and sunrise.',
         reference: 'Fajr Prayer',
       },
       {
@@ -1002,22 +994,20 @@ export const namazData = {
     name: 'Dhuhr',
     steps: [
       {
-        title: 'Takbir',
-        arabic: 'الله أكبر',
-        transliteration: 'Allahu Akbar',
-        translation: 'Allah is the Greatest.',
-        reference: 'Opening of Prayer',
+        title: 'The Structure of Dhuhr',
+        arabic: 'Dhuhr is broken down into four parts. Unlike Fajr, all recitations in Dhuhr are performed silently.\n- 4 Rakats Sunnah Mu’akkadah (Emphasized Sunnah)\n- 4 Rakats Fard (Obligatory)\n- 2 Rakats Sunnah Mu’akkadah (Emphasized Sunnah)\n- 2 Rakats Nafl (Voluntary/Optional)',
+        transliteration: '',
+        translation: 'Part: First Sunnah, Rakats: 4, Status: Emphasized, Recitation: Silent\nPart: Fard, Rakats: 4, Status: Compulsory, Recitation: Silent\nPart: Second Sunnah, Rakats: 2, Status: Emphasized, Recitation: Silent\nPart: Nafl, Rakats: 2, Status: Optional, Recitation: Silent',
+        reference: 'Dhuhr Prayer',
       },
       {
-        title: 'Sana',
-        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
-        transliteration:
-          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
-        translation:
-          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
-        reference: 'Before Al-Fatihah',
+        title: 'The Niyyah (Intention)',
+        arabic: 'Your intention should be specific to the part of the prayer you are performing. You can make this intention in your heart or say it quietly.',
+        transliteration: 'For the 4 Rakats Sunnah: "I intend to perform 4 Rakats Sunnah of Dhuhr, for the sake of Allah, facing the Kaaba."\nFor the 4 Rakats Fard: "I intend to perform 4 Rakats Fard of Dhuhr, for the sake of Allah, facing the Kaaba."\nFor the 2 Rakats Sunnah: "I intend to perform 2 Rakats Sunnah of Dhuhr, for the sake of Allah, facing the Kaaba."\nFor the 2 Rakats Nafl: "I intend to perform 2 Rakats Nafl of Dhuhr, for the sake of Allah, facing the Kaaba."',
+        translation: '(If praying in a congregation, add: "...behind this Imam.")',
+        reference: 'Dhuhr Prayer',
       },
-       {
+      {
         title: "Al-Fatihah",
         arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
         transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
@@ -1111,4 +1101,6 @@ export const namazData = {
     ],
   },
 };
+    
+
     
