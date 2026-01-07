@@ -9,10 +9,12 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { RotateCcw, Repeat } from 'lucide-react';
-import { useState } from 'react';
+import { RotateCcw, Volume2, Loader2 } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
 import { TasbihIcon } from './TasbihIcon';
 import Image from 'next/image';
+import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useToast } from '@/hooks/use-toast';
 
 const tasbihOptions = [
   { text: 'Astaghfirullah', arabic: 'أَسْتَغْفِرُ اللّٰهَ', meaning: 'I seek forgiveness from Allah', target: 100 },
@@ -35,6 +37,11 @@ export function TasbihCounter() {
   const [count, setCount] = useState(0);
   const [cycle, setCycle] = useState(0);
   const [currentTasbihIndex, setCurrentTasbihIndex] = useState(0);
+  const [playingTasbih, setPlayingTasbih] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioControllerRef = useRef<AbortController | null>(null);
+  const { toast } = useToast();
+  
   const currentTasbih = tasbihOptions[currentTasbihIndex];
 
   const increment = () => {
@@ -60,6 +67,71 @@ export function TasbihCounter() {
     setCount(0);
     setCycle(0);
   }
+
+  const playAudio = async (text: string) => {
+    if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+    }
+    
+    if (audioControllerRef.current) {
+      audioControllerRef.current.abort();
+    }
+
+    if (playingTasbih === text) {
+      setPlayingTasbih(null);
+      return;
+    }
+
+    setPlayingTasbih(text);
+    const controller = new AbortController();
+    audioControllerRef.current = controller;
+
+    try {
+      const { audioDataUri } = await generateAudio({ text });
+      
+      if (controller.signal.aborted) {
+        return;
+      }
+      
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingTasbih(null);
+        };
+      }
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        console.log('Audio generation aborted.');
+        return;
+      }
+      console.error('Failed to play audio', e);
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'Could not generate audio for this tasbih.',
+      });
+      setPlayingTasbih(null);
+    } finally {
+        if (audioControllerRef.current === controller) {
+            audioControllerRef.current = null;
+        }
+    }
+  };
+
+  useEffect(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+      if (audioControllerRef.current) {
+        audioControllerRef.current.abort();
+      }
+    };
+  }, []);
 
   return (
     <Card className="relative overflow-hidden">
@@ -130,9 +202,23 @@ export function TasbihCounter() {
             </div>
 
             <div className="relative z-10 text-center md:text-left">
-                <p className="font-headline text-5xl text-primary" dir="rtl">
-                    {currentTasbih.arabic}
-                </p>
+                <div className="flex items-center gap-4 justify-center md:justify-start">
+                    <p className="font-headline text-5xl text-primary" dir="rtl">
+                        {currentTasbih.arabic}
+                    </p>
+                    <button
+                        onClick={() => playAudio(currentTasbih.arabic)}
+                        className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                        aria-label={`Listen to ${currentTasbih.text}`}
+                        disabled={playingTasbih === currentTasbih.arabic}
+                    >
+                        {playingTasbih === currentTasbih.arabic ? (
+                        <Loader2 className="h-6 w-6 animate-spin" />
+                        ) : (
+                        <Volume2 className="h-6 w-6" />
+                        )}
+                    </button>
+                </div>
                 <p className="mt-2 text-3xl font-semibold text-foreground">
                     {currentTasbih.text}
                 </p>
@@ -164,7 +250,24 @@ export function TasbihCounter() {
                               <p className="font-semibold">{tasbih.text} ({tasbih.target})</p>
                               <p className="text-sm italic text-muted-foreground">&ldquo;{tasbih.meaning}&rdquo;</p>
                           </div>
-                          <p className="text-lg text-primary text-right" dir="rtl">{tasbih.arabic}</p>
+                          <div className="flex items-center gap-2">
+                            <p className="text-lg text-primary text-right" dir="rtl">{tasbih.arabic}</p>
+                             <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    playAudio(tasbih.arabic)
+                                }}
+                                className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                                aria-label={`Listen to ${tasbih.text}`}
+                                disabled={playingTasbih === tasbih.arabic}
+                            >
+                                {playingTasbih === tasbih.arabic ? (
+                                <Loader2 className="h-5 w-5 animate-spin" />
+                                ) : (
+                                <Volume2 className="h-5 w-5" />
+                                )}
+                            </button>
+                          </div>
                         </div>
                     </button>
                 ))}
@@ -174,3 +277,5 @@ export function TasbihCounter() {
     </Card>
   );
 }
+
+    
