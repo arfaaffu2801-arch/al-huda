@@ -291,6 +291,7 @@ export const eveningAzkar = [
     arabic: 'اللهُ لَا إِلَهَ إِلَّا هُوَ الْحَيُّ الْقَيُّومُ لَا تَأْخُذُهُ سِنَةٌ وَلَا نَوْمٌ لَهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ مَنْ ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلَا يُحِيطُونَ بِشَيْءٍ مِنْ عِلْمِهِ إِلَّا بِمَا شَاءَ وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالْأَرْضَ وَلَا يَئُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ',
     transliteration: "Allaahu laa 'ilaaha 'illaa Huwal-Hayyul-Qayyoom, laa ta'khuthuhu sinatun wa laa nawm, lahu maa fis-samaawaati wa maafil-'ardh, man thal-lathee yashfa'u 'indahu 'illaa bi'ithnih, ya'lamu maa bayna 'aydeehim wa maa khalfahum, wa laa yuheetoona bishay'im-min 'ilmihi 'illaa bimaa shaa'a, wasi'a kursiyyuhus-samaawaati wal'ardh, wa laa ya'ooduhu hifdhuhumaa, wa Huwal-'Aliyyul-'Adheem",
     translation: "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
+    reference: 'Quran 2:255',
   },
   {
     arabic: 'سُورَةُ الإِخْلَاصِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللهُ أَحَدٌ ۝ ٱللهُ ٱلصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌ',
@@ -1064,21 +1065,26 @@ export const namazData = {
   maghrib: {
     name: 'Maghrib',
     steps: [
-      {
-        title: 'Takbir',
-        arabic: 'الله أكبر',
-        transliteration: 'Allahu Akbar',
-        translation: 'Allah is the Greatest.',
-        reference: 'Opening of Prayer',
+       {
+        title: 'The Niyyah (Intention)',
+        arabic: 'The Niyyah is essentially the intention in your heart to pray for the sake of Allah. You do not have to say it out loud, but many find it helpful to say it quietly to focus their mind.',
+        transliteration: 'For the 3 Fardh Rak\'ahs:\n"I intend to perform 3 Rak\'ahs of the Fardh of Maghrib prayer, facing the Kaba, for the sake of Allah."\n\nFor the 2 Sunnah Rak\'ahs:\n"I intend to perform 2 Rak\'ahs of the Sunnah of Maghrib prayer, facing the Kaba, for the sake of Allah."',
+        translation: '',
+        reference: 'Maghrib Prayer',
       },
       {
-        title: 'Sana',
-        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
-        transliteration:
-          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
-        translation:
-          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
-        reference: 'Before Al-Fatihah',
+        title: 'Prayer Structure',
+        arabic: 'Maghrib is unique because it is the only daily prayer with an odd number of Fardh units.',
+        transliteration: '1st Rak\'ah: Recite Sana, Surah Al-Fatiha, and another Surah.\n2nd Rak\'ah: Recite Al-Fatiha and another Surah. Sit for Tashahhud (Attahiyat) after the second Sujud, then stand up.\n3rd Rak\'ah: Recite only Surah Al-Fatiha. Perform Ruku and Sujud, then sit for the final Tashahhud, Durood Ibrahim, and Dua.\nCompletion: End with Salam (right and left).',
+        translation: '',
+        reference: 'Maghrib Prayer',
+      },
+      {
+        title: 'Key Points to Remember',
+        arabic: 'Timeframe: Maghrib begins immediately after sunset and ends when the red glow (twilight) disappears from the sky. It is highly recommended to pray it as soon as the time starts.\nRecitation: If praying in a congregation (Jama\'at), the Imam recites the first two Rak\'ahs aloud. If praying alone, you may recite them aloud or quietly. The third Rak\'ah is always silent.\nSunnah Mu\'akkadah: The 2 Rak\'ahs after the Fardh are "confirmed Sunnah," meaning the Prophet (PBUH) rarely missed them.',
+        transliteration: '',
+        translation: '',
+        reference: 'Maghrib Prayer',
       },
        {
         title: "Al-Fatihah",
