@@ -4,7 +4,6 @@
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
@@ -63,11 +62,15 @@ import {
   Shirt,
   Bath,
   Search,
+  Volume2,
+  Loader2,
 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Input } from '../ui/input';
 import Image from 'next/image';
+import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useToast } from '@/hooks/use-toast';
 
 const azkarCategories = {
   waking: { label: 'Morning azkar', icon: Sunrise, data: wakingUpAzkar },
@@ -177,6 +180,75 @@ type AzkarCategoryKey = keyof typeof azkarCategories;
 
 export function Dua({ initialCategory }: { initialCategory?: string }) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [playingDua, setPlayingDua] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioControllerRef = useRef<AbortController | null>(null);
+  const { toast } = useToast();
+
+  const playAudio = async (text: string) => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
+    if (audioControllerRef.current) {
+      audioControllerRef.current.abort();
+    }
+
+    if (playingDua === text) {
+      setPlayingDua(null);
+      return;
+    }
+
+    setPlayingDua(text);
+    const controller = new AbortController();
+    audioControllerRef.current = controller;
+
+    try {
+      const { audioDataUri } = await generateAudio({ text });
+
+      if (controller.signal.aborted) {
+        return;
+      }
+
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingDua(null);
+        };
+      }
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        console.log('Audio generation aborted.');
+        return;
+      }
+      console.error('Failed to play audio', e);
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'Could not generate audio for this Azkar.',
+      });
+      setPlayingDua(null);
+    } finally {
+      if (audioControllerRef.current === controller) {
+        audioControllerRef.current = null;
+      }
+    }
+  };
+
+  useEffect(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+      if (audioControllerRef.current) {
+        audioControllerRef.current.abort();
+      }
+    };
+  }, []);
 
   const filteredCategories = Object.entries(azkarCategories).filter(
     ([key, { label, data }]) =>
@@ -189,7 +261,9 @@ export function Dua({ initialCategory }: { initialCategory?: string }) {
       )
   );
 
-  const displayedCategories = searchTerm ? Object.fromEntries(filteredCategories) : azkarCategories;
+  const displayedCategories = searchTerm
+    ? Object.fromEntries(filteredCategories)
+    : azkarCategories;
 
   const getFilteredData = (data: typeof morningAzkar) => {
     if (!searchTerm) return data;
@@ -200,17 +274,17 @@ export function Dua({ initialCategory }: { initialCategory?: string }) {
         dua.translation.toLowerCase().includes(searchTerm.toLowerCase())
     );
   };
-  
+
   return (
     <Card className="relative overflow-hidden">
-        <Image
-          src="https://picsum.photos/seed/islamic-pattern/1200/800"
-          alt="Islamic pattern background"
-          fill
-          className="absolute inset-0 z-0 object-cover opacity-5"
-          data-ai-hint="islamic pattern"
-        />
-      <div className='relative z-10'>
+      <Image
+        src="https://picsum.photos/seed/islamic-pattern/1200/800"
+        alt="Islamic pattern background"
+        fill
+        className="absolute inset-0 z-0 object-cover opacity-5"
+        data-ai-hint="islamic pattern"
+      />
+      <div className="relative z-10">
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-xl font-headline">
             <BookHeart className="h-6 w-6 text-primary" />
@@ -247,6 +321,8 @@ export function Dua({ initialCategory }: { initialCategory?: string }) {
             </TabsList>
             {Object.entries(displayedCategories).map(([key, { data }]) => {
               const filteredData = getFilteredData(data);
+              const uniqueId = (dua: any, index: number) => `${key}-${index}-${dua.transliteration.slice(0, 10)}`;
+
               return (
                 <TabsContent key={key} value={key}>
                   <ScrollArea className="h-[400px] w-full">
@@ -257,9 +333,23 @@ export function Dua({ initialCategory }: { initialCategory?: string }) {
                             key={index}
                             className="rounded-lg border bg-background/70 p-4 backdrop-blur-sm"
                           >
-                            <p className="mb-2 text-lg text-primary" dir="rtl">
-                              {dua.arabic}
-                            </p>
+                             <div className="flex justify-between items-start">
+                                <p className="mb-2 text-lg text-primary" dir="rtl">
+                                {dua.arabic}
+                                </p>
+                                <button
+                                    onClick={() => playAudio(dua.arabic)}
+                                    className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                                    aria-label={`Listen to dua`}
+                                    disabled={playingDua === dua.arabic}
+                                >
+                                    {playingDua === dua.arabic ? (
+                                    <Loader2 className="h-5 w-5 animate-spin" />
+                                    ) : (
+                                    <Volume2 className="h-5 w-5" />
+                                    )}
+                                </button>
+                            </div>
                             <p className="mb-2 text-sm text-muted-foreground">
                               {dua.transliteration}
                             </p>
