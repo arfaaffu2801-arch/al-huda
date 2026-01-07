@@ -1013,6 +1013,13 @@ export const namazData = {
         reference: 'Dhuhr Prayer',
       },
       {
+        title: 'Important Notes for Dhuhr',
+        arabic: "The 4 Rakats Sunnah: These are prayed in sets of four. You sit for Tashahhud after the second Rakat, then stand back up to complete the third and fourth.\nThe 4 Rakats Fard: In the third and fourth Rakats of the Fard prayer, you only recite Surah Al-Fatiha; you do not need to recite an additional Surah after it.\nFriday Prayer (Jumu'ah): On Fridays, the Dhuhr prayer is replaced by the Jumu'ah prayer (2 Rakats Fard preceded by a Khutbah/sermon) if you are praying in a congregation at a mosque.",
+        transliteration: "",
+        translation: "",
+        reference: "Dhuhr Prayer"
+      },
+      {
         title: "Al-Fatihah",
         arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
         transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
