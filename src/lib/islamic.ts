@@ -307,7 +307,7 @@ export const eveningAzkar = [
   {
     arabic: 'سُورَةُ النَّاسِ بِسْمِ ٱللهِ ٱلرَّحْمَـٰnِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ ۝ مَلِكِ ٱlnَّاسِ ۝ إِلَـٰهِ ٱlnَّاسِ ۝ مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ ۝ ٱلَّذِى يُوَسْوِسُ فِى صُdُورِ ٱlnَّاسِ ۝ مِنَ ٱلْجِنَّةِ وَٱlnَّاسِ',
     transliteration: 'bismillaahir-raḥmaanir-raḥeem qul a‛oodh-u birabbin-naas ۝ malikin-naas ۝ ilaahin-naas ۝ min sharril-waswaasil-khannaas ۝ alladhee yuwaswisu fee ṣudoorin-naas ۝ minal-jinnati wan-naas',
-    translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (God) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
+    translation: 'Surah An-Nas: In the name of Allah, a Beneficent, the Merciful. Say: "I seek refuge with (Allâh) the Lord of mankind, * The King of mankind * The Ilâh (Allah) of mankind, * From the evil of the whisperer (devil who whispers evil in the hearts of men) who withdraws (from his whispering in one\'s heart after one remembers Allâh), * Who whispers in the breasts of mankind, * Of jinn and men."',
     reference: 'An-Nas',
   }
 ];
@@ -414,7 +414,7 @@ export const sleepingAzkar = [
   },
   {
     arabic: 'اللَّهُمَّ رَبَّ السَّمَاوَاتِ وَرَبَّ الْأَرْضِ وَرَبَّ الْعَرْشِ الْعَظِيمِ، رَبَّنَا وَرَبَّ كُلِّ شَيْءٍ، فَالِقَ الْحَبِّ وَالنَّوَى، وَمُنْزِلَ التَّوْرَاةِ وَالْإِنْجِيلِ وَالْفُرْقَانِ، أَعُوذُ بِكَ مِنْ شَرِّ كُلِّ شَيْءٍ أَنْتَ آخِذٌ بِنَاصِيَتِهِ، اللهُمَّ أَنْتَ الْأَوَّلُ فَلَيْسَ قَبْلَكَ شَيْءٌ، وَأَنْتَ الْآخِرُ فَلَيْسَ بَعْدَكَ شَيْءٌ، وَأَنْتَ الظَّاهِرُ فَلَيْسَ فَوْقَكَ شَيْءٌ، وَأَنْتَ الْبَاطِنُ فَلَيْسَ دُونَكَ شَيْءٌ، اقْضِ عَنَّا الدَّيْنَ، وَأَغْنِنَا مِنَ الْفَقْرِ.',
-    transliteration: 'allaahumma rabbas-samaawaati, wa rabb-al-‛arshil-‛aẓeemi, rabbanaa wa rabba kulli shay’in, faaliq-al-ḥabbi wan-nawaa, wa munazzilat-tawraati wal-injeeli wal-furqaani, a‛oodhu bika min sharri kulli shay’in anta aakhidhun bi naaṣiyatih\nallaahumma antal-awwalu fa laysa qablaka shay’un, wa antal-aakhiru fa laysa ba‛daka shay’un, wa antaẓ-ẓaahiru fa laysa fawqaka shay’un, wa antal-baaṭinu fa laysa doonaka shay’un, iqḍi ‛annid-dayna wa aghni mi-nal-faqr.',
+    transliteration: 'alla-humma rabbas-samaawaati, wa rabb-al-‛arshil-‛aẓeemi, rabbanaa wa rabba kulli shay’in, faaliq-al-ḥabbi wan-nawaa, wa munazzilat-tawraati wal-injeeli wal-furqaani, a‛oodhu bika min sharri kulli shay’in anta aakhidhun bi naaṣiyatih\nallaahumma antal-awwalu fa laysa qablaka shay’un, wa antal-aakhiru fa laysa ba‛daka shay’un, wa antaẓ-ẓaahiru fa laysa fawqaka shay’un, wa antal-baaṭinu fa laysa doonaka shay’un, iqḍi ‛annid-dayna wa aghni mi-nal-faqr.',
     translation: 'O Allah, Lord of the heavens, lord of the earth and lord of the exalted throne, our Lord and the Lord of all things, Splitter of the seed and the date stone, Revealer of the Torah, the Injeel and the Furqan, I seek refuge with You from the evil of all things You seize by the forelock (i.e. You have total mastery over). \nO Allah, You are The First so there is nothing before You and You are The Last so there is nothing after You. You are Aẓ-ẓaahir so there is nothing above You and You are Al-baaṭin so there is nothing closer than You, settle my debt for me and spare me from poverty.',
   }
 ];
@@ -931,27 +931,32 @@ export const namazData = {
     name: 'Fajr',
     steps: [
       {
-        title: 'Niyyah (Intention)',
-        arabic: "The Niyyah is a matter of the heart. You do not have to say it out loud, but many people find it helpful to say it quietly to focus their minds. The structure of Fajr prayer is:\n- 2 Rakats Sunnah\n- 2 Rakats Fard",
-        transliteration: 'For 2 Rakats of Sunnah: "I intend to perform 2 Rakats of the Sunnah prayer of Fajr, for the sake of Allah, facing the Kaaba."\nFor 2 Rakats of Fard: "I intend to perform 2 Rakats of the Fard prayer of Fajr, for the sake of Allah, facing the Kaaba."',
-        translation: '(If you are following an Imam in a mosque, add: "...behind this Imam.")\nIn Fajr, the Quran is recited aloud by the Imam (or by you if praying alone) during the Fard rakats, while it is recited silently in the Sunnah rakats. The Sunnah prayer is highly emphasized, and the Fard is mandatory. Ensure you have performed Wudu and pray between the break of dawn and sunrise.',
+        title: 'The Niyyah (Intention)',
+        arabic: "The Niyyah is a matter of the heart. You do not have to say it out loud, but many people find it helpful to say it quietly to focus their minds.",
+        transliteration: 'For the 2 Rakats of Sunnah:\n"I intend to perform 2 Rakats of the Sunnah prayer of Fajr, for the sake of Allah, facing the Kaaba."\n\nFor the 2 Rakats of Fard:\n"I intend to perform 2 Rakats of the Fard prayer of Fajr, for the sake of Allah, facing the Kaaba."',
+        translation: '(If you are following an Imam in a mosque, add: "...behind this Imam.")',
         reference: 'Fajr Prayer',
       },
       {
-        title: 'Takbir',
-        arabic: 'الله أكبر',
-        transliteration: 'Allahu Akbar',
-        translation: 'Allah is the Greatest.',
-        reference: 'Opening of Prayer',
+        title: 'Prayer Structure',
+        arabic: 'Fajr is unique because it is the only prayer where the Quran is recited aloud by the Imam (or by you if praying alone) during the Fard rakats.',
+        transliteration: 'Sunnah (2 Rakats) - Recited silently. Highly emphasized by the Prophet (PBUH).\nFard (2 Rakats) - Recited aloud (Surah Fatiha + another Surah). Mandatory (Compulsory).',
+        translation: '',
+        reference: 'Fajr Prayer',
       },
       {
-        title: 'Sana',
-        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
-        transliteration:
-          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
-        translation:
-          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
-        reference: 'Before Al-Fatihah',
+        title: 'Quick Step-by-Step',
+        arabic: '1. Takbir: Raise your hands and say Allahu Akbar to begin.\n2. Qiyam: Recite the opening supplication (Sana), Surah Al-Fatiha, and another portion of the Quran.\n3. Ruku: Bow down and say Subhana Rabbiyal Azeem (3 times).\n4. Sujud: Prostrate and say Subhana Rabbiyal A\'la (3 times).\n5. Second Rakat: Repeat the steps, then sit for Tashahhud, Durood Ibrahim, and a short Dua.\n6. Taslim: Finish by turning your head right and then left, saying Assalamu Alaikum wa Rahmatullah.',
+        transliteration: '',
+        translation: '',
+        reference: 'Fajr Prayer',
+      },
+      {
+        title: 'Key Reminders',
+        arabic: 'Timeframe: Fajr begins at the break of dawn and ends just before sunrise. It is best to pray it as early as possible.\nWudu: Ensure you have performed your ablution (Wudu) before starting.',
+        transliteration: '',
+        translation: '',
+        reference: 'Fajr Prayer',
       },
       {
         title: "Al-Fatihah",
@@ -996,8 +1001,8 @@ export const namazData = {
       {
         title: 'The Structure of Dhuhr',
         arabic: 'Dhuhr is broken down into four parts. Unlike Fajr, all recitations in Dhuhr are performed silently.\n- 4 Rakats Sunnah Mu’akkadah (Emphasized Sunnah)\n- 4 Rakats Fard (Obligatory)\n- 2 Rakats Sunnah Mu’akkadah (Emphasized Sunnah)\n- 2 Rakats Nafl (Voluntary/Optional)',
-        transliteration: '',
-        translation: 'Part: First Sunnah, Rakats: 4, Status: Emphasized, Recitation: Silent\nPart: Fard, Rakats: 4, Status: Compulsory, Recitation: Silent\nPart: Second Sunnah, Rakats: 2, Status: Emphasized, Recitation: Silent\nPart: Nafl, Rakats: 2, Status: Optional, Recitation: Silent',
+        transliteration: 'Part: First Sunnah, Rakats: 4, Status: Emphasized, Recitation: Silent\nPart: Fard, Rakats: 4, Status: Compulsory, Recitation: Silent\nPart: Second Sunnah, Rakats: 2, Status: Emphasized, Recitation: Silent\nPart: Nafl, Rakats: 2, Status: Optional, Recitation: Silent',
+        translation: '',
         reference: 'Dhuhr Prayer',
       },
       {
@@ -1020,28 +1025,33 @@ export const namazData = {
     name: 'Asr',
     steps: [
       {
-        title: 'Takbir',
-        arabic: 'الله أكبر',
-        transliteration: 'Allahu Akbar',
-        translation: 'Allah is the Greatest.',
-        reference: 'Opening of Prayer',
+        title: 'The Niyyah (Intention)',
+        arabic: 'The intention is made in your heart. You don\'t have to say it out loud, but you should be conscious of what you are doing.',
+        transliteration: 'In your heart: "I intend to pray the 4 Rakats of the Fard (obligatory) Asr prayer, for the sake of Allah, facing the Qibla."\nIn Arabic (optional): Nawaytu an usalliya lillahi ta\'ala arba\'a raka\'ati salatil \'Asri fardan mustaqbilal Qiblati.',
+        translation: '',
+        reference: 'Asr Prayer',
       },
       {
-        title: 'Sana',
-        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
-        transliteration:
-          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
-        translation:
-          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
-        reference: 'Before Al-Fatihah',
+        title: 'What to Read in Asr',
+        arabic: 'Asr is a "Sirri" prayer, meaning the recitation is done silently (in a whisper to yourself, not out loud).',
+        transliteration: 'The First Two Rakats: In the first and second Rakat, you recite:\n- Sana: Subhanaka Allahumma... (only in the first Rakat).\n- Surah Al-Fatiha: The opening chapter of the Quran.\n- Another Surah: Any other Surah or verses from the Quran (e.g., Surah Al-Ikhlas, Surah Al-Kawthar, or Surah Al-Asr).\n\nThe Last Two Rakats: In the third and fourth Rakat, you recite:\n- Surah Al-Fatiha: Just the Fatiha.\n- No extra Surah: After Al-Fatiha, you go straight into Ruku (bowing).',
+        translation: '',
+        reference: 'Asr Prayer',
       },
-       {
+      {
+        title: 'A Quick Overview of the 4 Rakats',
+        arabic: "The steps for each Rakat are the same as other prayers: Takbir, Qiyam (standing), Ruku (bowing), Sujud (prostration), and Jalsa (sitting). The main difference is what is recited.",
+        transliteration: '',
+        translation: '',
+        reference: 'Asr Prayer',
+      },
+      {
         title: "Al-Fatihah",
         arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
         transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
         translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
         reference: "Quran 1",
-      }
+      },
     ],
   },
   maghrib: {
