@@ -31,9 +31,11 @@ import {
   ramadanDuas,
   istikharahDuas,
 } from '@/lib/islamic';
-import { BookHeart } from 'lucide-react';
+import { BookHeart, Volume2, Loader2 } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
+import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useToast } from '@/hooks/use-toast';
 
 const duaCategories = {
   jummah: { label: 'Jummah', data: jummahDuas },
@@ -57,6 +59,77 @@ const duaCategories = {
 type DuaCategoryKey = keyof typeof duaCategories;
 
 export function DuasPage() {
+  const [playingDua, setPlayingDua] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioControllerRef = useRef<AbortController | null>(null);
+  const { toast } = useToast();
+
+  const playAudio = async (text: string) => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
+    if (audioControllerRef.current) {
+      audioControllerRef.current.abort();
+    }
+
+    if (playingDua === text) {
+      setPlayingDua(null);
+      return;
+    }
+
+    setPlayingDua(text);
+    const controller = new AbortController();
+    audioControllerRef.current = controller;
+
+    try {
+      const { audioDataUri } = await generateAudio({ text });
+
+      if (controller.signal.aborted) {
+        return;
+      }
+
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingDua(null);
+        };
+      }
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        console.log('Audio generation aborted.');
+        return;
+      }
+      console.error('Failed to play audio', e);
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'Could not generate audio for this dua.',
+      });
+      setPlayingDua(null);
+    } finally {
+      if (audioControllerRef.current === controller) {
+        audioControllerRef.current = null;
+      }
+    }
+  };
+
+  useEffect(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+      if (audioControllerRef.current) {
+        audioControllerRef.current.abort();
+      }
+    };
+  }, []);
+
+
   return (
     <Card>
       <CardHeader>
@@ -83,9 +156,23 @@ export function DuasPage() {
                       key={index}
                       className="rounded-lg border bg-secondary/30 p-4"
                     >
-                      <p className="mb-2 text-lg text-primary" dir="rtl">
-                        {dua.arabic}
-                      </p>
+                      <div className="flex justify-between items-start">
+                        <p className="mb-2 text-lg text-primary" dir="rtl">
+                          {dua.arabic}
+                        </p>
+                        <button
+                          onClick={() => playAudio(dua.arabic)}
+                          className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                          aria-label={`Listen to dua`}
+                          disabled={playingDua === dua.arabic}
+                        >
+                          {playingDua === dua.arabic ? (
+                            <Loader2 className="h-5 w-5 animate-spin" />
+                          ) : (
+                            <Volume2 className="h-5 w-5" />
+                          )}
+                        </button>
+                      </div>
                       <p className="mb-2 text-sm text-muted-foreground">
                         {dua.transliteration}
                       </p>
