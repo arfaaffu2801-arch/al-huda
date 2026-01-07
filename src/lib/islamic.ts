@@ -1106,31 +1106,45 @@ export const namazData = {
     name: 'Isha',
     steps: [
       {
-        title: 'Takbir',
-        arabic: 'الله أكبر',
-        transliteration: 'Allahu Akbar',
-        translation: 'Allah is the Greatest.',
-        reference: 'Opening of Prayer',
+        title: 'Understanding the Niyyah',
+        arabic: 'In Islam, the intention is the internal resolve to perform an act for the sake of Allah. You do not strictly need to say specific words in Arabic for it to be valid; simply knowing in your heart that you are standing up to pray the 4 Rak\'ahs of the Fard (obligatory) Isha prayer is sufficient.',
+        transliteration: '',
+        translation: '',
+        reference: 'Isha Prayer',
       },
       {
-        title: 'Sana',
-        arabic: 'سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَى جَدُّكَ، وَلَا إِلَهَ غَيْرُكَ',
-        transliteration:
-          'Subhanakallahumma wa bihamdika, wa tabarakasmuka, wa ta\'ala jadduka, wa la ilaha ghairuk.',
-        translation:
-          'Glory is to You, O Allah, and praise. Blessed is Your Name and Exalted is Your Majesty. There is no god but You.',
-        reference: 'Before Al-Fatihah',
+        title: 'How to State the Niyyah (Examples)',
+        arabic: 'If you prefer to verbalize your intention, you can use these formats:',
+        transliteration: 'In English:\n"I intend to perform the 4 Rak\'ahs of the Fard Isha prayer, for the sake of Allah, facing the Kaaba."\n\nIn Arabic (Transliteration):\n"Nawaytu an usalliya lillahi ta\'ala arba\'a raka\'atin fardal \'Isha-i, mustaqbilal qiblati, Allahu Akbar."',
+        translation: '',
+        reference: 'Isha Prayer',
       },
-       {
+      {
+        title: 'The Structure of Isha Prayer',
+        arabic: 'Isha is the longest of the five daily prayers. While the 4 Rak\'ahs of Fard are the only strictly obligatory part, the Sunnah and Witr are highly recommended.',
+        transliteration: 'Sunnah: 4 Rak\'ahs Sunnah Ghair-Mu\'akkadah (Optional)\nFard: 4 Rak\'ahs Obligatory\nSunnah: 2 Rak\'ahs Sunnah Mu\'akkadah (Emphasized)\nNafl: 2 Rak\'ahs Voluntary\nWitr: 3 Rak\'ahs Wajib (Required)',
+        translation: '',
+        reference: 'Isha Prayer',
+      },
+      {
+        title: 'Key Points to Remember',
+        arabic: 'Direction: Ensure you are facing the Qibla (the Kaaba in Makkah).\nCongregation: If you are praying behind an Imam, add the phrase "behind this Imam" to your intention.\nThe Takbir: The prayer officially begins when you raise your hands and say "Allahu Akbar" (Takbiratul Ihram) immediately after your intention.',
+        transliteration: '',
+        translation: '',
+        reference: 'Isha Prayer',
+      },
+      {
         title: "Al-Fatihah",
         arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ * الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ * الرَّحْمَٰنِ الرَّحِيمِ * مَالِكِ يَوْمِ الدِّينِ * إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ * اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ * صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ",
         transliteration: "Bismillahi-r-Rahmani-r-Rahim. Al-hamdu lillahi Rabbi-l-alamin. Ar-Rahmani-r-Rahim. Maliki yawmi-d-din. Iyyaka na'budu wa iyyaka nasta'in. Ihdina-s-sirata-l-mustaqim. Sirata-lladhina an'amta 'alayhim ghayri-l-maghdubi 'alayhim wa la-d-dallin.",
         translation: "In the name of Allah, the Entirely Merciful, the Especially Merciful. [All] praise is [due] to Allah, Lord of the worlds - The Entirely Merciful, the Especially Merciful, Sovereign of the Day of Recompense. It is You we worship and You we ask for help. Guide us to the straight path - The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
         reference: "Quran 1",
-      }
+      },
     ],
   },
 };
+    
+
     
 
     
