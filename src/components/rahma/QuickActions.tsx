@@ -12,12 +12,18 @@ import { AllahNamesIcon } from './AllahNamesIcon';
 import { HadisIcon } from './HadisIcon';
 import { HealthIcon } from './HealthIcon';
 import { NamazIcon } from './NamazIcon';
+import { PillarsOfIslamIcon } from './PillarsOfIslamIcon';
 
 const actions = [
   {
     href: '/names-of-allah',
     label: '99 Names',
     icon: <AllahNamesIcon className="h-12 w-12" />,
+  },
+  {
+    href: '/pillars-of-islam',
+    label: '5 Pillars',
+    icon: <PillarsOfIslamIcon className="h-12 w-12" />,
   },
   {
     href: '/quran',
