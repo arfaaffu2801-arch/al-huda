@@ -4,15 +4,27 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { Button } from '../ui/button';
-import { ArrowLeft } from 'lucide-react';
-import { useLanguage } from '@/context/LanguageContext';
-import { Switch } from '../ui/switch';
-import { Label } from '../ui/label';
+import { ArrowLeft, Languages } from 'lucide-react';
+import { useLanguage, type Language } from '@/context/LanguageContext';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuRadioGroup,
+  DropdownMenuRadioItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
+
+const languageOptions: { value: Language; label: string }[] = [
+  { value: 'en', label: 'English' },
+  { value: 'kn', label: 'ಕನ್ನಡ' },
+  { value: 'hi', label: 'हिन्दी' },
+  { value: 'mr', label: 'मराठी' },
+];
 
 export function Header() {
   const pathname = usePathname();
   const router = useRouter();
-  const { language, toggleLanguage } = useLanguage();
+  const { language, setLanguage } = useLanguage();
 
   return (
     <header className="sticky top-0 z-10 w-full border-b bg-card shadow-sm">
@@ -41,20 +53,26 @@ export function Header() {
             </span>
           </Link>
         </div>
-        <div className="flex items-center gap-2">
-          <Label htmlFor="language-toggle" className="text-sm font-medium">
-            EN
-          </Label>
-          <Switch
-            id="language-toggle"
-            checked={language === 'kn'}
-            onCheckedChange={toggleLanguage}
-            aria-label="Toggle language"
-          />
-          <Label htmlFor="language-toggle" className="text-sm font-medium">
-            KN
-          </Label>
-        </div>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Button variant="outline" size="icon">
+              <Languages className="h-5 w-5" />
+              <span className="sr-only">Change language</span>
+            </Button>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent align="end">
+            <DropdownMenuRadioGroup
+              value={language}
+              onValueChange={(value) => setLanguage(value as Language)}
+            >
+              {languageOptions.map((option) => (
+                <DropdownMenuRadioItem key={option.value} value={option.value}>
+                  {option.label}
+                </DropdownMenuRadioItem>
+              ))}
+            </DropdownMenuRadioGroup>
+          </DropdownMenuContent>
+        </DropdownMenu>
       </div>
     </header>
   );
