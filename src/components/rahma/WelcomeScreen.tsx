@@ -3,10 +3,11 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import Image from 'next/image';
+import { Button } from '../ui/button';
 
-export function WelcomeScreen() {
+export function WelcomeScreen({ onEnter }: { onEnter: () => void }) {
   return (
-    <div className="flex flex-col items-center justify-center h-[calc(100vh-10rem)] text-center">
+    <div className="flex flex-col items-center justify-center h-screen text-center bg-background">
       <Card className="max-w-2xl p-8 shadow-2xl animate-fade-in-up">
         <CardContent className="flex flex-col items-center gap-6">
             <Image 
@@ -27,6 +28,7 @@ export function WelcomeScreen() {
             <br />
             <span className="font-bold text-primary">SPR AI ಎಜುಟೆಕ್, ಕರ್ನಾಟಕ ಬ್ಯಾಂಕ್ ಹಿಂದೆ, ಹೊಸದುರ್ಗ</span>
           </p>
+           <Button onClick={onEnter} className="mt-4">ಪ್ರವೇಶಿಸಿ</Button>
         </CardContent>
       </Card>
     </div>
