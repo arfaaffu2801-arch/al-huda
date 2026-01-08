@@ -14,15 +14,18 @@ import { BookMarked, Search } from 'lucide-react';
 import Link from 'next/link';
 import { useState } from 'react';
 import { ScrollArea } from '../ui/scroll-area';
+import { useLanguage } from '@/context/LanguageContext';
 
 export function SurahList() {
   const [searchTerm, setSearchTerm] = useState('');
+  const { language } = useLanguage();
 
   const filteredSurahs = surahData.filter(
     (surah) =>
       surah.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       surah.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      surah.translation.toLowerCase().includes(searchTerm.toLowerCase())
+      surah.translation.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (surah as any).kannada_translation?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   return (
@@ -30,10 +33,10 @@ export function SurahList() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookMarked className="h-6 w-6 text-primary" />
-          Surahs of the Qur'an
+          {language === 'kn' ? 'ಕುರಾನ್‌ನ ಸೂರಾಗಳು' : "Surahs of the Qur'an"}
         </CardTitle>
         <CardDescription>
-          Browse through the 114 chapters of the Holy Qur'an.
+          {language === 'kn' ? 'ಪವಿತ್ರ ಕುರ್‌ಆನ್‌ನ 114 ಅಧ್ಯಾಯಗಳ ಮೂಲಕ ಬ್ರೌಸ್ ಮಾಡಿ.' : "Browse through the 114 chapters of the Holy Qur'an."}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -42,7 +45,7 @@ export function SurahList() {
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="text"
-              placeholder="Search for a Surah..."
+              placeholder={language === 'kn' ? 'ಸೂರಾ ಹುಡುಕಿ...' : 'Search for a Surah...'}
               className="pl-10"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -68,7 +71,7 @@ export function SurahList() {
                     {surah.transliteration}
                   </p>
                   <p className="text-xs text-muted-foreground/80">
-                    {surah.translation} ({surah.verses} verses)
+                    {language === 'kn' ? (surah as any).kannada_translation || surah.translation : surah.translation} ({language === 'kn' ? `${surah.verses} ವಚನಗಳು` : `${surah.verses} verses`})
                   </p>
                 </div>
               </Link>

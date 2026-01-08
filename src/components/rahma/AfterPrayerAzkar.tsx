@@ -8,19 +8,24 @@ import {
   CardTitle,
 } from '@/components/ui/card';
 import { afterPrayerAzkar } from '@/lib/islamic';
+import { useLanguage } from '@/context/LanguageContext';
 import { Hand } from 'lucide-react';
 import { ScrollArea } from '../ui/scroll-area';
 
 export function AfterPrayerAzkar() {
+  const { language } = useLanguage();
+
   return (
     <Card>
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <Hand className="h-6 w-6 text-primary" />
-          After Prayer Azkar
+          {language === 'kn' ? 'ನಮಾಝಿನ ನಂತರದ ಅಜ್ಕಾರ್' : 'After Prayer Azkar'}
         </CardTitle>
         <CardDescription>
-          Supplications to be recited after prayers.
+          {language === 'kn'
+            ? 'ನಮಾಝಿನ ನಂತರ ಪಠಿಸಬೇಕಾದ ಪ್ರಾರ್ಥನೆಗಳು.'
+            : 'Supplications to be recited after prayers.'}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -38,7 +43,7 @@ export function AfterPrayerAzkar() {
                   {dua.transliteration}
                 </p>
                 <p className="italic text-foreground">
-                  &ldquo;{dua.translation}&rdquo;
+                  &ldquo;{language === 'kn' ? (dua as any).kannada_translation || dua.translation : dua.translation}&rdquo;
                 </p>
                 {dua.reference && (
                   <p className="mt-2 text-right text-xs text-muted-foreground">

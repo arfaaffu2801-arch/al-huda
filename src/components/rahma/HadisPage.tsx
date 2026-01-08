@@ -16,6 +16,7 @@ import { ScrollArea } from '../ui/scroll-area';
 import { HadisIcon } from './HadisIcon';
 import { generateAudio } from '@/ai/flows/text-to-speech-flow';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/context/LanguageContext';
 
 export function HadisPage() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -23,12 +24,14 @@ export function HadisPage() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
+  const { language } = useLanguage();
 
   const filteredHadis = hadisData.filter(
     (hadis) =>
       hadis.arabic.toLowerCase().includes(searchTerm.toLowerCase()) ||
       hadis.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
       hadis.translation.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (hadis as any).kannada_translation?.toLowerCase().includes(searchTerm.toLowerCase()) ||
       hadis.reference.toLowerCase().includes(searchTerm.toLowerCase())
   );
   
@@ -73,8 +76,8 @@ export function HadisPage() {
       console.error('Failed to play audio', e);
       toast({
         variant: 'destructive',
-        title: 'Error',
-        description: 'Could not generate audio for this Hadis.',
+        title: language === 'kn' ? 'ದೋಷ' : 'Error',
+        description: language === 'kn' ? 'ಈ ಹದೀಸ್‌ಗೆ ಆಡಿಯೋ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.' : 'Could not generate audio for this Hadis.',
       });
       setPlayingHadis(null);
     } finally {
@@ -102,7 +105,7 @@ export function HadisPage() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <HadisIcon className="h-6 w-6" />
-          40 Hadis
+          {language === 'kn' ? '40 ಹದೀಸ್' : '40 Hadis'}
         </CardTitle>
       </CardHeader>
       <CardContent>
@@ -111,7 +114,7 @@ export function HadisPage() {
             <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
             <Input
               type="text"
-              placeholder="Search for a Hadis..."
+              placeholder={language === 'kn' ? 'ಹದೀಸ್‌ಗಾಗಿ ಹುಡುಕಿ...' : 'Search for a Hadis...'}
               className="pl-10"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -146,7 +149,7 @@ export function HadisPage() {
                   {hadis.transliteration}
                 </p>
                 <p className="italic text-foreground">
-                  &ldquo;{hadis.translation}&rdquo;
+                  &ldquo;{language === 'kn' ? (hadis as any).kannada_translation || hadis.translation : hadis.translation}&rdquo;
                 </p>
                 <p className="mt-2 text-right text-xs text-muted-foreground">
                   - {hadis.reference}

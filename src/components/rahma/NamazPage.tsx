@@ -20,6 +20,7 @@ import { Volume2, Loader2, BookOpen } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { useToast } from '@/hooks/use-toast';
 import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useLanguage } from '@/context/LanguageContext';
 
 type NamazData = typeof namazData;
 type NamazKey = keyof NamazData;
@@ -29,6 +30,7 @@ export function NamazPage() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
+  const { language } = useLanguage();
 
   const playAudio = async (text: string) => {
     if (audioRef.current) {
@@ -71,8 +73,8 @@ export function NamazPage() {
       console.error('Failed to play audio', e);
       toast({
         variant: 'destructive',
-        title: 'Error',
-        description: 'Could not generate audio.',
+        title: language === 'kn' ? 'ದೋಷ' : 'Error',
+        description: language === 'kn' ? 'ಆಡಿಯೋ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.' : 'Could not generate audio.',
       });
       setPlayingText(null);
     } finally {
@@ -100,10 +102,10 @@ export function NamazPage() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <NamazIcon className="h-6 w-6 text-primary" />
-          Namaz Recitations
+          {language === 'kn' ? 'ನಮಾಝ್ ಪಠಣಗಳು' : 'Namaz Recitations'}
         </CardTitle>
         <CardDescription>
-          Essential recitations for the five daily prayers.
+          {language === 'kn' ? 'ಐದು ದೈನಂದಿನ ನಮಾಝ್‌ಗಳಿಗೆ ಅಗತ್ಯವಾದ ಪಠಣಗಳು.' : 'Essential recitations for the five daily prayers.'}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -111,7 +113,7 @@ export function NamazPage() {
           <TabsList className="mb-4 h-auto flex-wrap justify-start">
             {(Object.keys(namazData) as NamazKey[]).map((key) => (
               <TabsTrigger key={key} value={key}>
-                {namazData[key].name}
+                {language === 'kn' ? (namazData[key] as any).kannada_name || namazData[key].name : namazData[key].name}
               </TabsTrigger>
             ))}
           </TabsList>
@@ -126,30 +128,32 @@ export function NamazPage() {
                     >
                       <h3 className="mb-4 text-lg font-bold text-primary flex items-center gap-2">
                         <BookOpen className="h-5 w-5" />
-                        {step.title}
+                        {language === 'kn' ? (step as any).kannada_title || step.title : step.title}
                       </h3>
                       <div className="flex justify-between items-start">
                         <p className="mb-2 text-xl text-primary" dir="rtl">
                           {step.arabic}
                         </p>
-                        <button
-                          onClick={() => playAudio(step.arabic)}
-                          className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
-                          aria-label={`Listen`}
-                          disabled={playingText === step.arabic}
-                        >
-                          {playingText === step.arabic ? (
-                            <Loader2 className="h-5 w-5 animate-spin" />
-                          ) : (
-                            <Volume2 className="h-5 w-5" />
-                          )}
-                        </button>
+                        {step.arabic.length < 200 && ( // Avoid audio for long descriptive texts
+                          <button
+                            onClick={() => playAudio(step.arabic)}
+                            className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                            aria-label={`Listen`}
+                            disabled={playingText === step.arabic}
+                          >
+                            {playingText === step.arabic ? (
+                              <Loader2 className="h-5 w-5 animate-spin" />
+                            ) : (
+                              <Volume2 className="h-5 w-5" />
+                            )}
+                          </button>
+                        )}
                       </div>
                       <p className="mb-2 text-sm text-muted-foreground">
                         {step.transliteration}
                       </p>
                       <p className="italic text-foreground">
-                        &ldquo;{step.translation}&rdquo;
+                        &ldquo;{language === 'kn' ? (step as any).kannada_translation || step.translation : step.translation}&rdquo;
                       </p>
                       {step.reference && (
                         <p className="mt-2 text-right text-xs text-muted-foreground">

@@ -1,4 +1,3 @@
-
 'use client';
 
 import {
@@ -15,6 +14,7 @@ import Image from 'next/image';
 import { AllahNamesIcon } from './AllahNamesIcon';
 import { generateAudio } from '@/ai/flows/text-to-speech-flow';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/context/LanguageContext';
 
 export function AllahNames() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -22,12 +22,14 @@ export function AllahNames() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
+  const { language } = useLanguage();
 
   const filteredNames = allahNames.filter(
     (name) =>
       name.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       name.transliteration.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      name.meaning.toLowerCase().includes(searchTerm.toLowerCase())
+      name.meaning.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      (name as any).kannada_meaning?.toLowerCase().includes(searchTerm.toLowerCase())
   );
 
   const playAudio = async (text: string, transliteration: string) => {
@@ -73,8 +75,8 @@ export function AllahNames() {
       console.error('Failed to play audio', e);
       toast({
         variant: 'destructive',
-        title: 'Error',
-        description: 'Could not generate audio for this name.',
+        title: language === 'kn' ? 'ದೋಷ' : 'Error',
+        description: language === 'kn' ? 'ಈ ಹೆಸರಿಗೆ ಆಡಿಯೋ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.' : 'Could not generate audio for this name.',
       });
       setPlayingName(null);
     } finally {
@@ -110,7 +112,7 @@ export function AllahNames() {
         <CardHeader>
           <CardTitle className="flex items-center gap-2 text-xl font-headline">
             <AllahNamesIcon className="h-6 w-6" />
-            99 Names of Allah
+            {language === 'kn' ? 'ಅಲ್ಲಾಹನ 99 ಹೆಸರುಗಳು' : '99 Names of Allah'}
           </CardTitle>
         </CardHeader>
         <CardContent>
@@ -120,7 +122,7 @@ export function AllahNames() {
                 <Search className="absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
                 <Input
                   type="text"
-                  placeholder="Search for a name..."
+                  placeholder={language === 'kn' ? 'ಹೆಸರನ್ನು ಹುಡುಕಿ...' : 'Search for a name...'}
                   className="pl-10"
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
@@ -165,7 +167,7 @@ export function AllahNames() {
                     </div>
                   </div>
                   <p className="text-sm italic text-muted-foreground">
-                    &ldquo;{name.meaning}&rdquo;
+                    &ldquo;{language === 'kn' ? (name as any).kannada_meaning || name.meaning : name.meaning}&rdquo;
                   </p>
                 </div>
               ))}

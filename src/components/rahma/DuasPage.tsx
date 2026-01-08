@@ -36,24 +36,25 @@ import { ScrollArea } from '../ui/scroll-area';
 import { useState, useRef, useEffect } from 'react';
 import { generateAudio } from '@/ai/flows/text-to-speech-flow';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/context/LanguageContext';
 
 const duaCategories = {
-  jummah: { label: 'Jummah', data: jummahDuas },
-  mercy: { label: 'Mercy', data: mercyDuas },
-  forgiveness: { label: 'Forgiveness', data: forgivenessDuas },
-  happiness: { label: 'Happiness', data: happinessDuas },
-  rizq: { label: 'Rizq', data: rizqDuas },
-  repentance: { label: 'Repentance', data: repentanceDuas },
-  rectification: { label: 'Rectification', data: rectificationDuas },
-  goodness: { label: 'Goodness', data: goodnessDuas },
-  patience: { label: 'Patience', data: patienceDuas },
-  justice: { label: 'Justice', data: justiceDuas },
-  rabbana: { label: 'Rabbana', data: rabbanaDuas },
-  istikharah: { label: 'Istikhara', data: istikharahDuas },
-  ruqyah: { label: 'Ruqyah', data: ruqyahDuas },
-  protection: { label: 'Protection', data: protectionDuas },
-  reverence: { label: 'Reverence', data: reverenceDuas },
-  ramadan: { label: 'Ramadan', data: ramadanDuas },
+  jummah: { label: 'Jummah', kannada_label: 'ಜುಮ್ಮಾ', data: jummahDuas },
+  mercy: { label: 'Mercy', kannada_label: 'ಕರುಣೆ', data: mercyDuas },
+  forgiveness: { label: 'Forgiveness', kannada_label: 'ಕ್ಷಮೆ', data: forgivenessDuas },
+  happiness: { label: 'Happiness', kannada_label: 'ಸಂತೋಷ', data: happinessDuas },
+  rizq: { label: 'Rizq', kannada_label: 'ರಿಜ್ಕ್', data: rizqDuas },
+  repentance: { label: 'Repentance', kannada_label: 'ಪಶ್ಚಾತ್ತಾಪ', data: repentanceDuas },
+  rectification: { label: 'Rectification', kannada_label: 'ತಿದ್ದುಪಡಿ', data: rectificationDuas },
+  goodness: { label: 'Goodness', kannada_label: 'ಒಳ್ಳೆಯದು', data: goodnessDuas },
+  patience: { label: 'Patience', kannada_label: 'ಸಹನೆ', data: patienceDuas },
+  justice: { label: 'Justice', kannada_label: 'ನ್ಯಾಯ', data: justiceDuas },
+  rabbana: { label: 'Rabbana', kannada_label: 'ರಬ್ಬಾನಾ', data: rabbanaDuas },
+  istikharah: { label: 'Istikhara', kannada_label: 'ಇಸ್ತಿಖಾರಾ', data: istikharahDuas },
+  ruqyah: { label: 'Ruqyah', kannada_label: 'ರುಕ್ಯಾ', data: ruqyahDuas },
+  protection: { label: 'Protection', kannada_label: 'ರಕ್ಷಣೆ', data: protectionDuas },
+  reverence: { label: 'Reverence', kannada_label: 'ಗೌರವ', data: reverenceDuas },
+  ramadan: { label: 'Ramadan', kannada_label: 'ರಂಜಾನ್', data: ramadanDuas },
 };
 
 type DuaCategoryKey = keyof typeof duaCategories;
@@ -63,6 +64,7 @@ export function DuasPage() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
+  const { language } = useLanguage();
 
   const playAudio = async (text: string) => {
     if (audioRef.current) {
@@ -105,8 +107,8 @@ export function DuasPage() {
       console.error('Failed to play audio', e);
       toast({
         variant: 'destructive',
-        title: 'Error',
-        description: 'Could not generate audio for this dua.',
+        title: language === 'kn' ? 'ದೋಷ' : 'Error',
+        description: language === 'kn' ? 'ಈ ದುವಾಕ್ಕೆ ಆಡಿಯೋ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.' : 'Could not generate audio for this dua.',
       });
       setPlayingDua(null);
     } finally {
@@ -135,15 +137,15 @@ export function DuasPage() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <BookHeart className="h-6 w-6 text-primary" />
-          Collection of Du'as
+          {language === 'kn' ? 'ದುವಾಗಳ ಸಂಗ್ರಹ' : "Collection of Du'as"}
         </CardTitle>
       </CardHeader>
       <CardContent>
         <Tabs defaultValue="jummah" className="w-full">
           <TabsList className="mb-4 h-auto flex-wrap justify-start">
-            {Object.entries(duaCategories).map(([key, { label }]) => (
+            {Object.entries(duaCategories).map(([key, { label, kannada_label }]) => (
               <TabsTrigger key={key} value={key}>
-                {label}
+                {language === 'kn' ? kannada_label : label}
               </TabsTrigger>
             ))}
           </TabsList>
@@ -177,7 +179,7 @@ export function DuasPage() {
                         {dua.transliteration}
                       </p>
                       <p className="italic text-foreground">
-                        &ldquo;{dua.translation}&rdquo;
+                        &ldquo;{language === 'kn' ? (dua as any).kannada_translation || dua.translation : dua.translation}&rdquo;
                       </p>
                       {dua.reference && (
                         <p className="mt-2 text-right text-xs text-muted-foreground">

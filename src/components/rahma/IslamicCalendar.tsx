@@ -13,9 +13,11 @@ import { CalendarDays, Star } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { islamicFestivals2026 } from '@/lib/islamic';
 import { Badge } from '../ui/badge';
+import { useLanguage } from '@/context/LanguageContext';
 
 type Festival = {
   name: string;
+  kannada_name: string;
   date: Date;
   hijri: string;
 };
@@ -26,10 +28,12 @@ export function IslamicCalendar() {
   const [selectedFestival, setSelectedFestival] = useState<Festival | null>(
     null
   );
+  const { language } = useLanguage();
 
   useEffect(() => {
     const today = date || new Date();
-    const hijriDateString = new Intl.DateTimeFormat('en-US-u-ca-islamic', {
+    const hijriLocale = language === 'kn' ? 'kn-IN-u-ca-islamic' : 'en-US-u-ca-islamic';
+    const hijriDateString = new Intl.DateTimeFormat(hijriLocale, {
       day: 'numeric',
       month: 'long',
       year: 'numeric',
@@ -41,9 +45,9 @@ export function IslamicCalendar() {
         f.date.getDate() === today.getDate() &&
         f.date.getMonth() === today.getMonth() &&
         f.date.getFullYear() === today.getFullYear()
-    );
+    ) as Festival | undefined;
     setSelectedFestival(festival || null);
-  }, [date]);
+  }, [date, language]);
 
   const festivalDates = islamicFestivals2026.map((f) => f.date);
 
@@ -52,10 +56,10 @@ export function IslamicCalendar() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <CalendarDays className="h-6 w-6 text-primary" />
-          Islamic Calendar
+          {language === 'kn' ? 'ಇಸ್ಲಾಮಿಕ್ ಕ್ಯಾಲೆಂಡರ್' : 'Islamic Calendar'}
         </CardTitle>
         <CardDescription>
-          {hijriDate || 'Loading Hijri date...'}
+          {hijriDate || (language === 'kn' ? 'ಹಿಜ್ರಿ ದಿನಾಂಕವನ್ನು ಲೋಡ್ ಮಾಡಲಾಗುತ್ತಿದೆ...' : 'Loading Hijri date...')}
         </CardDescription>
       </CardHeader>
       <CardContent className="flex flex-col items-center justify-center gap-6">
@@ -75,7 +79,7 @@ export function IslamicCalendar() {
           {selectedFestival ? (
             <Badge variant="secondary" className="h-auto text-base font-semibold">
               <div className="flex flex-col p-2">
-                <span>{selectedFestival.name}</span>
+                <span>{language === 'kn' ? selectedFestival.kannada_name : selectedFestival.name}</span>
                 <span className="text-sm font-normal text-muted-foreground">
                   {selectedFestival.hijri}
                 </span>
@@ -83,21 +87,21 @@ export function IslamicCalendar() {
             </Badge>
           ) : (
             <p className="text-sm text-muted-foreground">
-              Select a date to see events.
+              {language === 'kn' ? 'ಕಾರ್ಯಕ್ರಮಗಳನ್ನು ನೋಡಲು ದಿನಾಂಕವನ್ನು ಆಯ್ಕೆಮಾಡಿ.' : 'Select a date to see events.'}
             </p>
           )}
         </div>
         <div className="w-full max-w-md rounded-lg border p-4">
-            <h3 className="mb-4 text-center text-lg font-semibold">Upcoming Festivals 2026</h3>
+            <h3 className="mb-4 text-center text-lg font-semibold">{language === 'kn' ? 'ಮುಂಬರುವ ಹಬ್ಬಗಳು 2026' : 'Upcoming Festivals 2026'}</h3>
             <ul className="space-y-2">
                 {islamicFestivals2026.map((festival, index) => (
                     <li key={index} className="flex justify-between items-center text-sm p-2 rounded-md hover:bg-secondary/50">
                         <div className="flex items-center gap-2">
                            <Star className="h-4 w-4 text-accent" />
-                           <span>{festival.name}</span>
+                           <span>{language === 'kn' ? (festival as any).kannada_name : festival.name}</span>
                         </div>
                         <div className="text-right">
-                            <p className='font-semibold'>{festival.date.toLocaleDateString('en-US', { month: 'long', day: 'numeric' })}</p>
+                            <p className='font-semibold'>{festival.date.toLocaleDateString(language === 'kn' ? 'kn-IN' : 'en-US', { month: 'long', day: 'numeric' })}</p>
                             <p className="text-xs text-muted-foreground">{festival.hijri}</p>
                         </div>
                     </li>
@@ -108,5 +112,3 @@ export function IslamicCalendar() {
     </Card>
   );
 }
-
-    

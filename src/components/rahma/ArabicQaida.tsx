@@ -12,6 +12,7 @@ import { Volume2, Loader2 } from 'lucide-react';
 import { useState, useRef, useEffect } from 'react';
 import { generateAudio } from '@/ai/flows/text-to-speech-flow';
 import { useToast } from '@/hooks/use-toast';
+import { useLanguage } from '@/context/LanguageContext';
 
 const arabicAlphabet = [
   { letter: 'ا', name: 'Alif' },
@@ -51,6 +52,7 @@ export function ArabicQaida() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const audioControllerRef = useRef<AbortController | null>(null);
   const { toast } = useToast();
+  const { language } = useLanguage();
 
   const playAudio = async (text: string) => {
     if (audioRef.current) {
@@ -93,8 +95,8 @@ export function ArabicQaida() {
       console.error('Failed to play audio', e);
       toast({
         variant: 'destructive',
-        title: 'Error',
-        description: 'Could not generate audio for this letter.',
+        title: language === 'kn' ? 'ದೋಷ' : 'Error',
+        description: language === 'kn' ? 'ಈ ಅಕ್ಷರಕ್ಕೆ ಆಡಿಯೋ ರಚಿಸಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ.' : 'Could not generate audio for this letter.',
       });
       setPlayingChar(null);
     } finally {
@@ -122,7 +124,7 @@ export function ArabicQaida() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <ArabicQaidaIcon className="h-6 w-6" />
-          Arabic Qaida - The Alphabet
+          {language === 'kn' ? 'ಅರೇಬಿಕ್ ಕೈದಾ - ವರ್ಣಮಾಲೆ' : 'Arabic Qaida - The Alphabet'}
         </CardTitle>
       </CardHeader>
       <CardContent>

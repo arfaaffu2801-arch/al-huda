@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button';
 import { Loader2, Send, MessageSquareHeart } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
+import { useLanguage } from '@/context/LanguageContext';
 
 type Message = {
   role: 'user' | 'model';
@@ -18,6 +19,7 @@ export function HealthChatbot() {
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const { language } = useLanguage();
 
   const handleSendMessage = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -40,7 +42,7 @@ export function HealthChatbot() {
       console.error('Chatbot error:', error);
       const errorMessage: Message = {
         role: 'model',
-        content: 'Sorry, I encountered an error. Please try again.',
+        content: language === 'kn' ? 'ಕ್ಷಮಿಸಿ, ದೋಷ ಎದುರಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.' : 'Sorry, I encountered an error. Please try again.',
       };
       setMessages([...newMessages, errorMessage]);
     } finally {
@@ -53,10 +55,10 @@ export function HealthChatbot() {
       <CardHeader>
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <MessageSquareHeart className="h-6 w-6 text-primary" />
-          Huda Health Assistant
+          {language === 'kn' ? 'ಹುದಾ ಆರೋಗ್ಯ ಸಹಾಯಕ' : 'Huda Health Assistant'}
         </CardTitle>
         <CardDescription>
-          Ask for Islamic perspectives on health and wellness. For medical emergencies, please consult a doctor.
+          {language === 'kn' ? 'ಆರೋಗ್ಯ ಮತ್ತು ಸ್ವಾಸ್ಥ್ಯದ ಕುರಿತು ಇಸ್ಲಾಮಿಕ್ ದೃಷ್ಟಿಕೋನಗಳಿಗಾಗಿ ಕೇಳಿ. ವೈದ್ಯಕೀಯ ತುರ್ತುಸ್ಥಿತಿಗಳಿಗಾಗಿ, ದಯವಿಟ್ಟು ವೈದ್ಯರನ್ನು ಸಂಪರ್ಕಿಸಿ.' : 'Ask for Islamic perspectives on health and wellness. For medical emergencies, please consult a doctor.'}
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -87,7 +89,7 @@ export function HealthChatbot() {
                   </div>
                    {message.role === 'user' && (
                     <Avatar>
-                      <AvatarFallback>You</AvatarFallback>
+                      <AvatarFallback>{language === 'kn' ? 'ನೀವು' : 'You'}</AvatarFallback>
                     </Avatar>
                   )}
                 </div>
@@ -108,7 +110,7 @@ export function HealthChatbot() {
           <form onSubmit={handleSendMessage} className="mt-4 flex items-center gap-2">
             <Input
               type="text"
-              placeholder="Ask a question..."
+              placeholder={language === 'kn' ? 'ಪ್ರಶ್ನೆ ಕೇಳಿ...' : 'Ask a question...'}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               disabled={isLoading}
@@ -120,7 +122,7 @@ export function HealthChatbot() {
               ) : (
                 <Send className="h-5 w-5" />
               )}
-              <span className="sr-only">Send</span>
+              <span className="sr-only">{language === 'kn' ? 'ಕಳುಹಿಸು' : 'Send'}</span>
             </Button>
           </form>
         </div>
