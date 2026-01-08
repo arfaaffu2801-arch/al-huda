@@ -2,6 +2,7 @@
 import { Header } from '@/components/rahma/Header';
 import { Shahada } from '@/components/rahma/Shahada';
 import { QuickActions } from '@/components/rahma/QuickActions';
+import { QuranChatbot } from '@/components/rahma/QuranChatbot';
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <main className="flex flex-1 flex-col gap-6 p-4 sm:p-6 md:p-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mx-auto w-full max-w-screen-2xl">
           <Shahada />
+          <QuranChatbot />
         </div>
         <div className="mx-auto w-full max-w-screen-2xl">
           <QuickActions />
