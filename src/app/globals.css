@@ -119,6 +119,6 @@ body {
     font-weight: bold;
     color: hsl(var(--primary));
     opacity: 0.1;
-    animation: float 12s ease-in-out infinite, fadeIn 2s ease-in;
+    animation: float 24s ease-in-out infinite, fadeIn 2s ease-in;
     white-space: nowrap;
 }
