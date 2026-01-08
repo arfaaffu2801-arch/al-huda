@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,4 +86,39 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(10px, 15px) rotate(10deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.8;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 0.1; }
+}
+
+.animated-allah-bg {
+    content: 'الله';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18rem;
+    font-family: 'Alegreya', serif;
+    font-weight: bold;
+    color: hsl(var(--primary));
+    opacity: 0.1;
+    animation: float 12s ease-in-out infinite, fadeIn 2s ease-in;
+    white-space: nowrap;
 }

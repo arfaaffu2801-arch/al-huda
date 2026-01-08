@@ -74,14 +74,15 @@ export function Shahada() {
 
 
   return (
-    <Card>
-      <CardHeader>
+    <Card className="relative overflow-hidden">
+       <div className="absolute inset-0 z-0 opacity-10 animated-allah-bg"></div>
+      <CardHeader className="relative z-10">
         <CardTitle className="flex items-center gap-2 text-xl font-headline">
           <Heart className="h-6 w-6 text-primary" />
           {getTitle()}
         </CardTitle>
       </CardHeader>
-      <CardContent className="space-y-4 text-center">
+      <CardContent className="relative z-10 space-y-4 text-center">
         <p
           className="font-headline text-3xl leading-relaxed text-primary"
           dir="rtl"
