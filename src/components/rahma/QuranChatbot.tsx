@@ -1,7 +1,6 @@
 'use client';
 
 import { useState }from 'react';
-import { quranChat } from '@/ai/flows/quran-chat-flow';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -14,6 +13,13 @@ type Message = {
   role: 'user' | 'model';
   content: string;
 };
+
+const comingSoonMessages = {
+    en: 'This service is coming soon.',
+    kn: 'ಈ ಸೇವೆ ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ.',
+    hi: 'यह सेवा जल्द ही आ रही है।',
+    mr: 'ही सेवा लवकरच येत आहे.',
+}
 
 export function QuranChatbot() {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -31,23 +37,12 @@ export function QuranChatbot() {
     setInput('');
     setIsLoading(true);
 
-    try {
-      const { response } = await quranChat({
-        message: input,
-        history: messages,
-      });
-      const modelMessage: Message = { role: 'model', content: response };
-      setMessages([...newMessages, modelMessage]);
-    } catch (error) {
-      console.error('Chatbot error:', error);
-      const errorMessage: Message = {
-        role: 'model',
-        content: language === 'kn' ? 'ಕ್ಷಮಿಸಿ, ದೋಷ ಎದುರಾಗಿದೆ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ.' : 'Sorry, I encountered an error. Please try again.',
-      };
-      setMessages([...newMessages, errorMessage]);
-    } finally {
-      setIsLoading(false);
-    }
+    // Simulate a delay and then show the "coming soon" message
+    setTimeout(() => {
+        const modelMessage: Message = { role: 'model', content: comingSoonMessages[language] };
+        setMessages([...newMessages, modelMessage]);
+        setIsLoading(false);
+    }, 1000);
   };
 
   return (
