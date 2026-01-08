@@ -9,8 +9,10 @@ import { useLanguage, type Language } from '@/context/LanguageContext';
 import {
   DropdownMenu,
   DropdownMenuContent,
+  DropdownMenuLabel,
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
+  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 
@@ -25,6 +27,9 @@ export function Header() {
   const pathname = usePathname();
   const router = useRouter();
   const { language, setLanguage } = useLanguage();
+
+  const selectedLanguageLabel =
+    languageOptions.find((opt) => opt.value === language)?.label || 'Language';
 
   return (
     <header className="sticky top-0 z-10 w-full border-b bg-card shadow-sm">
@@ -61,6 +66,8 @@ export function Header() {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
+            <DropdownMenuLabel>{selectedLanguageLabel}</DropdownMenuLabel>
+            <DropdownMenuSeparator />
             <DropdownMenuRadioGroup
               value={language}
               onValueChange={(value) => setLanguage(value as Language)}
