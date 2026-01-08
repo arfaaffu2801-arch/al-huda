@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { LanguageProvider } from '@/context/LanguageContext';
+import Footer from '@/components/rahma/Footer';
 
 export const metadata: Metadata = {
   title: 'Al-Huda',
@@ -37,11 +38,7 @@ export default function RootLayout({
         <LanguageProvider>
           <div className="flex-grow">{children}</div>
           <Toaster />
-          <footer className="w-full bg-card p-4 text-center border-t">
-            <p className="text-sm text-muted-foreground">
-              Created and designed by Arfa, SPR AI Edutech, Hosadurga
-            </p>
-          </footer>
+          <Footer />
         </LanguageProvider>
       </body>
     </html>
