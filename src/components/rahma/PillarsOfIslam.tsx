@@ -15,7 +15,10 @@ import {
 } from '@/components/ui/accordion';
 import { PillarsOfIslamIcon } from './PillarsOfIslamIcon';
 import { Separator } from '../ui/separator';
-import { BookOpenCheck } from 'lucide-react';
+import { BookOpenCheck, Volume2, Loader2 } from 'lucide-react';
+import { useState, useRef, useEffect } from 'react';
+import { generateAudio } from '@/ai/flows/text-to-speech-flow';
+import { useToast } from '@/hooks/use-toast';
 
 const pillars = [
   {
@@ -63,7 +66,7 @@ const articlesOfFaith = [
   },
   {
     name: 'Belief in the Holy Books',
-    description: 'To believe in the divine books revealed by Allah to His messengers, including the Tawrat (Torah), Zabur (Psalms), Injil (Gospel), and the final revelation, the Qur\'an.',
+    description: "To believe in the divine books revealed by Allah to His messengers, including the Tawrat (Torah), Zabur (Psalms), Injil (Gospel), and the final revelation, the Qur'an.",
   },
   {
     name: 'Belief in the Prophets',
@@ -80,6 +83,76 @@ const articlesOfFaith = [
 ];
 
 export function PillarsOfIslam() {
+  const [playingText, setPlayingText] = useState<string | null>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const audioControllerRef = useRef<AbortController | null>(null);
+  const { toast } = useToast();
+
+  const playAudio = async (text: string) => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+    }
+
+    if (audioControllerRef.current) {
+      audioControllerRef.current.abort();
+    }
+
+    if (playingText === text) {
+      setPlayingText(null);
+      return;
+    }
+
+    setPlayingText(text);
+    const controller = new AbortController();
+    audioControllerRef.current = controller;
+
+    try {
+      const { audioDataUri } = await generateAudio({ text });
+
+      if (controller.signal.aborted) {
+        return;
+      }
+
+      if (audioRef.current) {
+        audioRef.current.src = audioDataUri;
+        audioRef.current.play();
+        audioRef.current.onended = () => {
+          setPlayingText(null);
+        };
+      }
+    } catch (e: any) {
+      if (e.name === 'AbortError') {
+        console.log('Audio generation aborted.');
+        return;
+      }
+      console.error('Failed to play audio', e);
+      toast({
+        variant: 'destructive',
+        title: 'Error',
+        description: 'Could not generate audio.',
+      });
+      setPlayingText(null);
+    } finally {
+      if (audioControllerRef.current === controller) {
+        audioControllerRef.current = null;
+      }
+    }
+  };
+
+  useEffect(() => {
+    audioRef.current = new Audio();
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+      if (audioControllerRef.current) {
+        audioControllerRef.current.abort();
+      }
+    };
+  }, []);
+
   return (
     <Card>
       <CardHeader>
@@ -95,19 +168,47 @@ export function PillarsOfIslam() {
         <Accordion type="single" collapsible className="w-full">
           {pillars.map((pillar, index) => (
             <AccordionItem value={`item-${index}`} key={index}>
-              <AccordionTrigger className="text-lg font-semibold text-primary">
+              <AccordionTrigger className="text-lg font-semibold text-primary text-left">
                 {pillar.name} - {pillar.title}
               </AccordionTrigger>
               <AccordionContent className="space-y-4 px-2">
-                <p className="text-base">{pillar.description}</p>
+                 <div className="flex items-start justify-between gap-2">
+                    <p className="text-base flex-1">{pillar.description}</p>
+                    <button
+                        onClick={() => playAudio(`${pillar.title}. ${pillar.description}`)}
+                        className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                        aria-label={`Listen`}
+                        disabled={playingText === `${pillar.title}. ${pillar.description}`}
+                    >
+                        {playingText === `${pillar.title}. ${pillar.description}` ? (
+                        <Loader2 className="h-5 w-5 animate-spin" />
+                        ) : (
+                        <Volume2 className="h-5 w-5" />
+                        )}
+                    </button>
+                </div>
                 {pillar.arabic && (
                   <div className="rounded-lg border bg-secondary/30 p-4 text-center">
-                    <p
-                      className="font-headline text-2xl leading-relaxed text-primary"
-                      dir="rtl"
-                    >
-                      {pillar.arabic}
-                    </p>
+                    <div className="flex justify-center items-center gap-4">
+                        <p
+                        className="font-headline text-2xl leading-relaxed text-primary"
+                        dir="rtl"
+                        >
+                        {pillar.arabic}
+                        </p>
+                         <button
+                            onClick={() => playAudio(pillar.arabic)}
+                            className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                            aria-label={`Listen`}
+                            disabled={playingText === pillar.arabic}
+                        >
+                            {playingText === pillar.arabic ? (
+                            <Loader2 className="h-5 w-5 animate-spin" />
+                            ) : (
+                            <Volume2 className="h-5 w-5" />
+                            )}
+                        </button>
+                    </div>
                     <p className="mt-2 text-muted-foreground">
                       {pillar.transliteration}
                     </p>
@@ -138,7 +239,21 @@ export function PillarsOfIslam() {
                 {article.name}
                 </AccordionTrigger>
                 <AccordionContent className="space-y-4 px-2">
-                <p className="text-base">{article.description}</p>
+                    <div className="flex items-start justify-between gap-2">
+                        <p className="text-base flex-1">{article.description}</p>
+                        <button
+                            onClick={() => playAudio(`${article.name}. ${article.description}`)}
+                            className="p-2 text-muted-foreground hover:text-primary disabled:text-primary"
+                            aria-label={`Listen`}
+                            disabled={playingText === `${article.name}. ${article.description}`}
+                        >
+                            {playingText === `${article.name}. ${article.description}` ? (
+                            <Loader2 className="h-5 w-5 animate-spin" />
+                            ) : (
+                            <Volume2 className="h-5 w-5" />
+                            )}
+                        </button>
+                    </div>
                 </AccordionContent>
             </AccordionItem>
             ))}
